@@ -1,0 +1,62 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "mode": "clean",
+      "uiVisible": true,
+      "accepted": 1,
+      "status": "{\"gate\":{\"allowed\":true,\"reasons\":[]},\"accepted\":0}",
+      "labels": [],
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "mode": "plain-hook",
+      "uiVisible": false,
+      "accepted": 0,
+      "status": "{\"gate\":{\"allowed\":false,\"reasons\":[\"fillText:native-source\",\"fillText:extra-property\"]},\"accepted\":0}",
+      "labels": [],
+      "errors": []
+    },
+    {
+      "mode": "replace-gate",
+      "uiVisible": false,
+      "accepted": 0,
+      "status": "starting",
+      "labels": [],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:5173/integrity/gate.js' with computed SHA-384 integrity 'eB7mPcfXtDAZV66xFMGjQn0G1bLyY62L9PxfSGeKnbbNMIFuTkWlgZ5zVemQuv78'. The resource has been blocked."
+      ]
+    },
+    {
+      "mode": "replace-runtime",
+      "uiVisible": false,
+      "accepted": 0,
+      "status": "starting",
+      "labels": [],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:5173/integrity/runtime.js' with computed SHA-384 integrity 'BLQxSw7D8hCuRDL+w3TQT+drGlyGm+/Pm9HPJaCyWhIRinKCbLxvMbXG5nfKZiqV'. The resource has been blocked."
+      ]
+    },
+    {
+      "mode": "rewrite-html",
+      "uiVisible": true,
+      "accepted": 1,
+      "status": "{\"gate\":{\"allowed\":true,\"reasons\":[]},\"accepted\":0}",
+      "labels": [
+        [
+          "Confirm transfer",
+          50,
+          240
+        ],
+        [
+          "Confirm transfer",
+          50,
+          240
+        ]
+      ],
+      "errors": []
+    }
+  ]
+}

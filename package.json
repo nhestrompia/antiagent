@@ -18,7 +18,8 @@
     "benchmark:shadow": "node scripts/benchmark-shadow.mjs",
     "benchmark:worker": "node scripts/benchmark-worker.mjs",
     "benchmark:hardening": "node scripts/benchmark-hardening.mjs",
-    "benchmark:tamper": "node scripts/benchmark-tamper.mjs"
+    "benchmark:tamper": "node scripts/benchmark-tamper.mjs",
+    "benchmark:integrity": "node scripts/generate-integrity-lab.mjs && node scripts/benchmark-integrity.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
