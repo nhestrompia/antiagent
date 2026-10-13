@@ -11,7 +11,8 @@
     "capture:control": "node scripts/control-experiment.mjs",
     "capture:native-control": "node scripts/native-control.mjs",
     "capture:ui": "node scripts/capture-ui.mjs",
-    "benchmark:automation": "node scripts/benchmark-automation.mjs"
+    "benchmark:automation": "node scripts/benchmark-automation.mjs",
+    "benchmark:randomized": "node scripts/benchmark-randomized.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

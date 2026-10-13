@@ -109,6 +109,10 @@ The security selector requests the selected Widevine level without fallback. Una
 
 The browser-only guard lab is at [automation-lab.html](http://localhost:5173/automation-lab.html). Run `npm run benchmark:automation` to compare webdriver refusal, trusted input, and user activation against stock Playwright and two bypass configurations. These checks do not block privileged compositor capture. See [measured outcomes](docs/automation-workarounds.md).
 
+## Randomized canvas benchmark
+
+The [randomized canvas task](http://localhost:5173/randomized-canvas.html) shuffles choices per session without adding task steps. Run `npm run benchmark:randomized` to compare coordinate replay and a client that observes canvas drawing. See [results](docs/randomized-canvas-findings.md) for the separate screenshot-only test and limits.
+
 ## Manual capture protocol
 
 1. Use installed Chrome on macOS. Record OS version, Chrome version, hardware, viewport, and device pixel ratio.
