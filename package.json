@@ -12,12 +12,14 @@
     "capture:native-control": "node scripts/native-control.mjs",
     "capture:ui": "node scripts/capture-ui.mjs",
     "benchmark:automation": "node scripts/benchmark-automation.mjs",
-    "benchmark:randomized": "node scripts/benchmark-randomized.mjs"
+    "benchmark:randomized": "node scripts/benchmark-randomized.mjs",
+    "benchmark:stack": "node scripts/benchmark-stack.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
   },
   "devDependencies": {
+    "@fingerprintjs/botd": "2.0.0",
     "@playwright/test": "1.64.0",
     "pngjs": "7.0.0",
     "vite": "8.3.4"

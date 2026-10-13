@@ -1,12 +1,18 @@
 import { drawReference } from './canvas.js';
+import { load } from '@fingerprintjs/botd';
 
 const policy = new URLSearchParams(location.search).get('policy') || 'combined';
-if (!['webdriver', 'trusted', 'activation', 'combined'].includes(policy)) throw new Error('Unknown experimental policy.');
+if (!['webdriver', 'trusted', 'activation', 'combined', 'botd', 'botd-combined'].includes(policy)) throw new Error('Unknown experimental policy.');
 const scene = document.querySelector('#scene');
-const checksDriver = policy === 'webdriver' || policy === 'combined';
-const checksTrust = policy === 'trusted' || policy === 'combined';
-const checksActivation = policy === 'activation' || policy === 'combined';
-const refused = checksDriver && navigator.webdriver === true;
+const checksDriver = policy === 'webdriver' || policy === 'combined' || policy === 'botd-combined';
+const checksTrust = policy === 'trusted' || policy === 'combined' || policy === 'botd-combined';
+const checksActivation = policy === 'activation' || policy === 'combined' || policy === 'botd-combined';
+let detector = null, detectorError = null;
+if (policy.startsWith('botd')) {
+  try { detector = await (await load({ monitoring: false })).detect(); }
+  catch (error) { detectorError = `${error.name}: ${error.message}`; }
+}
+const refused = (checksDriver && navigator.webdriver === true) || detector?.bot === true || detectorError !== null;
 const events = [];
 let acceptedActions = 0;
 if (refused) {
@@ -15,7 +21,7 @@ if (refused) {
   ctx.fillStyle = '#111'; ctx.fillRect(0, 0, 720, 480);
 } else { drawReference(scene); }
 function snapshot() {
-  return { policy, webdriver: navigator.webdriver, contentRefused: refused, acceptedActions, events: structuredClone(events) };
+  return { policy, webdriver: navigator.webdriver, detector, detectorError, contentRefused: refused, acceptedActions, events: structuredClone(events) };
 }
 function update() { document.querySelector('#status').textContent = JSON.stringify(snapshot(), null, 2); }
 scene.addEventListener('click', event => {

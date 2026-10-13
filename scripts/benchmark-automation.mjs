@@ -10,11 +10,15 @@ for (const mode of ['stock', 'preload-override', 'browser-flag']) {
   const browser = await chromium.launch({ channel: 'chrome', headless: false, args: mode === 'browser-flag' ? ['--disable-blink-features=AutomationControlled'] : [] });
   try {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    const externalRequests = [];
+    const origin = new URL(process.env.EXPERIMENT_URL || 'http://127.0.0.1:5173/automation-lab.html').origin;
+    page.on('request', request => { if (new URL(request.url()).origin !== origin) externalRequests.push(request.url().split('?')[0]); });
     if (mode === 'preload-override') await page.addInitScript(() => Object.defineProperty(Navigator.prototype, 'webdriver', { get: () => false, configurable: true }));
-    for (const policy of ['webdriver', 'trusted', 'activation', 'combined']) {
+    for (const policy of ['webdriver', 'trusted', 'activation', 'combined', 'botd', 'botd-combined']) {
       await page.goto(`${process.env.EXPERIMENT_URL || 'http://127.0.0.1:5173/automation-lab.html'}?policy=${policy}`);
       await page.waitForFunction(() => Boolean(window.automationLab));
       const before = await page.evaluate(() => window.automationLab.snapshot());
+      assert.equal(before.detectorError, null, 'A detector error is not successful bot detection.');
       await page.locator('canvas').click({ position: { x: 180, y: 252 } });
       const after = await page.evaluate(() => window.automationLab.snapshot());
       const event = after.events.at(-1);
@@ -33,7 +37,8 @@ for (const mode of ['stock', 'preload-override', 'browser-flag']) {
         assert.equal(synthetic.acceptedActions, 0);
       }
     }
-    await writeFile(`${directory}/report.json`, JSON.stringify({ browser: browser.version(), results }, null, 2));
+    assert.equal(externalRequests.length, 0, 'The locally bundled detector must not contact external services.');
+    await writeFile(`${directory}/report.json`, JSON.stringify({ browser: browser.version(), botdVersion: '2.0.0', externalRequests, results }, null, 2));
   } finally { await browser.close(); }
 }
 assert.equal(results.find(row => row.mode === 'stock' && row.before.policy === 'combined').actionAccepted, false);

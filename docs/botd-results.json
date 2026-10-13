@@ -1,0 +1,593 @@
+{
+  "browser": "155.0.8059.40",
+  "botdVersion": "2.0.0",
+  "externalRequests": [],
+  "results": [
+    {
+      "mode": "stock",
+      "before": {
+        "policy": "webdriver",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "webdriver",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": false
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": false,
+      "actionAccepted": false
+    },
+    {
+      "mode": "stock",
+      "before": {
+        "policy": "trusted",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "trusted",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "stock",
+      "before": {
+        "policy": "activation",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "activation",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "stock",
+      "before": {
+        "policy": "combined",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "combined",
+        "webdriver": true,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": false
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": false,
+      "actionAccepted": false
+    },
+    {
+      "mode": "stock",
+      "before": {
+        "policy": "botd",
+        "webdriver": true,
+        "detector": {
+          "bot": true,
+          "botKind": "headless_chrome"
+        },
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "botd",
+        "webdriver": true,
+        "detector": {
+          "bot": true,
+          "botKind": "headless_chrome"
+        },
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": false
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": false,
+      "actionAccepted": false
+    },
+    {
+      "mode": "stock",
+      "before": {
+        "policy": "botd-combined",
+        "webdriver": true,
+        "detector": {
+          "bot": true,
+          "botKind": "headless_chrome"
+        },
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "botd-combined",
+        "webdriver": true,
+        "detector": {
+          "bot": true,
+          "botKind": "headless_chrome"
+        },
+        "detectorError": null,
+        "contentRefused": true,
+        "acceptedActions": 0,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": false
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": false,
+      "actionAccepted": false
+    },
+    {
+      "mode": "preload-override",
+      "before": {
+        "policy": "webdriver",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "webdriver",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "preload-override",
+      "before": {
+        "policy": "trusted",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "trusted",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "preload-override",
+      "before": {
+        "policy": "activation",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "activation",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "preload-override",
+      "before": {
+        "policy": "combined",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "combined",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "preload-override",
+      "before": {
+        "policy": "botd",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "botd",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "preload-override",
+      "before": {
+        "policy": "botd-combined",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "botd-combined",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "browser-flag",
+      "before": {
+        "policy": "webdriver",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "webdriver",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "browser-flag",
+      "before": {
+        "policy": "trusted",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "trusted",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "browser-flag",
+      "before": {
+        "policy": "activation",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "activation",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "browser-flag",
+      "before": {
+        "policy": "combined",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "combined",
+        "webdriver": false,
+        "detector": null,
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "browser-flag",
+      "before": {
+        "policy": "botd",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "botd",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    },
+    {
+      "mode": "browser-flag",
+      "before": {
+        "policy": "botd-combined",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 0,
+        "events": []
+      },
+      "after": {
+        "policy": "botd-combined",
+        "webdriver": false,
+        "detector": {
+          "bot": false
+        },
+        "detectorError": null,
+        "contentRefused": false,
+        "acceptedActions": 1,
+        "events": [
+          {
+            "trusted": true,
+            "activation": true,
+            "hit": true,
+            "accepted": true
+          }
+        ]
+      },
+      "screenshotCompleted": true,
+      "referenceRendered": true,
+      "actionAccepted": true
+    }
+  ]
+}

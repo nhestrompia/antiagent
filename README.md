@@ -109,6 +109,10 @@ The security selector requests the selected Widevine level without fallback. Una
 
 The browser-only guard lab is at [automation-lab.html](http://localhost:5173/automation-lab.html). Run `npm run benchmark:automation` to compare webdriver refusal, trusted input, and user activation against stock Playwright and two bypass configurations. These checks do not block privileged compositor capture. See [measured outcomes](docs/automation-workarounds.md).
 
+## Existing detector experiments
+
+BotD is locally bundled in the guard lab with monitoring disabled. Use `/automation-lab.html?policy=botd` or `?policy=botd-combined`. `npm run benchmark:automation` compares it with the original checks. `npm run benchmark:stack` separately tests V8 stack inspection and console serialization against screenshots, input, and evaluation. See [existing approaches and measured limits](docs/existing-anti-agent-approaches.md).
+
 ## Randomized canvas benchmark
 
 The [randomized canvas task](http://localhost:5173/randomized-canvas.html) shuffles choices per session without adding task steps. Run `npm run benchmark:randomized` to compare coordinate replay and a client that observes canvas drawing. See [results](docs/randomized-canvas-findings.md) for the separate screenshot-only test and limits.
