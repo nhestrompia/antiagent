@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><meta charset="UTF-8"><title>Debugger input marker experiment</title>
+<button id="action" style="margin:80px;padding:32px">Reference action</button><pre id="status"></pre>
+<script>
+const samples=[];let accepted=0;
+for(const type of ['pointerdown','mousedown','pointerup','mouseup','click','keydown'])document.querySelector('#action').addEventListener(type,event=>{
+ const modifiers={};for(const key of ['Alt','Control','Shift','Meta','AltGraph','CapsLock','NumLock','ScrollLock','Fn','FnLock','Symbol','SymbolLock','FromDebugger','Debugger'])modifiers[key]=event.getModifierState(key);
+ samples.push({type,isTrusted:event.isTrusted,userActivation:navigator.userActivation.isActive,modifiers,sourceCapabilities:event.sourceCapabilities?{firesTouchEvents:event.sourceCapabilities.firesTouchEvents}:null,pointerType:event.pointerType,pointerId:event.pointerId,pressure:event.pressure,movementX:event.movementX,movementY:event.movementY,detail:event.detail,coalesced:event.getCoalescedEvents?.().length,predicted:event.getPredictedEvents?.().length});
+ if(type==='click'&&event.isTrusted&&!modifiers.FromDebugger&&!modifiers.Debugger)accepted++;
+ document.querySelector('#status').textContent=JSON.stringify({accepted,samples});
+});
+document.querySelector('#status').textContent=JSON.stringify({accepted,samples});
+</script></html>
