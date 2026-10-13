@@ -15,7 +15,8 @@
     "benchmark:randomized": "node scripts/benchmark-randomized.mjs",
     "benchmark:stack": "node scripts/benchmark-stack.mjs",
     "benchmark:decoys": "node scripts/benchmark-decoys.mjs",
-    "benchmark:shadow": "node scripts/benchmark-shadow.mjs"
+    "benchmark:shadow": "node scripts/benchmark-shadow.mjs",
+    "benchmark:worker": "node scripts/benchmark-worker.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

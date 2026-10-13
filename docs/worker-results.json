@@ -1,0 +1,35 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "agent": "main-render-hook",
+      "mainLabels": [],
+      "workerLabels": [],
+      "ready": true,
+      "accepted": 0
+    },
+    {
+      "agent": "worker-render-hook",
+      "mainLabels": [],
+      "workerLabels": [
+        [
+          "Harbor Research",
+          50,
+          240
+        ],
+        [
+          "North Labs",
+          280,
+          240
+        ],
+        [
+          "West Studio",
+          510,
+          240
+        ]
+      ],
+      "ready": true,
+      "accepted": 1
+    }
+  ]
+}
