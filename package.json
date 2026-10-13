@@ -13,7 +13,8 @@
     "capture:ui": "node scripts/capture-ui.mjs",
     "benchmark:automation": "node scripts/benchmark-automation.mjs",
     "benchmark:randomized": "node scripts/benchmark-randomized.mjs",
-    "benchmark:stack": "node scripts/benchmark-stack.mjs"
+    "benchmark:stack": "node scripts/benchmark-stack.mjs",
+    "benchmark:decoys": "node scripts/benchmark-decoys.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

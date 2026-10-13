@@ -1,0 +1,155 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "mode": "off",
+      "agent": "text-selector",
+      "locked": false,
+      "accepted": 0,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": "TimeoutError"
+    },
+    {
+      "mode": "off",
+      "agent": "screenshot-coordinate",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "off",
+      "agent": "css-aware",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "off",
+      "agent": "remove-decoy",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "off",
+      "agent": "keyboard",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "hidden",
+      "agent": "text-selector",
+      "locked": false,
+      "accepted": 0,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": "TimeoutError"
+    },
+    {
+      "mode": "hidden",
+      "agent": "screenshot-coordinate",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "hidden",
+      "agent": "css-aware",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "hidden",
+      "agent": "remove-decoy",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "hidden",
+      "agent": "keyboard",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "opacity",
+      "agent": "text-selector",
+      "locked": true,
+      "accepted": 0,
+      "decoyHits": 1,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "opacity",
+      "agent": "screenshot-coordinate",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "opacity",
+      "agent": "css-aware",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "opacity",
+      "agent": "remove-decoy",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    },
+    {
+      "mode": "opacity",
+      "agent": "keyboard",
+      "locked": false,
+      "accepted": 1,
+      "decoyHits": 0,
+      "events": [],
+      "captureEvents": [],
+      "error": null
+    }
+  ]
+}
