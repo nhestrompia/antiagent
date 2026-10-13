@@ -1,0 +1,11 @@
+- main:
+  - heading "Protected media interface experiment" [level=1]
+  - paragraph: The reference interface is encoded inside the video. This static experiment has no interactive business controls.
+  - text: Media
+  - combobox "Media":
+    - option "Encrypted interface" [selected]
+    - option "Matching clear interface"
+  - button "Start playback"
+  - button "Stop playback"
+  - paragraph: Capture may make this region dark for everyone. No screenshot protection is inferred from playback status.
+  - text: "{ \"activeSource\": \"encrypted\", \"supported\": true, \"phase\": \"playing\", \"playing\": true, \"encrypted\": true, \"usableKeys\": true, \"protectedPlayback\": true, \"captureProtectionVerified\": null, \"error\": null, \"playbackVerified\": true, \"selectedRobustness\": \"SW_SECURE_DECODE\", \"encryptionExpected\": true, \"requestedRobustness\": \"SW_SECURE_DECODE\", \"requestedSecuritySupported\": true, \"keySystem\": \"com.widevine.alpha\", \"currentTime\": 0.558253, \"dimensions\": [ 720, 480 ] }"

@@ -28,16 +28,21 @@ try {
   await page.waitForFunction(() => window.antiAgentExperiment.snapshot().drm.protectedPlayback, null, { timeout: 60000 });
   await page.evaluate(() => { document.title = 'Anti-Agent native positive control'; });
   await page.bringToFront();
-  async function save(label) {
+  async function save(label, browserCaptureRequested = false) {
     const snapshot = await page.evaluate(() => window.antiAgentExperiment.snapshot());
-    await writeFile(`${directory}/${label}.json`, JSON.stringify({ browser: browser.version(), asset, launchArgs, graphics, mediaEvents, snapshot, browserCaptureRequested: false, nativeCaptureVerdict: 'requires native observation and human confirmation' }, null, 2));
+    await writeFile(`${directory}/${label}.json`, JSON.stringify({ browser: browser.version(), asset, launchArgs, graphics, mediaEvents, snapshot, browserCaptureRequested, nativeCaptureVerdict: 'requires native observation and human confirmation' }, null, 2));
     console.log(JSON.stringify({ directory, label, drm: snapshot.drm }));
   }
   await save('initial');
-  console.log('Ready for native computer-use observation. Commands: native, opaque, transparent, baseline, status, stop.');
+  console.log('Ready for native computer-use observation. Commands: native, opaque, transparent, baseline, status, capture-view, capture-surface, stop.');
   const input = createInterface({ input: process.stdin });
   for await (const command of input) {
     if (command === 'stop') break;
+    if (['capture-view', 'capture-surface'].includes(command)) {
+      const screenshot = await client.send('Page.captureScreenshot', { format: 'png', fromSurface: command === 'capture-surface' });
+      await writeFile(`${directory}/${command}.png`, Buffer.from(screenshot.data, 'base64'));
+      await save(command, true);
+    }
     if (['native', 'opaque', 'transparent', 'baseline'].includes(command)) await page.evaluate(mode => window.antiAgentExperiment.setMode(mode), command);
     if (command === 'status' || ['native', 'opaque', 'transparent', 'baseline'].includes(command)) await save(command);
   }

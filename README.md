@@ -86,7 +86,19 @@ ASSET=sintel npm run capture:native-control
 
 This opens installed Chrome in an explicit temporary profile with minimal launch flags. It plays opaque protected video without requesting a browser screenshot or tab stream. Chromium can change its macOS overlay path during capture, so observe native capture before running the other adapters. See [capture-path research](docs/chrome-capture-path-research.md).
 
-The terminal accepts `native`, `opaque`, `transparent`, `baseline`, `status`, and `stop`. Each mode saves playback, decoder, and GPU diagnostics under `artifacts/`. Use a native screenshot or computer-use observation and confirm that a human sees the live video. Saved playback diagnostics do not prove capture suppression. `stop` closes only this test browser and removes its temporary profile.
+The terminal accepts `native`, `opaque`, `transparent`, `baseline`, `status`, `capture-view`, `capture-surface`, and `stop`. Each mode saves playback, decoder, and GPU diagnostics under `artifacts/`. The optional capture commands compare CDP `fromSurface: false` and `true`; run them after native observation. Saved playback diagnostics do not prove capture suppression. `stop` closes only this test browser and removes its temporary profile.
+
+### Interface inside protected media
+
+Open [the protected interface experiment](http://localhost:5173/protected-ui.html), select encrypted or matching clear media, and start playback.
+
+```bash
+# Generate media from the reference scene, with the dev server running:
+ASSET_KIND=interface PACKAGER=/path/to/packager node scripts/generate-asset.mjs
+npm run capture:ui
+```
+
+This experiment puts the reference text inside a 720×480 encrypted video. There is no separate readable canvas beneath it. It tests Netflix/HBO-style media exclusion with capture-time usability no longer required. It is a static prerecorded interface, not an interactive renderer or React wrapper. The clear sample is intentionally served for comparison, so this fixture is not a network-access security boundary. See [results and limitations](docs/protected-ui-findings.md).
 
 ## Manual capture protocol
 

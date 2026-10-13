@@ -1,0 +1,17 @@
+{
+  "resolution": [
+    720,
+    480
+  ],
+  "pattern": "reference-interface",
+  "durationSeconds": 2,
+  "frameRate": 1,
+  "audio": false,
+  "clearLeadSeconds": 0,
+  "encryption": "Widevine CENC",
+  "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+  "generationSource": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+  "packagerVersion": "3.9.3",
+  "bytes": 32466,
+  "productionUse": false
+}

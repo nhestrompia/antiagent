@@ -54,6 +54,7 @@ export function validateConfig(config) {
   if (!config.headers || Array.isArray(config.headers) || typeof config.headers !== 'object' || Object.values(config.headers).some(value => typeof value !== 'string')) throw new Error('License headers must be a JSON object with string values.');
   if (!Number.isFinite(config.encryptedStart) || config.encryptedStart < 0) throw new Error('Encrypted start time must be a non-negative number.');
   if (!robustnessLevels.includes(config.robustness)) throw new Error('Select a supported Widevine robustness value.');
+  if (config.maxVideoHeight !== undefined && (!Number.isInteger(config.maxVideoHeight) || config.maxVideoHeight < 1)) throw new Error('Maximum video height must be a positive integer.');
 }
 
 export class DRMRuntime {
@@ -116,7 +117,7 @@ export class DRMRuntime {
       await player.attach(this.video);
       if (operation !== this.operation) return;
       player.addEventListener('error', event => this.update({ phase: 'error', error: `Shaka error ${event.detail.code}`, protectedPlayback: false }));
-      player.configure({ drm: { servers: { 'com.widevine.alpha': config.licenseServerUrl }, preferredKeySystems: ['com.widevine.alpha'], advanced: { 'com.widevine.alpha': { headers: config.headers, videoRobustness: [config.robustness] } } }, abr: { enabled: false }, restrictions: { maxHeight: 240 }, streaming: { bufferingGoal: 5, rebufferingGoal: 2 }, manifest: { disableAudio: true, disableText: true } });
+      player.configure({ drm: { servers: { 'com.widevine.alpha': config.licenseServerUrl }, preferredKeySystems: ['com.widevine.alpha'], advanced: { 'com.widevine.alpha': { headers: config.headers, videoRobustness: [config.robustness] } } }, abr: { enabled: false }, restrictions: { maxHeight: config.maxVideoHeight ?? 240 }, streaming: { bufferingGoal: 5, rebufferingGoal: 2 }, manifest: { disableAudio: true, disableText: true } });
       await player.load(config.manifestUrl, config.encryptedStart);
       if (operation !== this.operation) return;
       await this.video.play();
