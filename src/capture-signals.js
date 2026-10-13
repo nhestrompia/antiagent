@@ -2,7 +2,8 @@ const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 const events = [], samples = [], inputs = [];
 const guard = new URLSearchParams(location.search).get('guard') === 'on';
-let locked = false, accepted = 0;
+const hiddenFrameGuard = new URLSearchParams(location.search).get('guard') === 'hidden-frame';
+let frames = 0, locked = false, accepted = 0;
 function dimensions() {
   return { width: innerWidth, height: innerHeight, clientWidth: document.documentElement.clientWidth,
     viewportWidth: visualViewport?.width, viewportHeight: visualViewport?.height,
@@ -29,7 +30,7 @@ new ResizeObserver(() => {
   sample('ResizeObserver');
   if (guard && document.documentElement.clientWidth !== initialWidth) { locked = true; draw(); }
 }).observe(document.documentElement);
-function poll() { sample('animationFrame'); requestAnimationFrame(poll); }
+function poll() { frames++; sample('animationFrame'); if (hiddenFrameGuard && document.hidden && !locked) {locked = true;draw();} requestAnimationFrame(poll); }
 requestAnimationFrame(poll);
 for (const type of ['pointerdown', 'pointerup', 'mousedown', 'mouseup', 'click', 'keydown']) canvas.addEventListener(type, event => {
   inputs.push({ type, trusted: event.isTrusted, detail: event.detail, pointerType: event.pointerType,
@@ -43,5 +44,5 @@ canvas.addEventListener('click', event => {
   if (!locked && event.clientX - rect.left >= 40 && event.clientX - rect.left <= 220 && event.clientY - rect.top >= 200 && event.clientY - rect.top <= 270) accepted++;
   draw();
 });
-window.captureSignals = { snapshot: () => ({ dimensions: dimensions(), events: [...events], samples: [...samples], inputs: [...inputs], guard, locked, accepted }), reset: () => { events.length = samples.length = inputs.length = 0; previous = JSON.stringify(dimensions()); } };
+window.captureSignals = { snapshot: () => ({ frames, dimensions: dimensions(), events: [...events], samples: [...samples], inputs: [...inputs], guard, locked, accepted }), reset: () => { events.length = samples.length = inputs.length = 0; previous = JSON.stringify(dimensions()); } };
 draw();

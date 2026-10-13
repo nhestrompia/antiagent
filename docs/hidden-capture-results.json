@@ -1,0 +1,444 @@
+{
+  "browser": "155.0.8059.40",
+  "freshBrowserPerCase": true,
+  "results": [
+    {
+      "guard": "off",
+      "operation": "hidden-idle",
+      "repetition": 0,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 0,
+      "locked": false,
+      "events": [],
+      "captureAppearance": null
+    },
+    {
+      "guard": "off",
+      "operation": "hidden-idle",
+      "repetition": 1,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 0,
+      "locked": false,
+      "events": [],
+      "captureAppearance": null
+    },
+    {
+      "guard": "off",
+      "operation": "hidden-idle",
+      "repetition": 2,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 0,
+      "locked": false,
+      "events": [],
+      "captureAppearance": null
+    },
+    {
+      "guard": "off",
+      "operation": "hidden-viewport",
+      "repetition": 0,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 6,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "hidden-viewport",
+      "repetition": 1,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 6,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "hidden-viewport",
+      "repetition": 2,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 4,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "emulated-hidden-viewport",
+      "repetition": 0,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 9,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "emulated-hidden-viewport",
+      "repetition": 1,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 12,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "emulated-hidden-viewport",
+      "repetition": 2,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 9,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "foreground-viewport",
+      "repetition": 0,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 9,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "foreground-viewport",
+      "repetition": 1,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 9,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "off",
+      "operation": "foreground-viewport",
+      "repetition": 2,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 10,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "hidden-idle",
+      "repetition": 0,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 0,
+      "locked": false,
+      "events": [],
+      "captureAppearance": null
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "hidden-idle",
+      "repetition": 1,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 0,
+      "locked": false,
+      "events": [],
+      "captureAppearance": null
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "hidden-idle",
+      "repetition": 2,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 0,
+      "locked": false,
+      "events": [],
+      "captureAppearance": null
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "hidden-viewport",
+      "repetition": 0,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 4,
+      "locked": true,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "hidden-viewport",
+      "repetition": 1,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 5,
+      "locked": true,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "hidden-viewport",
+      "repetition": 2,
+      "visibilityBefore": true,
+      "visibilityAfter": true,
+      "focusEmulation": false,
+      "lockedBefore": false,
+      "frameDelta": 5,
+      "locked": true,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "emulated-hidden-viewport",
+      "repetition": 0,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 13,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "emulated-hidden-viewport",
+      "repetition": 1,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 8,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "emulated-hidden-viewport",
+      "repetition": 2,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 8,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "foreground-viewport",
+      "repetition": 0,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 11,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "foreground-viewport",
+      "repetition": 1,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 10,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    },
+    {
+      "guard": "hidden-frame",
+      "operation": "foreground-viewport",
+      "repetition": 2,
+      "visibilityBefore": false,
+      "visibilityAfter": false,
+      "focusEmulation": true,
+      "lockedBefore": false,
+      "frameDelta": 11,
+      "locked": false,
+      "events": [],
+      "captureAppearance": {
+        "rgb": [
+          46,
+          98,
+          86
+        ],
+        "black": false
+      }
+    }
+  ]
+}
