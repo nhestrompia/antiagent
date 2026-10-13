@@ -1,0 +1,104 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "guard": "off",
+      "operation": "late-hook",
+      "hookInstalled": true,
+      "labels": [
+        [
+          "Confirm transfer",
+          50,
+          240
+        ]
+      ],
+      "enabled": false,
+      "locks": [],
+      "accepted": 1
+    },
+    {
+      "guard": "off",
+      "operation": "early-hook",
+      "hookInstalled": true,
+      "labels": [
+        [
+          "Confirm transfer",
+          50,
+          240
+        ]
+      ],
+      "enabled": false,
+      "locks": [],
+      "accepted": 1
+    },
+    {
+      "guard": "off",
+      "operation": "compositor-input",
+      "hookInstalled": null,
+      "labels": [],
+      "enabled": false,
+      "locks": [],
+      "accepted": 1
+    },
+    {
+      "guard": "on",
+      "operation": "late-hook",
+      "hookInstalled": false,
+      "labels": [],
+      "enabled": true,
+      "locks": [
+        {
+          "key": "fillText",
+          "status": "locked"
+        },
+        {
+          "key": "attachShadow",
+          "status": "locked"
+        }
+      ],
+      "accepted": 1
+    },
+    {
+      "guard": "on",
+      "operation": "early-hook",
+      "hookInstalled": true,
+      "labels": [
+        [
+          "Confirm transfer",
+          50,
+          240
+        ]
+      ],
+      "enabled": true,
+      "locks": [
+        {
+          "key": "fillText",
+          "status": "locked"
+        },
+        {
+          "key": "attachShadow",
+          "status": "locked"
+        }
+      ],
+      "accepted": 1
+    },
+    {
+      "guard": "on",
+      "operation": "compositor-input",
+      "hookInstalled": null,
+      "labels": [],
+      "enabled": true,
+      "locks": [
+        {
+          "key": "fillText",
+          "status": "locked"
+        },
+        {
+          "key": "attachShadow",
+          "status": "locked"
+        }
+      ],
+      "accepted": 1
+    }
+  ]
+}
