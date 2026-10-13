@@ -13,6 +13,7 @@ export function inspectAPIs() {
     const reasons = [];
     for (const [name, target, baseline] of [
       ['fillText', CanvasRenderingContext2D.prototype, reference.CanvasRenderingContext2D.prototype],
+      ['appendChild', Node.prototype, reference.Node.prototype],
       ['attachShadow', Element.prototype, reference.Element.prototype],
       ['toString', Function.prototype, reference.Function.prototype],
     ]) {
