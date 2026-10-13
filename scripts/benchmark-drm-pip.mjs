@@ -12,8 +12,9 @@ function referencePixels(bytes) {
 }
 
 const guardMode = process.env.DRM_PIP_GUARD || 'off';
+const captureViews = process.env.DRM_PIP_CAPTURE_VIEWS === '1';
 if (!['off', 'on', 'suppressed'].includes(guardMode)) throw new Error('DRM_PIP_GUARD must be off, on, or suppressed');
-const directory = guardMode === 'off' ? 'artifacts/drm-pip' : `artifacts/drm-pip-${guardMode}`;
+const directory = captureViews ? `artifacts/drm-pip-${guardMode}-views` : guardMode === 'off' ? 'artifacts/drm-pip' : `artifacts/drm-pip-${guardMode}`;
 await mkdir(directory, { recursive: true });
 const results = [];
 let version;
@@ -64,6 +65,13 @@ for (const source of ['clear', 'encrypted']) for (let repetition = 0; repetition
     const capture = await client.send('Page.captureScreenshot', { fromSurface: true, captureBeyondViewport: false });
     const bytes = Buffer.from(capture.data, 'base64');
     await writeFile(`${directory}/${source}-${repetition}-pip.png`, bytes);
+    const captureModes = [{ stage: 'pip', fromSurface: true, referencePixels: referencePixels(bytes) }];
+    if (captureViews) {
+      const view = await client.send('Page.captureScreenshot', { fromSurface: false });
+      const viewBytes = Buffer.from(view.data, 'base64');
+      await writeFile(`${directory}/${source}-${repetition}-pip-view.png`, viewBytes);
+      captureModes.push({ stage: 'pip', fromSurface: false, referencePixels: referencePixels(viewBytes) });
+    }
     const copy = await page.evaluate(() => {
       const video = documentPictureInPicture.window.document.querySelector('video');
       const canvas = document.createElement('canvas'); canvas.width = video.videoWidth; canvas.height = video.videoHeight;
@@ -88,11 +96,18 @@ for (const source of ['clear', 'encrypted']) for (let repetition = 0; repetition
     for (let offset = 0; offset < copyImage.data.length; offset += 4) if (copyImage.data[offset] > 30 || copyImage.data[offset + 1] > 30 || copyImage.data[offset + 2] > 30) copyNonBlack++;
     const guardBlocked = await page.evaluate(() => !!window.pipGuardBlocked);
     const restoredReferencePixels = referencePixels(restoredBytes);
+    captureModes.push({ stage: 'restored', fromSurface: true, referencePixels: restoredReferencePixels });
+    if (captureViews) {
+      const view = await sourceClient.send('Page.captureScreenshot', { fromSurface: false });
+      const viewBytes = Buffer.from(view.data, 'base64');
+      await writeFile(`${directory}/${source}-${repetition}-restored-view.png`, viewBytes);
+      captureModes.push({ stage: 'restored', fromSurface: false, referencePixels: referencePixels(viewBytes) });
+    }
     if (guardMode === 'on' ? restoredReferencePixels !== 0 : restoredReferencePixels < 1000) throw new Error('Unexpected restored reference pixels');
-    results.push({ source, repetition, guardMode, guardBlocked, before, during, after, copyNonBlack, restoredReferencePixels, captureVerdict: 'Reference-color measurement plus paired images; static noninteractive media experiment', nativeHumanVisibility: 'Not tested' });
+    results.push({ source, repetition, guardMode, guardBlocked, before, during, after, copyNonBlack, restoredReferencePixels, captureModes, captureVerdict: 'Reference-color measurement plus paired images; static noninteractive media experiment', nativeHumanVisibility: 'Not tested' });
   } catch (error) { results.push({ source, repetition, failed: error.message, captureVerdict: 'No successful protection result' }); }
   finally { await close(); }
 }
-await writeFile(guardMode === 'off' ? 'docs/drm-pip-results.json' : `docs/drm-pip-${guardMode}-results.json`, JSON.stringify({ browser: version, guardMode, results }, null, 2));
-console.log(JSON.stringify(results.map(({ source, repetition, guardBlocked, skipped, failed, during, after, copyNonBlack }) => ({ source, repetition, guardMode, guardBlocked, skipped, failed, playingInPip: during?.drm.playbackVerified, playingRestored: after?.drm.playbackVerified, copyNonBlack }))));
+await writeFile(captureViews ? `docs/drm-pip-${guardMode}-views-results.json` : guardMode === 'off' ? 'docs/drm-pip-results.json' : `docs/drm-pip-${guardMode}-results.json`, JSON.stringify({ browser: version, guardMode, captureViews, results }, null, 2));
+console.log(JSON.stringify(results.map(({ source, repetition, guardBlocked, skipped, failed, during, after, copyNonBlack, captureModes }) => ({ source, repetition, guardMode, guardBlocked, skipped, failed, playingInPip: during?.drm.playbackVerified, playingRestored: after?.drm.playbackVerified, copyNonBlack, captureModes }))));
 if (results.some(result => result.failed || result.skipped)) throw new Error('One or more playback/capture cases did not complete; inspect results');
