@@ -1,0 +1,218 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "operation": "playwright-default",
+      "repetition": 0,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "caret-style-change"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "playwright-default",
+      "repetition": 1,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "caret-style-change"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "playwright-default",
+      "repetition": 2,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "caret-style-change"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "playwright-caret-initial",
+      "repetition": 0,
+      "rgb": [
+        17,
+        100,
+        86
+      ],
+      "black": false,
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "playwright-caret-initial",
+      "repetition": 1,
+      "rgb": [
+        17,
+        100,
+        86
+      ],
+      "black": false,
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "playwright-caret-initial",
+      "repetition": 2,
+      "rgb": [
+        17,
+        100,
+        86
+      ],
+      "black": false,
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "playwright-animation-disabled",
+      "repetition": 0,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "animation-cancel"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "playwright-animation-disabled",
+      "repetition": 1,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "animation-cancel"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "playwright-animation-disabled",
+      "repetition": 2,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "animation-cancel"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "direct-cdp",
+      "repetition": 0,
+      "rgb": [
+        17,
+        100,
+        86
+      ],
+      "black": false,
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "direct-cdp",
+      "repetition": 1,
+      "rgb": [
+        17,
+        100,
+        86
+      ],
+      "black": false,
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "direct-cdp",
+      "repetition": 2,
+      "rgb": [
+        17,
+        100,
+        86
+      ],
+      "black": false,
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "ordinary-caret-change",
+      "repetition": 0,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "caret-style-change"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "ordinary-caret-change",
+      "repetition": 1,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "caret-style-change"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "ordinary-caret-change",
+      "repetition": 2,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "black": true,
+      "covered": true,
+      "reasons": [
+        "caret-style-change"
+      ],
+      "accepted": 0
+    }
+  ]
+}
