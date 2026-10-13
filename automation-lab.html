@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anti-Agent automation guard experiment</title>
+  <style>
+    body { margin: 32px; font: 16px system-ui; color: #172b35; background: #ecf2f3; }
+    main { max-width: 900px; margin: auto; }
+    canvas { display: block; width: min(100%, 720px); aspect-ratio: 3 / 2; }
+    pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Automation guard experiment</h1>
+    <p>This page tests browser automation signals against capture and canvas input.</p>
+    <canvas id="scene"></canvas>
+    <pre id="status"></pre>
+  </main>
+  <script type="module" src="/src/automation-lab.js"></script>
+</body>
+</html>

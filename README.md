@@ -105,6 +105,10 @@ This experiment puts the reference text inside a 720×480 encrypted video. There
 
 The security selector requests the selected Widevine level without fallback. Unavailable playback produces a report with encrypted captures skipped. Both supported software modes still expose the interface through compositor screenshots on this Mac. See [the compositor investigation](docs/compositor-capture-research.md).
 
+## Browser-only automation guard lab
+
+The browser-only guard lab is at [automation-lab.html](http://localhost:5173/automation-lab.html). Run `npm run benchmark:automation` to compare webdriver refusal, trusted input, and user activation against stock Playwright and two bypass configurations. These checks do not block privileged compositor capture. See [measured outcomes](docs/automation-workarounds.md).
+
 ## Manual capture protocol
 
 1. Use installed Chrome on macOS. Record OS version, Chrome version, hardware, viewport, and device pixel ratio.
