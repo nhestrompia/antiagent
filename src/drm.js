@@ -17,6 +17,19 @@ export const sintelAsset = {
   encryptedStart: 12,
 };
 
+export const robustnessLevels = ['SW_SECURE_CRYPTO', 'SW_SECURE_DECODE', 'HW_SECURE_CRYPTO', 'HW_SECURE_DECODE', 'HW_SECURE_ALL'];
+
+export async function probeRobustness() {
+  const results = [];
+  for (const robustness of robustnessLevels) {
+    try {
+      const access = await navigator.requestMediaKeySystemAccess('com.widevine.alpha', [{ initDataTypes: ['cenc'], sessionTypes: ['temporary'], videoCapabilities: [{ contentType: 'video/mp4; codecs="avc1.42c00a"', encryptionScheme: 'cenc', robustness }] }]);
+      results.push({ robustness, supported: true, configuration: access.getConfiguration() });
+    } catch (error) { results.push({ robustness, supported: false, error: `${error.name}: ${error.message}` }); }
+  }
+  return results;
+}
+
 export function validateConfig(config) {
   for (const key of ['manifestUrl', 'licenseServerUrl']) {
     const url = new URL(config[key]);
@@ -24,6 +37,7 @@ export function validateConfig(config) {
   }
   if (!config.headers || Array.isArray(config.headers) || typeof config.headers !== 'object' || Object.values(config.headers).some(value => typeof value !== 'string')) throw new Error('License headers must be a JSON object with string values.');
   if (!Number.isFinite(config.encryptedStart) || config.encryptedStart < 0) throw new Error('Encrypted start time must be a non-negative number.');
+  if (!robustnessLevels.includes(config.robustness)) throw new Error('Select a supported Widevine robustness value.');
 }
 
 export class DRMRuntime {
@@ -53,17 +67,18 @@ export class DRMRuntime {
     const usableKeys = Object.values(statuses).includes('usable');
     const encrypted = Boolean(video.mediaKeys && keySystem === 'com.widevine.alpha');
     const playing = video.isConnected && !video.paused && video.readyState >= 2;
-    this.update({ playing, encrypted, usableKeys, keySystem, currentTime: video.currentTime, dimensions: [video.videoWidth, video.videoHeight], protectedPlayback: playing && this.frames > 0 && performance.now() - this.lastAdvance < 1500 && encrypted && usableKeys && video.currentTime >= this.encryptedStart,
+    this.update({ playing, encrypted, usableKeys, keySystem, selectedRobustness: this.player?.drmInfo()?.videoRobustness || null, currentTime: video.currentTime, dimensions: [video.videoWidth, video.videoHeight], protectedPlayback: this.state.phase === 'playing' && playing && this.frames > 0 && performance.now() - this.lastAdvance < 1500 && encrypted && usableKeys && video.currentTime >= this.encryptedStart,
       ...(!video.isConnected ? { phase: 'removed', error: 'Protected media element was removed. Reload to restore it.' } : {}),
     });
   }
 
   async start(config) {
     validateConfig(config);
+    const operation = this.operation + 1;
     await this.stop();
-    const operation = this.operation;
+    if (operation !== this.operation) return;
     this.encryptedStart = config.encryptedStart;
-    this.update({ phase: 'initializing', error: null, supported: null });
+    this.update({ phase: 'initializing', error: null, supported: null, requestedRobustness: config.robustness, requestedSecuritySupported: null, selectedRobustness: null });
     shaka.polyfill.installAll();
     if (!shaka.Player.isBrowserSupported() || !navigator.requestMediaKeySystemAccess) { this.update({ supported: false, phase: 'unsupported', error: 'Media Source Extensions or encrypted media is unavailable.' }); return; }
     try {
@@ -72,15 +87,21 @@ export class DRMRuntime {
       const available = Boolean(support.drm['com.widevine.alpha']);
       this.update({ supported: available });
       if (!available) { this.update({ phase: 'unsupported', error: 'Widevine is unavailable in this browser. Use installed Chrome.' }); return; }
+      if (!support.drm['com.widevine.alpha'].videoRobustnessLevels.includes(config.robustness)) {
+        this.update({ phase: 'unsupported', requestedSecuritySupported: false, error: `Widevine ${config.robustness} is unavailable in this browser. Playback stopped; no software fallback was used.` });
+        return;
+      }
+      this.update({ requestedSecuritySupported: true });
       const player = new shaka.Player();
       this.player = player;
       await player.attach(this.video);
       if (operation !== this.operation) return;
       player.addEventListener('error', event => this.update({ phase: 'error', error: `Shaka error ${event.detail.code}`, protectedPlayback: false }));
-      player.configure({ drm: { servers: { 'com.widevine.alpha': config.licenseServerUrl }, preferredKeySystems: ['com.widevine.alpha'], advanced: { 'com.widevine.alpha': { headers: config.headers } } }, abr: { enabled: false }, restrictions: { maxHeight: 240 }, streaming: { bufferingGoal: 5, rebufferingGoal: 2 }, manifest: { disableAudio: true, disableText: true } });
+      player.configure({ drm: { servers: { 'com.widevine.alpha': config.licenseServerUrl }, preferredKeySystems: ['com.widevine.alpha'], advanced: { 'com.widevine.alpha': { headers: config.headers, videoRobustness: [config.robustness] } } }, abr: { enabled: false }, restrictions: { maxHeight: 240 }, streaming: { bufferingGoal: 5, rebufferingGoal: 2 }, manifest: { disableAudio: true, disableText: true } });
       await player.load(config.manifestUrl, config.encryptedStart);
       if (operation !== this.operation) return;
       await this.video.play();
+      if (operation !== this.operation) return;
       this.update({ phase: 'playing' });
     } catch (error) { if (operation === this.operation) this.update({ phase: 'error', error: error.code ? `Shaka error ${error.code}` : `${error.name}: ${error.message}`, protectedPlayback: false }); }
   }
@@ -92,7 +113,7 @@ export class DRMRuntime {
     this.frames = 0;
     this.lastTime = 0;
     this.lastAdvance = 0;
-    this.update({ phase: 'idle', playing: false, encrypted: false, usableKeys: false, protectedPlayback: false, error: null });
+    this.update({ phase: 'idle', playing: false, encrypted: false, usableKeys: false, protectedPlayback: false, selectedRobustness: null, error: null });
   }
 
   stats() { return this.player?.getStats() || null; }

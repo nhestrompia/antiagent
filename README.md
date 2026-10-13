@@ -35,9 +35,13 @@ REPETITIONS=1 npm run capture
 HUMAN_REVIEW=1 npm run capture
 NATIVE_CAPTURE=1 npm run capture
 HEADLESS=1 npm run capture
+ROBUSTNESS=HW_SECURE_ALL REPETITIONS=1 npm run capture
+KEEP_OPEN=1 REPETITIONS=1 npm run capture
 ```
 
 `HUMAN_REVIEW=1` asks whether you can read the live scene before each capture. `NATIVE_CAPTURE=1` attempts whole-display macOS screenshots and requires operating-system permission; verify that the experiment window was actually visible. Headless runs cannot establish human visibility. `EXPERIMENT_URL` overrides the page URL.
+
+`ROBUSTNESS` selects an exact security requirement with no software fallback. The page also has a security-level probe and reports the requested and selected robustness separately. `KEEP_OPEN=1` leaves the isolated test instance open after capture for inspection; close that instance to finish the command. It does not reuse your normal browser profile.
 
 Playwright and direct CDP screenshots share Chrome's capture backend. Their agreement is not evidence from two independent mechanisms. Pixel comparisons help locate changes; they do not decide whether content is readable.
 

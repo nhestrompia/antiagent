@@ -1,6 +1,6 @@
 import './style.css';
 import { drawReference, readCanvas, copyVideo } from './canvas.js';
-import { DRMRuntime, publicAsset, sintelAsset } from './drm.js';
+import { DRMRuntime, publicAsset, sintelAsset, probeRobustness } from './drm.js';
 
 const $ = id => document.getElementById(id);
 const reference = $('reference');
@@ -11,6 +11,8 @@ $('license').value = publicAsset.licenseServerUrl;
 let mode = 'baseline';
 let opacity = 0.01;
 let busy = false;
+let playbackRequest = 0;
+let robustnessSupport = [];
 const events = [];
 const observations = [];
 let recorder;
@@ -45,24 +47,26 @@ video.addEventListener('loadedmetadata', () => setMode(mode, opacity));
 async function start() {
   if (busy) return;
   busy = true; $('start').disabled = true;
+  const request = ++playbackRequest;
   try {
     if (mode === 'baseline') setMode('native');
-    const config = { manifestUrl: $('manifest').value, licenseServerUrl: $('license').value, headers: JSON.parse($('headers').value), encryptedStart: Number($('encrypted-start').value) };
+    const config = { manifestUrl: $('manifest').value, licenseServerUrl: $('license').value, headers: JSON.parse($('headers').value), encryptedStart: Number($('encrypted-start').value), robustness: $('robustness').value };
     record('start', { asset: config.manifestUrl === publicAsset.manifestUrl ? publicAsset.name : 'Custom media' });
     await runtime.start(config);
     if (runtime.state.error) message(runtime.state.error);
   } catch (error) { message(error.message); record('configuration-error', error.message); }
-  finally { busy = false; $('start').disabled = false; }
+  finally { if (request === playbackRequest) { busy = false; $('start').disabled = false; } }
 }
 async function stop() {
-  if (busy) { message('Playback initialization is still running. Escape will reveal the page; retry Stop once initialization ends.'); setMode('baseline'); return; }
-  await runtime.stop(); setMode('baseline'); record('stop', {});
+  playbackRequest++;
+  setMode('baseline');
+  await runtime.stop(); busy = false; $('start').disabled = false; record('stop', {});
 }
 function snapshot() {
   return {
     schemaVersion: 1, at: new Date().toISOString(), configuration: { mode, opacity, encryptedStart: Number($('encrypted-start').value), asset: [publicAsset, sintelAsset].find(asset => asset.manifestUrl === $('manifest').value) || { name: 'Custom media', tinyAsset: null }, headersProvided: $('headers').value !== '{}' },
     environment: { userAgent: navigator.userAgent, secureContext: isSecureContext, viewport: { width: innerWidth, height: innerHeight }, devicePixelRatio, hardwareConcurrency: navigator.hardwareConcurrency },
-    drm: { ...runtime.state }, media: { timeAdvanceSamples: runtime.frames, decodedFrames: video.getVideoPlaybackQuality?.().totalVideoFrames ?? null, stats: runtime.stats() },
+    drm: { ...runtime.state }, robustnessSupport, media: { timeAdvanceSamples: runtime.frames, decodedFrames: video.getVideoPlaybackQuality?.().totalVideoFrames ?? null, stats: runtime.stats() },
     referenceRegion: reference.getBoundingClientRect().toJSON(),
     resources: performance.getEntriesByType('resource').map(entry => ({ name: entry.name.split('?')[0], initiatorType: entry.initiatorType, duration: entry.duration, transferSize: entry.transferSize, encodedBodySize: entry.encodedBodySize })),
     observations: structuredClone(observations), events: structuredClone(events), conclusion: 'inconclusive',
@@ -72,11 +76,16 @@ function snapshot() {
 function readback() { const result = readCanvas(reference); record('canvas-readback', { ...result, dataUrl: undefined }); return result; }
 function compose() { const result = copyVideo(video, $('composition')); record('composition', { ...result, readback: result.readback ? { ...result.readback, dataUrl: undefined } : undefined }); return result; }
 
-$('mode').addEventListener('change', () => { setMode($('mode').value); if (mode === 'baseline') void runtime.stop(); });
+$('mode').addEventListener('change', () => { setMode($('mode').value); if (mode === 'baseline') void stop(); });
 $('asset').addEventListener('change', () => { const asset = $('asset').value === 'tiny' ? publicAsset : sintelAsset; $('manifest').value = asset.manifestUrl; $('license').value = asset.licenseServerUrl; $('encrypted-start').value = asset.encryptedStart; message('Asset selected. Restart playback to apply it.'); });
 $('opacity').addEventListener('change', () => { try { setMode(mode, Number($('opacity').value)); } catch (error) { message(error.message); } });
 $('start').addEventListener('click', start);
 $('stop').addEventListener('click', stop);
+$('probe').addEventListener('click', async () => {
+  $('probe').disabled = true;
+  try { robustnessSupport = await probeRobustness(); $('robustness-results').textContent = JSON.stringify(robustnessSupport, null, 2); record('robustness-probe', robustnessSupport); }
+  finally { $('probe').disabled = false; }
+});
 document.addEventListener('keydown', event => { if (event.key === 'Escape') { setMode('baseline'); void stop(); } });
 $('readback').addEventListener('click', () => { const result = readback(); message(result.ok ? `Reference canvas is readable by JavaScript. Checksum: ${result.checksum}` : result.error); });
 $('copy').addEventListener('click', () => { const result = compose(); message(result.drawSucceeded ? 'Copy attempted. Inspect the copy and exported pixels; a successful draw can still produce black pixels.' : result.error); });
@@ -103,7 +112,7 @@ $('display').addEventListener('click', async () => {
 });
 $('end-recording').addEventListener('click', () => { if (recorder?.state !== 'inactive') recorder.stop(); });
 
-window.antiAgentExperiment = { setMode, start, stop, snapshot, readback, compose };
+window.antiAgentExperiment = { setMode, start, stop, snapshot, readback, compose, probe: async () => { robustnessSupport = await probeRobustness(); return robustnessSupport; } };
 const params = new URLSearchParams(location.search);
 setMode(params.get('mode') || 'baseline');
 if (params.get('manifest')) $('manifest').value = params.get('manifest');

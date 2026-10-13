@@ -34,6 +34,10 @@ page.on('response', response => { network.push({ url: response.url().split('?')[
 try {
   await page.goto(process.env.EXPERIMENT_URL || 'http://127.0.0.1:5173');
   await page.waitForFunction(() => Boolean(window.antiAgentExperiment));
+  const support = await page.evaluate(() => window.antiAgentExperiment.probe());
+  await writeFile(`${directory}/robustness.json`, JSON.stringify(support, null, 2));
+  if (process.env.ROBUSTNESS) await page.selectOption('#robustness', process.env.ROBUSTNESS);
+  if (process.env.ASSET) await page.selectOption('#asset', process.env.ASSET);
   for (let repetition = 1; repetition <= repetitions; repetition++) {
   let baseline;
   for (const mode of ['baseline', 'native', 'transparent', 'opaque', 'composition']) {
@@ -71,6 +75,11 @@ try {
 } finally {
   input?.close();
   await writeFile(`${directory}/report.json`, JSON.stringify({ schemaVersion: 1, environment: { hostname: hostname(), platform: platform(), release: release(), cpu: cpus()[0]?.model, browser: browser.version(), headless: process.env.HEADLESS === '1', ignoredDefaultArgs }, asset: JSON.parse(await readFile('public/drm/asset.json', 'utf8')), runs, network, conclusion: 'inconclusive', note: 'Inspect captures and pair with contemporaneous human observations. Do not infer readability from image differences.' }, null, 2));
-  await browser.close();
+  if (process.env.KEEP_OPEN === '1') {
+    await page.evaluate(() => window.antiAgentExperiment.setMode('transparent'));
+    await page.bringToFront();
+    console.log('Isolated Chrome is open for computer-use inspection. Close the browser to end this session.');
+    await new Promise(resolve => browser.on('disconnected', resolve));
+  } else await browser.close();
 }
 console.log(`Capture artifacts saved to ${directory}`);

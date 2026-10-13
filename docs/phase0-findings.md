@@ -53,3 +53,25 @@ The browser tests verify baseline readback, lack of business-action DOM controls
 ## Milestone decision
 
 The Phase 0 experiment implementation is ready for manual validation and is committed before later milestone work. The research gate is unmet. Continue capture validation or reassess the architecture; do not start Phase 1 or npm release flows on these results.
+
+## Follow-up computer-use and security-level tests
+
+The user independently reported that captures still show the canvas. Computer use reproduced unsupported Widevine in the collaborative browser. Native actions were refused during user activity. Native control could not bind the separate test instance and instead resolved the user's normal Chrome window, so native testing was stopped. Collaborative snapshot capture also failed during this follow-up. These are tool limitations, not capture resistance.
+
+Separate headed Chrome instances with temporary profiles tested the same page successfully. Explicit capability probes for the included H.264 CENC asset returned:
+
+| Security requirement | Available |
+| --- | --- |
+| SW_SECURE_CRYPTO | Yes |
+| SW_SECURE_DECODE | Yes |
+| HW_SECURE_CRYPTO | No |
+| HW_SECURE_DECODE | No |
+| HW_SECURE_ALL | No |
+
+Software playback selected `SW_SECURE_DECODE`, had usable keys and advancing video, and left the reference canvas readable. Its transparent capture comparison again had a mean channel difference of 2.781 and no pixels differing by more than 8 levels. The [software robustness evidence](evidence/phase0-followup/software-robustness.json) and [hardware requirement evidence](evidence/phase0-followup/hardware-robustness.json) preserve the capability results.
+
+The page now rejects unsupported security requirements before media loading, reports the requested and selected level, and never silently substitutes a software level. See [the hardware run](evidence/phase0-followup/hardware-report.json). This implements the robustness configuration described by [Shaka Player](https://shaka-project.github.io/shaka-player/docs/api/tutorial-drm-config.html). Robustness specifies decryption and decoding requirements; it does not establish screenshot protection for unrelated canvas pixels. See [the EME capability definition](https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness).
+
+A separate reproducible defect was fixed: Stop previously refused to cancel an initializing media load. A browser regression test first failed with the status stuck at initializing, then passed after cancellation was wired through the runtime. Baseline selection and Escape use the same cancellation path. Eight browser tests now pass.
+
+The overlay hypothesis still has no successful capture path. This follow-up is a Phase 0 correction and investigation, not progression to Phase 1.

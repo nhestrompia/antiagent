@@ -58,3 +58,29 @@ test('controls remain usable at a narrow viewport', async ({ page }) => {
   await page.getByRole('button', { name: 'Read canvas pixels', exact: true }).click();
   await expect(page.locator('#message')).toContainText('readable by JavaScript');
 });
+
+test('Stop cancels an in-progress media load and permits another start', async ({ page }) => {
+  await page.route('**/drm/encrypted-video.mpd', () => {});
+  const requested = page.waitForRequest('**/drm/encrypted-video.mpd');
+  await page.getByRole('button', { name: 'Start protected playback', exact: true }).click();
+  await requested;
+  await page.getByRole('button', { name: 'Stop / reveal page', exact: true }).click();
+  await expect(page.locator('#status')).toContainText('idle');
+  await expect(page.getByRole('button', { name: 'Start protected playback', exact: true })).toBeEnabled();
+});
+
+test('unsupported hardware security is reported without media loading or software fallback', async ({ page }) => {
+  const support = await page.evaluate(() => window.antiAgentExperiment.probe());
+  test.skip(support.find(result => result.robustness === 'HW_SECURE_ALL').supported, 'This environment supports hardware output; run the capture experiment to validate it.');
+  let requestedMedia = false;
+  await page.route('**/drm/encrypted-video.mpd', route => { requestedMedia = true; return route.abort(); });
+  await page.selectOption('#robustness', 'HW_SECURE_ALL');
+  await page.getByRole('button', { name: 'Start protected playback', exact: true }).click();
+  await expect(page.locator('#status')).toContainText('unsupported');
+  await expect(page.locator('#message')).toContainText('no software fallback');
+  const state = await page.evaluate(() => window.antiAgentExperiment.snapshot().drm);
+  expect(state.requestedSecuritySupported).toBe(false);
+  expect(state.selectedRobustness).toBeNull();
+  expect(state.protectedPlayback).toBe(false);
+  expect(requestedMedia).toBe(false);
+});

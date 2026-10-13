@@ -23,10 +23,14 @@
         <label>License server URL<input id="license" type="url" required /></label>
         <label>License headers · JSON<textarea id="headers" rows="2" spellcheck="false">{}</textarea></label>
         <label>Encrypted playback start · seconds<input id="encrypted-start" type="number" min="0" step="0.1" value="0" /></label>
+        <label>Widevine security requirement<select id="robustness"><option value="SW_SECURE_DECODE">Software secure decode · playback baseline</option><option value="SW_SECURE_CRYPTO">Software secure crypto</option><option value="HW_SECURE_CRYPTO">Hardware secure crypto</option><option value="HW_SECURE_DECODE">Hardware secure decode</option><option value="HW_SECURE_ALL">Hardware secure decode and output</option></select></label>
+        <p class="note">Hardware requirements never fall back to software. Encryption alone does not imply screenshot blocking.</p>
         <p class="note">Default: a 2-second, silent, 16 × 16 solid-color asset encrypted from its first frame. Public Widevine test licensing is for development only. Headers stay in memory and are excluded from reports.</p>
         <div class="actions"><button id="start">Start protected playback</button><button id="stop" class="secondary">Stop / reveal page</button></div>
         <p class="note">Press Escape to stop an opaque overlay.</p>
         <h2>Playback diagnostics</h2>
+        <button id="probe" class="secondary">Probe DRM security levels</button>
+        <pre id="robustness-results"></pre>
         <output id="status" aria-live="polite">Not started</output>
         <pre id="diagnostics"></pre>
         <div class="actions"><button id="readback" class="secondary">Read canvas pixels</button><button id="copy" class="secondary">Attempt video copy</button><button id="remove" class="secondary">Remove video</button></div>
