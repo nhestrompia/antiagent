@@ -1,0 +1,428 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "operation": "foreground-viewport",
+      "repetition": 0,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "foreground-viewport",
+      "repetition": 1,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "foreground-viewport",
+      "repetition": 2,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "foreground-fullpage",
+      "repetition": 0,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "foreground-fullpage",
+      "repetition": 1,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "foreground-fullpage",
+      "repetition": 2,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "hidden-viewport",
+      "repetition": 0,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "hidden-animation-frame"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "hidden-viewport",
+      "repetition": 1,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "hidden-animation-frame"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "hidden-viewport",
+      "repetition": 2,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "hidden-animation-frame"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "focus-emulated-viewport",
+      "repetition": 0,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "focus-emulated-viewport",
+      "repetition": 1,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "focus-emulated-viewport",
+      "repetition": 2,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "ordinary-resize",
+      "repetition": 0,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "ordinary-resize",
+      "repetition": 1,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "ordinary-resize",
+      "repetition": 2,
+      "black": false,
+      "rgb": [
+        46,
+        98,
+        86
+      ],
+      "rawCanvasPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "covered": false,
+      "reasons": [],
+      "accepted": 1
+    },
+    {
+      "operation": "ordinary-scrollbar-removal",
+      "repetition": 0,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "ordinary-scrollbar-removal",
+      "repetition": 1,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "ordinary-scrollbar-removal",
+      "repetition": 2,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "remove-after-fullpage",
+      "repetition": 0,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "remove-after-fullpage",
+      "repetition": 1,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    },
+    {
+      "operation": "remove-after-fullpage",
+      "repetition": 2,
+      "black": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "rawCanvasPixel": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "covered": true,
+      "reasons": [
+        "scrollbar-geometry"
+      ],
+      "accepted": 0
+    }
+  ]
+}
