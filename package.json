@@ -8,7 +8,8 @@
     "build": "vite build",
     "test": "playwright test",
     "capture": "node scripts/capture.mjs",
-    "capture:control": "node scripts/control-experiment.mjs"
+    "capture:control": "node scripts/control-experiment.mjs",
+    "capture:native-control": "node scripts/native-control.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

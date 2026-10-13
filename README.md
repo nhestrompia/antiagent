@@ -76,6 +76,18 @@ The colored control is 64×64 with red, green, blue, and yellow quadrants. Its e
 
 Sintel is included as an alternative playback baseline using [Shaka's documented test setup](https://shaka-project.github.io/shaka-player/docs/api/tutorial-license-server-auth.html). Its encrypted playback start is set to 12 seconds to skip the clear lead. It is not the tiny asset.
 
+### Native positive control without browser capture
+
+```bash
+npm run capture:native-control
+# Or use the documented movie sample:
+ASSET=sintel npm run capture:native-control
+```
+
+This opens installed Chrome in an explicit temporary profile with minimal launch flags. It plays opaque protected video without requesting a browser screenshot or tab stream. Chromium can change its macOS overlay path during capture, so observe native capture before running the other adapters. See [capture-path research](docs/chrome-capture-path-research.md).
+
+The terminal accepts `native`, `opaque`, `transparent`, `baseline`, `status`, and `stop`. Each mode saves playback, decoder, and GPU diagnostics under `artifacts/`. Use a native screenshot or computer-use observation and confirm that a human sees the live video. Saved playback diagnostics do not prove capture suppression. `stop` closes only this test browser and removes its temporary profile.
+
 ## Manual capture protocol
 
 1. Use installed Chrome on macOS. Record OS version, Chrome version, hardware, viewport, and device pixel ratio.
