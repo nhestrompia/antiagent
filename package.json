@@ -17,7 +17,8 @@
     "benchmark:decoys": "node scripts/benchmark-decoys.mjs",
     "benchmark:shadow": "node scripts/benchmark-shadow.mjs",
     "benchmark:worker": "node scripts/benchmark-worker.mjs",
-    "benchmark:hardening": "node scripts/benchmark-hardening.mjs"
+    "benchmark:hardening": "node scripts/benchmark-hardening.mjs",
+    "benchmark:tamper": "node scripts/benchmark-tamper.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
