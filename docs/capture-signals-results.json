@@ -1,0 +1,5513 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "guard": "off",
+      "method": "idle",
+      "repetition": 0,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "idle",
+      "repetition": 1,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "idle",
+      "repetition": 2,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "playwright-viewport",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 1000,
+        "height": 800
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "playwright-viewport",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 1000,
+        "height": 800
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "playwright-viewport",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 1000,
+        "height": 800
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "playwright-fullpage",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 976,
+        "height": 2064
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          },
+          {
+            "source": "visualViewport.resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 976,
+            "viewportWidth": 976,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "playwright-fullpage",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 976,
+        "height": 2064
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "playwright-fullpage",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 976,
+        "height": 2064
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "cdp-viewport",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 2000,
+        "height": 1600
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "cdp-viewport",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 2000,
+        "height": 1600
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "cdp-viewport",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 2000,
+        "height": 1600
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "cdp-fullpage",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 1952,
+        "height": 4128
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "cdp-fullpage",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 1952,
+        "height": 4128
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "cdp-fullpage",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 1952,
+        "height": 4128
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "resize-control",
+      "repetition": 0,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "resize-control",
+      "repetition": 1,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "off",
+      "method": "resize-control",
+      "repetition": 2,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": false,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": false,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "idle",
+      "repetition": 0,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "idle",
+      "repetition": 1,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "idle",
+      "repetition": 2,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "playwright-viewport",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 1000,
+        "height": 800
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "playwright-viewport",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 1000,
+        "height": 800
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "playwright-viewport",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 1,
+        "width": 1000,
+        "height": 800
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "playwright-fullpage",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true,
+        "scale": 1,
+        "width": 976,
+        "height": 2064
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          },
+          {
+            "source": "visualViewport.resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 976,
+            "viewportWidth": 976,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "playwright-fullpage",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true,
+        "scale": 1,
+        "width": 976,
+        "height": 2064
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "playwright-fullpage",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true,
+        "scale": 1,
+        "width": 976,
+        "height": 2064
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          },
+          {
+            "source": "visualViewport.resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 976,
+            "viewportWidth": 976,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "cdp-viewport",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 2000,
+        "height": 1600
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "cdp-viewport",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 2000,
+        "height": 1600
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "cdp-viewport",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          17,
+          100,
+          86
+        ],
+        "black": false,
+        "scale": 2,
+        "width": 2000,
+        "height": 1600
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": false,
+        "accepted": 1
+      }
+    },
+    {
+      "guard": "on",
+      "method": "cdp-fullpage",
+      "repetition": 0,
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true,
+        "scale": 2,
+        "width": 1952,
+        "height": 4128
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          },
+          {
+            "source": "visualViewport.resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 976,
+            "viewportWidth": 976,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "cdp-fullpage",
+      "repetition": 1,
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true,
+        "scale": 2,
+        "width": 1952,
+        "height": 4128
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "cdp-fullpage",
+      "repetition": 2,
+      "captureAppearance": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "black": true,
+        "scale": 2,
+        "width": 1952,
+        "height": 4128
+      },
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 1000,
+          "viewportWidth": 1000,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 2
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1000,
+            "height": 800,
+            "clientWidth": 1000,
+            "viewportWidth": 1000,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 2
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "resize-control",
+      "repetition": 0,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "resize-control",
+      "repetition": 1,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    },
+    {
+      "guard": "on",
+      "method": "resize-control",
+      "repetition": 2,
+      "captureAppearance": null,
+      "before": {
+        "dimensions": {
+          "width": 1000,
+          "height": 800,
+          "clientWidth": 976,
+          "viewportWidth": 976,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [],
+        "samples": [],
+        "inputs": [],
+        "guard": true,
+        "locked": false,
+        "accepted": 0
+      },
+      "afterCapture": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      },
+      "afterInput": {
+        "dimensions": {
+          "width": 1100,
+          "height": 800,
+          "clientWidth": 1076,
+          "viewportWidth": 1076,
+          "viewportHeight": 800,
+          "hidden": false,
+          "focused": true,
+          "dpr": 1
+        },
+        "events": [
+          "resize",
+          "visualViewport.resize"
+        ],
+        "samples": [
+          {
+            "source": "resize",
+            "width": 1100,
+            "height": 800,
+            "clientWidth": 1076,
+            "viewportWidth": 1076,
+            "viewportHeight": 800,
+            "hidden": false,
+            "focused": true,
+            "dpr": 1
+          }
+        ],
+        "inputs": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0.5,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mousedown",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "detail": 0,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467.4375,
+            "clientX": 162,
+            "clientY": 325.4375,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "mouseup",
+            "trusted": true,
+            "detail": 1,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "detail": 1,
+            "pointerType": "mouse",
+            "pressure": 0,
+            "screenX": 184,
+            "screenY": 467,
+            "clientX": 162,
+            "clientY": 325,
+            "sourceCapabilities": false,
+            "fromDebuggerProperty": false,
+            "modifierFromDebugger": false,
+            "userActivation": true
+          }
+        ],
+        "guard": true,
+        "locked": true,
+        "accepted": 0
+      }
+    }
+  ]
+}
