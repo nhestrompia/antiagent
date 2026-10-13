@@ -23,7 +23,8 @@
     "benchmark:capture-signals": "node scripts/benchmark-capture-signals.mjs",
     "benchmark:hidden-capture": "node scripts/benchmark-hidden-capture.mjs",
     "benchmark:capture-timing": "node scripts/benchmark-capture-timing.mjs",
-    "benchmark:cover": "node scripts/benchmark-cover.mjs"
+    "benchmark:cover": "node scripts/benchmark-cover.mjs",
+    "benchmark:webgpu": "node scripts/benchmark-webgpu-capture.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
