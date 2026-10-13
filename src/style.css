@@ -1,0 +1,29 @@
+:root { font-family: system-ui, sans-serif; color: #172b35; background: #eef2f3; font-size: 16px; accent-color: #116456; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1440px; margin: auto; padding: 32px; }
+h1 { font-size: clamp(1.7rem, 3vw, 2.5rem); margin: 0 0 12px; letter-spacing: -.025em; }
+h2 { font-size: 1.1rem; margin: 28px 0 12px; }
+p { line-height: 1.55; max-width: 72ch; }
+.workbench { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(320px, 1fr); gap: 32px; align-items: start; margin-top: 28px; }
+.scene { position: sticky; top: 24px; }
+canvas { display: block; width: 100%; background: #fff; }
+#composition { margin-top: 20px; }
+[hidden] { display: none !important; }
+.controls { padding: 0 24px 24px; background: #fff; }
+label { display: block; font-size: .9rem; font-weight: 600; margin: 14px 0; }
+input, select, textarea { display: block; width: 100%; margin-top: 6px; padding: 10px; color: inherit; border: 1px solid #879ba4; border-radius: 4px; background: #fff; font: inherit; }
+textarea, pre { font-family: ui-monospace, monospace; font-size: .8rem; }
+pre { overflow: auto; max-height: 260px; background: #eef2f3; padding: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+button { background: #116456; color: #fff; border: 1px solid #116456; padding: 10px 14px; border-radius: 4px; font: inherit; cursor: pointer; }
+button:hover { background: #0a493f; }
+button.secondary { background: #fff; color: #174e44; }
+button.secondary:hover { background: #edf5f2; }
+button:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 3px solid #a34b0c; outline-offset: 3px; }
+.note, .scene p { font-size: .85rem; color: #465f69; }
+output { display: block; font-weight: 650; }
+::selection { background: #bfddd5; }
+#drm-video { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 2147483647; object-fit: fill; }
+@media (max-width: 850px) { main { padding: 20px; } .workbench { grid-template-columns: 1fr; gap: 20px; } .scene { position: static; } .controls { padding: 0 16px 20px; } }
