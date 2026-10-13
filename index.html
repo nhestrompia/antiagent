@@ -18,7 +18,7 @@
         <h2>Experiment settings</h2>
         <label>Configuration<select id="mode"><option value="baseline">Baseline · no video</option><option value="native">A · native-size video</option><option value="transparent">B · transparent viewport</option><option value="opaque">C · opaque viewport</option><option value="composition">D · canvas composition</option></select></label>
         <label>Overlay opacity<input id="opacity" type="number" min="0" max="1" step="0.01" value="0.01" /></label>
-        <label>Development asset<select id="asset"><option value="tiny">Tiny solid-color video · 16 × 16</option><option value="sintel">Sintel · playback baseline</option></select></label>
+        <label>Development asset<select id="asset"><option value="tiny">Tiny solid-color video · 16 × 16</option><option value="control">Encrypted colored control · 64 × 64</option><option value="clear-control">Matching colored control · unencrypted</option><option value="sintel">Sintel · playback baseline</option></select></label>
         <label>Manifest URL<input id="manifest" type="url" required /></label>
         <label>License server URL<input id="license" type="url" required /></label>
         <label>License headers · JSON<textarea id="headers" rows="2" spellcheck="false">{}</textarea></label>
@@ -36,6 +36,7 @@
         <div class="actions"><button id="readback" class="secondary">Read canvas pixels</button><button id="copy" class="secondary">Attempt video copy</button><button id="remove" class="secondary">Remove video</button></div>
         <h2>Human observation</h2>
         <label>Can you read the reference scene now?<select id="human"><option value="unknown">Not recorded</option><option value="readable">Yes, readable</option><option value="unreadable">No, unreadable</option></select></label>
+        <label>What does the live video show?<select id="human-video"><option value="unknown">Not recorded</option><option value="pattern-visible">Red, green, blue, yellow quadrants</option><option value="black">Black rectangle</option><option value="other">Something else</option></select></label>
         <button id="observe" class="secondary">Record observation</button>
         <div class="actions"><button id="display" class="secondary">Record tab / screen</button><button id="end-recording" class="secondary" disabled>Finish recording</button><button id="export">Export run report</button></div>
         <p id="message" role="status"></p>

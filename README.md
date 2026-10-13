@@ -24,14 +24,20 @@ npm test
 npm run build
 # Keep the dev server running in another terminal.
 npm run capture
+npm run capture:control
 ```
 
-The capture command launches headed installed Chrome, runs baseline plus all four modes three times, and writes PNGs and a JSON report under `artifacts/`. It removes automation defaults that disable component loading or Chrome's sandbox. It does not change your normal Chrome profile.
+The capture command launches headed installed Chrome, selects the encrypted colored control, runs baseline plus all four modes three times, and writes PNGs and a JSON report under `artifacts/`. It removes automation defaults that disable component loading or Chrome's sandbox. It does not change your normal Chrome profile.
+
+`capture:control` runs both matching clear and encrypted colored assets, three repetitions each, and saves a paired summary. It measures the video region separately from the underlying reference canvas. The clear control checks that ordinary capture can reproduce the pattern. The encrypted control checks for preserved colors, opaque black replacement, or transparent output. Capture results are never inferred from a black source video.
 
 Options:
 
 ```bash
 REPETITIONS=1 npm run capture
+ASSET=clear-control npm run capture
+ASSET=tiny npm run capture
+TAB_CAPTURE=1 npm run capture:control
 HUMAN_REVIEW=1 npm run capture
 NATIVE_CAPTURE=1 npm run capture
 HEADLESS=1 npm run capture
@@ -42,6 +48,10 @@ KEEP_OPEN=1 REPETITIONS=1 npm run capture
 `HUMAN_REVIEW=1` asks whether you can read the live scene before each capture. `NATIVE_CAPTURE=1` attempts whole-display macOS screenshots and requires operating-system permission; verify that the experiment window was actually visible. Headless runs cannot establish human visibility. `EXPERIMENT_URL` overrides the page URL.
 
 `ROBUSTNESS` selects an exact security requirement with no software fallback. The page also has a security-level probe and reports the requested and selected robustness separately. `KEEP_OPEN=1` leaves the isolated test instance open after capture for inspection; close that instance to finish the command. It does not reuse your normal browser profile.
+
+`TAB_CAPTURE=1` adds real getDisplayMedia capture of the experiment browser tab, a one-second WebM recording, and inspection of the recording's first decoded frame. It uses Chromium's test picker flags to select only the isolated experiment tab, verifies the returned displaySurface is browser, and never uses fake camera/screen content. FFmpeg is required to decode recording evidence; otherwise the recording is retained with a review error. Whole-display recording remains a separate manual test. The test adapter records failure stages and skips dependent capture attempts after an unavailable baseline.
+
+Tab-capture frame heights can change as Chrome's sharing UI opens. Comparisons use the entire reference region only when it fits both frames and their widths agree; differing frame heights alone do not imply lost content.
 
 Playwright and direct CDP screenshots share Chrome's capture backend. Their agreement is not evidence from two independent mechanisms. Pixel comparisons help locate changes; they do not decide whether content is readable.
 
@@ -57,9 +67,12 @@ To regenerate, install FFmpeg and download the matching official [Shaka Packager
 
 ```bash
 PACKAGER=/absolute/path/to/packager node scripts/generate-asset.mjs
+ASSET_KIND=control PACKAGER=/absolute/path/to/packager node scripts/generate-asset.mjs
 ```
 
 The script uses the tutorial's public test credentials, generates a solid-color source locally, encrypts it with no clear lead, and records asset metadata. It never requires private Widevine credentials.
+
+The colored control is 64×64 with red, green, blue, and yellow quadrants. Its encrypted MP4 is 2,100 bytes, excluding manifest and licensing traffic. An identical unencrypted source is included. Both are silent, two-second, 1 FPS sequences. Pixel classification samples the four centers, records RGBA measurements, and tolerates observed color deviations in the clear decoder/display path. Native-size and opaque video are measured at full opacity; nearly transparent video is marked unsuitable for color classification rather than misclassified as missing.
 
 Sintel is included as an alternative playback baseline using [Shaka's documented test setup](https://shaka-project.github.io/shaka-player/docs/api/tutorial-license-server-auth.html). Its encrypted playback start is set to 12 seconds to skip the clear lead. It is not the tiny asset.
 
@@ -71,7 +84,7 @@ Sintel is included as an alternative playback baseline using [Shaka's documented
 4. Run native-size, transparent viewport at 0.01 opacity, opaque viewport, and composition configurations. For each, record whether you can read the live reference scene immediately before capture.
 5. Capture through macOS screenshots and Chrome DevTools' screenshot command. Save each artifact with its configuration, timestamp, and exported report. An opaque overlay hiding content from both you and the capture is not success.
 6. Use “Record tab / screen,” choose the experiment tab or display in the browser picker, record your observation, and finish recording. Repeat for tab capture and whole-display recording, labeling the selected source. Keep recordings next to the JSON report.
-7. Attempt video composition and canvas pixel readback. The black source cannot distinguish a real copy from black substituted pixels. Repeat composition with the Sintel baseline before making a claim about protected-frame copying.
+7. Attempt video composition and canvas pixel readback. Compare matching clear and encrypted colored controls. The black source cannot distinguish a real copy from black substituted pixels. Record video-copy output separately from the original reference canvas.
 8. Pause or remove the video and confirm diagnostics reflect interruption or removal. These checks are bypassable and are not server-trusted enforcement.
 9. Run Safari only with compatible FairPlay media and licensing. Neither is provided here; mark Safari unavailable rather than treating it as Chrome-equivalent.
 10. Inspect captured reference regions for readability. A pass requires unreadable underlying content while a human can still read the live scene, repeated with valid protected playback. Preserve all artifacts, including failures.

@@ -7,7 +7,21 @@ export const publicAsset = {
   source: 'https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html',
   tinyAsset: true,
   encryptedStart: 0,
+  encrypted: true,
+  metadataPath: '/drm/asset.json',
 };
+export const coloredAsset = {
+  name: 'Encrypted colored positive control',
+  manifestUrl: new URL('/drm-control/encrypted-video.mpd', location.origin).href,
+  licenseServerUrl: publicAsset.licenseServerUrl,
+  source: publicAsset.source,
+  tinyAsset: false,
+  encryptedStart: 0,
+  encrypted: true,
+  pattern: 'red-green-blue-yellow-quadrants',
+  metadataPath: '/drm-control/asset.json',
+};
+export const clearControlAsset = { ...coloredAsset, name: 'Unencrypted matching colored control', manifestUrl: new URL('/drm-control/clear-video.mp4', location.origin).href, encrypted: false };
 export const sintelAsset = {
   name: 'Shaka Sintel Widevine baseline',
   manifestUrl: 'https://storage.googleapis.com/shaka-demo-assets/sintel-widevine/dash.mpd',
@@ -15,7 +29,9 @@ export const sintelAsset = {
   source: 'https://shaka-project.github.io/shaka-player/docs/api/tutorial-license-server-auth.html',
   tinyAsset: false,
   encryptedStart: 12,
+  encrypted: true,
 };
+export const assets = { tiny: publicAsset, control: coloredAsset, 'clear-control': clearControlAsset, sintel: sintelAsset };
 
 export const robustnessLevels = ['SW_SECURE_CRYPTO', 'SW_SECURE_DECODE', 'HW_SECURE_CRYPTO', 'HW_SECURE_DECODE', 'HW_SECURE_ALL'];
 
@@ -67,7 +83,8 @@ export class DRMRuntime {
     const usableKeys = Object.values(statuses).includes('usable');
     const encrypted = Boolean(video.mediaKeys && keySystem === 'com.widevine.alpha');
     const playing = video.isConnected && !video.paused && video.readyState >= 2;
-    this.update({ playing, encrypted, usableKeys, keySystem, selectedRobustness: this.player?.drmInfo()?.videoRobustness || null, currentTime: video.currentTime, dimensions: [video.videoWidth, video.videoHeight], protectedPlayback: this.state.phase === 'playing' && playing && this.frames > 0 && performance.now() - this.lastAdvance < 1500 && encrypted && usableKeys && video.currentTime >= this.encryptedStart,
+    const playbackVerified = this.state.phase === 'playing' && playing && this.frames > 0 && performance.now() - this.lastAdvance < 1500;
+    this.update({ playing, playbackVerified, encrypted, usableKeys, keySystem, selectedRobustness: this.player?.drmInfo()?.videoRobustness || null, currentTime: video.currentTime, dimensions: [video.videoWidth, video.videoHeight], protectedPlayback: playbackVerified && encrypted && usableKeys && video.currentTime >= this.encryptedStart,
       ...(!video.isConnected ? { phase: 'removed', error: 'Protected media element was removed. Reload to restore it.' } : {}),
     });
   }
@@ -78,10 +95,11 @@ export class DRMRuntime {
     await this.stop();
     if (operation !== this.operation) return;
     this.encryptedStart = config.encryptedStart;
-    this.update({ phase: 'initializing', error: null, supported: null, requestedRobustness: config.robustness, requestedSecuritySupported: null, selectedRobustness: null });
+    this.update({ phase: 'initializing', error: null, supported: null, encryptionExpected: config.encrypted !== false, requestedRobustness: config.robustness, requestedSecuritySupported: null, selectedRobustness: null });
     shaka.polyfill.installAll();
-    if (!shaka.Player.isBrowserSupported() || !navigator.requestMediaKeySystemAccess) { this.update({ supported: false, phase: 'unsupported', error: 'Media Source Extensions or encrypted media is unavailable.' }); return; }
+    if (!shaka.Player.isBrowserSupported() || (config.encrypted !== false && !navigator.requestMediaKeySystemAccess)) { this.update({ supported: false, phase: 'unsupported', error: 'Media Source Extensions or encrypted media is unavailable.' }); return; }
     try {
+      if (config.encrypted !== false) {
       const support = await shaka.Player.probeSupport();
       if (operation !== this.operation) return;
       const available = Boolean(support.drm['com.widevine.alpha']);
@@ -92,6 +110,7 @@ export class DRMRuntime {
         return;
       }
       this.update({ requestedSecuritySupported: true });
+      }
       const player = new shaka.Player();
       this.player = player;
       await player.attach(this.video);
@@ -113,7 +132,7 @@ export class DRMRuntime {
     this.frames = 0;
     this.lastTime = 0;
     this.lastAdvance = 0;
-    this.update({ phase: 'idle', playing: false, encrypted: false, usableKeys: false, protectedPlayback: false, selectedRobustness: null, error: null });
+    this.update({ phase: 'idle', playing: false, playbackVerified: false, encrypted: false, usableKeys: false, protectedPlayback: false, selectedRobustness: null, error: null });
   }
 
   stats() { return this.player?.getStats() || null; }

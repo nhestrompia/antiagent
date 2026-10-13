@@ -1,4 +1,6 @@
 import { test, expect } from '@playwright/test';
+import { PNG } from 'pngjs';
+import { classifyVideoPattern } from '../scripts/capture-metrics.mjs';
 
 test.beforeEach(async ({ page }) => { await page.goto('/'); });
 
@@ -83,4 +85,39 @@ test('unsupported hardware security is reported without media loading or softwar
   expect(state.selectedRobustness).toBeNull();
   expect(state.protectedPlayback).toBe(false);
   expect(requestedMedia).toBe(false);
+});
+
+test('matching clear control shows colored pixels without reporting DRM playback', async ({ page }) => {
+  await page.selectOption('#asset', 'clear-control');
+  await page.getByRole('button', { name: 'Start protected playback', exact: true }).click();
+  await page.waitForFunction(() => window.antiAgentExperiment.snapshot().drm.playbackVerified);
+  const state = await page.evaluate(() => window.antiAgentExperiment.snapshot());
+  expect(state.configuration.asset.encrypted).toBe(false);
+  expect(state.drm.protectedPlayback).toBe(false);
+  expect(state.drm.encrypted).toBe(false);
+  const capture = PNG.sync.read(await page.screenshot());
+  const measurement = classifyVideoPattern(capture, state.videoRegion, state.environment.viewport.width);
+  expect(measurement.appearance, JSON.stringify({ measurement, videoRegion: state.videoRegion, opacity: state.videoOpacity })).toBe('pattern-visible');
+  await page.selectOption('#human-video', 'pattern-visible');
+  await page.getByRole('button', { name: 'Record observation', exact: true }).click();
+  expect(await page.evaluate(() => window.antiAgentExperiment.snapshot().observations[0].humanVideoAppearance)).toBe('pattern-visible');
+});
+
+test('protected colored control has advancing encrypted playback and a separately measured video region', async ({ page }) => {
+  await page.selectOption('#asset', 'control');
+  await page.getByRole('button', { name: 'Start protected playback', exact: true }).click();
+  await page.waitForFunction(() => { const state = window.antiAgentExperiment.snapshot().drm; return state.protectedPlayback || ['unsupported', 'error'].includes(state.phase); });
+  const state = await page.evaluate(() => window.antiAgentExperiment.snapshot());
+  test.skip(state.drm.phase === 'unsupported', 'Widevine is unavailable in this environment.');
+  expect(state.drm.error).toBeNull();
+  expect(state.drm.protectedPlayback).toBe(true);
+  expect(state.drm.dimensions).toEqual([64, 64]);
+  const capture = PNG.sync.read(await page.screenshot());
+  const appearance = classifyVideoPattern(capture, state.videoRegion, state.environment.viewport.width).appearance;
+  expect(['pattern-visible', 'black']).toContain(appearance);
+  expect(state.drm.captureProtectionVerified).toBeNull();
+  await page.selectOption('#asset', 'clear-control');
+  const pendingSelection = await page.evaluate(() => window.antiAgentExperiment.snapshot());
+  expect(pendingSelection.configuration.asset.encrypted).toBe(false);
+  expect(pendingSelection.media.asset.encrypted).toBe(true);
 });

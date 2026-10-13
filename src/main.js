@@ -1,6 +1,6 @@
 import './style.css';
 import { drawReference, readCanvas, copyVideo } from './canvas.js';
-import { DRMRuntime, publicAsset, sintelAsset, probeRobustness } from './drm.js';
+import { DRMRuntime, publicAsset, assets, probeRobustness } from './drm.js';
 
 const $ = id => document.getElementById(id);
 const reference = $('reference');
@@ -13,6 +13,7 @@ let opacity = 0.01;
 let busy = false;
 let playbackRequest = 0;
 let robustnessSupport = [];
+let activeAsset = null;
 const events = [];
 const observations = [];
 let recorder;
@@ -50,7 +51,9 @@ async function start() {
   const request = ++playbackRequest;
   try {
     if (mode === 'baseline') setMode('native');
-    const config = { manifestUrl: $('manifest').value, licenseServerUrl: $('license').value, headers: JSON.parse($('headers').value), encryptedStart: Number($('encrypted-start').value), robustness: $('robustness').value };
+    const asset = Object.values(assets).find(asset => asset.manifestUrl === $('manifest').value);
+    activeAsset = asset || { name: 'Custom media', tinyAsset: null };
+    const config = { manifestUrl: $('manifest').value, licenseServerUrl: $('license').value, headers: JSON.parse($('headers').value), encryptedStart: Number($('encrypted-start').value), robustness: $('robustness').value, encrypted: asset?.encrypted !== false };
     record('start', { asset: config.manifestUrl === publicAsset.manifestUrl ? publicAsset.name : 'Custom media' });
     await runtime.start(config);
     if (runtime.state.error) message(runtime.state.error);
@@ -61,13 +64,15 @@ async function stop() {
   playbackRequest++;
   setMode('baseline');
   await runtime.stop(); busy = false; $('start').disabled = false; record('stop', {});
+  activeAsset = null;
 }
 function snapshot() {
   return {
-    schemaVersion: 1, at: new Date().toISOString(), configuration: { mode, opacity, encryptedStart: Number($('encrypted-start').value), asset: [publicAsset, sintelAsset].find(asset => asset.manifestUrl === $('manifest').value) || { name: 'Custom media', tinyAsset: null }, headersProvided: $('headers').value !== '{}' },
+    schemaVersion: 1, at: new Date().toISOString(), configuration: { mode, opacity, encryptedStart: Number($('encrypted-start').value), asset: Object.values(assets).find(asset => asset.manifestUrl === $('manifest').value) || { name: 'Custom media', tinyAsset: null }, headersProvided: $('headers').value !== '{}' },
     environment: { userAgent: navigator.userAgent, secureContext: isSecureContext, viewport: { width: innerWidth, height: innerHeight }, devicePixelRatio, hardwareConcurrency: navigator.hardwareConcurrency },
-    drm: { ...runtime.state }, robustnessSupport, media: { timeAdvanceSamples: runtime.frames, decodedFrames: video.getVideoPlaybackQuality?.().totalVideoFrames ?? null, stats: runtime.stats() },
+    drm: { ...runtime.state }, robustnessSupport, media: { asset: activeAsset, timeAdvanceSamples: runtime.frames, decodedFrames: video.getVideoPlaybackQuality?.().totalVideoFrames ?? null, stats: runtime.stats() },
     referenceRegion: reference.getBoundingClientRect().toJSON(),
+    videoRegion: video.getBoundingClientRect().toJSON(), videoOpacity: Number(getComputedStyle(video).opacity), videoHidden: video.hidden,
     resources: performance.getEntriesByType('resource').map(entry => ({ name: entry.name.split('?')[0], initiatorType: entry.initiatorType, duration: entry.duration, transferSize: entry.transferSize, encodedBodySize: entry.encodedBodySize })),
     observations: structuredClone(observations), events: structuredClone(events), conclusion: 'inconclusive',
     limitations: ['Capture results require artifact inspection and contemporaneous human observation.', 'Cross-origin transfer sizes may be zero without Timing-Allow-Origin.', 'Public development licensing is not suitable for production use.', 'Encrypted start time for custom media must be verified independently.'],
@@ -77,7 +82,7 @@ function readback() { const result = readCanvas(reference); record('canvas-readb
 function compose() { const result = copyVideo(video, $('composition')); record('composition', { ...result, readback: result.readback ? { ...result.readback, dataUrl: undefined } : undefined }); return result; }
 
 $('mode').addEventListener('change', () => { setMode($('mode').value); if (mode === 'baseline') void stop(); });
-$('asset').addEventListener('change', () => { const asset = $('asset').value === 'tiny' ? publicAsset : sintelAsset; $('manifest').value = asset.manifestUrl; $('license').value = asset.licenseServerUrl; $('encrypted-start').value = asset.encryptedStart; message('Asset selected. Restart playback to apply it.'); });
+$('asset').addEventListener('change', () => { const asset = assets[$('asset').value]; $('manifest').value = asset.manifestUrl; $('license').value = asset.licenseServerUrl; $('encrypted-start').value = asset.encryptedStart; message('Asset selected. Restart playback to apply it.'); });
 $('opacity').addEventListener('change', () => { try { setMode(mode, Number($('opacity').value)); } catch (error) { message(error.message); } });
 $('start').addEventListener('click', start);
 $('stop').addEventListener('click', stop);
@@ -90,7 +95,7 @@ document.addEventListener('keydown', event => { if (event.key === 'Escape') { se
 $('readback').addEventListener('click', () => { const result = readback(); message(result.ok ? `Reference canvas is readable by JavaScript. Checksum: ${result.checksum}` : result.error); });
 $('copy').addEventListener('click', () => { const result = compose(); message(result.drawSucceeded ? 'Copy attempted. Inspect the copy and exported pixels; a successful draw can still produce black pixels.' : result.error); });
 $('remove').addEventListener('click', () => { video.remove(); runtime.sample(); record('remove-video', {}); });
-$('observe').addEventListener('click', () => { observations.push({ at: new Date().toISOString(), mode, opacity, humanReadability: $('human').value, drm: { ...runtime.state } }); message('Observation recorded for the current configuration.'); });
+$('observe').addEventListener('click', () => { observations.push({ at: new Date().toISOString(), mode, opacity, activeAsset, humanReadability: $('human').value, humanVideoAppearance: $('human-video').value, drm: { ...runtime.state } }); message('Observation recorded for the current configuration.'); });
 $('export').addEventListener('click', () => download(new Blob([JSON.stringify(snapshot(), null, 2)], { type: 'application/json' }), `anti-agent-${Date.now()}.json`));
 $('display').addEventListener('click', async () => {
   try {

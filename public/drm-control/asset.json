@@ -1,0 +1,17 @@
+{
+  "resolution": [
+    64,
+    64
+  ],
+  "pattern": "red-green-blue-yellow-quadrants",
+  "durationSeconds": 2,
+  "frameRate": 1,
+  "audio": false,
+  "clearLeadSeconds": 0,
+  "encryption": "Widevine CENC",
+  "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+  "generationSource": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+  "packagerVersion": "3.9.3",
+  "bytes": 2100,
+  "productionUse": false
+}

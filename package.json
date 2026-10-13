@@ -7,7 +7,8 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "test": "playwright test",
-    "capture": "node scripts/capture.mjs"
+    "capture": "node scripts/capture.mjs",
+    "capture:control": "node scripts/control-experiment.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
