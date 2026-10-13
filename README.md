@@ -96,9 +96,14 @@ Open [the protected interface experiment](http://localhost:5173/protected-ui.htm
 # Generate media from the reference scene, with the dev server running:
 ASSET_KIND=interface PACKAGER=/path/to/packager node scripts/generate-asset.mjs
 npm run capture:ui
+# Compare software modes or require hardware without fallback:
+ROBUSTNESS=SW_SECURE_CRYPTO npm run capture:ui
+ROBUSTNESS=HW_SECURE_ALL npm run capture:ui
 ```
 
 This experiment puts the reference text inside a 720×480 encrypted video. There is no separate readable canvas beneath it. It tests Netflix/HBO-style media exclusion with capture-time usability no longer required. It is a static prerecorded interface, not an interactive renderer or React wrapper. The clear sample is intentionally served for comparison, so this fixture is not a network-access security boundary. See [results and limitations](docs/protected-ui-findings.md).
+
+The security selector requests the selected Widevine level without fallback. Unavailable playback produces a report with encrypted captures skipped. Both supported software modes still expose the interface through compositor screenshots on this Mac. See [the compositor investigation](docs/compositor-capture-research.md).
 
 ## Manual capture protocol
 

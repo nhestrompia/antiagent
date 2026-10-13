@@ -13,6 +13,8 @@ try {
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
   const client = await page.context().newCDPSession(page);
   await page.goto(process.env.EXPERIMENT_URL || 'http://127.0.0.1:5173/protected-ui.html');
+  const robustness = process.env.ROBUSTNESS || 'SW_SECURE_DECODE';
+  await page.selectOption('#robustness', robustness);
   for (const source of ['clear', 'encrypted']) {
     await page.selectOption('#source', source);
     await page.evaluate(() => window.protectedUIExperiment.start());
@@ -21,7 +23,10 @@ try {
       return drm.error || (activeSource === 'encrypted' ? drm.protectedPlayback : drm.playbackVerified);
     });
     const before = await page.evaluate(() => window.protectedUIExperiment.snapshot());
-    if (before.drm.error) throw new Error(before.drm.error);
+    if (before.drm.error) {
+      results.push({ source, before, captureSkipped: true, captureVerdict: 'playback unavailable; no protection result' });
+      continue;
+    }
     if (before.drm.encrypted !== (source === 'encrypted')) throw new Error('Playback source does not match the requested control.');
     const semantics = await page.locator('body').ariaSnapshot();
     if (['NORTH-47', 'ALPHA-729', 'Harbor Research'].some(label => semantics.includes(label))) throw new Error('Sensitive reference text leaked into the accessibility snapshot.');

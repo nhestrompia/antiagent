@@ -1,0 +1,47 @@
+[
+  {
+    "robustness": "HW_SECURE_ALL",
+    "playing": false,
+    "usableKeys": false,
+    "selectedRobustness": null,
+    "error": "Widevine HW_SECURE_ALL is unavailable in this browser. Playback stopped; no software fallback was used.",
+    "captureSkipped": true,
+    "compositorReadable": null
+  },
+  {
+    "robustness": "HW_SECURE_CRYPTO",
+    "playing": false,
+    "usableKeys": false,
+    "selectedRobustness": null,
+    "error": "Widevine HW_SECURE_CRYPTO is unavailable in this browser. Playback stopped; no software fallback was used.",
+    "captureSkipped": true,
+    "compositorReadable": null
+  },
+  {
+    "robustness": "HW_SECURE_DECODE",
+    "playing": false,
+    "usableKeys": false,
+    "selectedRobustness": null,
+    "error": "Widevine HW_SECURE_DECODE is unavailable in this browser. Playback stopped; no software fallback was used.",
+    "captureSkipped": true,
+    "compositorReadable": null
+  },
+  {
+    "robustness": "SW_SECURE_CRYPTO",
+    "playing": true,
+    "usableKeys": true,
+    "selectedRobustness": "SW_SECURE_CRYPTO",
+    "error": null,
+    "captureSkipped": false,
+    "compositorReadable": true
+  },
+  {
+    "robustness": "SW_SECURE_DECODE",
+    "playing": true,
+    "usableKeys": true,
+    "selectedRobustness": "SW_SECURE_DECODE",
+    "error": null,
+    "captureSkipped": false,
+    "compositorReadable": true
+  }
+]
