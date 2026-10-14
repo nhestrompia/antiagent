@@ -1,0 +1,35 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "blocked": false,
+      "repetition": 0,
+      "failed": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   46,\n+   98,\n-   17,\n-   100,\n    86\n  ]\n"
+    },
+    {
+      "blocked": false,
+      "repetition": 1,
+      "failed": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   46,\n+   98,\n-   17,\n-   100,\n    86\n  ]\n"
+    },
+    {
+      "blocked": false,
+      "repetition": 2,
+      "failed": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   46,\n+   98,\n-   17,\n-   100,\n    86\n  ]\n"
+    },
+    {
+      "blocked": true,
+      "repetition": 0,
+      "failed": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   46,\n+   98,\n-   17,\n-   100,\n    86\n  ]\n"
+    },
+    {
+      "blocked": true,
+      "repetition": 1,
+      "failed": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   46,\n+   98,\n-   17,\n-   100,\n    86\n  ]\n"
+    },
+    {
+      "blocked": true,
+      "repetition": 2,
+      "failed": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   46,\n+   98,\n-   17,\n-   100,\n    86\n  ]\n"
+    }
+  ]
+}
