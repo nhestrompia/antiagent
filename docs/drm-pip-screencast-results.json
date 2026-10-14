@@ -1,0 +1,775 @@
+{
+  "browser": "155.0.8059.40",
+  "guardMode": "off",
+  "captureViews": false,
+  "results": [
+    {
+      "source": "clear",
+      "repetition": 0,
+      "guardMode": "off",
+      "guardBlocked": false,
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.214232,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 902.5,
+          "bottom": 673.4375,
+          "left": 182.5
+        }
+      },
+      "during": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.214232,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 8,
+          "y": 8,
+          "width": 720,
+          "height": 480,
+          "top": 8,
+          "right": 728,
+          "bottom": 488,
+          "left": 8
+        }
+      },
+      "after": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 1.584991,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 257.875,
+          "width": 720,
+          "height": 480,
+          "top": 257.875,
+          "right": 902.5,
+          "bottom": 737.875,
+          "left": 182.5
+        }
+      },
+      "copyNonBlack": 345600,
+      "restoredReferencePixels": 64024,
+      "captureModes": [
+        {
+          "stage": "pip",
+          "fromSurface": true,
+          "referencePixels": 0
+        },
+        {
+          "stage": "pip-screencast",
+          "referencePixels": 0
+        },
+        {
+          "stage": "restored",
+          "fromSurface": true,
+          "referencePixels": 64024
+        }
+      ],
+      "captureVerdict": "Reference-color measurement plus paired images; static noninteractive media experiment",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "clear",
+      "repetition": 1,
+      "guardMode": "off",
+      "guardBlocked": false,
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.207956,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 902.5,
+          "bottom": 673.4375,
+          "left": 182.5
+        }
+      },
+      "during": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.207956,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 8,
+          "y": 8,
+          "width": 720,
+          "height": 480,
+          "top": 8,
+          "right": 728,
+          "bottom": 488,
+          "left": 8
+        }
+      },
+      "after": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 1.416984,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 257.875,
+          "width": 720,
+          "height": 480,
+          "top": 257.875,
+          "right": 902.5,
+          "bottom": 737.875,
+          "left": 182.5
+        }
+      },
+      "copyNonBlack": 345600,
+      "restoredReferencePixels": 64024,
+      "captureModes": [
+        {
+          "stage": "pip",
+          "fromSurface": true,
+          "referencePixels": 0
+        },
+        {
+          "stage": "pip-screencast",
+          "referencePixels": 0
+        },
+        {
+          "stage": "restored",
+          "fromSurface": true,
+          "referencePixels": 64024
+        }
+      ],
+      "captureVerdict": "Reference-color measurement plus paired images; static noninteractive media experiment",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "clear",
+      "repetition": 2,
+      "guardMode": "off",
+      "guardBlocked": false,
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.206126,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 902.5,
+          "bottom": 673.4375,
+          "left": 182.5
+        }
+      },
+      "during": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.206126,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 8,
+          "y": 8,
+          "width": 720,
+          "height": 480,
+          "top": 8,
+          "right": 728,
+          "bottom": 488,
+          "left": 8
+        }
+      },
+      "after": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 1.414488,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 257.875,
+          "width": 720,
+          "height": 480,
+          "top": 257.875,
+          "right": 902.5,
+          "bottom": 737.875,
+          "left": 182.5
+        }
+      },
+      "copyNonBlack": 345600,
+      "restoredReferencePixels": 64024,
+      "captureModes": [
+        {
+          "stage": "pip",
+          "fromSurface": true,
+          "referencePixels": 0
+        },
+        {
+          "stage": "pip-screencast",
+          "referencePixels": 0
+        },
+        {
+          "stage": "restored",
+          "fromSurface": true,
+          "referencePixels": 64024
+        }
+      ],
+      "captureVerdict": "Reference-color measurement plus paired images; static noninteractive media experiment",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "repetition": 0,
+      "guardMode": "off",
+      "guardBlocked": false,
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.572367,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 902.5,
+          "bottom": 673.4375,
+          "left": 182.5
+        }
+      },
+      "during": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.592918,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 8,
+          "y": 8,
+          "width": 720,
+          "height": 480,
+          "top": 8,
+          "right": 728,
+          "bottom": 488,
+          "left": 8
+        }
+      },
+      "after": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 1.854728,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 257.875,
+          "width": 720,
+          "height": 480,
+          "top": 257.875,
+          "right": 902.5,
+          "bottom": 737.875,
+          "left": 182.5
+        }
+      },
+      "copyNonBlack": 0,
+      "restoredReferencePixels": 64563,
+      "captureModes": [
+        {
+          "stage": "pip",
+          "fromSurface": true,
+          "referencePixels": 0
+        },
+        {
+          "stage": "pip-screencast",
+          "referencePixels": 0
+        },
+        {
+          "stage": "restored",
+          "fromSurface": true,
+          "referencePixels": 64563
+        }
+      ],
+      "captureVerdict": "Reference-color measurement plus paired images; static noninteractive media experiment",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "repetition": 1,
+      "guardMode": "off",
+      "guardBlocked": false,
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.512682,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 902.5,
+          "bottom": 673.4375,
+          "left": 182.5
+        }
+      },
+      "during": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.512682,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 8,
+          "y": 8,
+          "width": 720,
+          "height": 480,
+          "top": 8,
+          "right": 728,
+          "bottom": 488,
+          "left": 8
+        }
+      },
+      "after": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 1.847134,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 257.875,
+          "width": 720,
+          "height": 480,
+          "top": 257.875,
+          "right": 902.5,
+          "bottom": 737.875,
+          "left": 182.5
+        }
+      },
+      "copyNonBlack": 0,
+      "restoredReferencePixels": 64563,
+      "captureModes": [
+        {
+          "stage": "pip",
+          "fromSurface": true,
+          "referencePixels": 0
+        },
+        {
+          "stage": "pip-screencast",
+          "referencePixels": 0
+        },
+        {
+          "stage": "restored",
+          "fromSurface": true,
+          "referencePixels": 64563
+        }
+      ],
+      "captureVerdict": "Reference-color measurement plus paired images; static noninteractive media experiment",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "repetition": 2,
+      "guardMode": "off",
+      "guardBlocked": false,
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.718318,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 902.5,
+          "bottom": 673.4375,
+          "left": 182.5
+        }
+      },
+      "during": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.735232,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 8,
+          "y": 8,
+          "width": 720,
+          "height": 480,
+          "top": 8,
+          "right": 728,
+          "bottom": 488,
+          "left": 8
+        }
+      },
+      "after": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.000333,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 182.5,
+          "y": 257.875,
+          "width": 720,
+          "height": 480,
+          "top": 257.875,
+          "right": 902.5,
+          "bottom": 737.875,
+          "left": 182.5
+        }
+      },
+      "copyNonBlack": 0,
+      "restoredReferencePixels": 64563,
+      "captureModes": [
+        {
+          "stage": "pip",
+          "fromSurface": true,
+          "referencePixels": 0
+        },
+        {
+          "stage": "pip-screencast",
+          "referencePixels": 0
+        },
+        {
+          "stage": "restored",
+          "fromSurface": true,
+          "referencePixels": 64563
+        }
+      ],
+      "captureVerdict": "Reference-color measurement plus paired images; static noninteractive media experiment",
+      "nativeHumanVisibility": "Not tested"
+    }
+  ]
+}

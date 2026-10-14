@@ -12,9 +12,10 @@ function referencePixels(bytes) {
 }
 
 const guardMode = process.env.DRM_PIP_GUARD || 'off';
+const screencast = process.env.DRM_PIP_SCREENCAST === '1';
 const captureViews = process.env.DRM_PIP_CAPTURE_VIEWS === '1';
 if (!['off', 'on', 'suppressed'].includes(guardMode)) throw new Error('DRM_PIP_GUARD must be off, on, or suppressed');
-const directory = captureViews ? `artifacts/drm-pip-${guardMode}-views` : guardMode === 'off' ? 'artifacts/drm-pip' : `artifacts/drm-pip-${guardMode}`;
+const directory = screencast ? 'artifacts/drm-pip-screencast' : captureViews ? `artifacts/drm-pip-${guardMode}-views` : guardMode === 'off' ? 'artifacts/drm-pip' : `artifacts/drm-pip-${guardMode}`;
 await mkdir(directory, { recursive: true });
 const results = [];
 let version;
@@ -72,6 +73,26 @@ for (const source of ['clear', 'encrypted']) for (let repetition = 0; repetition
       await writeFile(`${directory}/${source}-${repetition}-pip-view.png`, viewBytes);
       captureModes.push({ stage: 'pip', fromSurface: false, referencePixels: referencePixels(viewBytes) });
     }
+    const screencastFrames=[];
+    if(screencast) {
+      const pending=[];
+      const listener=event=>{
+        pending.push(client.send('Page.screencastFrameAck',{sessionId:event.sessionId}));
+        if(screencastFrames.length<3) screencastFrames.push(event.data);
+      };
+      client.on('Page.screencastFrame',listener);
+      await client.send('Page.startScreencast',{format:'png',maxWidth:1280,maxHeight:900,everyNthFrame:1});
+      await new Promise(resolve=>setTimeout(resolve,3000));
+      await client.send('Page.stopScreencast');
+      client.off('Page.screencastFrame',listener);
+      await Promise.all(pending);
+      for(const [index,data] of screencastFrames.entries()) {
+        const frame=Buffer.from(data,'base64');
+        await writeFile(`${directory}/${source}-${repetition}-screencast-${index}.png`,frame);
+        captureModes.push({stage:'pip-screencast',referencePixels:referencePixels(frame)});
+      }
+      if(!screencastFrames.length) throw new Error('No screencast frames; not a capture-protection result');
+    }
     const copy = await page.evaluate(() => {
       const video = documentPictureInPicture.window.document.querySelector('video');
       const canvas = document.createElement('canvas'); canvas.width = video.videoWidth; canvas.height = video.videoHeight;
@@ -108,6 +129,6 @@ for (const source of ['clear', 'encrypted']) for (let repetition = 0; repetition
   } catch (error) { results.push({ source, repetition, failed: error.message, captureVerdict: 'No successful protection result' }); }
   finally { await close(); }
 }
-await writeFile(captureViews ? `docs/drm-pip-${guardMode}-views-results.json` : guardMode === 'off' ? 'docs/drm-pip-results.json' : `docs/drm-pip-${guardMode}-results.json`, JSON.stringify({ browser: version, guardMode, captureViews, results }, null, 2));
+await writeFile(screencast ? 'docs/drm-pip-screencast-results.json' : captureViews ? `docs/drm-pip-${guardMode}-views-results.json` : guardMode === 'off' ? 'docs/drm-pip-results.json' : `docs/drm-pip-${guardMode}-results.json`, JSON.stringify({ browser: version, guardMode, captureViews, results }, null, 2));
 console.log(JSON.stringify(results.map(({ source, repetition, guardBlocked, skipped, failed, during, after, copyNonBlack, captureModes }) => ({ source, repetition, guardMode, guardBlocked, skipped, failed, playingInPip: during?.drm.playbackVerified, playingRestored: after?.drm.playbackVerified, copyNonBlack, captureModes }))));
 if (results.some(result => result.failed || result.skipped)) throw new Error('One or more playback/capture cases did not complete; inspect results');
