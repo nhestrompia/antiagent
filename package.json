@@ -40,7 +40,9 @@
     "verify:drm-fullscreen": "node scripts/benchmark-drm-fullscreen.mjs --require-blocking",
     "benchmark:layered-guards": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered",
     "verify:layered-guards": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --require-blocking",
-    "benchmark:drm-pip-screencast": "DRM_PIP_SCREENCAST=1 node scripts/benchmark-drm-pip.mjs"
+    "benchmark:drm-pip-screencast": "DRM_PIP_SCREENCAST=1 node scripts/benchmark-drm-pip.mjs",
+    "benchmark:protected-output": "node scripts/benchmark-protected-output.mjs",
+    "verify:protected-output": "node scripts/benchmark-protected-output.mjs --require-blocking"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
