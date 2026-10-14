@@ -47,7 +47,9 @@
     "benchmark:agent-routes": "MODES=bare,runtime-enabled,runtime-zero,runtime-disabled node scripts/benchmark-bare-cdp.mjs --layered --audit",
     "benchmark:agent-playwright": "node scripts/benchmark-agent-route-playwright.mjs",
     "benchmark:layout-freshness": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness",
-    "benchmark:layout-hold": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture"
+    "benchmark:layout-hold": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture",
+    "benchmark:layout-fast": "CAPTURE_FRAMES=4 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture",
+    "benchmark:layout-bounded-hold": "CAPTURE_FRAMES=32 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture --fast-capture"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

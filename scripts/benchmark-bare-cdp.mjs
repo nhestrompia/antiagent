@@ -9,6 +9,8 @@ const isolated=process.env.ISOLATED==='1'||process.argv.includes('--isolated');
 const freshness=process.argv.includes('--freshness');
 const holdCapture=process.argv.includes('--hold-capture');
 const fastCapture=process.argv.includes('--fast-capture');
+const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
+assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
 const allGuards=layered||process.argv.includes('--all-guards');
 const directory=freshness?'artifacts/freshness-guards':layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
@@ -29,6 +31,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     const send=(method,params)=>chrome.send(method,params,sessionId);
     await chrome.send('Target.activateTarget',{targetId});
     await send('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
+    if(fastCapture)await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:100,y:100});
     if(mode!=='bare'&&mode!=='runtime-late') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
@@ -40,28 +43,42 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       assert.ok(ready,'Layered initialization did not finish');
     }
     const readyAt=Date.now();
-    await new Promise(resolve=>setTimeout(resolve,500));
+    await new Promise(resolve=>setTimeout(resolve,fastCapture?50:500));
     if(isolated) {
       const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});
       assert.equal(targetInfo.title,'Isolated frame SecurityError');
     }
     if(mode==='runtime-late') {await send('Runtime.enable');await new Promise(resolve=>setTimeout(resolve,2200));}
     let captureIndex=0;
+    const captureTimings=[];
     async function observe(frameCount=1) {
+      const started=Date.now();
+      const cropped=fastCapture&&frameCount>1;
       const images=[];
       for(let frame=0;frame<frameCount;frame++) {
         let capture;
         for(let attempt=0;attempt<2;attempt++) {
-          try {capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false,optimizeForSpeed:fastCapture});break;}
+          try {capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false,optimizeForSpeed:fastCapture,...(cropped?{clip:{x:220,y:300,width:670,height:110,scale:1}}:{})});break;}
           catch(error) {if(attempt||!error.message.startsWith('CDP timeout:')) throw error;}
         }
         images.push(PNG.sync.read(Buffer.from(capture.data,'base64')));
         if(frameCount>1&&!fastCapture) await new Promise(resolve=>setTimeout(resolve,19));
       }
-      const combined=images[0];
-      if(frameCount>1) {
+      const combined=PNG.sync.read(PNG.sync.write(images[0]));
+      if(cropped) {
+        // Visible columns retain the colored button background; hidden noise is grayscale.
+        for(let x=0;x<combined.width;x++) {
+          let best=0,bestScore=-1;
+          for(let frame=0;frame<frameCount;frame++) {
+            let score=0;
+            for(let y=0;y<combined.height;y++){const offset=(y*combined.width+x)*4;if(images[frame].data[offset]!==images[frame].data[offset+1])score++;}
+            if(score>bestScore){best=frame;bestScore=score;}
+          }
+          for(let y=0;y<combined.height;y++){const offset=(y*combined.width+x)*4;images[best].data.copy(combined.data,offset,offset,offset+4);}
+        }
+      } else if(frameCount>1) {
         const samples=new Uint8Array(frameCount);
-        for(let y=300;y<410;y++) for(let x=220;x<890;x++) {
+        for(let y=cropped?0:300;y<(cropped?110:410);y++) for(let x=cropped?0:220;x<(cropped?670:890);x++) {
           const offset=(y*combined.width+x)*4;
           for(let channel=0;channel<3;channel++) {
             for(let frame=0;frame<frameCount;frame++) samples[frame]=images[frame].data[offset+channel];
@@ -72,7 +89,8 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       const path=`${directory}/${mode}-${repetition}-${captureIndex++}.png`;
       await writeFile(path,PNG.sync.write(combined));
       const {stdout}=await execute('/private/tmp/anti-agent-ocr',[path]);
-      return JSON.parse(stdout);
+      captureTimings.push({frameCount,cropped,elapsedMs:Date.now()-started});
+      return JSON.parse(stdout).map(item=>cropped?{...item,x:(220+item.x*670)/1280,y:(300+item.y*110)/900}:item);
     }
     const initial=await observe();
     const observations=[];
@@ -86,10 +104,10 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       }
       let text,target;
       for(let attempt=0;attempt<3&&!target;attempt++){
-        text=await observe(allGuards?(fastCapture?32:64):1);
-        target=text.find(item=>textDistance(item.text,label)===0);
+        text=await observe(allGuards?captureFrames:1);
+        target=text.find(item=>textDistance(item.text,label)<=(fastCapture?2:0));
       }
-      if(!target&&text.map(item=>item.text).join('').replace(/\s/g,'').includes('\"blocked\":true')) break;
+      if(!target){const diagnostic=await observe();if(diagnostic.map(item=>item.text).join('').replace(/\s/g,'').includes('\"blocked\":true')) break;}
       assert.ok(target,`No target ${label}: ${JSON.stringify(text)}`);
       const point={x:target.x*1280,y:target.y*900};
       if(holdCapture) {
@@ -98,14 +116,16 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
         await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:100,y:100,buttons:1});
         await send('Input.dispatchMouseEvent',{type:'mouseReleased',x:100,y:100,button:'left',buttons:0,clickCount:1});
       }
-      observations.push({label,point,frameCount:allGuards?(fastCapture?32:64):1});
-      for(let sample=0;sample<8;sample++) {
-        await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:point.x-70+sample*10,y:point.y-70+sample*10});
-        await new Promise(resolve=>setTimeout(resolve,60));
+      observations.push({label,point,frameCount:allGuards?captureFrames:1});
+      for(let sample=0;sample<(fastCapture?4:8);sample++) {
+        const distance=fastCapture?60-sample*20:70-sample*10;
+        await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:point.x-distance,y:point.y-distance});
+        await new Promise(resolve=>setTimeout(resolve,fastCapture?30:60));
       }
-      await new Promise(resolve=>setTimeout(resolve,300));
+      await new Promise(resolve=>setTimeout(resolve,fastCapture?170:300));
       await send('Input.dispatchMouseEvent',{type:'mousePressed',...point,button:'left',buttons:1,clickCount:1});
       await send('Input.dispatchMouseEvent',{type:'mouseReleased',...point,button:'left',buttons:0,clickCount:1});
+      if(fastCapture)await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:100,y:100});
     }
     const final=await observe();
     const completed=final.some(item=>textDistance(item.text,'Task complete')<=2);
@@ -115,11 +135,11 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     else if(freshness) {assert.equal(completed||blocked,true,JSON.stringify(final));}
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
-    results.push({mode,repetition,version:version.product,completed,blocked,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,observations,initial,final,commands:[...new Set(chrome.commands)]});
+    results.push({mode,repetition,version:version.product,completed,blocked,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
   } catch(error) {results.push({mode,repetition,error:error.message});}
   finally {await chrome.close();}
 }
-await writeFile(freshness?(holdCapture?'docs/freshness-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
+await writeFile(freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
 assert.equal(results.filter(result=>result.error).length,0,'One or more capture/input cases did not finish');
 

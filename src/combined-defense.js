@@ -85,6 +85,14 @@ for (const name of ['__playwright_global_listeners_check__', '__playwright_snaps
   window.addEventListener(name, () => block('playwright-runtime-event'), true);
 }
 // Experimental pointer continuity. CDP can reproduce this sequence.
+let pressTimer;
+function expireCancelledLayout() {
+  clearTimeout(pressTimer);
+  if (!freshnessMode || !motion.armed || state.blocked || state.completed) return;
+  layoutEpoch++; state.layoutEpoch=layoutEpoch;
+  layouts[state.step].push(layouts[state.step].shift());
+  draw();
+}
 let motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false, epoch: layoutEpoch };
 function pointerPosition(event) {
   const rect = canvas.getBoundingClientRect();
@@ -110,24 +118,31 @@ canvas.addEventListener('pointermove', event => {
 canvas.addEventListener('pointerdown', event => {
   if (!state.ready || state.blocked || state.completed) return;
   const point = pointerPosition(event), now = performance.now();
+  clearTimeout(pressTimer);
   motion.armed = false;
   if (point.slot === undefined) return;
   if (freshnessMode && motion.epoch !== layoutEpoch) { block('expired-layout'); return; }
   const allowed = event.button === 0 && event.isPrimary && event.isTrusted && motion.samples >= 4 && motion.distance >= 32 && now - motion.start >= 120 && point.slot === motion.slot && now - motion.entered >= 150;
   if (!allowed) block('pointer-continuity');
-  else motion.armed = { pointerId: event.pointerId, slot: point.slot, released: false, epoch: layoutEpoch };
+  else {
+    const transaction={pointerId:event.pointerId,slot:point.slot,released:false,epoch:layoutEpoch,started:now};
+    motion.armed=transaction;
+    if(freshnessMode) pressTimer=setTimeout(()=>{if(motion.armed===transaction) block('press-expired');},500);
+  }
 });
 canvas.addEventListener('pointerup', event => {
   if (state.blocked || state.completed || !motion.armed) return;
   if ((freshnessMode && motion.armed.epoch !== layoutEpoch) || !event.isTrusted || event.button !== 0 || event.pointerId !== motion.armed.pointerId || pointerPosition(event).slot !== motion.armed.slot) {
     block('pointer-transaction'); return;
   }
+  if(freshnessMode&&performance.now()-motion.armed.started>500){block('press-expired');return;}
+  clearTimeout(pressTimer);
   motion.armed.released = true;
 });
 for (const name of ['pointercancel', 'pointerleave']) canvas.addEventListener(name, () => {
-  motion.armed = false;
+  expireCancelledLayout(); motion.armed = false;
 });
-window.addEventListener('blur', () => { motion.armed = false; });
+window.addEventListener('blur', () => { expireCancelledLayout(); motion.armed = false; });
 canvas.addEventListener('click', event => {
   if (!state.ready) return;
   if (state.blocked || state.completed) return;
@@ -193,6 +208,7 @@ if (freshnessMode && !state.blocked) {
   },3000);
   window.addEventListener('pagehide',()=>clearInterval(refresh),{once:true});
 }
+window.addEventListener('pagehide',()=>clearTimeout(pressTimer),{once:true});
 state.ready=true;
 document.title='Defense ready';
 draw();
