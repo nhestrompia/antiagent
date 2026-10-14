@@ -17,6 +17,17 @@ const freshnessMode = layeredMode && parameters.get('fresh') === 'on';
 const decoyMask = layeredMode && parameters.get('mask') === 'decoy';
 const clockGuard = layeredMode && parameters.get('clock') === 'on';
 const jitterMask = layeredMode && parameters.get('jitter') === 'on';
+const timingProbe = parameters.get('timing') === 'on';
+let timingSamples, timingPrevious;
+if(timingProbe)window.addEventListener('keydown',event=>{
+  if(!event.isTrusted)return;
+  if(event.key==='s'){timingSamples=[];timingPrevious=undefined;event.preventDefault();}
+  if(event.key==='e'&&timingSamples){
+    const samples=timingSamples;timingSamples=undefined;samples.sort((a,b)=>a-b);
+    const panel=document.createElement('pre');panel.style.cssText='position:fixed;inset:20px auto auto 20px;background:white;color:black;font:24px sans-serif;padding:20px;z-index:99999';
+    panel.textContent=['Timing finished',`Frames ${samples.length}`,`Median ${(samples[Math.floor(samples.length*.5)]||0).toFixed(2)}`,`P95 ${(samples[Math.floor(samples.length*.95)]||0).toFixed(2)}`,`Maximum ${(samples.at(-1)||0).toFixed(2)}`,`Over25 ${samples.filter(value=>value>25).length}`].join('\n');document.body.append(panel);event.preventDefault();
+  }
+});
 let layoutEpoch = 0;
 const temporalMode = combinedMode ? 'noise' : parameters.get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
@@ -226,4 +237,7 @@ state.ready=true;
 document.title='Defense ready';
 draw();
 
-if (temporal) requestAnimationFrame(function animate() { paintFrame(); requestAnimationFrame(animate); });
+if (temporal) requestAnimationFrame(function animate(time) {
+  if(timingSamples){if(timingPrevious!==undefined)timingSamples.push(time-timingPrevious);timingPrevious=time;}
+  paintFrame();requestAnimationFrame(animate);
+});

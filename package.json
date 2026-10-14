@@ -57,7 +57,8 @@
     "benchmark:document-pip": "node scripts/benchmark-document-pip.mjs",
     "verify:current-stack": "RESULT_PATH=docs/current-stack-verification-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames --require-blocking",
     "benchmark:jitter-unaligned": "RESULT_PATH=docs/jitter-unaligned-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask",
-    "benchmark:jitter-aligned": "RESULT_PATH=docs/jitter-aligned-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames"
+    "benchmark:jitter-aligned": "RESULT_PATH=docs/jitter-aligned-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames",
+    "benchmark:capture-burst": "node scripts/benchmark-capture-burst.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
