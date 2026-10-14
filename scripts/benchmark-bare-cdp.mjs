@@ -12,6 +12,8 @@ const fastCapture=process.argv.includes('--fast-capture');
 const decoyMask=process.argv.includes('--decoy-mask');
 const stableColumns=process.argv.includes('--stable-columns');
 const virtualClock=process.argv.includes('--virtual-clock');
+const clockGuard=process.argv.includes('--clock-guard');
+const leanCapture=process.argv.includes('--lean-capture');
 const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
 assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
@@ -45,7 +47,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if(mode!=='bare'&&mode!=='runtime-late') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':'')+(clockGuard?'&clock=on':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
     assert.ok(!navigation.errorText,navigation.errorText);
     if(layered) {
       let ready=false;
@@ -122,11 +124,11 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       captureTimings.push({frameCount,cropped,elapsedMs:Date.now()-started});
       return JSON.parse(stdout).map(item=>cropped?{...item,x:(220+item.x*670)/1280,y:(300+item.y*110)/900}:item);
     }
-    const initial=await observe();
+    const initial=leanCapture?[]:await observe();
     const observations=[];
     if((mode!=='runtime-enabled'&&mode!=='runtime-late')||isolated) for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
       await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:250,y:180});
-      await delay(100);
+      if(!leanCapture)await delay(100);
       if(holdCapture) {
         for(let sample=0;sample<8;sample++){await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:223+sample*10,y:292+sample*10});await new Promise(resolve=>setTimeout(resolve,60));}
         await new Promise(resolve=>setTimeout(resolve,300));

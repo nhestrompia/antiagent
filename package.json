@@ -51,7 +51,9 @@
     "benchmark:layout-fast": "CAPTURE_FRAMES=4 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture",
     "benchmark:layout-bounded-hold": "CAPTURE_FRAMES=32 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture --fast-capture",
     "benchmark:decoy-color": "CAPTURE_FRAMES=4 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask",
-    "benchmark:decoy-virtual": "RESULT_PATH=docs/decoy-virtual-final-results.json CAPTURE_FRAMES=16 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --virtual-clock"
+    "benchmark:decoy-virtual": "RESULT_PATH=docs/decoy-virtual-final-results.json CAPTURE_FRAMES=16 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --virtual-clock",
+    "benchmark:clock-guard-virtual": "RESULT_PATH=docs/clock-guard-virtual-results.json CAPTURE_FRAMES=16 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --virtual-clock --clock-guard",
+    "benchmark:clock-guard-lean": "RESULT_PATH=docs/clock-guard-lean-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

@@ -15,6 +15,7 @@ const layeredMode = parameters.get('defense') === 'layered';
 const combinedMode = layeredMode || parameters.get('defense') === 'combined';
 const freshnessMode = layeredMode && parameters.get('fresh') === 'on';
 const decoyMask = layeredMode && parameters.get('mask') === 'decoy';
+const clockGuard = layeredMode && parameters.get('clock') === 'on';
 let layoutEpoch = 0;
 const temporalMode = combinedMode ? 'noise' : parameters.get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
@@ -126,6 +127,7 @@ canvas.addEventListener('pointermove', event => {
 });
 canvas.addEventListener('pointerdown', event => {
   if (!state.ready || state.blocked || state.completed) return;
+  if(clockGuard){const timing=inspectRuntimeCost();state.actionClockMs=timing.medianMs;if(timing.medianMs===0){block('clock-stalled');return;}}
   const point = pointerPosition(event), now = performance.now();
   clearTimeout(pressTimer);
   motion.armed = false;

@@ -1,4 +1,5 @@
 // Experimental timing signal. The debugger can suppress it, and slow hardware can trigger it.
+const readClock = performance.now.bind(performance);
 export function inspectRuntimeCost() {
   const previousLimit = Error.stackTraceLimit;
   const samples = [];
@@ -11,9 +12,9 @@ export function inspectRuntimeCost() {
     Error.stackTraceLimit = 0;
     for (let i = 0; i < 500; i++) create(80);
     for (let round = 0; round < 3; round++) {
-      const start = performance.now();
+      const start = readClock();
       for (let i = 0; i < 2000; i++) create(80);
-      samples.push(performance.now() - start);
+      samples.push(readClock() - start);
     }
   } finally { Error.stackTraceLimit = previousLimit; }
   samples.sort((a, b) => a - b);
