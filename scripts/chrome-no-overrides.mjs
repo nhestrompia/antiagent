@@ -4,10 +4,11 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { chromium } from '@playwright/test';
 
-export async function launchChromeWithoutOverrides() {
+export async function launchChromeWithoutOverrides({ tabCaptureTitle } = {}) {
   const profile = await mkdtemp(join(tmpdir(), 'antiagent-hidden-'));
   const process = spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', [
-    `--user-data-dir=${profile}`, '--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check', 'about:blank',
+    `--user-data-dir=${profile}`, '--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check',
+    ...(tabCaptureTitle ? [`--auto-select-tab-capture-source-by-title=${tabCaptureTitle}`] : []), 'about:blank',
   ], { stdio: 'ignore' });
   let browser;
   async function close() {
