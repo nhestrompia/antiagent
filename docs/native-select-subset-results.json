@@ -1,15 +1,16 @@
 {
   "results": [
     {
-      "strategy": "heap-observer-character-selection",
+      "strategy": "inline-heap-observer-character-selection",
       "repetition": 0,
       "version": "Chrome/155.0.8059.40",
-      "targetIndex": 3,
+      "targetIndex": 2,
       "disabledObservers": 1,
       "popup": {
         "clear": true,
         "harden": true,
         "hide": true,
+        "inline": true,
         "focused": true,
         "accepted": 0,
         "blocked": false,
@@ -29,6 +30,7 @@
           "\"clear\": true,",
           "\"harden\": true,",
           "\"hide\": true,",
+          "\"inline\": true,",
           "\"focused\": true,",
           "\"accepted\": 0,",
           "\"blocked\": false,",
@@ -37,17 +39,21 @@
           "\"popupOpen\": true,",
           "\"events\": [",
           "\"type\": \"pointerdown\",",
-          "\"trusted\": true"
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
         ]
       },
-      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"bf0fa26a-a6bf-4a00-98ac-f10b326c62d3\"></option><option value=\"1f76da1b-7f2d-4f0c-8577-b3bd57bfe69c\"></option><option value=\"c1a93001-72a4-48f6-861c-b0272d75c4e2\"></option></select>",
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"0705e500-d429-4000-a3b9-677263a512e3\"></option><option value=\"e1d99f2d-07f4-4ee5-a5ac-31b2cc33ff3b\"></option><option value=\"67334e08-158e-4ef5-96d6-44624ce5b178\"></option></select>",
       "final": {
         "clear": true,
         "harden": true,
         "hide": true,
+        "inline": true,
         "focused": true,
-        "accepted": 1,
-        "blocked": false,
+        "accepted": 0,
+        "blocked": true,
         "lastChangeTrusted": true,
         "labelsCleared": true,
         "popupOpen": false,
@@ -69,7 +75,8 @@
             "type": "confirm",
             "trusted": true
           }
-        ]
+        ],
+        "reason": "inline-dom-tamper"
       },
       "commands": [
         "Browser.getVersion",
@@ -96,7 +103,7 @@
       ]
     },
     {
-      "strategy": "heap-observer-character-selection",
+      "strategy": "inline-heap-observer-character-selection",
       "repetition": 1,
       "version": "Chrome/155.0.8059.40",
       "targetIndex": 3,
@@ -105,6 +112,7 @@
         "clear": true,
         "harden": true,
         "hide": true,
+        "inline": true,
         "focused": true,
         "accepted": 0,
         "blocked": false,
@@ -124,6 +132,7 @@
           "\"clear\": true,",
           "\"harden\": true,",
           "\"hide\": true,",
+          "\"inline\": true,",
           "\"focused\": true,",
           "\"accepted\": 0,",
           "\"blocked\": false,",
@@ -132,17 +141,21 @@
           "\"popupOpen\": true,",
           "\"events\": [",
           "\"type\": \"pointerdown\",",
-          "\"trusted\": true"
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
         ]
       },
-      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"9c748077-ac2b-4007-9723-e11e3a4d677c\"></option><option value=\"aa471a6b-fd63-4770-b808-b23328f2b411\"></option><option value=\"d111a24e-9bc3-4a78-ac6a-b12ede624a72\"></option></select>",
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"30074202-de5e-4fb5-855c-ba56aa98acca\"></option><option value=\"f44daa24-113c-484c-be5c-5175dfba9536\"></option><option value=\"8c2cf853-5609-45b0-9288-b4982790c50a\"></option></select>",
       "final": {
         "clear": true,
         "harden": true,
         "hide": true,
+        "inline": true,
         "focused": true,
-        "accepted": 1,
-        "blocked": false,
+        "accepted": 0,
+        "blocked": true,
         "lastChangeTrusted": true,
         "labelsCleared": true,
         "popupOpen": false,
@@ -164,7 +177,8 @@
             "type": "confirm",
             "trusted": true
           }
-        ]
+        ],
+        "reason": "inline-dom-tamper"
       },
       "commands": [
         "Browser.getVersion",
@@ -191,7 +205,7 @@
       ]
     },
     {
-      "strategy": "heap-observer-character-selection",
+      "strategy": "inline-heap-observer-character-selection",
       "repetition": 2,
       "version": "Chrome/155.0.8059.40",
       "targetIndex": 1,
@@ -200,6 +214,7 @@
         "clear": true,
         "harden": true,
         "hide": true,
+        "inline": true,
         "focused": true,
         "accepted": 0,
         "blocked": false,
@@ -219,6 +234,7 @@
           "\"clear\": true,",
           "\"harden\": true,",
           "\"hide\": true,",
+          "\"inline\": true,",
           "\"focused\": true,",
           "\"accepted\": 0,",
           "\"blocked\": false,",
@@ -227,17 +243,21 @@
           "\"popupOpen\": true,",
           "\"events\": [",
           "\"type\": \"pointerdown\",",
-          "\"trusted\": true"
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
         ]
       },
-      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"24ae52f5-a14c-4f6b-981c-6cdb9cb9fb0b\"></option><option value=\"e9a1ed27-0ef3-4fc0-8b13-e6b4794a1779\"></option><option value=\"b1c309fc-5c36-4292-91a8-69acf568a8fb\"></option></select>",
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"79203d83-d637-4cae-8cfc-bf9a17033915\"></option><option value=\"8576742e-8808-4708-a005-71ec0dd384f9\"></option><option value=\"32140564-e3e9-45cf-955f-43316dcb7287\"></option></select>",
       "final": {
         "clear": true,
         "harden": true,
         "hide": true,
+        "inline": true,
         "focused": true,
-        "accepted": 1,
-        "blocked": false,
+        "accepted": 0,
+        "blocked": true,
         "lastChangeTrusted": true,
         "labelsCleared": true,
         "popupOpen": false,
@@ -259,7 +279,8 @@
             "type": "confirm",
             "trusted": true
           }
-        ]
+        ],
+        "reason": "inline-dom-tamper"
       },
       "commands": [
         "Browser.getVersion",
@@ -283,6 +304,150 @@
         "Runtime.callFunctionOn",
         "DOM.setOuterHTML",
         "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "inline-focus-character-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "inline": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Input.dispatchKeyEvent",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "inline-focus-character-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "inline": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Input.dispatchKeyEvent",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "inline-focus-character-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "inline": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Input.dispatchKeyEvent",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
       ]
     }
   ]
