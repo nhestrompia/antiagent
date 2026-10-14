@@ -1,15 +1,15 @@
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
-const files = ['src/intrinsic-guard.js', 'src/runtime-cost.js', 'src/combined-defense.js'];
+const files = ['src/intrinsic-guard.js', 'src/runtime-cost.js', 'src/capture-cover.js', 'src/combined-defense.js'];
 const sources = await Promise.all(files.map(path => readFile(path, 'utf8')));
-const runtimeOptIn = "new URLSearchParams(location.search).get('runtime') === 'on' && ";
-assert.ok(sources[2].includes(runtimeOptIn), 'Runtime opt-in changed; update the fixture generator');
-sources[2] = sources[2].replace(runtimeOptIn, '');
+const runtimeOptIn = "(combinedMode || parameters.get('runtime') === 'on') && ";
+assert.ok(sources[3].includes(runtimeOptIn), 'Runtime opt-in changed; update the fixture generator');
+sources[3] = sources[3].replace(runtimeOptIn, '');
 const referenceCheck = 'const integrity = inspectAPIs();';
-assert.ok(sources[2].includes(referenceCheck), 'Reference gate changed; update the fixture generator');
+assert.ok(sources[3].includes(referenceCheck), 'Reference gate changed; update the fixture generator');
 // A nested reference frame has another opaque origin and cannot supply API baselines.
 // Disable only this incompatible check in the sandbox experiment, not the application.
-sources[2] = sources[2].replace(referenceCheck, 'const integrity = { allowed: true, reasons: [] };');
+sources[3] = sources[3].replace(referenceCheck, 'const integrity = { allowed: true, reasons: [] };');
 const script = sources.map(source => source.replace(/^import .*;\n/gm, '').replace(/^export /gm, '')).join('\n');
 const original = await readFile('combined-defense.html', 'utf8');
 const child = original.replace('<script type="module" src="/src/combined-defense.js"></script>', `<script type="module">${script}</script>`);

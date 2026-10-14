@@ -2,10 +2,12 @@ import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { mkdir, writeFile } from 'node:fs/promises';
+import { PNG } from 'pngjs';
 import { launchRawCDP } from './raw-cdp.mjs';
 const execute=promisify(execFile);
 const isolated=process.env.ISOLATED==='1'||process.argv.includes('--isolated');
-const directory=isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
+const allGuards=process.argv.includes('--all-guards');
+const directory=allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
 await mkdir(directory,{recursive:true});
 const results=[];
 function textDistance(a,b) {
@@ -14,28 +16,45 @@ function textDistance(a,b) {
   for(let i=1;i<=a.length;i++) {const next=[i];for(let j=1;j<=b.length;j++) next[j]=Math.min(next[j-1]+1,row[j]+1,row[j-1]+(a[i-1]===b[j-1]?0:1));row=next;}
   return row[b.length];
 }
-for(const mode of ['bare','runtime-enabled','runtime-zero','runtime-disabled']) for(let repetition=0;repetition<3;repetition++) {
+for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','runtime-zero','runtime-disabled'])) for(let repetition=0;repetition<3;repetition++) {
   const chrome=await launchRawCDP();
   try {
     const version=await chrome.send('Browser.getVersion');
     const {targetId}=await chrome.send('Target.createTarget',{url:'about:blank'});
     const {sessionId}=await chrome.send('Target.attachToTarget',{targetId,flatten:true});
     const send=(method,params)=>chrome.send(method,params,sessionId);
+    await chrome.send('Target.activateTarget',{targetId});
     await send('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
     if(mode!=='bare') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    await send('Page.navigate',{url:isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    await send('Page.navigate',{url:allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
     await new Promise(resolve=>setTimeout(resolve,500));
     if(isolated) {
       const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});
       assert.equal(targetInfo.title,'Isolated frame SecurityError');
     }
     let captureIndex=0;
-    async function observe() {
-      const capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false});
+    async function observe(frameCount=1) {
+      const images=[];
+      for(let frame=0;frame<frameCount;frame++) {
+        const capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false});
+        images.push(PNG.sync.read(Buffer.from(capture.data,'base64')));
+        if(frameCount>1) await new Promise(resolve=>setTimeout(resolve,19));
+      }
+      const combined=images[0];
+      if(frameCount>1) {
+        const samples=new Uint8Array(frameCount);
+        for(let y=300;y<410;y++) for(let x=220;x<890;x++) {
+          const offset=(y*combined.width+x)*4;
+          for(let channel=0;channel<3;channel++) {
+            for(let frame=0;frame<frameCount;frame++) samples[frame]=images[frame].data[offset+channel];
+            samples.sort();combined.data[offset+channel]=samples[Math.floor(frameCount/2)];
+          }
+        }
+      }
       const path=`${directory}/${mode}-${repetition}-${captureIndex++}.png`;
-      await writeFile(path,Buffer.from(capture.data,'base64'));
+      await writeFile(path,PNG.sync.write(combined));
       const {stdout}=await execute('/private/tmp/anti-agent-ocr',[path]);
       return JSON.parse(stdout);
     }
@@ -44,11 +63,11 @@ for(const mode of ['bare','runtime-enabled','runtime-zero','runtime-disabled']) 
     if(mode!=='runtime-enabled'||isolated) for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
       await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:250,y:180});
       await new Promise(resolve=>setTimeout(resolve,100));
-      const text=await observe();
+      const text=await observe(allGuards?64:1);
       const target=text.map(item=>({...item,distance:textDistance(item.text,label)})).filter(item=>item.distance<=2).sort((a,b)=>a.distance-b.distance)[0];
       assert.ok(target,`No target ${label}: ${JSON.stringify(text)}`);
       const point={x:target.x*1280,y:target.y*900};
-      observations.push({label,point});
+      observations.push({label,point,frameCount:allGuards?64:1});
       for(let sample=0;sample<8;sample++) {
         await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:point.x-70+sample*10,y:point.y-70+sample*10});
         await new Promise(resolve=>setTimeout(resolve,60));
@@ -64,8 +83,13 @@ for(const mode of ['bare','runtime-enabled','runtime-zero','runtime-disabled']) 
     if(mode==='runtime-enabled'&&!isolated) {assert.equal(completed,false);assert.equal(blocked,true);assert.ok(text.includes('runtime-cost'));}
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
-    results.push({mode,repetition,version:version.product,completed,blocked,observations,initial,final,commands:[...new Set(chrome.commands)]});
+    results.push({mode,repetition,version:version.product,completed,blocked,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,observations,initial,final,commands:[...new Set(chrome.commands)]});
   } finally {await chrome.close();}
 }
-await writeFile(isolated?'docs/isolated-frame-results.json':'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
+await writeFile(allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked})=>({mode,repetition,completed,blocked})),null,2));
+
+if(process.argv.includes('--require-blocking')) {
+  const bypasses=results.filter(({completed,blocked})=>completed||!blocked);
+  assert.equal(bypasses.length,0,`Agent-proof acceptance failed: ${bypasses.length} sessions bypassed the guard`);
+}

@@ -1,4 +1,5 @@
 import { inspectAPIs } from './tamper-gate.js';
+import { installCaptureCover } from './capture-cover.js';
 import { inspectRuntimeCost } from './runtime-cost.js';
 import { lockMethods } from './intrinsic-guard.js';
 
@@ -6,7 +7,9 @@ const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 const status = document.querySelector('#status');
 // Opt-in rendering research; human readability is not established.
-const temporalMode = new URLSearchParams(location.search).get('temporal');
+const parameters = new URLSearchParams(location.search);
+const combinedMode = parameters.get('defense') === 'combined';
+const temporalMode = combinedMode ? 'noise' : parameters.get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
 const tasks = [
   ['Choose Harbor Research', ['Harbor Research', 'North Labs', 'West Studio']],
@@ -133,7 +136,8 @@ canvas.addEventListener('click', event => {
   motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false };
   state.step++; state.completed = state.step === tasks.length; draw();
 });
-if (new URLSearchParams(location.search).get('runtime') === 'on' && inspectRuntimeCost().suspected) block('runtime-cost');
+if ((combinedMode || parameters.get('runtime') === 'on') && inspectRuntimeCost().suspected) block('runtime-cost');
+if (combinedMode) installCaptureCover(canvas.parentElement, { onCover: reason => block(`capture-cover:${reason}`) });
 const integrity = inspectAPIs();
 if (navigator.webdriver) block('webdriver');
 else if (!integrity.allowed) block(`api-integrity:${integrity.reasons.join(',')}`);
