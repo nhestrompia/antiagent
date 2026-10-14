@@ -1,0 +1,937 @@
+{
+  "results": [
+    {
+      "type": "headed",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 292.99999895,
+        "y": 362.00000009999997
+      },
+      "final": {
+        "detector": {
+          "isLegitClient": true,
+          "suspicionScore": 0,
+          "confidence": "low",
+          "automation": {
+            "isAutomated": false,
+            "kind": "unknown",
+            "confidence": "low",
+            "evidence": [],
+            "alternatives": []
+          },
+          "triggered": [],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "headed",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 752.9999989486159,
+        "y": 360.0000001219396
+      },
+      "final": {
+        "detector": {
+          "isLegitClient": true,
+          "suspicionScore": 0,
+          "confidence": "low",
+          "automation": {
+            "isAutomated": false,
+            "kind": "unknown",
+            "confidence": "low",
+            "evidence": [],
+            "alternatives": []
+          },
+          "triggered": [],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "headed",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 522.99999895,
+        "y": 362.00000009999997
+      },
+      "final": {
+        "detector": {
+          "isLegitClient": true,
+          "suspicionScore": 0,
+          "confidence": "low",
+          "automation": {
+            "isAutomated": false,
+            "kind": "unknown",
+            "confidence": "low",
+            "evidence": [],
+            "alternatives": []
+          },
+          "triggered": [],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "headless",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 753.9999987600002,
+        "y": 359.0000001000001
+      },
+      "final": {
+        "detector": {
+          "isLegitClient": false,
+          "suspicionScore": 0.976,
+          "confidence": "high",
+          "automation": {
+            "isAutomated": true,
+            "kind": "browser-automation",
+            "confidence": "high",
+            "evidence": [
+              "User-Agent claims browser-automation"
+            ],
+            "alternatives": [
+              "patchright",
+              "playwright",
+              "puppeteer",
+              "selenium"
+            ]
+          },
+          "triggered": [
+            "isHeadless",
+            "isUserAgentValid",
+            "isDefaultAutomationViewport"
+          ],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 0,
+        "blocked": true,
+        "reason": "detector",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "headless",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 523.99999845,
+        "y": 359.0000001250001
+      },
+      "final": {
+        "detector": {
+          "isLegitClient": false,
+          "suspicionScore": 0.976,
+          "confidence": "high",
+          "automation": {
+            "isAutomated": true,
+            "kind": "browser-automation",
+            "confidence": "high",
+            "evidence": [
+              "User-Agent claims browser-automation"
+            ],
+            "alternatives": [
+              "patchright",
+              "playwright",
+              "puppeteer",
+              "selenium"
+            ]
+          },
+          "triggered": [
+            "isHeadless",
+            "isUserAgentValid",
+            "isDefaultAutomationViewport"
+          ],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 0,
+        "blocked": true,
+        "reason": "detector",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "headless",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 292.99999874,
+        "y": 361.0000000600001
+      },
+      "final": {
+        "detector": {
+          "isLegitClient": false,
+          "suspicionScore": 0.976,
+          "confidence": "high",
+          "automation": {
+            "isAutomated": true,
+            "kind": "browser-automation",
+            "confidence": "high",
+            "evidence": [
+              "User-Agent claims browser-automation"
+            ],
+            "alternatives": [
+              "patchright",
+              "playwright",
+              "puppeteer",
+              "selenium"
+            ]
+          },
+          "triggered": [
+            "isHeadless",
+            "isUserAgentValid",
+            "isDefaultAutomationViewport"
+          ],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 0,
+        "blocked": true,
+        "reason": "detector",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "stock-playwright",
+      "repetition": 0,
+      "version": "155.0.8059.40",
+      "final": {
+        "detector": {
+          "isLegitClient": false,
+          "suspicionScore": 1,
+          "confidence": "high",
+          "automation": {
+            "isAutomated": true,
+            "kind": "browser-automation",
+            "confidence": "high",
+            "evidence": [
+              "navigator.webdriver is set",
+              "Lightpanda/HeadlessChrome UA, HeadlessChrome appVersion/Client Hints, or webdriver flag"
+            ],
+            "alternatives": [
+              "playwright",
+              "puppeteer",
+              "selenium"
+            ]
+          },
+          "triggered": [
+            "isWebDriver",
+            "isHeadless"
+          ],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 0,
+        "blocked": true,
+        "reason": "detector",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "stock-playwright",
+      "repetition": 1,
+      "version": "155.0.8059.40",
+      "final": {
+        "detector": {
+          "isLegitClient": false,
+          "suspicionScore": 1,
+          "confidence": "high",
+          "automation": {
+            "isAutomated": true,
+            "kind": "browser-automation",
+            "confidence": "high",
+            "evidence": [
+              "navigator.webdriver is set",
+              "Lightpanda/HeadlessChrome UA, HeadlessChrome appVersion/Client Hints, or webdriver flag"
+            ],
+            "alternatives": [
+              "playwright",
+              "puppeteer",
+              "selenium"
+            ]
+          },
+          "triggered": [
+            "isWebDriver",
+            "isHeadless"
+          ],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 0,
+        "blocked": true,
+        "reason": "detector",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "stock-playwright",
+      "repetition": 2,
+      "version": "155.0.8059.40",
+      "final": {
+        "detector": {
+          "isLegitClient": false,
+          "suspicionScore": 1,
+          "confidence": "high",
+          "automation": {
+            "isAutomated": true,
+            "kind": "browser-automation",
+            "confidence": "high",
+            "evidence": [
+              "navigator.webdriver is set",
+              "Lightpanda/HeadlessChrome UA, HeadlessChrome appVersion/Client Hints, or webdriver flag"
+            ],
+            "alternatives": [
+              "playwright",
+              "puppeteer",
+              "selenium"
+            ]
+          },
+          "triggered": [
+            "isWebDriver",
+            "isHeadless"
+          ],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 0,
+        "blocked": true,
+        "reason": "detector",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "marker-disabled-playwright",
+      "repetition": 0,
+      "version": "155.0.8059.40",
+      "final": {
+        "detector": {
+          "isLegitClient": true,
+          "suspicionScore": 0,
+          "confidence": "low",
+          "automation": {
+            "isAutomated": false,
+            "kind": "unknown",
+            "confidence": "low",
+            "evidence": [],
+            "alternatives": []
+          },
+          "triggered": [],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "marker-disabled-playwright",
+      "repetition": 1,
+      "version": "155.0.8059.40",
+      "final": {
+        "detector": {
+          "isLegitClient": true,
+          "suspicionScore": 0,
+          "confidence": "low",
+          "automation": {
+            "isAutomated": false,
+            "kind": "unknown",
+            "confidence": "low",
+            "evidence": [],
+            "alternatives": []
+          },
+          "triggered": [],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "marker-disabled-playwright",
+      "repetition": 2,
+      "version": "155.0.8059.40",
+      "final": {
+        "detector": {
+          "isLegitClient": true,
+          "suspicionScore": 0,
+          "confidence": "low",
+          "automation": {
+            "isAutomated": false,
+            "kind": "unknown",
+            "confidence": "low",
+            "evidence": [],
+            "alternatives": []
+          },
+          "triggered": [],
+          "isCdpDetected": false,
+          "isPlaywright": false
+        },
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      }
+    }
+  ]
+}

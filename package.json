@@ -34,7 +34,8 @@
     "verify:combined-guards": "node scripts/benchmark-bare-cdp.mjs --all-guards --require-blocking",
     "benchmark:persistent-device": "node scripts/benchmark-persistent-device.mjs",
     "benchmark:native-select": "node scripts/benchmark-native-select.mjs",
-    "verify:native-select": "node scripts/benchmark-native-select.mjs --require-blocking"
+    "verify:native-select": "node scripts/benchmark-native-select.mjs --require-blocking",
+    "benchmark:bot-signal": "node scripts/benchmark-bot-signal.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
@@ -42,6 +43,7 @@
   "devDependencies": {
     "@fingerprintjs/botd": "2.0.0",
     "@playwright/test": "1.64.0",
+    "bot-signal": "2.0.18",
     "pngjs": "7.0.0",
     "vite": "8.3.4"
   }
