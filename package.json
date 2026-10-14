@@ -55,7 +55,9 @@
     "benchmark:clock-guard-virtual": "RESULT_PATH=docs/clock-guard-virtual-results.json CAPTURE_FRAMES=16 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --virtual-clock --clock-guard",
     "benchmark:clock-guard-lean": "RESULT_PATH=docs/clock-guard-lean-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture",
     "benchmark:document-pip": "node scripts/benchmark-document-pip.mjs",
-    "verify:current-stack": "RESULT_PATH=docs/current-stack-verification-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --require-blocking"
+    "verify:current-stack": "RESULT_PATH=docs/current-stack-verification-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames --require-blocking",
+    "benchmark:jitter-unaligned": "RESULT_PATH=docs/jitter-unaligned-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask",
+    "benchmark:jitter-aligned": "RESULT_PATH=docs/jitter-aligned-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

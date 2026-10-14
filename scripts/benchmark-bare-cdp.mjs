@@ -14,6 +14,8 @@ const stableColumns=process.argv.includes('--stable-columns');
 const virtualClock=process.argv.includes('--virtual-clock');
 const clockGuard=process.argv.includes('--clock-guard');
 const leanCapture=process.argv.includes('--lean-capture');
+const jitterMask=process.argv.includes('--jitter-mask');
+const alignFrames=process.argv.includes('--align-frames');
 const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
 assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
@@ -57,7 +59,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if(mode!=='bare'&&mode!=='runtime-late') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':'')+(clockGuard?'&clock=on':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':'')+(clockGuard?'&clock=on':'')+(jitterMask?'&jitter=on':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
     assert.ok(!navigation.errorText,navigation.errorText);
     if(layered) {
       let ready=false;
@@ -95,6 +97,15 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
         images.push(PNG.sync.read(Buffer.from(capture.data,'base64')));
         if(frameCount>1&&!fastCapture) await new Promise(resolve=>setTimeout(resolve,19));
       }
+      const shifts=[];
+      if(cropped&&alignFrames){
+        const bottoms=images.map(png=>{let bottom=0;for(let y=40;y<85;y++){let white=0;for(let slot=0;slot<3;slot++)for(let x=10+slot*230;x<190+slot*230;x++){const i=(y*png.width+x)*4;if(png.data[i]>180&&png.data[i+1]>180&&png.data[i+2]>180)white++;}if(white>8)bottom=y;}return bottom;});
+        for(let frame=0;frame<images.length;frame++){
+          const original=images[frame],aligned=PNG.sync.read(PNG.sync.write(original)),shift=bottoms[frame]-bottoms[0];shifts.push(shift);
+          for(let y=35;y<90;y++){const from=y+shift;if(from>=0&&from<original.height)original.data.copy(aligned.data,y*original.width*4,from*original.width*4,(from+1)*original.width*4);}
+          images[frame]=aligned;
+        }
+      }
       const combined=PNG.sync.read(PNG.sync.write(images[0]));
       if(cropped) {
         // Visible columns retain the colored button background; hidden noise is grayscale.
@@ -131,7 +142,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       const path=`${directory}/${mode}-${repetition}-${captureIndex++}.png`;
       await writeFile(path,PNG.sync.write(combined));
       const {stdout}=await execute('/private/tmp/anti-agent-ocr',[path]);
-      captureTimings.push({frameCount,cropped,elapsedMs:Date.now()-started});
+      captureTimings.push({frameCount,cropped,shifts,elapsedMs:Date.now()-started});
       return JSON.parse(stdout).map(item=>cropped?{...item,x:(220+item.x*670)/1280,y:(300+item.y*110)/900}:item);
     }
     const initial=leanCapture?[]:await observe();

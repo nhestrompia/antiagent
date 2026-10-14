@@ -16,6 +16,7 @@ const combinedMode = layeredMode || parameters.get('defense') === 'combined';
 const freshnessMode = layeredMode && parameters.get('fresh') === 'on';
 const decoyMask = layeredMode && parameters.get('mask') === 'decoy';
 const clockGuard = layeredMode && parameters.get('clock') === 'on';
+const jitterMask = layeredMode && parameters.get('jitter') === 'on';
 let layoutEpoch = 0;
 const temporalMode = combinedMode ? 'noise' : parameters.get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
@@ -47,6 +48,7 @@ function paintFrame() {
   context.fillText(`Decision ${state.step + 1} of 3`, 40, 110);
   const phases = temporalMode === 'noise' ? 2 : 4;
   const phase = temporal ? crypto.getRandomValues(new Uint32Array(1))[0] % phases : 0;
+  const textShift=jitterMask?crypto.getRandomValues(new Uint8Array(1))[0]%9-4:0;
   layouts[state.step].forEach((choice, slot) => {
     const left = 40 + slot * 230;
     context.fillStyle = '#116456'; context.fillRect(left, 200, 180, 70);
@@ -57,7 +59,7 @@ function paintFrame() {
       context.clip();
     }
     // Hidden columns never enter a reusable full-text bitmap.
-    context.fillStyle = '#fff'; context.fillText(choice, left + 10, 240);
+    context.fillStyle = '#fff'; context.fillText(choice, left + 10, 240+textShift);
     context.restore();
     if (temporalMode === 'noise' && decoyMask) {
       context.save(); context.beginPath();
@@ -65,7 +67,7 @@ function paintFrame() {
       context.clip();context.fillStyle='#116456';context.fillRect(left,200,180,70);
       const alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
       const values=crypto.getRandomValues(new Uint8Array(20));
-      context.fillStyle='#fff';context.fillText(Array.from(values,value=>alphabet[value%alphabet.length]).join(''),left+10,240);
+      context.fillStyle='#fff';context.fillText(Array.from(values,value=>alphabet[value%alphabet.length]).join(''),left+10,240+textShift);
       context.restore();
     } else if (temporalMode === 'noise') {
       const pixels = context.getImageData(left, 200, 180, 70);
