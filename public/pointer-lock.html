@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><meta charset="UTF-8"><title>Anti-Agent pointer lock control</title>
+<style>body{margin:32px;font:16px system-ui}canvas{display:block;background:#116456}</style><button id="lock">Start pointer-lock test</button><canvas width="720" height="480"></canvas><pre id="status"></pre>
+<script>
+const canvas=document.querySelector('canvas'),state={locked:false,error:null,events:[]};
+const update=()=>document.querySelector('#status').textContent=JSON.stringify(state);
+document.querySelector('#lock').addEventListener('click',()=>canvas.requestPointerLock().catch(error=>{state.error=error.name;state.message=error.message;state.focused=document.hasFocus();update();}));
+document.addEventListener('pointerlockchange',()=>{state.locked=document.pointerLockElement===canvas;update();});
+document.addEventListener('mousemove',event=>{state.events.push({locked:state.locked,trusted:event.isTrusted,x:event.clientX,y:event.clientY,movementX:event.movementX,movementY:event.movementY});update();});
+window.pointerLockState=state;update();
+</script></html>

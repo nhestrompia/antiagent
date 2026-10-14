@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><meta charset="UTF-8"><title>Anti-Agent raw pointer control</title>
+<style>body{margin:32px;font:16px system-ui}canvas{display:block}</style><canvas width="720" height="480"></canvas><pre id="status"></pre>
+<script>
+const context=document.querySelector('canvas').getContext('2d');context.fillStyle='#116456';context.fillRect(0,0,720,480);
+const records=[];
+for(const type of ['pointerrawupdate','pointermove','mousemove','pointerdown','mousedown','click'])document.querySelector('canvas').addEventListener(type,event=>{
+ records.push({type:event.type,trusted:event.isTrusted,x:event.clientX,y:event.clientY,movementX:event.movementX,movementY:event.movementY,pointerType:event.pointerType??null,pointerId:event.pointerId??null,pressure:event.pressure??null,coalesced:event.getCoalescedEvents?.().map(e=>({x:e.clientX,y:e.clientY,movementX:e.movementX,movementY:e.movementY}))??null,predicted:event.getPredictedEvents?.().length??null,firesTouchEvents:event.sourceCapabilities?.firesTouchEvents??null});
+ document.querySelector('#status').textContent=JSON.stringify(records);
+});
+window.rawPointerRecords=records;
+</script></html>
