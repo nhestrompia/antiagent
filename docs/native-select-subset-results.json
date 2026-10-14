@@ -1,0 +1,289 @@
+{
+  "results": [
+    {
+      "strategy": "heap-observer-character-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "disabledObservers": 1,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "\"clear\": true,",
+          "\"harden\": true,",
+          "\"hide\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"bf0fa26a-a6bf-4a00-98ac-f10b326c62d3\"></option><option value=\"1f76da1b-7f2d-4f0c-8577-b3bd57bfe69c\"></option><option value=\"c1a93001-72a4-48f6-861c-b0272d75c4e2\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "HeapProfiler.enable",
+        "HeapProfiler.takeHeapSnapshot",
+        "HeapProfiler.getObjectByHeapObjectId",
+        "Runtime.callFunctionOn",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "heap-observer-character-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "disabledObservers": 1,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "\"clear\": true,",
+          "\"harden\": true,",
+          "\"hide\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"9c748077-ac2b-4007-9723-e11e3a4d677c\"></option><option value=\"aa471a6b-fd63-4770-b808-b23328f2b411\"></option><option value=\"d111a24e-9bc3-4a78-ac6a-b12ede624a72\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "HeapProfiler.enable",
+        "HeapProfiler.takeHeapSnapshot",
+        "HeapProfiler.getObjectByHeapObjectId",
+        "Runtime.callFunctionOn",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "heap-observer-character-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 1,
+      "disabledObservers": 1,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "\"clear\": true,",
+          "\"harden\": true,",
+          "\"hide\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"24ae52f5-a14c-4f6b-981c-6cdb9cb9fb0b\"></option><option value=\"e9a1ed27-0ef3-4fc0-8b13-e6b4794a1779\"></option><option value=\"b1c309fc-5c36-4292-91a8-69acf568a8fb\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "hide": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "HeapProfiler.enable",
+        "HeapProfiler.takeHeapSnapshot",
+        "HeapProfiler.getObjectByHeapObjectId",
+        "Runtime.callFunctionOn",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    }
+  ]
+}

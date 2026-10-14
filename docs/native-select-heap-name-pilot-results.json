@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "strategy": "heap-observer-character-selection",
+      "repetition": 0,
+      "error": "No disconnectable observer in 0 heap candidates"
+    },
+    {
+      "strategy": "heap-observer-character-selection",
+      "repetition": 1,
+      "error": "No disconnectable observer in 0 heap candidates"
+    },
+    {
+      "strategy": "heap-observer-character-selection",
+      "repetition": 2,
+      "error": "No disconnectable observer in 0 heap candidates"
+    }
+  ]
+}

@@ -12,10 +12,13 @@ layout.forEach((label,index)=>select.add(new Option(label,values[index])));
 const expected=values[layout.indexOf('Harbor Research')];
 const parameters=new URLSearchParams(location.search);
 const harden=parameters.get('harden')==='on';
+const hide=parameters.get('hide')==='on';
 const clear=harden||parameters.get('clear')==='on';
 let clearedMarkup;
-new MutationObserver(()=>{if(harden&&state.labelsCleared&&!state.blocked&&select.outerHTML!==clearedMarkup){state.blocked=true;state.reason='dom-tamper';report();}}).observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true});
-const state={clear,harden,focused:document.hasFocus(),accepted:0,blocked:false,lastChangeTrusted:null,labelsCleared:false,popupOpen:false,events:[]};
+const observer=new MutationObserver(()=>{if(harden&&state.labelsCleared&&!state.blocked&&select.outerHTML!==clearedMarkup){state.blocked=true;state.reason='dom-tamper';report();}});
+observer.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true});
+if(hide){Object.setPrototypeOf(observer,null);Object.freeze(observer);}
+const state={clear,harden,hide,focused:document.hasFocus(),accepted:0,blocked:false,lastChangeTrusted:null,labelsCleared:false,popupOpen:false,events:[]};
 function report(){state.focused=document.hasFocus();state.popupOpen=CSS.supports('selector(:open)')?select.matches(':open'):null;document.querySelector('pre').textContent=JSON.stringify(state,null,2);document.title='Select result:'+JSON.stringify(state);}
 select.addEventListener('pointerdown',event=>{
   state.events.push({type:'pointerdown',trusted:event.isTrusted});

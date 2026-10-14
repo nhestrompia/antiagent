@@ -11,11 +11,13 @@ export async function launchRawCDP({ headless = true } = {}) {
   ], { stdio: 'ignore' });
   let socket;
   const pending = new Map();
+  const listeners = new Map();
   const commands = [];
   let nextId = 0;
   async function close() {
     for (const request of pending.values()) { clearTimeout(request.timer); request.reject(new Error('CDP session closed')); }
     pending.clear();
+    listeners.clear();
     socket?.close();
     if (child.exitCode === null && child.signalCode === null) {
       const exited = new Promise(resolve => child.once('exit', resolve));
@@ -39,6 +41,10 @@ export async function launchRawCDP({ headless = true } = {}) {
     await new Promise((resolve, reject) => { socket.addEventListener('open', resolve, { once: true }); socket.addEventListener('error', reject, { once: true }); });
     socket.addEventListener('message', event => {
       const message = JSON.parse(event.data);
+      if (message.method) {
+        for (const listener of listeners.get(`${message.sessionId || ''}:${message.method}`) || []) listener(message.params);
+        return;
+      }
       const request = pending.get(message.id);
       if (!request) return;
       pending.delete(message.id); clearTimeout(request.timer);
@@ -54,6 +60,12 @@ export async function launchRawCDP({ headless = true } = {}) {
         socket.send(JSON.stringify({ id, method, params, ...(sessionId ? { sessionId } : {}) }));
       });
     }
-    return { send, commands, close };
+    function onEvent(method, sessionId, listener) {
+      const key = `${sessionId || ''}:${method}`;
+      if (!listeners.has(key)) listeners.set(key, new Set());
+      listeners.get(key).add(listener);
+      return () => { listeners.get(key)?.delete(listener); if (!listeners.get(key)?.size) listeners.delete(key); };
+    }
+    return { send, commands, close, onEvent };
   } catch (error) { await close(); throw error; }
 }

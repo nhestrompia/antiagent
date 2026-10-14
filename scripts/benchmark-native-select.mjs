@@ -5,7 +5,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { launchRawCDP } from './raw-cdp.mjs';
 const execute=promisify(execFile),results=[];
 await mkdir('artifacts/native-select',{recursive:true});
-for(const strategy of (process.env.STRATEGIES?.split(',')||['character-selection','cleared-character-selection','hardened-character-selection','observer-query-character-selection','synthetic-selection'])) for(let repetition=0;repetition<3;repetition++) {
+for(const strategy of (process.env.STRATEGIES?.split(',')||['character-selection','cleared-character-selection','hardened-character-selection','observer-query-character-selection','hidden-observer-query-character-selection','heap-observer-character-selection','synthetic-selection'])) for(let repetition=0;repetition<3;repetition++) {
   const chrome=await launchRawCDP({headless:false});
   try {
     const version=await chrome.send('Browser.getVersion');
@@ -14,7 +14,7 @@ for(const strategy of (process.env.STRATEGIES?.split(',')||['character-selection
     const send=(method,params)=>chrome.send(method,params,sessionId);
     await chrome.send('Target.activateTarget',{targetId});
     await send('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
-    await send('Page.navigate',{url:`http://127.0.0.1:5173/native-select.html${(strategy.startsWith('hardened-')||strategy.startsWith('observer-query-'))?'?harden=on':strategy.startsWith('cleared-')?'?clear=on':''}`});
+    await send('Page.navigate',{url:`http://127.0.0.1:5173/native-select.html${(strategy.startsWith('hidden-')||strategy.startsWith('paused-')||strategy.startsWith('heap-'))?'?harden=on&hide=on':(strategy.startsWith('hardened-')||strategy.startsWith('observer-query-'))?'?harden=on':strategy.startsWith('cleared-')?'?clear=on':''}`});
     async function report(){
       for(let attempt=0;attempt<50;attempt++) {
         const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});
@@ -33,7 +33,7 @@ for(const strategy of (process.env.STRATEGIES?.split(',')||['character-selection
     async function clickNode(id){const {model}=await send('DOM.getBoxModel',{nodeId:id});const [x0,y0,x1,y1,,y2]=model.content;const point={x:(x0+x1)/2,y:(y0+y2)/2};for(const type of ['mousePressed','mouseReleased']) await send('Input.dispatchMouseEvent',{type,...point,button:'left',buttons:type==='mousePressed'?1:0,clickCount:1});}
     async function key(key,code,keyCode){for(const type of ['rawKeyDown','keyUp']) await send('Input.dispatchKeyEvent',{type,key,code,windowsVirtualKeyCode:keyCode});}
     let popup=null,labelsAfterOpen=null,disabledObservers=null;
-    if(strategy.includes('popup')||['cleared-character-selection','hardened-character-selection','observer-query-character-selection'].includes(strategy)) {
+    if(strategy.includes('popup')||['cleared-character-selection','hardened-character-selection','observer-query-character-selection','hidden-observer-query-character-selection','paused-observer-character-selection','heap-observer-character-selection'].includes(strategy)) {
       await clickNode(nodeId);await new Promise(resolve=>setTimeout(resolve,250));popup=await report();
       const capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false});
       const path=`artifacts/native-select/${strategy}-${repetition}-popup.png`;await writeFile(path,Buffer.from(capture.data,'base64'));
@@ -44,13 +44,54 @@ for(const strategy of (process.env.STRATEGIES?.split(',')||['character-selection
     if(strategy==='synthetic-selection') {
       await send('Runtime.evaluate',{expression:`(()=>{const s=document.querySelector('select');s.value=${JSON.stringify(options[targetIndex].value)};s.dispatchEvent(new Event('change',{bubbles:true}));})()`});
     } else if(strategy.includes('character-selection')) {
-      if(strategy==='observer-query-character-selection') {
+      if(strategy.includes('observer-query-character-selection')) {
         const prototype=await send('Runtime.evaluate',{expression:'MutationObserver.prototype'});
         const objects=await send('Runtime.queryObjects',{prototypeObjectId:prototype.result.objectId});
         const disconnected=await send('Runtime.callFunctionOn',{objectId:objects.objects.objectId,functionDeclaration:'function(){for(const observer of this) observer.disconnect();return this.length;}',returnByValue:true});
-        disabledObservers=disconnected.result.value;assert.ok(disabledObservers>0,'No observer found to test the guard bypass');
+        disabledObservers=disconnected.result.value;
+        if(strategy==='hidden-observer-query-character-selection') assert.equal(disabledObservers,0);
+        else assert.ok(disabledObservers>0,'No observer found to test the guard bypass');
       }
-      if(['cleared-character-selection','hardened-character-selection','observer-query-character-selection'].includes(strategy)) {
+      if(strategy==='heap-observer-character-selection') {
+        await send('HeapProfiler.enable');
+        const chunks=[];
+        const dispose=chrome.onEvent('HeapProfiler.addHeapSnapshotChunk',sessionId,event=>chunks.push(event.chunk));
+        try {await send('HeapProfiler.takeHeapSnapshot',{reportProgress:false,exposeInternals:true,captureNumericValue:true});} finally {dispose();}
+        const heap=JSON.parse(chunks.join(''));
+        const fields=heap.snapshot.meta.node_fields,width=fields.length;
+        const types=heap.snapshot.meta.node_types[fields.indexOf('type')];
+        const candidates=[];
+        for(let offset=0;offset<heap.nodes.length;offset+=width) {
+          const name=heap.strings[heap.nodes[offset+fields.indexOf('name')]];
+          if((types[heap.nodes[offset+fields.indexOf('type')]]==='object'||name==='MutationObserver')) candidates.push(heap.nodes[offset+fields.indexOf('id')]);
+        }
+        disabledObservers=0;
+        for(let start=0;start<candidates.length;start+=30) {
+          const matches=await Promise.all(candidates.slice(start,start+30).map(async id=>{
+            try {
+              const object=await send('HeapProfiler.getObjectByHeapObjectId',{objectId:String(id),objectGroup:'observer-attack'});
+              const disconnected=await send('Runtime.callFunctionOn',{objectId:object.result.objectId,functionDeclaration:'function(){MutationObserver.prototype.disconnect.call(this);return true;}',returnByValue:true});
+              return !disconnected.exceptionDetails;
+            } catch {return false;}
+          }));
+          disabledObservers+=matches.filter(Boolean).length;
+        }
+        assert.ok(disabledObservers>0,`No disconnectable observer in ${candidates.length} heap candidates`);
+      }
+      if(strategy==='paused-observer-character-selection') {
+        await send('Debugger.enable');
+        const paused=new Promise((resolve,reject)=>{
+          const timer=setTimeout(()=>{dispose();reject(new Error('Debugger pause did not arrive'));},10000);
+          const dispose=chrome.onEvent('Debugger.paused',sessionId,event=>{clearTimeout(timer);dispose();resolve(event);});
+        });
+        await send('Debugger.pause');
+        const event=await paused;
+        const disconnected=await send('Debugger.evaluateOnCallFrame',{callFrameId:event.callFrames[0].callFrameId,expression:'MutationObserver.prototype.disconnect.call(observer)'});
+        assert.ok(!disconnected.exceptionDetails,JSON.stringify(disconnected.exceptionDetails));
+        disabledObservers=1;
+        await send('Debugger.resume');
+      }
+      if(['cleared-character-selection','hardened-character-selection','observer-query-character-selection','hidden-observer-query-character-selection','paused-observer-character-selection','heap-observer-character-selection'].includes(strategy)) {
         await send('DOM.setOuterHTML',{nodeId,outerHTML:labelsAfterOpen.replace(/<option value="([^"]*)"><\/option>/g,(match,value)=>value===options[targetIndex].value?`<option value="${value}">Harbor Research</option>`:match)});
         const refreshed=await send('DOM.querySelector',{nodeId:root.nodeId,selector:'#destination'});await send('DOM.focus',{nodeId:refreshed.nodeId});
       }
@@ -62,14 +103,14 @@ for(const strategy of (process.env.STRATEGIES?.split(',')||['character-selection
     }
     const button=await send('DOM.querySelector',{nodeId:root.nodeId,selector:'#confirm'});await clickNode(button.nodeId);
     const final=await report();
-    if(strategy==='synthetic-selection'||strategy==='hardened-character-selection') {assert.equal(final.blocked,true);assert.equal(final.accepted,0);if(strategy==='hardened-character-selection') assert.equal(final.reason,'dom-tamper');}
+    if(strategy==='synthetic-selection'||strategy==='hardened-character-selection'||strategy==='hidden-observer-query-character-selection') {assert.equal(final.blocked,true);assert.equal(final.accepted,0);if(strategy==='hardened-character-selection'||strategy==='hidden-observer-query-character-selection') assert.equal(final.reason,'dom-tamper');}
     else {assert.equal(final.accepted,1,JSON.stringify(final));assert.equal(final.blocked,false);assert.equal(final.lastChangeTrusted,true);}
-    if(strategy.startsWith('cleared-')||strategy.startsWith('hardened-')) {assert.equal(popup.labelsCleared,true);assert.ok(!labelsAfterOpen.includes('Harbor Research'));}
+    if(strategy.startsWith('cleared-')||strategy.startsWith('hardened-')||strategy.startsWith('hidden-')||strategy.startsWith('paused-')||strategy.startsWith('heap-')) {assert.equal(popup.labelsCleared,true);assert.ok(!labelsAfterOpen.includes('Harbor Research'));}
     results.push({strategy,repetition,version:version.product,targetIndex,disabledObservers,popup,labelsAfterOpen,final,commands:[...new Set(chrome.commands)]});
   } catch(error){results.push({strategy,repetition,error:error.message});}
   finally {await chrome.close();}
 }
-await writeFile('docs/native-select-results.json',JSON.stringify({results},null,2));
+await writeFile(process.env.STRATEGIES?'docs/native-select-subset-results.json':'docs/native-select-results.json',JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({strategy,repetition,disabledObservers,popup,final,error})=>({strategy,repetition,disabledObservers,popupOpen:popup?.popupOpen,labelsCleared:popup?.labelsCleared,accepted:final?.accepted,blocked:final?.blocked,error})),null,2));
 assert.equal(results.filter(result=>result.error).length,0,'One or more native select cases failed');
 
