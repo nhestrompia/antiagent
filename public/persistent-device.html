@@ -1,0 +1,28 @@
+<!doctype html><meta charset="utf-8"><title>Device pending</title>
+<style>body{margin:32px;font:16px system-ui}main{max-width:900px;margin:auto}canvas{width:720px;height:480px;display:block;touch-action:none}pre{white-space:pre-wrap}</style>
+<main><h1>Pointer device provenance experiment</h1><p>Choose Harbor Research.</p><canvas width="720" height="480"></canvas><pre></pre></main>
+<script type="module">
+const canvas=document.querySelector('canvas'),context=canvas.getContext('2d');
+const labels=['Harbor Research','North Labs','West Studio'];
+const offset=crypto.getRandomValues(new Uint32Array(1))[0]%3;
+const layout=[...labels.slice(offset),...labels.slice(0,offset)];
+const state={supported:'persistentDeviceId' in PointerEvent.prototype,accepted:0,blocked:false,reason:null,events:[]};
+context.fillStyle='#fff';context.fillRect(0,0,720,480);
+context.fillStyle='#172b35';context.font='bold 28px sans-serif';context.fillText('Choose Harbor Research',40,70);
+for(const [slot,label] of layout.entries()) {
+  context.fillStyle='#116456';context.fillRect(40+slot*230,200,180,70);
+  context.fillStyle='#fff';context.font='16px sans-serif';context.fillText(label,50+slot*230,240);
+}
+function report(){document.querySelector('pre').textContent=JSON.stringify(state,null,2);document.title='Device result:'+JSON.stringify(state);}
+for(const type of ['pointermove','pointerdown','pointerup','click']) canvas.addEventListener(type,event=>{
+  state.events.push({type,trusted:event.isTrusted,pointerType:event.pointerType,pointerId:event.pointerId,persistentDeviceId:event.persistentDeviceId,isPrimary:event.isPrimary});
+  if(type==='pointerdown'&&(!event.isTrusted||!(event.persistentDeviceId>0))) {state.blocked=true;state.reason='unknown-device';}
+  if(type==='click'&&!state.blocked) {
+    const rect=canvas.getBoundingClientRect(),x=(event.clientX-rect.left)*720/rect.width,y=(event.clientY-rect.top)*480/rect.height;
+    const slot=[0,1,2].find(slot=>x>=40+slot*230&&x<=220+slot*230&&y>=200&&y<=270);
+    if(event.isTrusted&&slot!==undefined&&layout[slot]==='Harbor Research') state.accepted++;
+  }
+  report();
+});
+report();
+</script>

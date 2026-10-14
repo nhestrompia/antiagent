@@ -31,7 +31,8 @@
     "benchmark:isolated-frame": "node scripts/generate-isolated-frame.mjs && node scripts/benchmark-bare-cdp.mjs --isolated",
     "benchmark:desynchronized-canvas": "node scripts/benchmark-desynchronized-canvas.mjs",
     "benchmark:combined-guards": "node scripts/benchmark-bare-cdp.mjs --all-guards",
-    "verify:combined-guards": "node scripts/benchmark-bare-cdp.mjs --all-guards --require-blocking"
+    "verify:combined-guards": "node scripts/benchmark-bare-cdp.mjs --all-guards --require-blocking",
+    "benchmark:persistent-device": "node scripts/benchmark-persistent-device.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
