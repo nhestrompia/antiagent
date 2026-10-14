@@ -172,6 +172,13 @@ if (layeredMode && !state.blocked) {
     },true);
   }
 }
+if (layeredMode && !state.blocked) {
+  const monitor=setInterval(()=>{
+    if(state.blocked||state.completed){clearInterval(monitor);return;}
+    if(inspectRuntimeCost().suspected) block('runtime-attached');
+  },1000);
+  window.addEventListener('pagehide',()=>clearInterval(monitor),{once:true});
+}
 state.ready=true;
 document.title='Defense ready';
 draw();

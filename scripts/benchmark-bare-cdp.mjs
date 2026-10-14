@@ -26,7 +26,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     const send=(method,params)=>chrome.send(method,params,sessionId);
     await chrome.send('Target.activateTarget',{targetId});
     await send('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
-    if(mode!=='bare') await send('Runtime.enable');
+    if(mode!=='bare'&&mode!=='runtime-late') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
     await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered':allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
@@ -40,6 +40,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});
       assert.equal(targetInfo.title,'Isolated frame SecurityError');
     }
+    if(mode==='runtime-late') {await send('Runtime.enable');await new Promise(resolve=>setTimeout(resolve,2200));}
     let captureIndex=0;
     async function observe(frameCount=1) {
       const images=[];
@@ -70,7 +71,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     }
     const initial=await observe();
     const observations=[];
-    if(mode!=='runtime-enabled'||isolated) for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
+    if((mode!=='runtime-enabled'&&mode!=='runtime-late')||isolated) for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
       await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:250,y:180});
       await new Promise(resolve=>setTimeout(resolve,100));
       const text=await observe(allGuards?64:1);
@@ -90,14 +91,14 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     const completed=final.some(item=>textDistance(item.text,'Task complete')<=2);
     const text=final.map(item=>item.text).join('').toLowerCase().replace(/\s/g,'');
     const blocked=text.includes('"blocked":true');
-    if(mode==='runtime-enabled'&&!isolated) {assert.equal(completed,false);assert.equal(blocked,true);assert.ok(text.includes('runtime-cost'));}
+    if((mode==='runtime-enabled'||mode==='runtime-late')&&!isolated) {assert.equal(completed,false);assert.equal(blocked,true);assert.ok(text.includes(mode==='runtime-late'?'runtime-attached':'runtime-cost'));}
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
     results.push({mode,repetition,version:version.product,completed,blocked,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,observations,initial,final,commands:[...new Set(chrome.commands)]});
   } catch(error) {results.push({mode,repetition,error:error.message});}
   finally {await chrome.close();}
 }
-await writeFile(layered?'docs/layered-guards-results.json':allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
+await writeFile(layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
 assert.equal(results.filter(result=>result.error).length,0,'One or more capture/input cases did not finish');
 
