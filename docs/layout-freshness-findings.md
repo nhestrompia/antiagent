@@ -1,0 +1,11 @@
+# Layout freshness against screenshot/input agents
+
+The opt-in `?defense=layered&fresh=on` mode rotates the current choices every three seconds and binds pointer transactions to the layout generation at the start of their motion. A press tied to an expired generation is rejected. An already armed press/release transaction postpones rotation so that its layout does not change during the click. The first trusted motion records the current generation, including after an idle period. This does not detect capture itself.
+
+The original 64-frame median client could not recover an exact choice label in any of three trials. The app remained unblocked in those observations, so these are incomplete reading attempts, not three explicit prevention successes. The changing layout mixes choice pixels across its capture window. Results are retained in `freshness-slow-results.json`; the expected-completion benchmark exits nonzero for these incomplete cases.
+
+An adapted bare-CDP client primes a pointer trajectory, presses the first choice, collects screenshots while the transaction holds the layout, cancels by releasing outside the canvas, then uses the observed correct choice. It uses wall-clock alignment against the public three-second interval. It changes no DOM, app state, or JavaScript and issues no Runtime/Debugger commands. One of three sessions completed all original task actions; one was explicitly blocked and one failed to read a label. `freshness-hold-results.json` records the mixed outcomes. One successful session is sufficient to reject agent-proof prevention.
+
+The first run was made with the local server unavailable; `freshness-server-pilot-results.json` records those initialization failures. Navigation errors now fail immediately with their protocol error rather than waiting for application initialization. No infrastructure error is counted as a block.
+
+This is presentation and input research, not a package default. Changing controls while a person reads them can harm usability and accessibility. Human operation and false-positive rates remain unvalidated. The timer does not create protected pixels or human input provenance. The held-transaction exception creates a concrete adaptive observation window that requires further testing.

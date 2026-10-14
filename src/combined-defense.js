@@ -13,6 +13,8 @@ const status = document.querySelector('#status');
 const parameters = new URLSearchParams(location.search);
 const layeredMode = parameters.get('defense') === 'layered';
 const combinedMode = layeredMode || parameters.get('defense') === 'combined';
+const freshnessMode = layeredMode && parameters.get('fresh') === 'on';
+let layoutEpoch = 0;
 const temporalMode = combinedMode ? 'noise' : parameters.get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
 const tasks = [
@@ -83,7 +85,7 @@ for (const name of ['__playwright_global_listeners_check__', '__playwright_snaps
   window.addEventListener(name, () => block('playwright-runtime-event'), true);
 }
 // Experimental pointer continuity. CDP can reproduce this sequence.
-let motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false };
+let motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false, epoch: layoutEpoch };
 function pointerPosition(event) {
   const rect = canvas.getBoundingClientRect();
   const x = (event.clientX - rect.left) * 720 / rect.width;
@@ -96,7 +98,7 @@ canvas.addEventListener('pointermove', event => {
   const point = pointerPosition(event), now = performance.now();
   if (motion.armed && point.slot !== motion.armed.slot) { block('pointer-transaction'); return; }
   if (!motion.samples) {
-    motion.start = now;
+    motion.start = now; motion.epoch = layoutEpoch;
     // A first pointer observation invalidates the previous choice positions.
     layouts[state.step].push(layouts[state.step].shift());
     draw();
@@ -110,13 +112,14 @@ canvas.addEventListener('pointerdown', event => {
   const point = pointerPosition(event), now = performance.now();
   motion.armed = false;
   if (point.slot === undefined) return;
+  if (freshnessMode && motion.epoch !== layoutEpoch) { block('expired-layout'); return; }
   const allowed = event.button === 0 && event.isPrimary && event.isTrusted && motion.samples >= 4 && motion.distance >= 32 && now - motion.start >= 120 && point.slot === motion.slot && now - motion.entered >= 150;
   if (!allowed) block('pointer-continuity');
-  else motion.armed = { pointerId: event.pointerId, slot: point.slot, released: false };
+  else motion.armed = { pointerId: event.pointerId, slot: point.slot, released: false, epoch: layoutEpoch };
 });
 canvas.addEventListener('pointerup', event => {
   if (state.blocked || state.completed || !motion.armed) return;
-  if (!event.isTrusted || event.button !== 0 || event.pointerId !== motion.armed.pointerId || pointerPosition(event).slot !== motion.armed.slot) {
+  if ((freshnessMode && motion.armed.epoch !== layoutEpoch) || !event.isTrusted || event.button !== 0 || event.pointerId !== motion.armed.pointerId || pointerPosition(event).slot !== motion.armed.slot) {
     block('pointer-transaction'); return;
   }
   motion.armed.released = true;
@@ -134,11 +137,11 @@ canvas.addEventListener('click', event => {
   const x = (event.clientX - rect.left) * 720 / rect.width;
   const y = (event.clientY - rect.top) * 480 / rect.height;
   const slot = [0, 1, 2].find(slot => x >= 40 + slot * 230 && x <= 220 + slot * 230 && y >= 200 && y <= 270);
-  if (!motion.armed.released || event.pointerId !== motion.armed.pointerId || slot !== motion.armed.slot) { block('pointer-transaction'); return; }
+  if ((freshnessMode && motion.armed.epoch !== layoutEpoch) || !motion.armed.released || event.pointerId !== motion.armed.pointerId || slot !== motion.armed.slot) { block('pointer-transaction'); return; }
   motion.armed = false;
   state.clicks++;
   if (layouts[state.step][slot] !== tasks[state.step][1][0]) { block('incorrect-decision'); return; }
-  motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false };
+  motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false, epoch: layoutEpoch };
   state.step++; state.completed = state.step === tasks.length; draw();
 });
 if ((combinedMode || parameters.get('runtime') === 'on') && inspectRuntimeCost().suspected) block('runtime-cost');
@@ -178,6 +181,17 @@ if (layeredMode && !state.blocked) {
     if(inspectRuntimeCost().suspected) block('runtime-attached');
   },1000);
   window.addEventListener('pagehide',()=>clearInterval(monitor),{once:true});
+}
+if (freshnessMode && !state.blocked) {
+  const refresh=setInterval(()=>{
+    if(state.blocked||state.completed){clearInterval(refresh);return;}
+    // Preserve an already armed press/release transaction.
+    if(motion.armed) return;
+    layoutEpoch++;state.layoutEpoch=layoutEpoch;
+    layouts[state.step].push(layouts[state.step].shift());
+    draw();
+  },3000);
+  window.addEventListener('pagehide',()=>clearInterval(refresh),{once:true});
 }
 state.ready=true;
 document.title='Defense ready';

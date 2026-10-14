@@ -45,7 +45,9 @@
     "verify:protected-output": "node scripts/benchmark-protected-output.mjs --require-blocking",
     "benchmark:password-mask": "node scripts/benchmark-password-mask.mjs",
     "benchmark:agent-routes": "MODES=bare,runtime-enabled,runtime-zero,runtime-disabled node scripts/benchmark-bare-cdp.mjs --layered --audit",
-    "benchmark:agent-playwright": "node scripts/benchmark-agent-route-playwright.mjs"
+    "benchmark:agent-playwright": "node scripts/benchmark-agent-route-playwright.mjs",
+    "benchmark:layout-freshness": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness",
+    "benchmark:layout-hold": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
