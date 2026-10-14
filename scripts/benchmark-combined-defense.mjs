@@ -17,7 +17,7 @@ function textDistance(a, b) {
   }
   return row[right.length];
 }
-const strategies = process.env.STRATEGIES?.split(',') || ['default-playwright', 'locator-stealth', 'synthetic-input', 'render-hook', 'screenshot-cdp', 'adaptive-cdp', 'reactive-cdp', 'release-swap'];
+const strategies = process.env.STRATEGIES?.split(',') || ['default-playwright', 'locator-stealth', 'synthetic-input', 'render-hook', 'screenshot-cdp', 'adaptive-cdp', 'reactive-cdp', 'reactive-playwright', 'release-swap'];
 for (const strategy of strategies) {
   const browser = await chromium.launch({ channel: 'chrome', headless: false, args: strategy === 'default-playwright' ? [] : ['--disable-blink-features=AutomationControlled'] });
   try {
@@ -28,16 +28,22 @@ for (const strategy of strategies) {
         CanvasRenderingContext2D.prototype.fillText = function (...args) { return original.apply(this, args); };
       });
       await page.goto('http://127.0.0.1:5173/combined-defense.html');
-      const client = await page.context().newCDPSession(page);
+      const client = strategy === 'reactive-playwright' ? null : await page.context().newCDPSession(page);
+      async function sendMouse(event) {
+        if (client) return client.send('Input.dispatchMouseEvent', event);
+        if (event.type === 'mouseMoved') return page.mouse.move(event.x, event.y);
+        if (event.type === 'mousePressed') return page.mouse.down({ button: 'left' });
+        return page.mouse.up({ button: 'left' });
+      }
       if (strategy === 'locator-stealth') await page.locator('canvas').click({ position: { x: 130, y: 235 } });
       if (strategy === 'synthetic-input') await page.evaluate(() => document.querySelector('canvas').click());
       const observations = [];
-      if (['screenshot-cdp', 'adaptive-cdp', 'reactive-cdp', 'release-swap'].includes(strategy)) for (const label of ['Harbor Research', '125 EUR', 'Confirm transfer']) {
-        if (['reactive-cdp', 'release-swap'].includes(strategy)) {
-          await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 250, y: 180 });
+      if (['screenshot-cdp', 'adaptive-cdp', 'reactive-cdp', 'reactive-playwright', 'release-swap'].includes(strategy)) for (const label of ['Harbor Research', '125 EUR', 'Confirm transfer']) {
+        if (['reactive-cdp', 'reactive-playwright', 'release-swap'].includes(strategy)) {
+          await sendMouse({ type: 'mouseMoved', x: 250, y: 180 });
           await new Promise(resolve => setTimeout(resolve, 100));
         }
-        const capture = await client.send('Page.captureScreenshot', { fromSurface: true, captureBeyondViewport: false });
+        const capture = client ? await client.send('Page.captureScreenshot', { fromSurface: true, captureBeyondViewport: false }) : { data: (await page.screenshot({ fullPage: false })).toString('base64') };
         const path = `${directory}/${strategy}-${repetition}-${observations.length}.png`;
         await writeFile(path, Buffer.from(capture.data, 'base64'));
         const { stdout } = await execute('/private/tmp/anti-agent-ocr', [path]);
@@ -47,16 +53,16 @@ for (const strategy of strategies) {
         const point = { x: target.x * 1280, y: target.y * 900 };
         const pressPoint = strategy === 'release-swap' ? { x: point.x < 600 ? point.x + 230 : point.x - 230, y: point.y } : point;
         observations.push({ label, point, text });
-        if (['adaptive-cdp', 'reactive-cdp', 'release-swap'].includes(strategy)) {
+        if (['adaptive-cdp', 'reactive-cdp', 'reactive-playwright', 'release-swap'].includes(strategy)) {
           for (let sample = 0; sample < 8; sample++) {
-            await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: pressPoint.x - 70 + sample * 10, y: pressPoint.y - 70 + sample * 10 });
-            await new Promise(resolve => setTimeout(resolve, 30));
+            await sendMouse({ type: 'mouseMoved', x: pressPoint.x - 70 + sample * 10, y: pressPoint.y - 70 + sample * 10 });
+            await new Promise(resolve => setTimeout(resolve, 60));
           }
           await new Promise(resolve => setTimeout(resolve, 300));
         }
-        await client.send('Input.dispatchMouseEvent', { type: 'mousePressed', ...pressPoint, button: 'left', buttons: 1, clickCount: 1 });
-        if (strategy === 'release-swap') await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', ...point, buttons: 1 });
-        await client.send('Input.dispatchMouseEvent', { type: 'mouseReleased', ...point, button: 'left', buttons: 0, clickCount: 1 });
+        await sendMouse({ type: 'mousePressed', ...pressPoint, button: 'left', buttons: 1, clickCount: 1 });
+        if (strategy === 'release-swap') await sendMouse({ type: 'mouseMoved', ...point, buttons: 1 });
+        await sendMouse({ type: 'mouseReleased', ...point, button: 'left', buttons: 0, clickCount: 1 });
         if (['screenshot-cdp', 'adaptive-cdp', 'release-swap'].includes(strategy)) break;
       }
       // Outcome read happens only after the screenshot agent finishes its actions.
@@ -66,7 +72,7 @@ for (const strategy of strategies) {
         assert.equal(state.blocked, true, 'A press on another choice must not authorize this choice');
         assert.equal(state.completed, false);
         assert.equal(state.reason, 'pointer-transaction');
-      } else if (strategy === 'reactive-cdp') {
+      } else if (['reactive-cdp', 'reactive-playwright'].includes(strategy)) {
         assert.equal(state.completed, true, JSON.stringify(state)); assert.equal(state.blocked, false); assert.equal(state.clicks, 3);
       } else {
         assert.equal(state.blocked, true); assert.equal(state.completed, false);
@@ -80,3 +86,8 @@ for (const strategy of strategies) {
 }
 await writeFile('artifacts/combined-defense/results.json', JSON.stringify({ playwright: '1.64.0', results }, null, 2));
 console.log(JSON.stringify(results.map(({ strategy, repetition, state }) => ({ strategy, repetition, state }))));
+
+if (process.argv.includes('--require-blocking')) {
+  const bypasses = results.filter(({ state }) => state.completed || !state.blocked);
+  assert.equal(bypasses.length, 0, `Agent-proof acceptance failed: ${bypasses.length} sessions bypassed the guard. See ${directory}/results.json`);
+}

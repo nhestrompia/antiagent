@@ -1,0 +1,334 @@
+{
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "strategy": "default-playwright",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "webdriver",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "default-playwright",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "webdriver",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "default-playwright",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "webdriver",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "locator-stealth",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "playwright-target-event",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "locator-stealth",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "playwright-target-event",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "locator-stealth",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "playwright-target-event",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "synthetic-input",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "untrusted-input",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "synthetic-input",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "untrusted-input",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "synthetic-input",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "untrusted-input",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "render-hook",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "api-integrity:fillText:native-source,fillText:extra-property",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "render-hook",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "api-integrity:fillText:native-source,fillText:extra-property",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "render-hook",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "api-integrity:fillText:native-source,fillText:extra-property",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "screenshot-cdp",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "pointer-continuity",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "screenshot-cdp",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "pointer-continuity",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "screenshot-cdp",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "pointer-continuity",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "adaptive-cdp",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 1,
+        "blocked": true,
+        "reason": "incorrect-decision",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "adaptive-cdp",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 1,
+        "blocked": true,
+        "reason": "incorrect-decision",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "adaptive-cdp",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 1,
+        "blocked": true,
+        "reason": "incorrect-decision",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "reactive-cdp",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "strategy": "reactive-cdp",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "strategy": "reactive-cdp",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "strategy": "reactive-playwright",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "strategy": "reactive-playwright",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "strategy": "reactive-playwright",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "strategy": "release-swap",
+      "repetition": 0,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "pointer-transaction",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "release-swap",
+      "repetition": 1,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "pointer-transaction",
+        "completed": false
+      }
+    },
+    {
+      "strategy": "release-swap",
+      "repetition": 2,
+      "browser": "155.0.8059.40",
+      "state": {
+        "step": 0,
+        "clicks": 0,
+        "blocked": true,
+        "reason": "pointer-transaction",
+        "completed": false
+      }
+    }
+  ],
+  "agentProofAcceptance": {
+    "passed": false,
+    "bypassedSessions": 6,
+    "totalSessions": 27
+  }
+}
