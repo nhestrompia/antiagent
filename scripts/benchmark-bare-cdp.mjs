@@ -4,7 +4,8 @@ import { promisify } from 'node:util';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { launchRawCDP } from './raw-cdp.mjs';
 const execute=promisify(execFile);
-const directory='artifacts/bare-cdp';
+const isolated=process.env.ISOLATED==='1'||process.argv.includes('--isolated');
+const directory=isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
 await mkdir(directory,{recursive:true});
 const results=[];
 function textDistance(a,b) {
@@ -24,8 +25,12 @@ for(const mode of ['bare','runtime-enabled','runtime-zero','runtime-disabled']) 
     if(mode!=='bare') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    await send('Page.navigate',{url:'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    await send('Page.navigate',{url:isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
     await new Promise(resolve=>setTimeout(resolve,500));
+    if(isolated) {
+      const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});
+      assert.equal(targetInfo.title,'Isolated frame SecurityError');
+    }
     let captureIndex=0;
     async function observe() {
       const capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false});
@@ -36,7 +41,7 @@ for(const mode of ['bare','runtime-enabled','runtime-zero','runtime-disabled']) 
     }
     const initial=await observe();
     const observations=[];
-    if(mode!=='runtime-enabled') for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
+    if(mode!=='runtime-enabled'||isolated) for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
       await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:250,y:180});
       await new Promise(resolve=>setTimeout(resolve,100));
       const text=await observe();
@@ -56,11 +61,11 @@ for(const mode of ['bare','runtime-enabled','runtime-zero','runtime-disabled']) 
     const completed=final.some(item=>textDistance(item.text,'Task complete')<=2);
     const text=final.map(item=>item.text).join('').toLowerCase().replace(/\s/g,'');
     const blocked=text.includes('"blocked":true');
-    if(mode==='runtime-enabled') {assert.equal(completed,false);assert.equal(blocked,true);assert.ok(text.includes('runtime-cost'));}
+    if(mode==='runtime-enabled'&&!isolated) {assert.equal(completed,false);assert.equal(blocked,true);assert.ok(text.includes('runtime-cost'));}
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
     results.push({mode,repetition,version:version.product,completed,blocked,observations,initial,final,commands:[...new Set(chrome.commands)]});
   } finally {await chrome.close();}
 }
-await writeFile('docs/bare-cdp-results.json',JSON.stringify({results},null,2));
+await writeFile(isolated?'docs/isolated-frame-results.json':'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked})=>({mode,repetition,completed,blocked})),null,2));
