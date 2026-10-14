@@ -9,6 +9,9 @@ const isolated=process.env.ISOLATED==='1'||process.argv.includes('--isolated');
 const freshness=process.argv.includes('--freshness');
 const holdCapture=process.argv.includes('--hold-capture');
 const fastCapture=process.argv.includes('--fast-capture');
+const decoyMask=process.argv.includes('--decoy-mask');
+const stableColumns=process.argv.includes('--stable-columns');
+const virtualClock=process.argv.includes('--virtual-clock');
 const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
 assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
@@ -22,8 +25,15 @@ function textDistance(a,b) {
   for(let i=1;i<=a.length;i++) {const next=[i];for(let j=1;j<=b.length;j++) next[j]=Math.min(next[j-1]+1,row[j]+1,row[j-1]+(a[i-1]===b[j-1]?0:1));row=next;}
   return row[b.length];
 }
+function retainedLetters(text,label) {
+  text=text.toLowerCase().replace(/[^a-z0-9]/g,'');label=label.toLowerCase().replace(/[^a-z0-9]/g,'');
+  let row=Array(label.length+1).fill(0);
+  for(const letter of text){const next=[0];for(let i=1;i<=label.length;i++)next[i]=letter===label[i-1]?row[i-1]+1:Math.max(row[i],next[i-1]);row=next;}
+  return row[label.length]/label.length;
+}
 for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','runtime-zero','runtime-disabled'])) for(let repetition=0;repetition<3;repetition++) {
   const chrome=await launchRawCDP({headless:!layered});
+  let failureDiagnostic;
   try {
     const version=await chrome.send('Browser.getVersion');
     const {targetId}=await chrome.send('Target.createTarget',{url:'about:blank'});
@@ -35,7 +45,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if(mode!=='bare'&&mode!=='runtime-late') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
     assert.ok(!navigation.errorText,navigation.errorText);
     if(layered) {
       let ready=false;
@@ -43,6 +53,14 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       assert.ok(ready,'Layered initialization did not finish');
     }
     const readyAt=Date.now();
+    if(virtualClock)await send('Emulation.setVirtualTimePolicy',{policy:'pause'});
+    async function delay(ms) {
+      if(!virtualClock)return new Promise(resolve=>setTimeout(resolve,ms));
+      let unsubscribe,timer;
+      const expired=new Promise((resolve,reject)=>{unsubscribe=chrome.onEvent('Emulation.virtualTimeBudgetExpired',sessionId,resolve);timer=setTimeout(()=>reject(new Error('Virtual time budget event timeout')),5000);});
+      try{await send('Emulation.setVirtualTimePolicy',{policy:'advance',budget:ms,maxVirtualTimeTaskStarvationCount:100});await expired;}
+      finally{clearTimeout(timer);unsubscribe();}
+    }
     await new Promise(resolve=>setTimeout(resolve,fastCapture?50:500));
     if(isolated) {
       const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});
@@ -56,6 +74,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       const cropped=fastCapture&&frameCount>1;
       const images=[];
       for(let frame=0;frame<frameCount;frame++) {
+        if(virtualClock&&frameCount>1)await delay(17);
         let capture;
         for(let attempt=0;attempt<2;attempt++) {
           try {capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false,optimizeForSpeed:fastCapture,...(cropped?{clip:{x:220,y:300,width:670,height:110,scale:1}}:{})});break;}
@@ -69,7 +88,18 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
         // Visible columns retain the colored button background; hidden noise is grayscale.
         for(let x=0;x<combined.width;x++) {
           let best=0,bestScore=-1;
-          for(let frame=0;frame<frameCount;frame++) {
+          const repeats=new Map();
+          if(stableColumns)for(let frame=0;frame<frameCount;frame++) {
+            const column=Buffer.alloc(50*4);let white=0;
+            for(let y=30;y<80;y++){const offset=(y*combined.width+x)*4;images[frame].data.copy(column,(y-30)*4,offset,offset+4);if(images[frame].data[offset]>150)white++;}
+            const key=column.toString('base64');
+            const entry=repeats.get(key)||{count:0,frame,white};entry.count++;repeats.set(key,entry);
+          }
+          if(stableColumns)for(const entry of repeats.values()) {
+            const score=entry.count*100+entry.white;
+            if(score>bestScore){best=entry.frame;bestScore=score;}
+          }
+          else for(let frame=0;frame<frameCount;frame++) {
             let score=0;
             for(let y=0;y<combined.height;y++){const offset=(y*combined.width+x)*4;if(images[frame].data[offset]!==images[frame].data[offset+1])score++;}
             if(score>bestScore){best=frame;bestScore=score;}
@@ -96,7 +126,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     const observations=[];
     if((mode!=='runtime-enabled'&&mode!=='runtime-late')||isolated) for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
       await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:250,y:180});
-      await new Promise(resolve=>setTimeout(resolve,100));
+      await delay(100);
       if(holdCapture) {
         for(let sample=0;sample<8;sample++){await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:223+sample*10,y:292+sample*10});await new Promise(resolve=>setTimeout(resolve,60));}
         await new Promise(resolve=>setTimeout(resolve,300));
@@ -105,9 +135,13 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       let text,target;
       for(let attempt=0;attempt<3&&!target;attempt++){
         text=await observe(allGuards?captureFrames:1);
-        target=text.find(item=>textDistance(item.text,label)<=(fastCapture?2:0));
+        const digits=label.match(/\d+/)?.[0];
+        const candidates=text.filter(item=>!digits||item.text.match(/\d+/g)?.includes(digits));
+        const nearest=candidates.map(item=>({...item,distance:textDistance(item.text,label)})).sort((a,b)=>a.distance-b.distance);
+        if(nearest[0]?.distance<=(fastCapture?2:0))target=nearest[0];
+        if(!target&&stableColumns){const ranked=candidates.map(item=>({...item,score:retainedLetters(item.text,label)})).sort((a,b)=>b.score-a.score);if(ranked[0]?.score>=0.9)target=ranked[0];}
       }
-      if(!target){const diagnostic=await observe();if(diagnostic.map(item=>item.text).join('').replace(/\s/g,'').includes('\"blocked\":true')) break;}
+      if(!target){const diagnostic=await observe();failureDiagnostic=diagnostic;if(diagnostic.map(item=>item.text).join('').replace(/\s/g,'').includes('\"blocked\":true')) break;}
       assert.ok(target,`No target ${label}: ${JSON.stringify(text)}`);
       const point={x:target.x*1280,y:target.y*900};
       if(holdCapture) {
@@ -120,9 +154,9 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
       for(let sample=0;sample<(fastCapture?4:8);sample++) {
         const distance=fastCapture?60-sample*20:70-sample*10;
         await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:point.x-distance,y:point.y-distance});
-        await new Promise(resolve=>setTimeout(resolve,fastCapture?30:60));
+        await delay(fastCapture?30:60);
       }
-      await new Promise(resolve=>setTimeout(resolve,fastCapture?170:300));
+      await delay(fastCapture?170:300);
       await send('Input.dispatchMouseEvent',{type:'mousePressed',...point,button:'left',buttons:1,clickCount:1});
       await send('Input.dispatchMouseEvent',{type:'mouseReleased',...point,button:'left',buttons:0,clickCount:1});
       if(fastCapture)await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:100,y:100});
@@ -136,10 +170,10 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
     results.push({mode,repetition,version:version.product,completed,blocked,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
-  } catch(error) {results.push({mode,repetition,error:error.message});}
+  } catch(error) {results.push({mode,repetition,error:error.message,diagnostic:failureDiagnostic,commands:[...new Set(chrome.commands)]});}
   finally {await chrome.close();}
 }
-await writeFile(freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
+await writeFile(process.env.RESULT_PATH||(decoyMask?(stableColumns?'docs/decoy-stable-results.json':'docs/decoy-color-results.json'):freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json'),JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
 assert.equal(results.filter(result=>result.error).length,0,'One or more capture/input cases did not finish');
 

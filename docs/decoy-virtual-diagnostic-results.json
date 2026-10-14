@@ -1,0 +1,214 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "error": "CDP timeout: Page.captureScreenshot",
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Emulation.setVirtualTimePolicy",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "error": "No target 125 EUR: [{\"text\":\"ssbmawalaialenelos\",\"x\":0.6124999990401786,\"y\":0.40333333341269845}]",
+      "diagnostic": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743
+        },
+        {
+          "x": 0.26796874901909723,
+          "y": 0.20777777788888896,
+          "text": "Choose 125 EUR"
+        },
+        {
+          "y": 0.25666666658333337,
+          "text": "Decision 2 of 3",
+          "x": 0.22265625103515624
+        },
+        {
+          "x": 0.25390625138671874,
+          "text": "8T 8RCENA2NCI",
+          "y": 0.40222222194444446
+        },
+        {
+          "y": 0.4033333332037037,
+          "text": "#25180242PMTW",
+          "x": 0.4335937511328125
+        },
+        {
+          "x": 0.6132812513593751,
+          "y": 0.4033333332222222,
+          "text": "FGEAROSPOEMD"
+        },
+        {
+          "y": 0.7255555555833333,
+          "text": "\"step\": 1,",
+          "x": 0.20078125095703125
+        },
+        {
+          "x": 0.20859375153645832,
+          "text": "\"clicks\": 1,",
+          "y": 0.7455555555925926
+        },
+        {
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "text": "\"reason': null,",
+          "x": 0.21955804684139074,
+          "y": 0.7877073228728871
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21562500166666665,
+          "y": 0.830000000037037
+        },
+        {
+          "x": 0.2382812509114583,
+          "y": 0.8499999996666666,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556,
+          "text": "\"detectorsAllowed\": true"
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Emulation.setVirtualTimePolicy",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "error": "No target 125 EUR: []",
+      "diagnostic": [
+        {
+          "text": "Combined defense experiment",
+          "y": 0.06000000029629626,
+          "x": 0.32812500140625
+        },
+        {
+          "y": 0.11333333333333329,
+          "x": 0.28593750339843743,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "text": "Choose 125 EUR",
+          "y": 0.20777777788888896,
+          "x": 0.26796874901909723
+        },
+        {
+          "y": 0.2566666665555556,
+          "x": 0.2226562513802083,
+          "text": "Decision 2 of 3"
+        },
+        {
+          "y": 0.4022222223174603,
+          "x": 0.4328124990401786,
+          "text": "VE2N00SRCE"
+        },
+        {
+          "text": "8505m000g54",
+          "x": 0.6125000011197916,
+          "y": 0.4033333332037037
+        },
+        {
+          "text": "\"step\": 1,",
+          "x": 0.20078125095703125,
+          "y": 0.7255555555833333
+        },
+        {
+          "text": "\"clicks\": 1,",
+          "y": 0.7455555555925926,
+          "x": 0.20859375153645832
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011
+        },
+        {
+          "text": "\"reason': null,",
+          "y": 0.7877073228728871,
+          "x": 0.21955804684139074
+        },
+        {
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249,
+          "text": "\"completed\": false,"
+        },
+        {
+          "x": 0.21562500166666665,
+          "y": 0.830000000037037,
+          "text": "\"ready\": true,"
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.2382812509114583,
+          "y": 0.8499999996666666
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Emulation.setVirtualTimePolicy",
+        "Page.captureScreenshot"
+      ]
+    }
+  ]
+}

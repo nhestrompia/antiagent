@@ -14,6 +14,7 @@ const parameters = new URLSearchParams(location.search);
 const layeredMode = parameters.get('defense') === 'layered';
 const combinedMode = layeredMode || parameters.get('defense') === 'combined';
 const freshnessMode = layeredMode && parameters.get('fresh') === 'on';
+const decoyMask = layeredMode && parameters.get('mask') === 'decoy';
 let layoutEpoch = 0;
 const temporalMode = combinedMode ? 'noise' : parameters.get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
@@ -57,7 +58,15 @@ function paintFrame() {
     // Hidden columns never enter a reusable full-text bitmap.
     context.fillStyle = '#fff'; context.fillText(choice, left + 10, 240);
     context.restore();
-    if (temporalMode === 'noise') {
+    if (temporalMode === 'noise' && decoyMask) {
+      context.save(); context.beginPath();
+      for(let x=0;x<180;x++)if(x%phases!==phase)context.rect(left+x,200,1,70);
+      context.clip();context.fillStyle='#116456';context.fillRect(left,200,180,70);
+      const alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      const values=crypto.getRandomValues(new Uint8Array(20));
+      context.fillStyle='#fff';context.fillText(Array.from(values,value=>alphabet[value%alphabet.length]).join(''),left+10,240);
+      context.restore();
+    } else if (temporalMode === 'noise') {
       const pixels = context.getImageData(left, 200, 180, 70);
       const noise = crypto.getRandomValues(new Uint8Array(180 * 70));
       for (let y = 0; y < 70; y++) for (let x = 0; x < 180; x++) {

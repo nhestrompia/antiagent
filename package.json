@@ -49,7 +49,9 @@
     "benchmark:layout-freshness": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness",
     "benchmark:layout-hold": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture",
     "benchmark:layout-fast": "CAPTURE_FRAMES=4 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture",
-    "benchmark:layout-bounded-hold": "CAPTURE_FRAMES=32 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture --fast-capture"
+    "benchmark:layout-bounded-hold": "CAPTURE_FRAMES=32 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --hold-capture --fast-capture",
+    "benchmark:decoy-color": "CAPTURE_FRAMES=4 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask",
+    "benchmark:decoy-virtual": "RESULT_PATH=docs/decoy-virtual-final-results.json CAPTURE_FRAMES=16 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --virtual-clock"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
