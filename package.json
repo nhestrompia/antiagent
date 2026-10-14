@@ -28,7 +28,8 @@
     "verify:agent-proof": "node scripts/benchmark-combined-defense.mjs --require-blocking",
     "benchmark:runtime-cost": "node scripts/benchmark-runtime-cost.mjs",
     "benchmark:bare-cdp": "node scripts/benchmark-bare-cdp.mjs",
-    "benchmark:isolated-frame": "node scripts/generate-isolated-frame.mjs && node scripts/benchmark-bare-cdp.mjs --isolated"
+    "benchmark:isolated-frame": "node scripts/generate-isolated-frame.mjs && node scripts/benchmark-bare-cdp.mjs --isolated",
+    "benchmark:desynchronized-canvas": "node scripts/benchmark-desynchronized-canvas.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

@@ -3,11 +3,11 @@ import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-export async function launchRawCDP() {
+export async function launchRawCDP({ headless = true } = {}) {
   const profile = await mkdtemp(join(tmpdir(), 'antiagent-raw-'));
   const child = spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', [
     `--user-data-dir=${profile}`, '--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check',
-    '--disable-blink-features=AutomationControlled', '--headless=new', 'about:blank',
+    '--disable-blink-features=AutomationControlled', ...(headless ? ['--headless=new'] : []), 'about:blank',
   ], { stdio: 'ignore' });
   let socket;
   const pending = new Map();
