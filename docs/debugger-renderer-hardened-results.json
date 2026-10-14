@@ -1,0 +1,99 @@
+{
+  "browser": "155.0.8059.40",
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "repetition": 0,
+      "global": {
+        "layouts": "undefined",
+        "fullFrame": "undefined"
+      },
+      "reads": [
+        {
+          "step": 0,
+          "targetSlot": 0,
+          "bitmapAvailable": false
+        },
+        {
+          "step": 1,
+          "targetSlot": 2,
+          "bitmapAvailable": false
+        },
+        {
+          "step": 2,
+          "targetSlot": 1,
+          "bitmapAvailable": false
+        }
+      ],
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "repetition": 1,
+      "global": {
+        "layouts": "undefined",
+        "fullFrame": "undefined"
+      },
+      "reads": [
+        {
+          "step": 0,
+          "targetSlot": 1,
+          "bitmapAvailable": false
+        },
+        {
+          "step": 1,
+          "targetSlot": 2,
+          "bitmapAvailable": false
+        },
+        {
+          "step": 2,
+          "targetSlot": 1,
+          "bitmapAvailable": false
+        }
+      ],
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    },
+    {
+      "repetition": 2,
+      "global": {
+        "layouts": "undefined",
+        "fullFrame": "undefined"
+      },
+      "reads": [
+        {
+          "step": 0,
+          "targetSlot": 0,
+          "bitmapAvailable": false
+        },
+        {
+          "step": 1,
+          "targetSlot": 2,
+          "bitmapAvailable": false
+        },
+        {
+          "step": 2,
+          "targetSlot": 0,
+          "bitmapAvailable": false
+        }
+      ],
+      "state": {
+        "step": 3,
+        "clicks": 3,
+        "blocked": false,
+        "reason": null,
+        "completed": true
+      }
+    }
+  ]
+}

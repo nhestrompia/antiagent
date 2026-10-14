@@ -7,8 +7,6 @@ const status = document.querySelector('#status');
 // Opt-in rendering research; human readability is not established.
 const temporalMode = new URLSearchParams(location.search).get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
-const fullFrame = temporal ? new OffscreenCanvas(720, 480) : null;
-const fullContext = fullFrame?.getContext('2d');
 const tasks = [
   ['Choose Harbor Research', ['Harbor Research', 'North Labs', 'West Studio']],
   ['Choose 125 EUR', ['125 EUR', '50 EUR', '250 EUR']],
@@ -26,51 +24,45 @@ const layouts = tasks.map(([, choices]) => {
   }
   return result;
 });
-function draw() {
+function paintFrame() {
   context.fillStyle = state.blocked ? '#000' : '#fff';
   context.fillRect(0, 0, 720, 480);
-  if (!state.blocked) {
-    context.fillStyle = '#172b35';
-    context.font = 'bold 28px sans-serif';
-    context.fillText(state.completed ? 'Task complete' : tasks[state.step][0], 40, 70);
-    if (!state.completed) {
-      context.font = '16px sans-serif';
-      context.fillText(`Decision ${state.step + 1} of 3`, 40, 110);
-      layouts[state.step].forEach((choice, slot) => {
-        const x = 40 + slot * 230;
-        context.fillStyle = '#116456'; context.fillRect(x, 200, 180, 70);
-        context.fillStyle = '#fff'; context.fillText(choice, x + 10, 240);
-      });
+  if (state.blocked) return;
+  context.fillStyle = '#172b35'; context.font = 'bold 28px sans-serif';
+  context.fillText(state.completed ? 'Task complete' : tasks[state.step][0], 40, 70);
+  if (state.completed) return;
+  context.font = '16px sans-serif';
+  context.fillText(`Decision ${state.step + 1} of 3`, 40, 110);
+  const phases = temporalMode === 'noise' ? 2 : 4;
+  const phase = temporal ? crypto.getRandomValues(new Uint32Array(1))[0] % phases : 0;
+  layouts[state.step].forEach((choice, slot) => {
+    const left = 40 + slot * 230;
+    context.fillStyle = '#116456'; context.fillRect(left, 200, 180, 70);
+    context.save();
+    if (temporal) {
+      context.beginPath();
+      for (let x = 0; x < 180; x++) if (x % phases === phase) context.rect(left + x, 200, 1, 70);
+      context.clip();
     }
-  }
-  // Diagnostics expose outcomes, never the randomized target positions.
-  status.textContent = JSON.stringify(state, null, 2);
-  if (temporal) {
-    fullContext.drawImage(canvas, 0, 0);
-    renderMaskedFrame();
-  }
-}
-function renderMaskedFrame() {
-  context.drawImage(fullFrame, 0, 0);
-  if (state.blocked || state.completed) return;
-  const phase = crypto.getRandomValues(new Uint32Array(1))[0] % (temporalMode === 'noise' ? 2 : 4);
-  if (temporalMode === 'noise') {
-    for (let slot = 0; slot < 3; slot++) {
-      const pixels = context.getImageData(40 + slot * 230, 200, 180, 70);
+    // Hidden columns never enter a reusable full-text bitmap.
+    context.fillStyle = '#fff'; context.fillText(choice, left + 10, 240);
+    context.restore();
+    if (temporalMode === 'noise') {
+      const pixels = context.getImageData(left, 200, 180, 70);
       const noise = crypto.getRandomValues(new Uint8Array(180 * 70));
       for (let y = 0; y < 70; y++) for (let x = 0; x < 180; x++) {
-        if (x % 2 === phase) continue;
+        if (x % phases === phase) continue;
         const offset = (y * 180 + x) * 4, value = (noise[y * 180 + x] & 1) * 255;
         pixels.data[offset] = pixels.data[offset + 1] = pixels.data[offset + 2] = value;
       }
-      context.putImageData(pixels, 40 + slot * 230, 200);
+      context.putImageData(pixels, left, 200);
     }
-    return;
-  }
-  context.fillStyle = '#116456';
-  for (let slot = 0; slot < 3; slot++) for (let x = 0; x < 180; x++) {
-    if (x % 4 !== phase) context.fillRect(40 + slot * 230 + x, 200, 1, 70);
-  }
+  });
+}
+function draw() {
+  paintFrame();
+  // Diagnostics expose outcomes, never the randomized target positions.
+  status.textContent = JSON.stringify(state, null, 2);
 }
 function block(reason) {
   if (state.blocked || state.completed) return;
@@ -134,4 +126,4 @@ else {
 }
 draw();
 
-if (temporal) requestAnimationFrame(function animate() { renderMaskedFrame(); requestAnimationFrame(animate); });
+if (temporal) requestAnimationFrame(function animate() { paintFrame(); requestAnimationFrame(animate); });
