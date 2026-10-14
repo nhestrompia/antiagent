@@ -21,7 +21,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": null,
           "keySystem": null,
-          "currentTime": 0.215092,
+          "currentTime": 0.215743,
           "dimensions": [
             720,
             480
@@ -57,7 +57,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": null,
           "keySystem": null,
-          "currentTime": 0.481342,
+          "currentTime": 0.481065,
           "dimensions": [
             720,
             480
@@ -69,13 +69,35 @@
           "fromSurface": true,
           "count": 219847,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
         },
         {
           "fromSurface": false,
           "count": 226197,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:01 / 0:02"
+          ],
+          "readable": true
         }
       ],
       "interactive": false,
@@ -101,7 +123,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": null,
           "keySystem": null,
-          "currentTime": 0.215863,
+          "currentTime": 0.212506,
           "dimensions": [
             720,
             480
@@ -137,7 +159,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": null,
           "keySystem": null,
-          "currentTime": 0.215863,
+          "currentTime": 0.402617,
           "dimensions": [
             720,
             480
@@ -147,15 +169,37 @@
       "captures": [
         {
           "fromSurface": true,
-          "count": 220128,
+          "count": 220126,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
         },
         {
           "fromSurface": false,
-          "count": 226575,
+          "count": 226197,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:01 / 0:02"
+          ],
+          "readable": true
         }
       ],
       "interactive": false,
@@ -181,7 +225,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": null,
           "keySystem": null,
-          "currentTime": 0.215485,
+          "currentTime": 0.166225,
           "dimensions": [
             720,
             480
@@ -217,7 +261,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": null,
           "keySystem": null,
-          "currentTime": 0.412438,
+          "currentTime": 0.166225,
           "dimensions": [
             720,
             480
@@ -227,15 +271,37 @@
       "captures": [
         {
           "fromSurface": true,
-          "count": 219857,
+          "count": 220129,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
         },
         {
           "fromSurface": false,
           "count": 226197,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:01 / 0:02"
+          ],
+          "readable": true
         }
       ],
       "interactive": false,
@@ -261,7 +327,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": true,
           "keySystem": "com.widevine.alpha",
-          "currentTime": 0.485795,
+          "currentTime": 0.495693,
           "dimensions": [
             720,
             480
@@ -297,7 +363,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": true,
           "keySystem": "com.widevine.alpha",
-          "currentTime": 0.485795,
+          "currentTime": 0.590197,
           "dimensions": [
             720,
             480
@@ -307,15 +373,30 @@
       "captures": [
         {
           "fromSurface": true,
-          "count": 222474,
+          "count": 222466,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
         },
         {
           "fromSurface": false,
           "count": 0,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
         }
       ],
       "interactive": false,
@@ -341,7 +422,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": true,
           "keySystem": "com.widevine.alpha",
-          "currentTime": 0.627554,
+          "currentTime": 0.511196,
           "dimensions": [
             720,
             480
@@ -377,7 +458,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": true,
           "keySystem": "com.widevine.alpha",
-          "currentTime": 0.639464,
+          "currentTime": 0.776902,
           "dimensions": [
             720,
             480
@@ -387,15 +468,30 @@
       "captures": [
         {
           "fromSurface": true,
-          "count": 222473,
+          "count": 222464,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
         },
         {
           "fromSurface": false,
           "count": 0,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
         }
       ],
       "interactive": false,
@@ -421,7 +517,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": true,
           "keySystem": "com.widevine.alpha",
-          "currentTime": 0.59222,
+          "currentTime": 0.669227,
           "dimensions": [
             720,
             480
@@ -457,7 +553,7 @@
           "requestedRobustness": "SW_SECURE_DECODE",
           "requestedSecuritySupported": true,
           "keySystem": "com.widevine.alpha",
-          "currentTime": 0.631793,
+          "currentTime": 0.877229,
           "dimensions": [
             720,
             480
@@ -467,15 +563,30 @@
       "captures": [
         {
           "fromSurface": true,
-          "count": 222468,
+          "count": 222464,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
         },
         {
           "fromSurface": false,
           "count": 0,
           "width": 3024,
-          "height": 1898
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
         }
       ],
       "interactive": false,

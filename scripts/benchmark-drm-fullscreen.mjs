@@ -1,4 +1,8 @@
 import { mkdir, writeFile } from 'node:fs/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
+import assert from 'node:assert/strict';
+const execute=promisify(execFile);
 import { PNG } from 'pngjs';
 import { launchChromeWithoutOverrides } from './chrome-no-overrides.mjs';
 
@@ -38,8 +42,13 @@ for (const source of ['clear', 'encrypted']) for (let repetition = 0; repetition
     for (const fromSurface of [true, false]) {
       const result = await client.send('Page.captureScreenshot', { fromSurface, captureBeyondViewport: false });
       const bytes = Buffer.from(result.data, 'base64');
-      await writeFile(`artifacts/drm-fullscreen/${source}-${repetition}-${fromSurface ? 'surface' : 'view'}.png`, bytes);
-      captures.push({ fromSurface, ...referencePixels(bytes) });
+      const path=`artifacts/drm-fullscreen/${source}-${repetition}-${fromSurface ? 'surface' : 'view'}.png`;
+      await writeFile(path, bytes);
+      const {stdout}=await execute('/private/tmp/anti-agent-ocr',[path]);
+      const text=JSON.parse(stdout).map(item=>item.text);
+      const readable=text.some(line=>line.includes('Harbor Research'))&&text.some(line=>line.includes('ALPHA-729'));
+      assert.equal(readable,fromSurface||source==='clear',JSON.stringify({source,fromSurface,text}));
+      captures.push({ fromSurface, ...referencePixels(bytes), text, readable });
     }
     await page.evaluate(() => document.exitFullscreen());
     results.push({ source, repetition, before, fullscreen, captures, interactive: false, nativeHumanVisibility: 'Not tested' });
@@ -49,3 +58,5 @@ for (const source of ['clear', 'encrypted']) for (let repetition = 0; repetition
 await writeFile('docs/drm-fullscreen-results.json', JSON.stringify({ browser: version, results }, null, 2));
 console.log(JSON.stringify(results.map(({ source, repetition, failed, fullscreen, captures }) => ({ source, repetition, failed, active: fullscreen?.active, playbackVerified: fullscreen?.drm.playbackVerified, captures }))));
 if (results.some(result => result.failed)) throw new Error('One or more fullscreen cases did not complete');
+
+if(process.argv.includes('--require-blocking')) assert.equal(results.filter(result=>result.source==='encrypted'&&result.captures.some(capture=>capture.readable)).length,0,'Encrypted interface remains readable to browser capture');
