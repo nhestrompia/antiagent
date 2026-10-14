@@ -1,0 +1,297 @@
+{
+  "browser": "155.0.8059.40",
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "operation": "locator-guard-off",
+      "repetition": 0,
+      "state": {
+        "guard": false,
+        "blocked": false,
+        "accepted": 1,
+        "events": [
+          {
+            "type": "__playwright_reset_targets__",
+            "isTrusted": false,
+            "time": 102
+          },
+          {
+            "type": "__playwright_mark_target__",
+            "isTrusted": false,
+            "time": 102.10000002384186
+          }
+        ]
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "locator-guard-off",
+      "repetition": 1,
+      "state": {
+        "guard": false,
+        "blocked": false,
+        "accepted": 1,
+        "events": [
+          {
+            "type": "__playwright_reset_targets__",
+            "isTrusted": false,
+            "time": 26.300000071525574
+          },
+          {
+            "type": "__playwright_mark_target__",
+            "isTrusted": false,
+            "time": 26.600000023841858
+          }
+        ]
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "locator-guard-off",
+      "repetition": 2,
+      "state": {
+        "guard": false,
+        "blocked": false,
+        "accepted": 1,
+        "events": [
+          {
+            "type": "__playwright_reset_targets__",
+            "isTrusted": false,
+            "time": 30.699999928474426
+          },
+          {
+            "type": "__playwright_mark_target__",
+            "isTrusted": false,
+            "time": 30.799999952316284
+          }
+        ]
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "locator-guard-on",
+      "repetition": 0,
+      "state": {
+        "guard": true,
+        "blocked": true,
+        "accepted": 0,
+        "events": [
+          {
+            "type": "__playwright_reset_targets__",
+            "isTrusted": false,
+            "time": 31.200000047683716
+          },
+          {
+            "type": "__playwright_mark_target__",
+            "isTrusted": false,
+            "time": 31.200000047683716
+          }
+        ]
+      },
+      "pixel": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "locator-guard-on",
+      "repetition": 1,
+      "state": {
+        "guard": true,
+        "blocked": true,
+        "accepted": 0,
+        "events": [
+          {
+            "type": "__playwright_reset_targets__",
+            "isTrusted": false,
+            "time": 22.800000071525574
+          },
+          {
+            "type": "__playwright_mark_target__",
+            "isTrusted": false,
+            "time": 22.800000071525574
+          }
+        ]
+      },
+      "pixel": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "locator-guard-on",
+      "repetition": 2,
+      "state": {
+        "guard": true,
+        "blocked": true,
+        "accepted": 0,
+        "events": [
+          {
+            "type": "__playwright_reset_targets__",
+            "isTrusted": false,
+            "time": 27.5
+          },
+          {
+            "type": "__playwright_mark_target__",
+            "isTrusted": false,
+            "time": 27.5
+          }
+        ]
+      },
+      "pixel": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "mouse-guard-on",
+      "repetition": 0,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "mouse-guard-on",
+      "repetition": 1,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "mouse-guard-on",
+      "repetition": 2,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "cdp-guard-on",
+      "repetition": 0,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "cdp-guard-on",
+      "repetition": 1,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "cdp-guard-on",
+      "repetition": 2,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "element-screenshot-guard-on",
+      "repetition": 0,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "element-screenshot-guard-on",
+      "repetition": 1,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "element-screenshot-guard-on",
+      "repetition": 2,
+      "state": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    }
+  ]
+}
