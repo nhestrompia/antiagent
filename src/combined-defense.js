@@ -1,4 +1,5 @@
 import { inspectAPIs } from './tamper-gate.js';
+import { inspectRuntimeCost } from './runtime-cost.js';
 import { lockMethods } from './intrinsic-guard.js';
 
 const canvas = document.querySelector('canvas');
@@ -132,6 +133,7 @@ canvas.addEventListener('click', event => {
   motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false };
   state.step++; state.completed = state.step === tasks.length; draw();
 });
+if (new URLSearchParams(location.search).get('runtime') === 'on' && inspectRuntimeCost().suspected) block('runtime-cost');
 const integrity = inspectAPIs();
 if (navigator.webdriver) block('webdriver');
 else if (!integrity.allowed) block(`api-integrity:${integrity.reasons.join(',')}`);

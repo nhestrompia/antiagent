@@ -25,7 +25,9 @@
     "benchmark:capture-timing": "node scripts/benchmark-capture-timing.mjs",
     "benchmark:cover": "node scripts/benchmark-cover.mjs",
     "benchmark:webgpu": "node scripts/benchmark-webgpu-capture.mjs",
-    "verify:agent-proof": "node scripts/benchmark-combined-defense.mjs --require-blocking"
+    "verify:agent-proof": "node scripts/benchmark-combined-defense.mjs --require-blocking",
+    "benchmark:runtime-cost": "node scripts/benchmark-runtime-cost.mjs",
+    "benchmark:bare-cdp": "node scripts/benchmark-bare-cdp.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
