@@ -74,8 +74,11 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if((mode!=='runtime-enabled'&&mode!=='runtime-late')||isolated) for(const label of ['Harbor Research','125 EUR','Confirm transfer']) {
       await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:250,y:180});
       await new Promise(resolve=>setTimeout(resolve,100));
-      const text=await observe(allGuards?64:1);
-      const target=text.map(item=>({...item,distance:textDistance(item.text,label)})).filter(item=>item.distance<=2).sort((a,b)=>a.distance-b.distance)[0];
+      let text,target;
+      for(let attempt=0;attempt<3&&!target;attempt++){
+        text=await observe(allGuards?64:1);
+        target=text.find(item=>textDistance(item.text,label)===0);
+      }
       assert.ok(target,`No target ${label}: ${JSON.stringify(text)}`);
       const point={x:target.x*1280,y:target.y*900};
       observations.push({label,point,frameCount:allGuards?64:1});
@@ -98,7 +101,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
   } catch(error) {results.push({mode,repetition,error:error.message});}
   finally {await chrome.close();}
 }
-await writeFile(layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
+await writeFile(process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
 assert.equal(results.filter(result=>result.error).length,0,'One or more capture/input cases did not finish');
 

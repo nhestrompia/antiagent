@@ -1,0 +1,95 @@
+{
+  "main": {
+    "route": "T3 preview screenshot and semantic snapshot",
+    "url": "/combined-defense.html?defense=layered",
+    "attempts": 1,
+    "observed": {
+      "blocked": true,
+      "reason": "runtime-cost",
+      "completed": false,
+      "step": 0
+    },
+    "screenshotPath": "/Users/nhestrompia/.t3/userdata/browser-artifacts/browser-screenshot-127-0-0-1-mv7pxrej-aea1af8a.png"
+  },
+  "nativeSelect": {
+    "route": "T3 preview semantic snapshot, Tab, h, Confirm",
+    "url": "/native-select.html?harden=on&hide=on&inline=on",
+    "attempts": 1,
+    "observed": {
+      "accepted": 1,
+      "blocked": false,
+      "clear": true,
+      "events": [
+        {
+          "key": "h",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "trusted": true,
+          "type": "change"
+        },
+        {
+          "trusted": true,
+          "type": "confirm"
+        }
+      ],
+      "focused": true,
+      "harden": true,
+      "hide": true,
+      "inline": true,
+      "labelsCleared": false,
+      "lastChangeTrusted": true,
+      "popupOpen": false
+    },
+    "verification": "Read original fixture diagnostics only after trusted actions; no acceptance state mutation"
+  },
+  "limits": [
+    "Native-select is an isolated fixture, not the full layered application.",
+    "Main preview startup block applies to this tool connection only.",
+    "Mobile and other-browser execution not claimed."
+  ],
+  "nativeComputerUse": {
+    "route": "Native app screenshot, mouse and accessibility APIs; no debugger connection opened by this client",
+    "browserContext": "New local-fixture tab in existing Chrome profile",
+    "detectorFixture": {
+      "attempts": 1,
+      "accepted": 1,
+      "blocked": false,
+      "suspicionScore": 0,
+      "isCdpDetected": false,
+      "observedTrustedPointerDown": true,
+      "correctLabelReadFromNativeScreenshot": "Harbor Research"
+    },
+    "fullLayeredApp": {
+      "attempts": 1,
+      "blocked": true,
+      "reason": "api-integrity:attachShadow:native-source,attachShadow:source,attachShadow:extra-property,attachShadow:keys,attachShadow:signature",
+      "completed": false,
+      "limit": "Existing profile API differences triggered the guard; clean native profile not established."
+    },
+    "drmPair": {
+      "attemptsPerAsset": 1,
+      "encrypted": {
+        "playbackVerified": true,
+        "protectedPlayback": true,
+        "selectedRobustness": "SW_SECURE_DECODE",
+        "nativeCaptureAppearance": "black reference-video region"
+      },
+      "clear": {
+        "playbackVerified": true,
+        "encrypted": false,
+        "nativeCaptureAppearance": "readable account, amount, recipient, confirm label and token"
+      },
+      "limits": [
+        "Static media; no business actions",
+        "No independent physical human-visibility observation",
+        "Native images observed in tool transcript, not committed"
+      ]
+    },
+    "isolationAttempt": {
+      "separateProcessWindowTargeting": "Native API selected existing profile instead; isolated process closed",
+      "guestSession": "Search-engine setup blocked a clean-profile trial; no preference change made during measurements"
+    }
+  }
+}
