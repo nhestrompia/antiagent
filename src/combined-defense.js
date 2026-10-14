@@ -51,9 +51,34 @@ for (const name of ['__playwright_reset_targets__', '__playwright_mark_target__'
 for (const name of ['__playwright_global_listeners_check__', '__playwright_snapshotter_global_listeners_check__']) {
   window.addEventListener(name, () => block('playwright-runtime-event'), true);
 }
+// Experimental pointer continuity. CDP can reproduce this sequence.
+let motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false };
+function pointerPosition(event) {
+  const rect = canvas.getBoundingClientRect();
+  const x = (event.clientX - rect.left) * 720 / rect.width;
+  const y = (event.clientY - rect.top) * 480 / rect.height;
+  const slot = [0, 1, 2].find(slot => x >= 40 + slot * 230 && x <= 220 + slot * 230 && y >= 200 && y <= 270);
+  return { x, y, slot };
+}
+canvas.addEventListener('pointermove', event => {
+  if (!event.isTrusted || state.blocked || state.completed) return;
+  const point = pointerPosition(event), now = performance.now();
+  if (!motion.samples) motion.start = now;
+  if (motion.previous) motion.distance += Math.hypot(point.x - motion.previous.x, point.y - motion.previous.y);
+  motion.samples++; motion.previous = point;
+  if (point.slot !== motion.slot) { motion.slot = point.slot; motion.entered = now; }
+});
+canvas.addEventListener('pointerdown', event => {
+  if (state.blocked || state.completed) return;
+  const point = pointerPosition(event), now = performance.now();
+  if (point.slot === undefined) return;
+  motion.armed = event.isTrusted && motion.samples >= 4 && motion.distance >= 32 && now - motion.start >= 120 && point.slot === motion.slot && now - motion.entered >= 150;
+  if (!motion.armed) block('pointer-continuity');
+});
 canvas.addEventListener('click', event => {
   if (state.blocked || state.completed) return;
   if (!event.isTrusted) { block('untrusted-input'); return; }
+  if (!motion.armed) { block('pointer-continuity'); return; }
   const rect = canvas.getBoundingClientRect();
   const x = (event.clientX - rect.left) * 720 / rect.width;
   const y = (event.clientY - rect.top) * 480 / rect.height;
@@ -61,6 +86,7 @@ canvas.addEventListener('click', event => {
   if (slot === undefined) return;
   state.clicks++;
   if (layouts[state.step][slot] !== tasks[state.step][1][0]) { block('incorrect-decision'); return; }
+  motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false };
   state.step++; state.completed = state.step === tasks.length; draw();
 });
 const integrity = inspectAPIs();
