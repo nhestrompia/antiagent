@@ -4,6 +4,10 @@ import { lockMethods } from './intrinsic-guard.js';
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 const status = document.querySelector('#status');
+// Opt-in rendering research; human readability is not established.
+const temporal = new URLSearchParams(location.search).get('temporal') === 'on';
+const fullFrame = temporal ? new OffscreenCanvas(720, 480) : null;
+const fullContext = fullFrame?.getContext('2d');
 const tasks = [
   ['Choose Harbor Research', ['Harbor Research', 'North Labs', 'West Studio']],
   ['Choose 125 EUR', ['125 EUR', '50 EUR', '250 EUR']],
@@ -40,6 +44,19 @@ function draw() {
   }
   // Diagnostics expose outcomes, never the randomized target positions.
   status.textContent = JSON.stringify(state, null, 2);
+  if (temporal) {
+    fullContext.drawImage(canvas, 0, 0);
+    renderMaskedFrame();
+  }
+}
+function renderMaskedFrame() {
+  context.drawImage(fullFrame, 0, 0);
+  if (state.blocked || state.completed) return;
+  const phase = crypto.getRandomValues(new Uint32Array(1))[0] % 4;
+  context.fillStyle = '#116456';
+  for (let slot = 0; slot < 3; slot++) for (let x = 0; x < 180; x++) {
+    if (x % 4 !== phase) context.fillRect(40 + slot * 230 + x, 200, 1, 70);
+  }
 }
 function block(reason) {
   if (state.blocked || state.completed) return;
@@ -102,3 +119,5 @@ else {
   if (locks.some(lock => !['locked', 'already-locked'].includes(lock.status))) block('renderer-lock-failed');
 }
 draw();
+
+if (temporal) requestAnimationFrame(function animate() { renderMaskedFrame(); requestAnimationFrame(animate); });
