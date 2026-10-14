@@ -42,7 +42,8 @@
     "verify:layered-guards": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --require-blocking",
     "benchmark:drm-pip-screencast": "DRM_PIP_SCREENCAST=1 node scripts/benchmark-drm-pip.mjs",
     "benchmark:protected-output": "node scripts/benchmark-protected-output.mjs",
-    "verify:protected-output": "node scripts/benchmark-protected-output.mjs --require-blocking"
+    "verify:protected-output": "node scripts/benchmark-protected-output.mjs --require-blocking",
+    "benchmark:password-mask": "node scripts/benchmark-password-mask.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
