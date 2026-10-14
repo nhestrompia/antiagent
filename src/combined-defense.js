@@ -86,6 +86,7 @@ function pointerPosition(event) {
 canvas.addEventListener('pointermove', event => {
   if (!event.isTrusted || state.blocked || state.completed) return;
   const point = pointerPosition(event), now = performance.now();
+  if (motion.armed && point.slot !== motion.armed.slot) { block('pointer-transaction'); return; }
   if (!motion.samples) {
     motion.start = now;
     // A first pointer observation invalidates the previous choice positions.
@@ -99,10 +100,23 @@ canvas.addEventListener('pointermove', event => {
 canvas.addEventListener('pointerdown', event => {
   if (state.blocked || state.completed) return;
   const point = pointerPosition(event), now = performance.now();
+  motion.armed = false;
   if (point.slot === undefined) return;
-  motion.armed = event.isTrusted && motion.samples >= 4 && motion.distance >= 32 && now - motion.start >= 120 && point.slot === motion.slot && now - motion.entered >= 150;
-  if (!motion.armed) block('pointer-continuity');
+  const allowed = event.button === 0 && event.isPrimary && event.isTrusted && motion.samples >= 4 && motion.distance >= 32 && now - motion.start >= 120 && point.slot === motion.slot && now - motion.entered >= 150;
+  if (!allowed) block('pointer-continuity');
+  else motion.armed = { pointerId: event.pointerId, slot: point.slot, released: false };
 });
+canvas.addEventListener('pointerup', event => {
+  if (state.blocked || state.completed || !motion.armed) return;
+  if (!event.isTrusted || event.button !== 0 || event.pointerId !== motion.armed.pointerId || pointerPosition(event).slot !== motion.armed.slot) {
+    block('pointer-transaction'); return;
+  }
+  motion.armed.released = true;
+});
+for (const name of ['pointercancel', 'pointerleave']) canvas.addEventListener(name, () => {
+  motion.armed = false;
+});
+window.addEventListener('blur', () => { motion.armed = false; });
 canvas.addEventListener('click', event => {
   if (state.blocked || state.completed) return;
   if (!event.isTrusted) { block('untrusted-input'); return; }
@@ -111,7 +125,8 @@ canvas.addEventListener('click', event => {
   const x = (event.clientX - rect.left) * 720 / rect.width;
   const y = (event.clientY - rect.top) * 480 / rect.height;
   const slot = [0, 1, 2].find(slot => x >= 40 + slot * 230 && x <= 220 + slot * 230 && y >= 200 && y <= 270);
-  if (slot === undefined) return;
+  if (!motion.armed.released || event.pointerId !== motion.armed.pointerId || slot !== motion.armed.slot) { block('pointer-transaction'); return; }
+  motion.armed = false;
   state.clicks++;
   if (layouts[state.step][slot] !== tasks[state.step][1][0]) { block('incorrect-decision'); return; }
   motion = { samples: 0, distance: 0, start: 0, previous: null, slot: undefined, entered: 0, armed: false };

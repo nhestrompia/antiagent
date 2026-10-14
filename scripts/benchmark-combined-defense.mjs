@@ -17,7 +17,8 @@ function textDistance(a, b) {
   }
   return row[right.length];
 }
-for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-input', 'render-hook', 'screenshot-cdp', 'adaptive-cdp', 'reactive-cdp']) {
+const strategies = process.env.STRATEGIES?.split(',') || ['default-playwright', 'locator-stealth', 'synthetic-input', 'render-hook', 'screenshot-cdp', 'adaptive-cdp', 'reactive-cdp', 'release-swap'];
+for (const strategy of strategies) {
   const browser = await chromium.launch({ channel: 'chrome', headless: false, args: strategy === 'default-playwright' ? [] : ['--disable-blink-features=AutomationControlled'] });
   try {
     for (let repetition = 0; repetition < 3; repetition++) {
@@ -31,8 +32,8 @@ for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-inpu
       if (strategy === 'locator-stealth') await page.locator('canvas').click({ position: { x: 130, y: 235 } });
       if (strategy === 'synthetic-input') await page.evaluate(() => document.querySelector('canvas').click());
       const observations = [];
-      if (['screenshot-cdp', 'adaptive-cdp', 'reactive-cdp'].includes(strategy)) for (const label of ['Harbor Research', '125 EUR', 'Confirm transfer']) {
-        if (strategy === 'reactive-cdp') {
+      if (['screenshot-cdp', 'adaptive-cdp', 'reactive-cdp', 'release-swap'].includes(strategy)) for (const label of ['Harbor Research', '125 EUR', 'Confirm transfer']) {
+        if (['reactive-cdp', 'release-swap'].includes(strategy)) {
           await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 250, y: 180 });
           await new Promise(resolve => setTimeout(resolve, 100));
         }
@@ -44,23 +45,29 @@ for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-inpu
         const target = text.map(item => ({ ...item, distance: textDistance(item.text, label) })).filter(item => item.distance <= 2).sort((a, b) => a.distance - b.distance)[0];
         assert.ok(target, `OCR did not locate ${label}: ${stdout}`);
         const point = { x: target.x * 1280, y: target.y * 900 };
+        const pressPoint = strategy === 'release-swap' ? { x: point.x < 600 ? point.x + 230 : point.x - 230, y: point.y } : point;
         observations.push({ label, point, text });
-        if (['adaptive-cdp', 'reactive-cdp'].includes(strategy)) {
+        if (['adaptive-cdp', 'reactive-cdp', 'release-swap'].includes(strategy)) {
           for (let sample = 0; sample < 8; sample++) {
-            await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: point.x - 70 + sample * 10, y: point.y - 70 + sample * 10 });
+            await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: pressPoint.x - 70 + sample * 10, y: pressPoint.y - 70 + sample * 10 });
             await new Promise(resolve => setTimeout(resolve, 30));
           }
-          await new Promise(resolve => setTimeout(resolve, 180));
+          await new Promise(resolve => setTimeout(resolve, 300));
         }
-        await client.send('Input.dispatchMouseEvent', { type: 'mousePressed', ...point, button: 'left', buttons: 1, clickCount: 1 });
+        await client.send('Input.dispatchMouseEvent', { type: 'mousePressed', ...pressPoint, button: 'left', buttons: 1, clickCount: 1 });
+        if (strategy === 'release-swap') await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', ...point, buttons: 1 });
         await client.send('Input.dispatchMouseEvent', { type: 'mouseReleased', ...point, button: 'left', buttons: 0, clickCount: 1 });
-        if (['screenshot-cdp', 'adaptive-cdp'].includes(strategy)) break;
+        if (['screenshot-cdp', 'adaptive-cdp', 'release-swap'].includes(strategy)) break;
       }
       // Outcome read happens only after the screenshot agent finishes its actions.
       const state = await page.evaluate(() => JSON.parse(document.querySelector('#status').textContent));
       const reasons = { 'default-playwright': 'webdriver', 'locator-stealth': 'playwright-target-event', 'synthetic-input': 'untrusted-input', 'screenshot-cdp': 'pointer-continuity', 'adaptive-cdp': 'incorrect-decision' };
-      if (strategy === 'reactive-cdp') {
-        assert.equal(state.completed, true); assert.equal(state.blocked, false); assert.equal(state.clicks, 3);
+      if (strategy === 'release-swap') {
+        assert.equal(state.blocked, true, 'A press on another choice must not authorize this choice');
+        assert.equal(state.completed, false);
+        assert.equal(state.reason, 'pointer-transaction');
+      } else if (strategy === 'reactive-cdp') {
+        assert.equal(state.completed, true, JSON.stringify(state)); assert.equal(state.blocked, false); assert.equal(state.clicks, 3);
       } else {
         assert.equal(state.blocked, true); assert.equal(state.completed, false);
         if (strategy === 'render-hook') assert.ok(state.reason.startsWith('api-integrity:'));
@@ -71,5 +78,5 @@ for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-inpu
     }
   } finally { await browser.close(); }
 }
-await writeFile('docs/pointer-arrival-results.json', JSON.stringify({ playwright: '1.64.0', results }, null, 2));
+await writeFile('artifacts/combined-defense/results.json', JSON.stringify({ playwright: '1.64.0', results }, null, 2));
 console.log(JSON.stringify(results.map(({ strategy, repetition, state }) => ({ strategy, repetition, state }))));
