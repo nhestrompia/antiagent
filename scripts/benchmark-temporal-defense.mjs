@@ -6,7 +6,8 @@ import { PNG } from 'pngjs';
 import { chromium } from '@playwright/test';
 const execute = promisify(execFile);
 const headed = process.env.HEADED === '1';
-const directory = `artifacts/temporal-defense-${headed ? 'headed' : 'headless'}`;
+const noise = process.env.NOISE === '1';
+const directory = `artifacts/temporal-defense-${noise ? 'noise-' : ''}${headed ? 'headed' : 'headless'}`;
 await mkdir(directory, { recursive: true });
 function textDistance(a, b) {
   const left = a.toLowerCase().replace(/[^a-z0-9]/g, ''), right = b.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -20,24 +21,43 @@ function textDistance(a, b) {
 }
 const browser = await chromium.launch({ channel: 'chrome', headless: !headed, args: ['--disable-blink-features=AutomationControlled'] });
 const results = [];
+const selectedStrategy = process.env.STRATEGY;
+if (selectedStrategy && !['single-frame', 'frame-union', 'frame-median', 'frame-mean'].includes(selectedStrategy)) throw new Error('Unknown strategy');
 try {
-  for (const strategy of (headed ? ['frame-union'] : ['single-frame', 'frame-union'])) for (let repetition = 0; repetition < 3; repetition++) {
+  for (const strategy of (selectedStrategy ? [selectedStrategy] : noise ? ['frame-union', 'frame-median'] : headed ? ['frame-union'] : ['single-frame', 'frame-union'])) for (let repetition = 0; repetition < 3; repetition++) {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
-    await page.goto('http://127.0.0.1:5173/combined-defense.html?temporal=on');
+    await page.goto(`http://127.0.0.1:5173/combined-defense.html?temporal=${noise ? 'noise' : 'on'}`);
     const client = await page.context().newCDPSession(page);
     const observations = [];
     for (const label of ['Harbor Research', '125 EUR', 'Confirm transfer']) {
       await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 250, y: 180 });
       await new Promise(resolve => setTimeout(resolve, 100));
       let combined;
-      const frameCount = strategy === 'single-frame' ? 1 : 16;
+      const frames = [];
+      const frameCount = strategy === 'single-frame' ? 1 : ['frame-median', 'frame-mean'].includes(strategy) ? 64 : 16;
       for (let frame = 0; frame < frameCount; frame++) {
         const capture = await client.send('Page.captureScreenshot', { fromSurface: true, captureBeyondViewport: false });
         const image = PNG.sync.read(Buffer.from(capture.data, 'base64'));
-        await writeFile(`${directory}/${strategy}-${repetition}-${observations.length}-${frame}.png`, PNG.sync.write(image));
-        if (!combined) combined = image;
+        if (frame === 0) await writeFile(`${directory}/${strategy}-${repetition}-${observations.length}-first.png`, PNG.sync.write(image));
+        if (['frame-median', 'frame-mean'].includes(strategy)) frames.push(image);
+        if (!combined) { combined = new PNG({width:image.width,height:image.height}); combined.data.set(image.data); }
         else for (let pixel = 0; pixel < image.data.length; pixel++) combined.data[pixel] = Math.max(combined.data[pixel], image.data[pixel]);
         await new Promise(resolve => setTimeout(resolve, 19));
+      }
+      if (['frame-median', 'frame-mean'].includes(strategy)) {
+        const scale = combined.width / 1280;
+        const samples = new Uint8Array(frameCount);
+        for (let y = Math.round(300 * scale); y < Math.round(410 * scale); y++) for (let x = Math.round(220 * scale); x < Math.round(890 * scale); x++) {
+          const offset = (y * combined.width + x) * 4;
+          for (let channel = 0; channel < 3; channel++) {
+            for (let frame = 0; frame < frameCount; frame++) samples[frame] = frames[frame].data[offset + channel];
+            if (strategy === 'frame-median') { samples.sort(); combined.data[offset + channel] = samples[frameCount / 2]; }
+            else {
+              const mean = samples.reduce((sum, value) => sum + value, 0) / frameCount;
+              combined.data[offset + channel] = Math.max(0, Math.min(255, Math.round(mean * 2 - 127.5)));
+            }
+          }
+        }
       }
       const path = `${directory}/${strategy}-${repetition}-${observations.length}-union.png`;
       await writeFile(path, PNG.sync.write(combined));
@@ -73,6 +93,6 @@ try {
     results.push({ strategy, repetition, state, observations });
     await page.close();
   }
-  await writeFile(headed ? 'docs/temporal-defense-headed-results.json' : 'docs/temporal-defense-results.json', JSON.stringify({ headed, browser: browser.version(), playwright: '1.64.0', results }, null, 2));
+  await writeFile(noise ? `docs/temporal-noise-${selectedStrategy ? selectedStrategy + '-' : ''}${headed ? 'headed' : 'headless'}-results.json` : headed ? 'docs/temporal-defense-headed-results.json' : 'docs/temporal-defense-results.json', JSON.stringify({ headed, noise, browser: browser.version(), playwright: '1.64.0', results }, null, 2));
   console.log(JSON.stringify(results.map(({ strategy, repetition, state }) => ({ strategy, repetition, state }))));
 } finally { await browser.close(); }

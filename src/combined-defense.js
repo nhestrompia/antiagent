@@ -5,7 +5,8 @@ const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 const status = document.querySelector('#status');
 // Opt-in rendering research; human readability is not established.
-const temporal = new URLSearchParams(location.search).get('temporal') === 'on';
+const temporalMode = new URLSearchParams(location.search).get('temporal');
+const temporal = ['on', 'noise'].includes(temporalMode);
 const fullFrame = temporal ? new OffscreenCanvas(720, 480) : null;
 const fullContext = fullFrame?.getContext('2d');
 const tasks = [
@@ -52,7 +53,20 @@ function draw() {
 function renderMaskedFrame() {
   context.drawImage(fullFrame, 0, 0);
   if (state.blocked || state.completed) return;
-  const phase = crypto.getRandomValues(new Uint32Array(1))[0] % 4;
+  const phase = crypto.getRandomValues(new Uint32Array(1))[0] % (temporalMode === 'noise' ? 2 : 4);
+  if (temporalMode === 'noise') {
+    for (let slot = 0; slot < 3; slot++) {
+      const pixels = context.getImageData(40 + slot * 230, 200, 180, 70);
+      const noise = crypto.getRandomValues(new Uint8Array(180 * 70));
+      for (let y = 0; y < 70; y++) for (let x = 0; x < 180; x++) {
+        if (x % 2 === phase) continue;
+        const offset = (y * 180 + x) * 4, value = (noise[y * 180 + x] & 1) * 255;
+        pixels.data[offset] = pixels.data[offset + 1] = pixels.data[offset + 2] = value;
+      }
+      context.putImageData(pixels, 40 + slot * 230, 200);
+    }
+    return;
+  }
   context.fillStyle = '#116456';
   for (let slot = 0; slot < 3; slot++) for (let x = 0; x < 180; x++) {
     if (x % 4 !== phase) context.fillRect(40 + slot * 230 + x, 200, 1, 70);
