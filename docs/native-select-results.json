@@ -1,0 +1,1111 @@
+{
+  "results": [
+    {
+      "strategy": "character-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "harden": false,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Input.dispatchKeyEvent",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "character-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "harden": false,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Input.dispatchKeyEvent",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "character-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 1,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "harden": false,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Input.dispatchKeyEvent",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "cleared-character-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 1,
+      "disabledObservers": null,
+      "popup": {
+        "clear": true,
+        "harden": false,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": false,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"9549fc7f-97ef-4737-8905-51c8df11013a\"></option><option value=\"8defc2b2-7d11-4846-adfa-46493601ab06\"></option><option value=\"098366c7-5409-483c-87eb-af839544db62\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": false,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "cleared-character-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 1,
+      "disabledObservers": null,
+      "popup": {
+        "clear": true,
+        "harden": false,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": false,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"7fe1f8e3-9890-463c-9432-a1d8e4a2d6a0\"></option><option value=\"33b11b9a-8fbc-475c-90fc-6b0a679dc01b\"></option><option value=\"a89ff002-d9d6-4985-bea5-b5726227b2fe\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": false,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "cleared-character-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "disabledObservers": null,
+      "popup": {
+        "clear": true,
+        "harden": false,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": false,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"6d69d092-d820-4d74-9517-ed454a1d66b9\"></option><option value=\"dbe77f37-dbfd-4c74-b3d2-b0663c9daf86\"></option><option value=\"c243f7ce-3026-4746-b56f-0e6d64f72a90\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": false,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "hardened-character-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 1,
+      "disabledObservers": null,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"fde1b6ab-5c29-49a8-a18a-f2f1f413ce6b\"></option><option value=\"f32e8d58-0df8-46a9-91e7-7de9dacb8191\"></option><option value=\"7635b400-6b2c-4f30-8dc9-0aac4510d8dd\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ],
+        "reason": "dom-tamper"
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "hardened-character-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "disabledObservers": null,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"30f75040-d0a9-4423-bf65-84ab021f4f8c\"></option><option value=\"9e6ff9c3-fda8-408c-9df0-9fcd3baec454\"></option><option value=\"4c35a595-ddd4-4cc1-9ca9-1ba3ab30fea5\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ],
+        "reason": "dom-tamper"
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "hardened-character-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "disabledObservers": null,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"6bde2d9e-448a-4f1a-9f1b-4ec58d1813e1\"></option><option value=\"c8fd0867-8b9b-4581-82f1-9ae85c40753c\"></option><option value=\"cbd0de9d-bdb3-443f-aead-0b6aa938fda6\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ],
+        "reason": "dom-tamper"
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "observer-query-character-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 1,
+      "disabledObservers": 1,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"876d69d9-75a0-40b3-a0b0-3c88fc8e19c7\"></option><option value=\"fcfcd712-e22f-454f-ad65-5a6395fb1378\"></option><option value=\"cd287031-79d2-468a-b99d-67ae825b4915\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "Runtime.evaluate",
+        "Runtime.queryObjects",
+        "Runtime.callFunctionOn",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "observer-query-character-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "disabledObservers": 1,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"d1501f13-f043-4b4b-a6ae-78666e71ee85\"></option><option value=\"90fcb140-8331-4d7e-b254-60f62d928f3a\"></option><option value=\"4a3d18d3-308f-4ee8-acfa-3899c7fbe065\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "Runtime.evaluate",
+        "Runtime.queryObjects",
+        "Runtime.callFunctionOn",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "observer-query-character-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "disabledObservers": 1,
+      "popup": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 0,
+        "blocked": false,
+        "lastChangeTrusted": null,
+        "labelsCleared": true,
+        "popupOpen": true,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          }
+        ],
+        "screenshotText": [
+          "Native popup boundary experiment",
+          "Choose Harbor Research, then confirm.",
+          "Confirm",
+          "'clear\": true,",
+          "\"harden\": true,",
+          "\"focused\": true,",
+          "\"accepted\": 0,",
+          "\"blocked\": false,",
+          "\"lastChangeTrusted\": null,",
+          "\"labelsCleared\": true,",
+          "\"popupOpen\": true,",
+          "\"events\": [",
+          "\"type\": \"pointerdown\",",
+          "\"trusted\": true",
+          "}",
+          "]",
+          "}"
+        ]
+      },
+      "labelsAfterOpen": "<select id=\"destination\" aria-label=\"Destination\"><option value=\"\"></option><option value=\"662e44e0-c75c-4f6d-a4ad-bc051a3bd7bc\"></option><option value=\"3f417c79-3e8a-4f69-a48d-73691c21238a\"></option><option value=\"58ebc806-5eda-4565-8eab-7075bdf1c7d6\"></option></select>",
+      "final": {
+        "clear": true,
+        "harden": true,
+        "focused": true,
+        "accepted": 1,
+        "blocked": false,
+        "lastChangeTrusted": true,
+        "labelsCleared": true,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "key": "Escape",
+            "trusted": true
+          },
+          {
+            "type": "change",
+            "trusted": true
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchKeyEvent",
+        "Runtime.evaluate",
+        "Runtime.queryObjects",
+        "Runtime.callFunctionOn",
+        "DOM.setOuterHTML",
+        "DOM.focus"
+      ]
+    },
+    {
+      "strategy": "synthetic-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "harden": false,
+        "focused": true,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": false,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": false
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Runtime.evaluate",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "synthetic-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 1,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "harden": false,
+        "focused": true,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": false,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": false
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Runtime.evaluate",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "synthetic-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "disabledObservers": null,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "harden": false,
+        "focused": true,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": false,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": false
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.bringToFront",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Runtime.evaluate",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}

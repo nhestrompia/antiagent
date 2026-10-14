@@ -1,0 +1,18 @@
+{
+  "browser": "T3 collaborative preview",
+  "url": "http://127.0.0.1:5173/native-select.html",
+  "actions": ["Click destination", "Escape", "Type h", "Click Confirm"],
+  "clear": false,
+  "accepted": 1,
+  "blocked": false,
+  "lastChangeTrusted": true,
+  "labelsCleared": false,
+  "popupOpen": false,
+  "events": [
+    {"type": "pointerdown", "trusted": true},
+    {"type": "keydown", "key": "Escape", "trusted": true},
+    {"type": "keydown", "key": "h", "trusted": true},
+    {"type": "change", "trusted": true},
+    {"type": "confirm", "trusted": true}
+  ]
+}

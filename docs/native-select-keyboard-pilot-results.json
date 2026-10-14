@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "strategy": "closed-keyboard",
+      "repetition": 0,
+      "error": "{\"clear\":false,\"focused\":true,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"keydown\",\"key\":\"Home\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"ArrowDown\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"Enter\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"Escape\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "closed-keyboard",
+      "repetition": 1,
+      "error": "{\"clear\":false,\"focused\":true,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"keydown\",\"key\":\"Home\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"ArrowDown\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"Enter\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"Escape\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "closed-keyboard",
+      "repetition": 2,
+      "error": "{\"clear\":false,\"focused\":true,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"keydown\",\"key\":\"Home\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"ArrowDown\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"Enter\",\"trusted\":true},{\"type\":\"keydown\",\"key\":\"Escape\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    }
+  ]
+}
