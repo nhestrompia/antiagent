@@ -63,7 +63,12 @@ function pointerPosition(event) {
 canvas.addEventListener('pointermove', event => {
   if (!event.isTrusted || state.blocked || state.completed) return;
   const point = pointerPosition(event), now = performance.now();
-  if (!motion.samples) motion.start = now;
+  if (!motion.samples) {
+    motion.start = now;
+    // A first pointer observation invalidates the previous choice positions.
+    layouts[state.step].push(layouts[state.step].shift());
+    draw();
+  }
   if (motion.previous) motion.distance += Math.hypot(point.x - motion.previous.x, point.y - motion.previous.y);
   motion.samples++; motion.previous = point;
   if (point.slot !== motion.slot) { motion.slot = point.slot; motion.entered = now; }

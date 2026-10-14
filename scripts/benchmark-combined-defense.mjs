@@ -17,7 +17,7 @@ function textDistance(a, b) {
   }
   return row[right.length];
 }
-for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-input', 'render-hook', 'screenshot-cdp', 'adaptive-cdp']) {
+for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-input', 'render-hook', 'screenshot-cdp', 'adaptive-cdp', 'reactive-cdp']) {
   const browser = await chromium.launch({ channel: 'chrome', headless: false, args: strategy === 'default-playwright' ? [] : ['--disable-blink-features=AutomationControlled'] });
   try {
     for (let repetition = 0; repetition < 3; repetition++) {
@@ -31,7 +31,11 @@ for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-inpu
       if (strategy === 'locator-stealth') await page.locator('canvas').click({ position: { x: 130, y: 235 } });
       if (strategy === 'synthetic-input') await page.evaluate(() => document.querySelector('canvas').click());
       const observations = [];
-      if (['screenshot-cdp', 'adaptive-cdp'].includes(strategy)) for (const label of ['Harbor Research', '125 EUR', 'Confirm transfer']) {
+      if (['screenshot-cdp', 'adaptive-cdp', 'reactive-cdp'].includes(strategy)) for (const label of ['Harbor Research', '125 EUR', 'Confirm transfer']) {
+        if (strategy === 'reactive-cdp') {
+          await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 250, y: 180 });
+          await new Promise(resolve => setTimeout(resolve, 100));
+        }
         const capture = await client.send('Page.captureScreenshot', { fromSurface: true, captureBeyondViewport: false });
         const path = `${directory}/${strategy}-${repetition}-${observations.length}.png`;
         await writeFile(path, Buffer.from(capture.data, 'base64'));
@@ -41,7 +45,7 @@ for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-inpu
         assert.ok(target, `OCR did not locate ${label}: ${stdout}`);
         const point = { x: target.x * 1280, y: target.y * 900 };
         observations.push({ label, point, text });
-        if (strategy === 'adaptive-cdp') {
+        if (['adaptive-cdp', 'reactive-cdp'].includes(strategy)) {
           for (let sample = 0; sample < 8; sample++) {
             await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: point.x - 70 + sample * 10, y: point.y - 70 + sample * 10 });
             await new Promise(resolve => setTimeout(resolve, 30));
@@ -50,12 +54,12 @@ for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-inpu
         }
         await client.send('Input.dispatchMouseEvent', { type: 'mousePressed', ...point, button: 'left', buttons: 1, clickCount: 1 });
         await client.send('Input.dispatchMouseEvent', { type: 'mouseReleased', ...point, button: 'left', buttons: 0, clickCount: 1 });
-        if (strategy === 'screenshot-cdp') break;
+        if (['screenshot-cdp', 'adaptive-cdp'].includes(strategy)) break;
       }
       // Outcome read happens only after the screenshot agent finishes its actions.
       const state = await page.evaluate(() => JSON.parse(document.querySelector('#status').textContent));
-      const reasons = { 'default-playwright': 'webdriver', 'locator-stealth': 'playwright-target-event', 'synthetic-input': 'untrusted-input', 'screenshot-cdp': 'pointer-continuity' };
-      if (strategy === 'adaptive-cdp') {
+      const reasons = { 'default-playwright': 'webdriver', 'locator-stealth': 'playwright-target-event', 'synthetic-input': 'untrusted-input', 'screenshot-cdp': 'pointer-continuity', 'adaptive-cdp': 'incorrect-decision' };
+      if (strategy === 'reactive-cdp') {
         assert.equal(state.completed, true); assert.equal(state.blocked, false); assert.equal(state.clicks, 3);
       } else {
         assert.equal(state.blocked, true); assert.equal(state.completed, false);
@@ -67,5 +71,5 @@ for (const strategy of ['default-playwright', 'locator-stealth', 'synthetic-inpu
     }
   } finally { await browser.close(); }
 }
-await writeFile('docs/pointer-continuity-results.json', JSON.stringify({ playwright: '1.64.0', results }, null, 2));
+await writeFile('docs/pointer-arrival-results.json', JSON.stringify({ playwright: '1.64.0', results }, null, 2));
 console.log(JSON.stringify(results.map(({ strategy, repetition, state }) => ({ strategy, repetition, state }))));
