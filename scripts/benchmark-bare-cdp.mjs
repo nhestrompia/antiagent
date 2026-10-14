@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { PNG } from 'pngjs';
 import { launchRawCDP } from './raw-cdp.mjs';
 const execute=promisify(execFile);
@@ -21,6 +21,16 @@ const allGuards=layered||process.argv.includes('--all-guards');
 const directory=freshness?'artifacts/freshness-guards':layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
 await mkdir(directory,{recursive:true});
 const results=[];
+function verifyResults(results) {
+  if(process.argv.includes('--require-blocking')) {
+    assert.equal(results.filter(result=>result.completed===true).length,0,'Agent-proof acceptance failed: a session completed the task');
+    assert.ok(results.length>0,'Agent-proof acceptance is inconclusive: no sessions');
+    assert.equal(results.filter(result=>result.error||result.blocked!==true).length,0,'Agent-proof acceptance is inconclusive: some sessions were not explicitly blocked');
+  }
+  assert.equal(results.filter(result=>result.error).length,0,'One or more capture/input cases did not finish');
+}
+const verifyIndex=process.argv.indexOf('--verify-results');
+if(verifyIndex>=0){verifyResults(JSON.parse(await readFile(process.argv[verifyIndex+1],'utf8')).results);process.exit(0);}
 function textDistance(a,b) {
   a=a.toLowerCase().replace(/[^a-z0-9]/g,'');b=b.toLowerCase().replace(/[^a-z0-9]/g,'');
   let row=Array.from({length:b.length+1},(_,i)=>i);
@@ -177,9 +187,4 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
 }
 await writeFile(process.env.RESULT_PATH||(decoyMask?(stableColumns?'docs/decoy-stable-results.json':'docs/decoy-color-results.json'):freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json'),JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
-assert.equal(results.filter(result=>result.error).length,0,'One or more capture/input cases did not finish');
-
-if(process.argv.includes('--require-blocking')) {
-  const bypasses=results.filter(({completed,blocked})=>completed||!blocked);
-  assert.equal(bypasses.length,0,`Agent-proof acceptance failed: ${bypasses.length} sessions bypassed the guard`);
-}
+verifyResults(results);
