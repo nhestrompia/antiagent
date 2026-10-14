@@ -16,6 +16,8 @@ const clockGuard=process.argv.includes('--clock-guard');
 const leanCapture=process.argv.includes('--lean-capture');
 const jitterMask=process.argv.includes('--jitter-mask');
 const alignFrames=process.argv.includes('--align-frames');
+const screencastCapture=process.argv.includes('--screencast-capture');
+const binaryColumns=process.argv.includes('--binary-columns');
 const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
 assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
@@ -48,6 +50,7 @@ function retainedLetters(text,label) {
 for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','runtime-zero','runtime-disabled'])) for(let repetition=0;repetition<3;repetition++) {
   const chrome=await launchRawCDP({headless:!layered});
   let failureDiagnostic;
+  let stopCapture=async()=>{},streamFrameCount=0;
   try {
     const version=await chrome.send('Browser.getVersion');
     const {targetId}=await chrome.send('Target.createTarget',{url:'about:blank'});
@@ -83,18 +86,38 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if(mode==='runtime-late') {await send('Runtime.enable');await new Promise(resolve=>setTimeout(resolve,2200));}
     let captureIndex=0;
     const captureTimings=[];
+    const streamed=[],waiting=[];
+    if(screencastCapture){
+      const unsubscribe=chrome.onEvent('Page.screencastFrame',sessionId,event=>{
+        streamFrameCount++;send('Page.screencastFrameAck',{sessionId:event.sessionId}).catch(()=>{});
+        const consumer=waiting.shift();
+        if(consumer){clearTimeout(consumer.timer);consumer.resolve(event.data);}
+        else{streamed.push(event.data);if(streamed.length>64)streamed.shift();}
+      });
+      await send('Page.startScreencast',{format:'png',maxWidth:1280,maxHeight:900,everyNthFrame:1});
+      stopCapture=async()=>{unsubscribe();for(const consumer of waiting){clearTimeout(consumer.timer);consumer.reject(new Error('Screencast stopped'));}await send('Page.stopScreencast');};
+    }
+    function nextStreamFrame(){
+      if(streamed.length)return Promise.resolve(streamed.shift());
+      return new Promise((resolve,reject)=>{const consumer={resolve,reject,timer:setTimeout(()=>{const index=waiting.indexOf(consumer);if(index>=0)waiting.splice(index,1);reject(new Error('Screencast frame timeout'));},5000)};waiting.push(consumer);});
+    }
     async function observe(frameCount=1) {
       const started=Date.now();
       const cropped=fastCapture&&frameCount>1;
       const images=[];
+      if(screencastCapture&&frameCount>1){await delay(100);streamed.length=0;}
       for(let frame=0;frame<frameCount;frame++) {
         if(virtualClock&&frameCount>1)await delay(17);
         let capture;
+        if(screencastCapture&&frameCount>1)capture={data:await nextStreamFrame()};
+        else
         for(let attempt=0;attempt<2;attempt++) {
           try {capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false,optimizeForSpeed:fastCapture,...(cropped?{clip:{x:220,y:300,width:670,height:110,scale:1}}:{})});break;}
           catch(error) {if(attempt||!error.message.startsWith('CDP timeout:')) throw error;}
         }
-        images.push(PNG.sync.read(Buffer.from(capture.data,'base64')));
+        let png=PNG.sync.read(Buffer.from(capture.data,'base64'));
+        if(screencastCapture&&cropped){assert.equal(png.width,1280);assert.equal(png.height,900);const crop=new PNG({width:670,height:110});for(let y=0;y<110;y++)png.data.copy(crop.data,y*670*4,((y+300)*1280+220)*4,((y+300)*1280+890)*4);png=crop;}
+        images.push(png);
         if(frameCount>1&&!fastCapture) await new Promise(resolve=>setTimeout(resolve,19));
       }
       const shifts=[];
@@ -113,8 +136,8 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
           let best=0,bestScore=-1;
           const repeats=new Map();
           if(stableColumns)for(let frame=0;frame<frameCount;frame++) {
-            const column=Buffer.alloc(50*4);let white=0;
-            for(let y=30;y<80;y++){const offset=(y*combined.width+x)*4;images[frame].data.copy(column,(y-30)*4,offset,offset+4);if(images[frame].data[offset]>150)white++;}
+            const column=Buffer.alloc(binaryColumns?50:50*4);let white=0;
+            for(let y=30;y<80;y++){const offset=(y*combined.width+x)*4;if(binaryColumns)column[y-30]=images[frame].data[offset]>150&&images[frame].data[offset+1]>150&&images[frame].data[offset+2]>150?1:0;else images[frame].data.copy(column,(y-30)*4,offset,offset+4);if(images[frame].data[offset]>150)white++;}
             const key=column.toString('base64');
             const entry=repeats.get(key)||{count:0,frame,white};entry.count++;repeats.set(key,entry);
           }
@@ -192,9 +215,9 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     else if(freshness) {assert.equal(completed||blocked,true,JSON.stringify(final));}
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
-    results.push({mode,repetition,version:version.product,completed,blocked,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
+    results.push({mode,repetition,version:version.product,completed,blocked,streamFrameCount,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
   } catch(error) {results.push({mode,repetition,error:error.message,diagnostic:failureDiagnostic,commands:[...new Set(chrome.commands)]});}
-  finally {await chrome.close();}
+  finally {try{await stopCapture();}catch{}await chrome.close();}
 }
 await writeFile(process.env.RESULT_PATH||(decoyMask?(stableColumns?'docs/decoy-stable-results.json':'docs/decoy-color-results.json'):freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json'),JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));

@@ -1,0 +1,309 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "error": "No target 125 EUR: [{\"x\":0.43281250134375,\"text\":\"C50 EURH\",\"y\":0.4077777776222222},{\"x\":0.6125000011197916,\"y\":0.4066666665555556,\"text\":\"SOLEURI3ND\"}]",
+      "diagnostic": [
+        {
+          "text": "Combined defense experiment",
+          "y": 0.06000000029629626,
+          "x": 0.32812500140625
+        },
+        {
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "x": 0.26796874901909723,
+          "text": "Choose 125 EUR",
+          "y": 0.20777777788888896
+        },
+        {
+          "text": "Decision 2 of 3",
+          "x": 0.2226562513802083,
+          "y": 0.2566666665555556
+        },
+        {
+          "y": 0.40666666676190477,
+          "text": "188EDT*300NI",
+          "x": 0.2531249990401786
+        },
+        {
+          "text": "EXG3AA3NC oow",
+          "x": 0.6125000009598214,
+          "y": 0.40666666657142847
+        },
+        {
+          "y": 0.7255555555277778,
+          "x": 0.20078124904296873,
+          "text": "\"step\": 1,"
+        },
+        {
+          "text": "\"clicks\": 1,",
+          "x": 0.20859375153645832,
+          "y": 0.7455555555925926
+        },
+        {
+          "x": 0.22736663438243393,
+          "y": 0.765494731153163,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "x": 0.21955804684139074,
+          "text": "\"reason\": null,",
+          "y": 0.7877073228728871
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "x": 0.21562500166666665,
+          "y": 0.830000000037037,
+          "text": "\"ready\": true,"
+        },
+        {
+          "x": 0.2382812509114583,
+          "y": 0.8499999996666666,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "y": 0.8723898772417563,
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.25702902816386375
+        },
+        {
+          "text": "\"actionClockMs\": 1.100000023841858",
+          "x": 0.2914062457031251,
+          "y": 0.8922222221851852
+        },
+        {
+          "y": 0.9133333331111111,
+          "text": "}",
+          "x": 0.15234374994140626
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.startScreencast",
+        "Page.screencastFrameAck",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "error": "No target 125 EUR: []",
+      "diagnostic": [
+        {
+          "y": 0.06000000029629626,
+          "x": 0.32812500140625,
+          "text": "Combined defense experiment"
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333333333329,
+          "x": 0.28593750339843743
+        },
+        {
+          "text": "Choose 125 EUR",
+          "x": 0.26796874901909723,
+          "y": 0.20777777788888896
+        },
+        {
+          "x": 0.22265625082812499,
+          "text": "Decision 2 of 3",
+          "y": 0.2566666665555556
+        },
+        {
+          "x": 0.25312500078125,
+          "y": 0.40333333353333334,
+          "text": "22280002"
+        },
+        {
+          "text": "85838090",
+          "x": 0.43281250134375,
+          "y": 0.40333333317777775
+        },
+        {
+          "y": 0.4033333334126983,
+          "text": "205EAR0ELNOWE",
+          "x": 0.6132812490290178
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 1,"
+        },
+        {
+          "x": 0.20859375153645832,
+          "text": "\"clicks\": 1,",
+          "y": 0.7455555555925926
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736663438243393,
+          "y": 0.765494731153163
+        },
+        {
+          "x": 0.21955804684139074,
+          "y": 0.7877073228728871,
+          "text": "\"reason\": null,"
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "text": "\"ready\": true,",
+          "y": 0.830000000037037,
+          "x": 0.21562500166666665
+        },
+        {
+          "x": 0.2382812509114583,
+          "y": 0.8499999996666666,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.25702902816386375,
+          "y": 0.8723898772417563
+        },
+        {
+          "x": 0.2914062457031251,
+          "y": 0.8922222221851852,
+          "text": "\"actionClockMs\": 1.100000023841858"
+        },
+        {
+          "text": "}",
+          "y": 0.9133333331111111,
+          "x": 0.15234374994140626
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.startScreencast",
+        "Page.screencastFrameAck",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "error": "No target 125 EUR: [{\"text\":\"250 EURIVOD\",\"y\":0.4066666665777778,\"x\":0.25078125129687495}]",
+      "diagnostic": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "y": 0.11333333340740737,
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28515624544270846
+        },
+        {
+          "text": "Choose 125 EUR",
+          "x": 0.26796874901909723,
+          "y": 0.20777777788888896
+        },
+        {
+          "text": "Decision 2 of 3",
+          "y": 0.2566666665555556,
+          "x": 0.2226562513802083
+        },
+        {
+          "y": 0.4044444443333334,
+          "text": "2Д0340410с*",
+          "x": 0.25312500111979164
+        },
+        {
+          "text": "186 1ceHL30",
+          "x": 0.4320312511067709,
+          "y": 0.4044444443333334
+        },
+        {
+          "text": "\"step\": 1,",
+          "y": 0.7255555560892202,
+          "x": 0.20078125095722665
+        },
+        {
+          "y": 0.7455555555925926,
+          "x": 0.20859375153645832,
+          "text": "\"clicks\": 1,"
+        },
+        {
+          "x": 0.22736663438243393,
+          "text": "\"blocked\": false,",
+          "y": 0.765494731153163
+        },
+        {
+          "y": 0.7877073228728871,
+          "text": "\"reason\": null,",
+          "x": 0.21955804684139074
+        },
+        {
+          "text": "\"completed\": false,",
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923
+        },
+        {
+          "y": 0.8300342430775739,
+          "text": "\"ready\": true,",
+          "x": 0.21648513988377624
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.23828124752604174,
+          "y": 0.8511111110370371
+        },
+        {
+          "y": 0.8723148043648579,
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.2570305658725971
+        },
+        {
+          "x": 0.29531249557291683,
+          "y": 0.8922222221851852,
+          "text": "\"actionClockMs\": 1.1999999284744263"
+        },
+        {
+          "text": "}",
+          "x": 0.152343749921875,
+          "y": 0.9133333330370372
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.startScreencast",
+        "Page.screencastFrameAck",
+        "Page.captureScreenshot"
+      ]
+    }
+  ]
+}
