@@ -1,3 +1,6 @@
+import { load as loadBotD } from '@fingerprintjs/botd';
+import { detectInstantClientAsync } from 'bot-signal/browser';
+import { DRMRuntime, publicAsset } from './drm.js';
 import { inspectAPIs } from './tamper-gate.js';
 import { installCaptureCover } from './capture-cover.js';
 import { inspectRuntimeCost } from './runtime-cost.js';
@@ -8,7 +11,8 @@ const context = canvas.getContext('2d');
 const status = document.querySelector('#status');
 // Opt-in rendering research; human readability is not established.
 const parameters = new URLSearchParams(location.search);
-const combinedMode = parameters.get('defense') === 'combined';
+const layeredMode = parameters.get('defense') === 'layered';
+const combinedMode = layeredMode || parameters.get('defense') === 'combined';
 const temporalMode = combinedMode ? 'noise' : parameters.get('temporal');
 const temporal = ['on', 'noise'].includes(temporalMode);
 const tasks = [
@@ -16,7 +20,7 @@ const tasks = [
   ['Choose 125 EUR', ['125 EUR', '50 EUR', '250 EUR']],
   ['Choose Confirm transfer', ['Confirm transfer', 'Cancel', 'Go back']],
 ];
-const state = { step: 0, clicks: 0, blocked: false, reason: null, completed: false };
+const state = { step: 0, clicks: 0, blocked: false, reason: null, completed: false, ready: !layeredMode };
 const layouts = tasks.map(([, choices]) => {
   const result = [...choices];
   for (let i = result.length - 1; i > 0; i--) {
@@ -88,7 +92,7 @@ function pointerPosition(event) {
   return { x, y, slot };
 }
 canvas.addEventListener('pointermove', event => {
-  if (!event.isTrusted || state.blocked || state.completed) return;
+  if (!state.ready || !event.isTrusted || state.blocked || state.completed) return;
   const point = pointerPosition(event), now = performance.now();
   if (motion.armed && point.slot !== motion.armed.slot) { block('pointer-transaction'); return; }
   if (!motion.samples) {
@@ -102,7 +106,7 @@ canvas.addEventListener('pointermove', event => {
   if (point.slot !== motion.slot) { motion.slot = point.slot; motion.entered = now; }
 });
 canvas.addEventListener('pointerdown', event => {
-  if (state.blocked || state.completed) return;
+  if (!state.ready || state.blocked || state.completed) return;
   const point = pointerPosition(event), now = performance.now();
   motion.armed = false;
   if (point.slot === undefined) return;
@@ -122,6 +126,7 @@ for (const name of ['pointercancel', 'pointerleave']) canvas.addEventListener(na
 });
 window.addEventListener('blur', () => { motion.armed = false; });
 canvas.addEventListener('click', event => {
+  if (!state.ready) return;
   if (state.blocked || state.completed) return;
   if (!event.isTrusted) { block('untrusted-input'); return; }
   if (!motion.armed) { block('pointer-continuity'); return; }
@@ -145,6 +150,30 @@ else {
   const locks = lockMethods([{ target: CanvasRenderingContext2D.prototype, key: 'fillText' }]);
   if (locks.some(lock => !['locked', 'already-locked'].includes(lock.status))) block('renderer-lock-failed');
 }
+if (layeredMode && !state.blocked) {
+  const [botd, instant] = await Promise.all([loadBotD({monitoring:false}).then(detector=>detector.detect()), detectInstantClientAsync(window)]);
+  if (botd.bot || !instant.isLegitClient) block('browser-detector');
+  else {
+    const video=document.createElement('video');
+    video.muted=true;video.playsInline=true;video.loop=true;
+    video.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:fill;opacity:0.02;pointer-events:none';
+    const surface=document.createElement('div');surface.style.position='relative';
+    canvas.before(surface);surface.append(canvas,video);
+    const drm=new DRMRuntime(video,()=>{});
+    await drm.start({...publicAsset,headers:{},robustness:'SW_SECURE_DECODE',maxVideoHeight:240});
+    for(let attempt=0;attempt<200&&!drm.state.protectedPlayback&&!drm.state.error;attempt++) await new Promise(resolve=>setTimeout(resolve,100));
+    if (!drm.state.protectedPlayback) block('drm-unverified');
+    state.drmVerified=Boolean(drm.state.protectedPlayback);
+    state.detectorsAllowed=true;
+    // Action-time checks do not depend on an observer that can be disconnected.
+    const owner=surface.ownerDocument;
+    canvas.addEventListener('pointerdown',()=>{
+      if (surface.ownerDocument!==owner || canvas.parentElement!==surface || video.parentElement!==surface || !drm.state.protectedPlayback) block('layer-ownership');
+    },true);
+  }
+}
+state.ready=true;
+document.title='Defense ready';
 draw();
 
 if (temporal) requestAnimationFrame(function animate() { paintFrame(); requestAnimationFrame(animate); });

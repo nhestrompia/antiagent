@@ -37,7 +37,9 @@
     "verify:native-select": "node scripts/benchmark-native-select.mjs --require-blocking",
     "benchmark:bot-signal": "node scripts/benchmark-bot-signal.mjs",
     "benchmark:drm-fullscreen": "node scripts/benchmark-drm-fullscreen.mjs",
-    "verify:drm-fullscreen": "node scripts/benchmark-drm-fullscreen.mjs --require-blocking"
+    "verify:drm-fullscreen": "node scripts/benchmark-drm-fullscreen.mjs --require-blocking",
+    "benchmark:layered-guards": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered",
+    "verify:layered-guards": "MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --require-blocking"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

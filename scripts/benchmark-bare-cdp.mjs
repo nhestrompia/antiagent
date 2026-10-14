@@ -6,8 +6,9 @@ import { PNG } from 'pngjs';
 import { launchRawCDP } from './raw-cdp.mjs';
 const execute=promisify(execFile);
 const isolated=process.env.ISOLATED==='1'||process.argv.includes('--isolated');
-const allGuards=process.argv.includes('--all-guards');
-const directory=allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
+const layered=process.argv.includes('--layered');
+const allGuards=layered||process.argv.includes('--all-guards');
+const directory=layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
 await mkdir(directory,{recursive:true});
 const results=[];
 function textDistance(a,b) {
@@ -17,7 +18,7 @@ function textDistance(a,b) {
   return row[b.length];
 }
 for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','runtime-zero','runtime-disabled'])) for(let repetition=0;repetition<3;repetition++) {
-  const chrome=await launchRawCDP();
+  const chrome=await launchRawCDP({headless:!layered});
   try {
     const version=await chrome.send('Browser.getVersion');
     const {targetId}=await chrome.send('Target.createTarget',{url:'about:blank'});
@@ -28,7 +29,12 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if(mode!=='bare') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    await send('Page.navigate',{url:allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered':allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    if(layered) {
+      let ready=false;
+      for(let attempt=0;attempt<300;attempt++){const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});if(targetInfo.title==='Defense ready'){ready=true;break;}await new Promise(resolve=>setTimeout(resolve,100));}
+      assert.ok(ready,'Layered initialization did not finish');
+    }
     await new Promise(resolve=>setTimeout(resolve,500));
     if(isolated) {
       const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});
@@ -38,7 +44,11 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     async function observe(frameCount=1) {
       const images=[];
       for(let frame=0;frame<frameCount;frame++) {
-        const capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false});
+        let capture;
+        for(let attempt=0;attempt<2;attempt++) {
+          try {capture=await send('Page.captureScreenshot',{fromSurface:true,captureBeyondViewport:false});break;}
+          catch(error) {if(attempt||!error.message.startsWith('CDP timeout:')) throw error;}
+        }
         images.push(PNG.sync.read(Buffer.from(capture.data,'base64')));
         if(frameCount>1) await new Promise(resolve=>setTimeout(resolve,19));
       }
@@ -84,10 +94,12 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
     results.push({mode,repetition,version:version.product,completed,blocked,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,observations,initial,final,commands:[...new Set(chrome.commands)]});
-  } finally {await chrome.close();}
+  } catch(error) {results.push({mode,repetition,error:error.message});}
+  finally {await chrome.close();}
 }
-await writeFile(allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
-console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked})=>({mode,repetition,completed,blocked})),null,2));
+await writeFile(layered?'docs/layered-guards-results.json':allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json',JSON.stringify({results},null,2));
+console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
+assert.equal(results.filter(result=>result.error).length,0,'One or more capture/input cases did not finish');
 
 if(process.argv.includes('--require-blocking')) {
   const bypasses=results.filter(({completed,blocked})=>completed||!blocked);
