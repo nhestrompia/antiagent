@@ -1,5 +1,7 @@
 # Protected copy-output source review
 
+Update 2026-10-16: the [pinned producer trace](secure-quad-producer-trace.md) resolves the missing metadata mapping. The [Mac capture-path trace](mac-native-vs-cdp-boundary.md) explains the separate native and compositor rules.
+
 Researched 2026-10-14. The pinned change is Chromium commit `b24f276980930f375ff91144a68e3e8846b17431`, committed 2026-09-23. This is a screenshot-obfuscation lead, not website control over CDP.
 
 ## What the change actually adds

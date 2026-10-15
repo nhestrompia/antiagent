@@ -1,0 +1,161 @@
+{
+  "revision": "155.0.8059.40",
+  "records": [
+    {
+      "path": "media/cdm/cdm_adapter.cc",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/media/cdm/cdm_adapter.cc?format=TEXT",
+      "sha256": "457385c8c09a841df8ed8103aceffe5400a03b607d203533979a70a3f119888c",
+      "lineCount": 1272,
+      "anchors": [
+        {
+          "needle": "metadata().protected_video",
+          "line": 673,
+          "startLine": 668,
+          "text": "    DLOG(ERROR) << __func__ << \": TransformToVideoFrame failed.\";\n    std::move(video_decode_cb).Run(Decryptor::kError, nullptr);\n    return;\n  }\n\n  decoded_frame->metadata().protected_video = is_video_encrypted_;\n\n  ++cdm_metrics_data_.video_frames_processed;\n  ++frames_processed_;\n\n  std::move(video_decode_cb).Run(Decryptor::kSuccess, decoded_frame);\n}\n\nvoid CdmAdapter::ResetDecoder(StreamType stream_type) {\n  DVLOG(2) << __func__ << \": stream_type = \" << stream_type;\n  CHECK(task_runner_->BelongsToCurrentThread());\n  TRACE_EVENT1(\"media\", \"CdmAdapter::ResetDecoder\", \"stream_type\", stream_type);\n\n  cdm_->ResetDecoder(ToCdmStreamType(stream_type));\n}"
+        }
+      ]
+    },
+    {
+      "path": "media/renderers/video_resource_updater.cc",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/media/renderers/video_resource_updater.cc?format=TEXT",
+      "sha256": "a82b087346f29009cbea7e255eb8f7ac1787460ab3a16a45b8b5f72d1eb4be33",
+      "lineCount": 1373,
+      "anchors": [
+        {
+          "needle": "kSoftwareProtected",
+          "line": 79,
+          "startLine": 74,
+          "text": "  if (!metadata.protected_video) {\n    return gfx::ProtectedVideoType::kClear;\n  }\n\n  return metadata.hw_protected ? gfx::ProtectedVideoType::kHardwareProtected\n                               : gfx::ProtectedVideoType::kSoftwareProtected;\n}\n\nVideoFrameResourceType ExternalResourceTypeForHardware(\n    const VideoFrame& frame) {\n  bool si_prefers_external_sampler =\n      frame.shared_image()->format().PrefersExternalSampler();\n  if (si_prefers_external_sampler) {\n    return VideoFrameResourceType::RGB;\n  }\n\n#if BUILDFLAG(IS_ANDROID)\n  // Hardware video decode on Android requires using external formats which are\n  // currently not expressible by SharedImageFormat, so images are created as\n  // RGBA+GL_TEXTURE_EXTERNAL_OES."
+        },
+        {
+          "needle": "nearest_neighbor, false, protected_video_type",
+          "line": 615,
+          "startLine": 610,
+          "text": "      auto* texture_quad =\n          render_pass->CreateAndAppendDrawQuad<viz::TextureDrawQuad>();\n      texture_quad->SetNew(shared_quad_state, quad_rect, visible_quad_rect,\n                           needs_blending, frame_resource_id_, uv_top_left,\n                           uv_bottom_right, SkColors::kTransparent,\n                           nearest_neighbor, false, protected_video_type,\n                           /*is_tex_coords_normalized=*/false);\n#if BUILDFLAG(IS_WIN)\n      // Windows uses DComp surfaces to e.g. hold MediaFoundation videos, which\n      // must be promoted to overlay to be composited correctly.\n      if (frame->metadata().dcomp_surface) {\n        texture_quad->overlay_priority_hint = viz::OverlayPriority::kRequired;\n      }\n#endif\n      texture_quad->is_video_frame = true;\n      resource_provider_->ValidateResource(texture_quad->resource_id);\n      break;\n    }\n    case VideoFrameResourceType::NONE:\n      NOTIMPLEMENTED();"
+        }
+      ]
+    },
+    {
+      "path": "components/viz/common/quads/texture_draw_quad.cc",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/components/viz/common/quads/texture_draw_quad.cc?format=TEXT",
+      "sha256": "f150c5e3f7c746124cacd070517ff4d7dca1f6b3497dd833cb3830490da9b56d",
+      "lineCount": 189,
+      "anchors": [
+        {
+          "needle": "secure_output_only = secure_output",
+          "line": 54,
+          "startLine": 49,
+          "text": "                   visible_rect, needs_blending);\n  resource_id = resource;\n  tex_coord_rect_ = gfx::BoundingRect(top_left, bottom_right);\n  background_color = background;\n  nearest_neighbor = nearest;\n  secure_output_only = secure_output;\n  protected_video_type = video_type;\n  is_normalized_coords = is_tex_coords_normalized;\n}\n\nvoid TextureDrawQuad::SetAll(const SharedQuadState* shared_quad_state,\n                             const gfx::Rect& rect,\n                             const gfx::Rect& visible_rect,\n                             bool needs_blending,\n                             ResourceId resource,\n                             const gfx::PointF& top_left,\n                             const gfx::PointF& bottom_right,\n                             SkColor4f background,\n                             bool nearest,\n                             bool secure_output,"
+        },
+        {
+          "needle": "secure_output_only = secure_output",
+          "line": 78,
+          "startLine": 73,
+          "text": "                   visible_rect, needs_blending);\n  resource_id = resource;\n  tex_coord_rect_ = gfx::BoundingRect(top_left, bottom_right);\n  background_color = background;\n  nearest_neighbor = nearest;\n  secure_output_only = secure_output;\n  protected_video_type = video_type;\n  is_normalized_coords = is_tex_coords_normalized;\n}\n\nconst TextureDrawQuad* TextureDrawQuad::MaterialCast(const DrawQuad* quad) {\n  CHECK_EQ(quad->material, DrawQuad::Material::kTextureContent);\n  return static_cast<const TextureDrawQuad*>(quad);\n}\n\nvoid TextureDrawQuad::ExtendValue(base::trace_event::TracedValue* value) const {\n  cc::MathUtil::AddToTracedValue(\"tex_coord_rect\", tex_coord_rect_, value);\n  value->SetString(\"background_color\",\n                   color_utils::SkColor4fToRgbaString(background_color));\n  value->SetString(\"dynamic_range_limit\", dynamic_range_limit.ToString());"
+        }
+      ]
+    },
+    {
+      "path": "ui/accelerated_widget_mac/ca_renderer_layer_tree.mm",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/ui/accelerated_widget_mac/ca_renderer_layer_tree.mm?format=TEXT",
+      "sha256": "2bf6cf7d42918aed04ab292745bef2e0d6f1ec08c906370ac6e37d5b21c4ece5",
+      "lineCount": 1412,
+      "anchors": [
+        {
+          "needle": "preventsCapture",
+          "line": 1186,
+          "startLine": 1181,
+          "text": "        old_layer_->background_color_ != background_color_;\n    update_ca_edge_aa_mask = old_layer_->ca_edge_aa_mask_ != ca_edge_aa_mask_;\n    update_opacity = old_layer_->opacity_ != opacity_;\n    update_ca_filter = old_layer_->ca_filter_ != ca_filter_;\n    if (type_ == CALayerType::kVideo) {\n      av_layer_.preventsCapture =\n          protected_video_type_ != gfx::ProtectedVideoType::kClear;\n    }\n  } else {\n    switch (type_) {\n      case CALayerType::kHDRCopier:\n        ca_layer_ = metal::MakeHDRCopierLayer();\n        break;\n      case CALayerType::kVideo:\n        av_layer_ = [[AVSampleBufferDisplayLayer alloc] init];\n        // Workaround for https://crbug.com/398425794. The documentation for\n        // geometryFlipped specifies that \"The value of this property does not\n        // affect the rendering of the layer\u2019s content.\" If this is not\n        // specified, then AVSampleBufferDisplayLayer, when rendering HDR\n        // content that is transformed (by, e.g, a 90 degree rotation), will"
+        },
+        {
+          "needle": "preventsCapture",
+          "line": 1206,
+          "startLine": 1201,
+          "text": "        // be flipped vertically.\n        av_layer_.geometryFlipped = YES;\n        ca_layer_ = av_layer_;\n        av_layer_.videoGravity = AVLayerVideoGravityResize;\n        if (protected_video_type_ != gfx::ProtectedVideoType::kClear) {\n          av_layer_.preventsCapture = true;\n        }\n        break;\n      case CALayerType::kDefault:\n        ca_layer_ = [[CALayer alloc] init];\n    }\n    ca_layer_.anchorPoint = CGPointZero;\n  }\n\n  if (ca_layer_.superlayer != superlayer) {\n    DCHECK_EQ(ca_layer_.superlayer, nil);\n    if (last_committed_ca_layer == nullptr) {\n      [superlayer insertSublayer:ca_layer_ atIndex:0];\n    } else {\n      [superlayer insertSublayer:ca_layer_ above:last_committed_ca_layer];"
+        }
+      ]
+    },
+    {
+      "path": "components/viz/service/display/surface_aggregator.cc",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/components/viz/service/display/surface_aggregator.cc?format=TEXT",
+      "sha256": "f045bf250a01e6ca524e84c7765aeb465dbac72928d3df1eb1cbe1ab7bb99334",
+      "lineCount": 2503,
+      "anchors": [
+        {
+          "needle": "secure_output_only",
+          "line": 1460,
+          "startLine": 1455,
+          "text": "                                    new_dest_root_target_clip_rect,\n                                    dest_pass->transform_to_root_target);\n        }\n      } else if (const auto* texture_quad =\n                     quad->DynamicCast<TextureDrawQuad>()) {\n        if (texture_quad->secure_output_only &&\n            (!output_is_secure_ ||\n             resolved_pass.aggregation().in_copy_request_pass)) {\n          // If TextureDrawQuad requires secure output and the output is not\n          // secure then replace it with solid black.\n          auto* solid_color_quad =\n              dest_pass->CreateAndAppendDrawQuad<SolidColorDrawQuad>();\n          solid_color_quad->SetNew(dest_pass->shared_quad_state_list.back(),\n                                   quad->rect, quad->visible_rect,\n                                   SkColors::kBlack, false);\n        } else {\n          dest_quad = dest_pass->CopyFromAndAppendDrawQuad(quad);\n          if (override_filter_quality.has_value()) {\n            static_cast<TextureDrawQuad*>(dest_quad)->nearest_neighbor =\n                override_filter_quality == cc::PaintFlags::FilterQuality::kNone;"
+        }
+      ]
+    },
+    {
+      "path": "content/browser/renderer_host/render_widget_host_impl.cc",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/content/browser/renderer_host/render_widget_host_impl.cc?format=TEXT",
+      "sha256": "e5a9d75766d0a642283c6caf413534c5fee0f692140441a88f0e68733b77f51d",
+      "lineCount": 4547,
+      "anchors": [
+        {
+          "needle": "void RenderWidgetHostImpl::GetSnapshotFromBrowser",
+          "line": 2303,
+          "startLine": 2298,
+          "text": "  if (auto* touch_emulator = GetTouchEmulator(/*create_if_necessary=*/false)) {\n    touch_emulator->SetDeviceScaleFactor(GetScaleFactorForView(view_.get()));\n  }\n}\n\nvoid RenderWidgetHostImpl::GetSnapshotFromBrowser(\n    GetSnapshotFromBrowserCallback callback,\n    bool from_surface) {\n  int snapshot_id = next_browser_snapshot_id_++;\n  if (from_surface) {\n    pending_surface_browser_snapshots_.insert(\n        std::make_pair(snapshot_id, std::move(callback)));\n    if (base::FeatureList::IsEnabled(features::kCDPScreenshotNewSurface)) {\n      // 1. Force content redraw in the renderer.\n      blink_widget_->ForceRedraw(base::DoNothing());\n      // 2. Force a repaint to ensure that surface is updated.\n      RequestRepaintOnNewSurface();\n      // 3. Create a copy request from the newest surface. This\n      // should wait until the requested repaint has arrived.\n      GetView()->CopyFromSurface("
+        },
+        {
+          "needle": "void RenderWidgetHostImpl::GotResponseToForceRedraw",
+          "line": 3911,
+          "startLine": 3906,
+          "text": "  } else {\n    UnlockKeyboard();\n  }\n}\n\nvoid RenderWidgetHostImpl::GotResponseToForceRedraw(int snapshot_id) {\n  // Snapshots from surface do not need to wait for the screen update.\n  if (!pending_surface_browser_snapshots_.empty()) {\n    GetView()->CopyFromSurface(\n        gfx::Rect(), gfx::Size(), base::TimeDelta(),\n        base::BindOnce(&RenderWidgetHostImpl::OnSnapshotFromSurfaceReceived,\n                       weak_factory_.GetWeakPtr(), snapshot_id, 0));\n  }\n\n  if (pending_browser_snapshots_.empty()) {\n    return;\n  }\n#if BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)\n  // On Mac, when using CoreAnimation, or Win32 when using GDI, there is a\n  // delay between when content is drawn to the screen, and when the"
+        }
+      ]
+    },
+    {
+      "path": "content/browser/renderer_host/render_widget_host_view_mac.mm",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/content/browser/renderer_host/render_widget_host_view_mac.mm?format=TEXT",
+      "sha256": "e4458d5d4e95382657ea442043d3a35eb31c36f87baaa4877792902954fba5f5",
+      "lineCount": 2768,
+      "anchors": [
+        {
+          "needle": "void RenderWidgetHostViewMac::CopyFromSurface",
+          "line": 1179,
+          "startLine": 1174,
+          "text": "\nvoid RenderWidgetHostViewMac::SetSupportsAutoFill(bool supports) {\n  ns_view_->SetSupportsAutoFill(supports);\n}\n\nvoid RenderWidgetHostViewMac::CopyFromSurface(\n    const gfx::Rect& src_subrect,\n    const gfx::Size& dst_size,\n    base::TimeDelta timeout,\n    base::OnceCallback<void(const content::CopyFromSurfaceResult&)> callback) {\n  base::WeakPtr<RenderWidgetHostImpl> popup_host;\n  base::WeakPtr<DelegatedFrameHost> popup_frame_host;\n  if (popup_child_host_view_) {\n    popup_host = popup_child_host_view_->host()->GetWeakPtr();\n    popup_frame_host = popup_child_host_view_->BrowserCompositor()\n                           ->GetDelegatedFrameHost()\n                           ->GetWeakPtr();\n  }\n  // TODO(crbug.com/40743791): Resolve potential differences between display\n  // info caches in RenderWidgetHostViewMac and BrowserCompositorMac."
+        }
+      ]
+    },
+    {
+      "path": "content/browser/renderer_host/render_widget_host_view_base.cc",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/content/browser/renderer_host/render_widget_host_view_base.cc?format=TEXT",
+      "sha256": "9f812ebbc35fa1e715c5063fde6f4334076bb0b7c63776c7eca1897360a040c1",
+      "lineCount": 1192,
+      "anchors": [
+        {
+          "needle": "void RenderWidgetHostViewBase::CopyMainAndPopupFromSurface",
+          "line": 195,
+          "startLine": 190,
+          "text": "  }\n\n  return true;\n}\n\nvoid RenderWidgetHostViewBase::CopyMainAndPopupFromSurface(\n    base::WeakPtr<RenderWidgetHostImpl> main_host,\n    base::WeakPtr<DelegatedFrameHost> main_frame_host,\n    base::WeakPtr<RenderWidgetHostImpl> popup_host,\n    base::WeakPtr<DelegatedFrameHost> popup_frame_host,\n    const gfx::Rect& src_subrect,\n    const gfx::Size& dst_size,\n    float scale_factor,\n    base::TimeDelta timeout,\n    base::OnceCallback<void(const content::CopyFromSurfaceResult&)> callback) {\n  if (!main_host || !main_frame_host) {\n    if (base::FeatureList::IsEnabled(\n            features::kCopyFromSurfaceAlwaysCallCallback)) {\n      std::move(callback).Run(base::unexpected<content::CopyFromSurfaceError>(\n          content::CopyFromSurfaceError::kFrameGone));"
+        },
+        {
+          "needle": "main_frame_host->CopyFromCompositingSurface(src_subrect",
+          "line": 233,
+          "startLine": 228,
+          "text": "  CHECK(!has_popup || !unbounded_window);\n\n  if (!has_popup && !unbounded_window) {\n    // No popup or unbounded window - just call CopyFromCompositingSurface\n    // once.\n    main_frame_host->CopyFromCompositingSurface(src_subrect, dst_size, timeout,\n                                                std::move(callback));\n    return;\n  }\n\n  // First locate the secondary window relative to the main page, in DIPs\n  const gfx::Point parent_location =\n      main_view ? main_view->GetViewBounds().origin() : gfx::Point();\n  gfx::Point secondary_location;\n  if (popup_host && popup_frame_host) {\n    secondary_location = popup_host->GetView()->GetViewBounds().origin();\n  } else if (unbounded_window) {\n    CHECK(base::FeatureList::IsEnabled(blink::features::kUnboundedElement),\n          base::NotFatalUntil::M158);\n    secondary_location = unbounded_window->GetBounds().origin();"
+        }
+      ]
+    },
+    {
+      "path": "content/browser/renderer_host/delegated_frame_host.cc",
+      "url": "https://chromium.googlesource.com/chromium/src/+/155.0.8059.40/content/browser/renderer_host/delegated_frame_host.cc?format=TEXT",
+      "sha256": "ae1b3cee5fdf469be885587fdbe0a8988121b526634e0523471b2be308ac9622",
+      "lineCount": 757,
+      "anchors": [
+        {
+          "needle": "void DelegatedFrameHost::CopyFromCompositingSurfaceInternal",
+          "line": 195,
+          "startLine": 190,
+          "text": "      viz::CopyOutputRequest::ResultFormat::RGBA,\n      viz::CopyOutputRequest::ResultDestination::kSharedImage,\n      base::TimeDelta(), std::move(callback));\n}\n\nvoid DelegatedFrameHost::CopyFromCompositingSurfaceInternal(\n    const gfx::Rect& src_subrect,\n    const gfx::Size& output_size,\n    const viz::SurfaceId& surface_id,\n    viz::CopyOutputRequest::ResultFormat format,\n    viz::CopyOutputRequest::ResultDestination destination,\n    base::TimeDelta timeout,\n    viz::CopyOutputRequest::CopyOutputRequestCallback callback) {\n  auto request = std::make_unique<viz::CopyOutputRequest>(format, destination,\n                                                          std::move(callback));\n  // Run result callback on the current thread in case `callback` needs to run\n  // on the current thread. See http://crbug.com/1431363. When we bound a\n  // `ui::Compositor::ScopedKeepSurfaceAliveCallback` it must also be ran on the\n  // current thread.\n  request->set_result_task_runner("
+        }
+      ]
+    }
+  ]
+}
