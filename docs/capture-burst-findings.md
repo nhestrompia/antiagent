@@ -10,15 +10,19 @@ Each mode ran three times. The screenshot mode continuously captured the choices
 
 | Mode | Captured frames per trial | Median interval | P95 interval | Maximum interval | Intervals above 25 ms |
 | --- | --- | --- | --- | --- | --- |
-| Idle | 0 | 16.7 ms | 16.7 to 16.8 ms | 16.8 to 33.3 ms | 0, 0, 1 |
-| Screenshots | 60 to 61 | 16.7 ms | 16.7 ms | 16.8 ms | 0, 0, 0 |
-| Screencast | 179 to 180 | 16.7 ms | 16.7 to 16.8 ms | 16.8 ms | 0, 0, 0 |
+| Idle | 0 | 8.3 ms | 9.1 to 9.2 ms | 9.3 to 9.4 ms | 0, 0, 0 |
+| Screenshots | 95 to 109 | 8.3 ms | 9.1 ms | 9.3 to 9.4 ms | 0, 0, 0 |
+| Screencast | 288 to 291 | 8.3 ms | 9.0 to 9.2 ms | 9.3 to 9.4 ms | 0, 0, 0 |
 
-The captured groups did not produce the candidate signal. One idle session did. A threshold above 25 ms would therefore reject an idle session and allow every measured capture session. This is not a useful detection rule on the tested machine.
+No group produced the candidate signal. A threshold above 25 ms would allow every measured capture session. The observed timing distributions overlap. This is not a useful detection rule on the tested machine.
 
 See [the recorded metrics and OCR](capture-burst-results.json). Run `npm run benchmark:capture-burst` to repeat the measurement. Screenshots remain local under `artifacts/capture-burst`.
 
 ## Limits
+
+The earlier driver inherited the launcher's headless default. It also failed to verify whether the renderer remained unblocked. All nine earlier sessions had `browser-detector` blocks, so their 16.7 ms timing measurements did not represent the active layered renderer. Those invalid measurements remain in `capture-burst-headless-pilot-results.json`. They do not support the current result.
+
+The corrected driver explicitly launches visible Chrome. It requires every metric, verified DRM playback, allowed detectors, readiness, and an unblocked app in the recorded summary. All nine current sessions passed those checks.
 
 These nine sessions do not cover all hardware or workloads. The result rejects this threshold and measurement method, not every possible timing signal. Capture rates alone do not establish useful task reconstruction. The separate adaptive readers establish that screenshots remain useful. The next countertest is reconstruction from the screencast stream.
 

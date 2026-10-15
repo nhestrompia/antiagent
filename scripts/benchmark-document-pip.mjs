@@ -8,24 +8,25 @@ const execute=promisify(execFile),results=[];
 const directory='artifacts/document-pip';await mkdir(directory,{recursive:true});
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 for(let repetition=0;repetition<3;repetition++){
-  const chrome=await launchRawCDP();let evidence={repetition};
+  const chrome=await launchRawCDP({headless:false});let evidence={repetition,conditions:{headless:false,automationMarkerDisabled:true}};
   try{
     evidence.version=(await chrome.send('Browser.getVersion')).product;
     const {targetId}=await chrome.send('Target.createTarget',{url:'about:blank'});
     const {sessionId}=await chrome.send('Target.attachToTarget',{targetId,flatten:true});
     await chrome.send('Target.activateTarget',{targetId});
     await chrome.send('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false},sessionId);
-    await chrome.send('Page.navigate',{url:'http://127.0.0.1:5173/document-pip.html'},sessionId);await sleep(500);
+    const navigation=await chrome.send('Page.navigate',{url:'http://127.0.0.1:5173/document-pip.html'},sessionId);assert.ok(!navigation.errorText,navigation.errorText);await sleep(500);
     let captureIndex=0;
     async function capture(session){
       const {data}=await chrome.send('Page.captureScreenshot',{fromSurface:true},session);
       const bytes=Buffer.from(data,'base64'),png=PNG.sync.read(bytes),path=`${directory}/${repetition}-${captureIndex++}.png`;
       await writeFile(path,bytes);const {stdout}=await execute('/private/tmp/anti-agent-ocr',[path]);
-      return {width:png.width,height:png.height,text:JSON.parse(stdout)};
+      const {cssVisualViewport}=await chrome.send('Page.getLayoutMetrics',{},session);
+      return {width:png.width,height:png.height,cssWidth:cssVisualViewport.clientWidth,cssHeight:cssVisualViewport.clientHeight,text:JSON.parse(stdout)};
     }
     async function click(session,shot,label){
       const item=shot.text.find(item=>item.text.toLowerCase()===label.toLowerCase());assert.ok(item,`Missing ${label}: ${JSON.stringify(shot.text)}`);
-      const point={x:item.x*shot.width,y:item.y*shot.height};
+      const point={x:item.x*shot.cssWidth,y:item.y*shot.cssHeight};
       await chrome.send('Input.dispatchMouseEvent',{type:'mouseMoved',...point},session);
       await chrome.send('Input.dispatchMouseEvent',{type:'mousePressed',...point,button:'left',buttons:1,clickCount:1},session);
       await chrome.send('Input.dispatchMouseEvent',{type:'mouseReleased',...point,button:'left',buttons:0,clickCount:1},session);

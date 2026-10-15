@@ -6,13 +6,13 @@ import {launchRawCDP} from './raw-cdp.mjs';
 const execute=promisify(execFile),results=[],directory='artifacts/capture-burst';await mkdir(directory,{recursive:true});
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 for(let repetition=0;repetition<3;repetition++)for(const mode of ['idle','screenshots','screencast']){
-  const chrome=await launchRawCDP();let frameCount=0;
+  const chrome=await launchRawCDP({headless:false});let frameCount=0;
   try{
     const version=(await chrome.send('Browser.getVersion')).product;
     const {targetId}=await chrome.send('Target.createTarget',{url:'about:blank'}),{sessionId}=await chrome.send('Target.attachToTarget',{targetId,flatten:true});
     const send=(method,params)=>chrome.send(method,params,sessionId);
     await chrome.send('Target.activateTarget',{targetId});await send('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
-    await send('Page.navigate',{url:'http://127.0.0.1:5173/combined-defense.html?defense=layered&fresh=on&mask=decoy&clock=on&jitter=on&timing=on'});
+    const navigation=await send('Page.navigate',{url:'http://127.0.0.1:5173/combined-defense.html?defense=layered&fresh=on&mask=decoy&clock=on&jitter=on&timing=on'});assert.ok(!navigation.errorText,navigation.errorText);
     let ready=false;for(let attempt=0;attempt<300;attempt++){const {targetInfo}=await chrome.send('Target.getTargetInfo',{targetId});if(targetInfo.title==='Defense ready'){ready=true;break;}await sleep(100);}assert.ok(ready,'Initialization failed');
     await sleep(500);
     const key=async value=>{await send('Input.dispatchKeyEvent',{type:'keyDown',key:value,code:value==='s'?'KeyS':'KeyE'});await send('Input.dispatchKeyEvent',{type:'keyUp',key:value,code:value==='s'?'KeyS':'KeyE'});};
@@ -29,8 +29,11 @@ for(let repetition=0;repetition<3;repetition++)for(const mode of ['idle','screen
     const {stdout}=await execute('/private/tmp/anti-agent-ocr',[path]),text=JSON.parse(stdout);
     const metrics={};for(const item of text){const match=item.text.match(/^(Frames|Median|P95|Maximum|Over25)\s+([\d.]+)/);if(match)metrics[match[1]]=Number(match[2]);}
     assert.ok(metrics.Frames>0,`Missing timing summary: ${stdout}`);
+    for(const metric of ['Median','P95','Maximum','Over25'])assert.ok(Number.isFinite(metrics[metric]),`Missing ${metric}: ${stdout}`);
+    const diagnostic=text.map(item=>item.text).join('').toLowerCase().replace(/\s/g,'');
+    for(const field of ['"ready":true','"drmverified":true','"detectorsallowed":true','"blocked":false'])assert.ok(diagnostic.includes(field),`Renderer measurement is not valid without ${field}: ${stdout}`);
     assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
-    results.push({mode,repetition,version,frameCount,wallMs:Date.now()-started,metrics,text,commands:[...new Set(chrome.commands)]});
+    results.push({mode,repetition,version,conditions:{headless:false,rendererVerified:true},frameCount,wallMs:Date.now()-started,metrics,text,commands:[...new Set(chrome.commands)]});
   }catch(error){results.push({mode,repetition,error:error.message});}
   finally{await chrome.close();}
 }
