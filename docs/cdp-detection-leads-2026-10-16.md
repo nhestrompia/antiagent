@@ -1,5 +1,7 @@
 # CDP detection leads
 
+Update: the [endpoint and coordinate experiments](cdp-multiple-angle-findings.md) now test both leads. Neither establishes an attachment detector.
+
 Reviewed 2026-10-16. Target: desktop Chrome 155, with Runtime and Debugger disabled. A human may be blocked while CDP is active. That removes a usability constraint; it does not make every automation fingerprint a test for an attached session.
 
 ## Known-port listener probe

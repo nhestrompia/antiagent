@@ -63,7 +63,10 @@
     "probe:html-readback": "node scripts/probe-html-readback.mjs",
     "audit:capture-boundary": "python3 scripts/audit-capture-boundary.py",
     "verify:perception-input": "RESULT_PATH=docs/first-principles-route-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames --perception-input-only --require-blocking",
-    "benchmark:gpu-capture-signal": "node scripts/benchmark-gpu-capture-signal.mjs"
+    "benchmark:gpu-capture-signal": "node scripts/benchmark-gpu-capture-signal.mjs",
+    "benchmark:endpoint-probe": "node scripts/benchmark-endpoint-probe.mjs",
+    "benchmark:input-coordinates": "node scripts/benchmark-input-coordinates.mjs",
+    "benchmark:task-observer": "node scripts/benchmark-task-observer.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

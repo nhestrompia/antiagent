@@ -69,6 +69,6 @@ export async function launchRawCDP({ headless = true, allowedCommands } = {}) {
       listeners.get(key).add(listener);
       return () => { listeners.get(key)?.delete(listener); if (!listeners.get(key)?.size) listeners.delete(key); };
     }
-    return { send, commands, close, onEvent };
+    return { send, commands, close, onEvent, debuggingPort: Number(new URL(endpoint).port) };
   } catch (error) { await close(); throw error; }
 }
