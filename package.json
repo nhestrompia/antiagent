@@ -61,7 +61,8 @@
     "benchmark:capture-burst": "node scripts/benchmark-capture-burst.mjs",
     "benchmark:layered-screencast": "RESULT_PATH=docs/layered-screencast-results.json CAPTURE_FRAMES=16 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames --screencast-capture --binary-columns",
     "probe:html-readback": "node scripts/probe-html-readback.mjs",
-    "audit:capture-boundary": "python3 scripts/audit-capture-boundary.py"
+    "audit:capture-boundary": "python3 scripts/audit-capture-boundary.py",
+    "verify:perception-input": "RESULT_PATH=docs/first-principles-route-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames --perception-input-only --require-blocking"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

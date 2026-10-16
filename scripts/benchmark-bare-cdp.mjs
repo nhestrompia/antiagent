@@ -18,10 +18,20 @@ const jitterMask=process.argv.includes('--jitter-mask');
 const alignFrames=process.argv.includes('--align-frames');
 const screencastCapture=process.argv.includes('--screencast-capture');
 const binaryColumns=process.argv.includes('--binary-columns');
+const perceptionInputOnly=process.argv.includes('--perception-input-only');
+const perceptionInputCommands=new Set([
+  'Browser.getVersion','Target.createTarget','Target.attachToTarget','Target.activateTarget',
+  'Emulation.setDeviceMetricsOverride','Input.dispatchMouseEvent','Page.navigate',
+  'Target.getTargetInfo','Page.captureScreenshot',
+]);
 const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
 assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
 const allGuards=layered||process.argv.includes('--all-guards');
+if(perceptionInputOnly){
+  assert.ok(layered&&!virtualClock&&!screencastCapture&&!isolated,'The route contract requires the visible layered screenshot test');
+  assert.equal(process.env.MODES,'bare','The route contract requires MODES=bare');
+}
 const directory=freshness?'artifacts/freshness-guards':layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
 await mkdir(directory,{recursive:true});
 const results=[];
@@ -48,7 +58,7 @@ function retainedLetters(text,label) {
   return row[label.length]/label.length;
 }
 for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','runtime-zero','runtime-disabled'])) for(let repetition=0;repetition<3;repetition++) {
-  const chrome=await launchRawCDP({headless:!layered});
+  const chrome=await launchRawCDP({headless:!layered,allowedCommands:perceptionInputOnly?perceptionInputCommands:undefined});
   let failureDiagnostic;
   let stopCapture=async()=>{},streamFrameCount=0;
   try {
@@ -215,7 +225,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     else if(freshness) {assert.equal(completed||blocked,true,JSON.stringify(final));}
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
-    results.push({mode,repetition,version:version.product,completed,blocked,streamFrameCount,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
+    results.push({mode,repetition,version:version.product,...(perceptionInputOnly?{routeContract:{headless:false,allowedCommands:[...perceptionInputCommands]}}:{}),completed,blocked,streamFrameCount,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
   } catch(error) {results.push({mode,repetition,error:error.message,diagnostic:failureDiagnostic,commands:[...new Set(chrome.commands)]});}
   finally {try{await stopCapture();}catch{}await chrome.close();}
 }
