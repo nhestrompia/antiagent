@@ -1,0 +1,339 @@
+{
+  "browser": "155.0.8059.40",
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "operation": "idle",
+      "repetition": 0,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "idle",
+      "repetition": 1,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "idle",
+      "repetition": 2,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "cdp-screenshot",
+      "repetition": 0,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "cdp-screenshot",
+      "repetition": 1,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "cdp-screenshot",
+      "repetition": 2,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "playwright-screenshot",
+      "repetition": 0,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "playwright-screenshot",
+      "repetition": 1,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "playwright-screenshot",
+      "repetition": 2,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "locator-count",
+      "repetition": 0,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": true,
+        "accepted": 0,
+        "events": [
+          {
+            "type": "__playwright_global_listeners_check__",
+            "isTrusted": false,
+            "time": 28.5
+          }
+        ]
+      },
+      "pixel": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "locator-count",
+      "repetition": 1,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": true,
+        "accepted": 0,
+        "events": [
+          {
+            "type": "__playwright_global_listeners_check__",
+            "isTrusted": false,
+            "time": 25.899999976158142
+          }
+        ]
+      },
+      "pixel": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "locator-count",
+      "repetition": 2,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": true,
+        "accepted": 0,
+        "events": [
+          {
+            "type": "__playwright_global_listeners_check__",
+            "isTrusted": false,
+            "time": 31.899999976158142
+          }
+        ]
+      },
+      "pixel": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "coordinate-input",
+      "repetition": 0,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "coordinate-input",
+      "repetition": 1,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    },
+    {
+      "operation": "coordinate-input",
+      "repetition": 2,
+      "before": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 0,
+        "events": []
+      },
+      "after": {
+        "guard": true,
+        "blocked": false,
+        "accepted": 1,
+        "events": []
+      },
+      "pixel": [
+        17,
+        100,
+        86
+      ]
+    }
+  ]
+}

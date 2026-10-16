@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><meta charset="UTF-8"><title>Capture policy experiment</title>
+<style>body{margin:32px}canvas{display:block}</style><canvas width="720" height="480"></canvas><pre id="status"></pre>
+<script>
+const canvas=document.querySelector('canvas'),context=canvas.getContext('2d');let accepted=0;
+context.fillStyle='#fff';context.fillRect(0,0,720,480);context.fillStyle='#116456';context.fillRect(40,200,180,70);context.fillStyle='#fff';context.font='18px sans-serif';context.fillText('Confirm transfer',50,240);
+const update=()=>{document.querySelector('#status').textContent=JSON.stringify({accepted});};
+canvas.addEventListener('click',event=>{if(event.offsetX>=40&&event.offsetX<=220&&event.offsetY>=200&&event.offsetY<=270)accepted++;update();});update();
+</script></html>

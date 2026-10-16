@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "error": "No target Harbor Research: [{\"x\":0.25312499862500004,\"y\":0.4033333334,\"text\":\"WelstiStlidio003\"},{\"text\":\"HlalrbolrkRels elalrchnieem6 cl 8\",\"x\":0.4328124990401786,\"y\":0.40333333341269845},{\"x\":0.6125000009598214,\"y\":0.40333333322222226,\"text\":\"NolrthLlabissskan(and\"}]"
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "error": "No target Harbor Research: [{\"x\":0.433593751359375,\"y\":0.40333333322222226,\"text\":\"HalrblorhRleislealrch aikmucy\"}]"
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "error": "No target Harbor Research: []"
+    }
+  ]
+}

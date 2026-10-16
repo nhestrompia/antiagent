@@ -1,0 +1,212 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "operation": "idle",
+      "repetition": 0,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 606,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "idle",
+      "repetition": 1,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 604.7000000476837,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "idle",
+      "repetition": 2,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 604.2000000476837,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "capture-series",
+      "repetition": 0,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 465.10000002384186,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "capture-series",
+      "repetition": 1,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 467.7000000476837,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "capture-series",
+      "repetition": 2,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 427.1999999284744,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "ui-longtask",
+      "repetition": 0,
+      "failed": "The expression evaluated to a falsy value:\n\n  assert(probe.entries.some(entry => entry.entryType === 'longtask' && entry.duration >= 50))\n"
+    },
+    {
+      "operation": "ui-longtask",
+      "repetition": 1,
+      "failed": "The expression evaluated to a falsy value:\n\n  assert(probe.entries.some(entry => entry.entryType === 'longtask' && entry.duration >= 50))\n"
+    },
+    {
+      "operation": "ui-longtask",
+      "repetition": 2,
+      "failed": "The expression evaluated to a falsy value:\n\n  assert(probe.entries.some(entry => entry.entryType === 'longtask' && entry.duration >= 50))\n"
+    }
+  ]
+}

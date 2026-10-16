@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "error": "No target 125 EUR: []"
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "error": "No target 125 EUR: [{\"x\":0.6117187511067709,\"y\":0.40222222211111114,\"text\":\"50BERрканкоррідеоринка\"}]"
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "error": "No target 125 EUR: []"
+    }
+  ]
+}

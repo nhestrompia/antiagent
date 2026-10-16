@@ -1,0 +1,229 @@
+{
+  "headless": true,
+  "browser": "155.0.8059.40",
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "repetition": 0,
+      "acquired": true,
+      "state": {
+        "locked": true,
+        "error": null,
+        "events": [
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 198,
+            "movementY": 258
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 1,
+      "acquired": true,
+      "state": {
+        "locked": true,
+        "error": null,
+        "events": [
+          {
+            "locked": false,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 198,
+            "movementY": 258
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 2,
+      "acquired": true,
+      "state": {
+        "locked": true,
+        "error": null,
+        "events": [
+          {
+            "locked": false,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 198,
+            "movementY": 258
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          },
+          {
+            "locked": true,
+            "trusted": true,
+            "x": 102,
+            "y": 42,
+            "movementX": 20,
+            "movementY": 10
+          }
+        ]
+      }
+    }
+  ]
+}

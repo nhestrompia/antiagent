@@ -1,0 +1,1657 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 194,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 762.0000010665954,
+            "y": 357.99999996445706
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 501.9999996460186,
+            "y": 371.0000013787591
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 528.0000012,
+            "y": 362.9999999
+          },
+          "frameCount": 64
+        }
+      ],
+      "initial": [
+        {
+          "x": 0.3281250012276786,
+          "y": 0.06000000025396823,
+          "text": "Combined defense experiment"
+        },
+        {
+          "x": 0.2851562534179687,
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333333333329
+        },
+        {
+          "x": 0.310937501875,
+          "text": "Choose Harbor Research",
+          "y": 0.20888888879365075
+        },
+        {
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3",
+          "x": 0.22187500140624997
+        },
+        {
+          "x": 0.2351562508737003,
+          "y": 0.4022222221342536,
+          "text": "Ho-rer Bent pals"
+        },
+        {
+          "x": 0.581250000719616,
+          "y": 0.3999999999266408,
+          "text": "Namuben"
+        },
+        {
+          "x": 0.20078124904296873,
+          "text": "\"step\": 0,",
+          "y": 0.7255555555277778
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753,
+          "y": 0.7466666666111113
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011
+        },
+        {
+          "x": 0.21954405011017566,
+          "y": 0.7877601501114742,
+          "text": "\"reason\": null,"
+        },
+        {
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249,
+          "text": "\"completed\": false,"
+        },
+        {
+          "x": 0.21644517979405783,
+          "y": 0.830031328079673,
+          "text": "\"ready\": true,"
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.23828124752604174,
+          "y": 0.8511111110370371
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556
+        },
+        {
+          "x": 0.152343750078125,
+          "text": "}",
+          "y": 0.8933333336296295
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743
+        },
+        {
+          "x": 0.2554687512630208,
+          "y": 0.21111111100000002,
+          "text": "Task complete"
+        },
+        {
+          "y": 0.7255555555277778,
+          "x": 0.20078124904296873,
+          "text": "\"step\": 3,"
+        },
+        {
+          "text": "\"clicks\": 3,",
+          "y": 0.7455555555833333,
+          "x": 0.20781250113281247
+        },
+        {
+          "y": 0.7654469754988609,
+          "x": 0.22736790244522023,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.22031399223983747,
+          "y": 0.7876587676811976
+        },
+        {
+          "x": 0.23124625154024567,
+          "y": 0.8091554486226028,
+          "text": "\"completed\": true,"
+        },
+        {
+          "x": 0.21644517979405783,
+          "text": "\"ready\": true,",
+          "y": 0.830031328079673
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.23833147039651123,
+          "y": 0.8493296101229282
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "y": 0.8711111110555556,
+          "x": 0.2539062522851562
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 194,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 772.154704174725,
+            "y": 359.7398445779991
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 737.99999985,
+            "y": 361.99999975000003
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 299.00000152499996,
+            "y": 361.99999995
+          },
+          "frameCount": 64
+        }
+      ],
+      "initial": [
+        {
+          "y": 0.06000000025396823,
+          "x": 0.3281250012276786,
+          "text": "Combined defense experiment"
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329
+        },
+        {
+          "y": 0.20888888879365075,
+          "text": "Choose Harbor Research",
+          "x": 0.310937501875
+        },
+        {
+          "text": "Decision 1 of 3",
+          "x": 0.22265625082812499,
+          "y": 0.2566666665555556
+        },
+        {
+          "text": "\"step\": 0,",
+          "y": 0.7255555555277778,
+          "x": 0.20078124904296873
+        },
+        {
+          "x": 0.20781249886718753,
+          "y": 0.7466666666111113,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "x": 0.21954405011017566,
+          "text": "\"reason\": null,",
+          "y": 0.7877601501114742
+        },
+        {
+          "text": "\"completed\": false,",
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923
+        },
+        {
+          "y": 0.830031328079673,
+          "x": 0.21644517979405783,
+          "text": "\"ready\": true,"
+        },
+        {
+          "y": 0.8511111110370371,
+          "x": 0.23828124752604174,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "y": 0.8711111110555556,
+          "x": 0.2539062522851562
+        },
+        {
+          "y": 0.8933333336296295,
+          "text": "}",
+          "x": 0.152343750078125
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "y": 0.06000000029629626,
+          "x": 0.32812500140625
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329
+        },
+        {
+          "x": 0.2554687512630208,
+          "text": "Task complete",
+          "y": 0.21111111100000002
+        },
+        {
+          "text": "\"step\": 3,",
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778
+        },
+        {
+          "x": 0.20781250113281247,
+          "text": "\"clicks\": 3,",
+          "y": 0.7455555555833333
+        },
+        {
+          "y": 0.7654469754988609,
+          "text": "\"blocked\": false,",
+          "x": 0.22736790244522023
+        },
+        {
+          "y": 0.7876587676811976,
+          "x": 0.22031399223983747,
+          "text": "\"reason\": null,"
+        },
+        {
+          "y": 0.8091554486226028,
+          "x": 0.23124625154024567,
+          "text": "\"completed\": true,"
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21644517979405783,
+          "y": 0.830031328079673
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.23833147039651123,
+          "y": 0.8493296101229282
+        },
+        {
+          "x": 0.2539062522851562,
+          "text": "\"detectorsAllowed\": true",
+          "y": 0.8711111110555556
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 194,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 302.99999832500004,
+            "y": 362.00000009999997
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 502.0000005666667,
+            "y": 361.99999990000003
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 760.0000012397934,
+            "y": 359.0000004466365
+          },
+          "frameCount": 64
+        }
+      ],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.3281250012276786,
+          "y": 0.06000000025396823
+        },
+        {
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.310937501875,
+          "y": 0.20888888879365075
+        },
+        {
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3",
+          "x": 0.22265625082812499
+        },
+        {
+          "x": 0.20078124904296873,
+          "text": "\"step\": 0,",
+          "y": 0.7255555555277778
+        },
+        {
+          "y": 0.7466666666111113,
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011
+        },
+        {
+          "x": 0.21954405011017566,
+          "y": 0.7877601501114742,
+          "text": "\"reason\": null,"
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "x": 0.21644517979405783,
+          "y": 0.830031328079673,
+          "text": "\"ready\": true,"
+        },
+        {
+          "y": 0.8511111110370371,
+          "text": "\"drmVerified\": true,",
+          "x": 0.23828124752604174
+        },
+        {
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556,
+          "text": "\"detectorsAllowed\": true"
+        },
+        {
+          "text": "}",
+          "y": 0.8933333336296295,
+          "x": 0.152343750078125
+        }
+      ],
+      "final": [
+        {
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626,
+          "text": "Combined defense experiment"
+        },
+        {
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "x": 0.2554687512630208,
+          "text": "Task complete",
+          "y": 0.21111111100000002
+        },
+        {
+          "x": 0.20078124904296873,
+          "text": "\"step\": 3,",
+          "y": 0.7255555555277778
+        },
+        {
+          "text": "\"clicks\": 3,",
+          "y": 0.7455555555833333,
+          "x": 0.20781250113281247
+        },
+        {
+          "y": 0.7654469754988609,
+          "text": "\"blocked\": false,",
+          "x": 0.22736790244522023
+        },
+        {
+          "y": 0.7876587676811976,
+          "x": 0.22031399223983747,
+          "text": "\"reason\": null,"
+        },
+        {
+          "y": 0.8091554486226028,
+          "x": 0.23124625154024567,
+          "text": "\"completed\": true,"
+        },
+        {
+          "y": 0.830031328079673,
+          "text": "\"ready\": true,",
+          "x": 0.21644517979405783
+        },
+        {
+          "y": 0.8493296101229282,
+          "x": 0.23833147039651123,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556,
+          "text": "\"detectorsAllowed\": true"
+        },
+        {
+          "y": 0.8933333336296295,
+          "text": "}",
+          "x": 0.152343750078125
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "runtime-enabled",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "completed": false,
+      "blocked": true,
+      "screenshotCount": 2,
+      "observations": [],
+      "initial": [
+        {
+          "x": 0.32812500140625,
+          "text": "Combined defense experiment",
+          "y": 0.05888888920370361
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333340740737,
+          "x": 0.28515624544270846
+        },
+        {
+          "text": "{",
+          "y": 0.702222221925926,
+          "x": 0.152343749921875
+        },
+        {
+          "text": "\"step\": 0,",
+          "y": 0.7255555554444445,
+          "x": 0.20078124872395836
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753,
+          "y": 0.7466666666111113
+        },
+        {
+          "text": "\"blocked\": true,",
+          "x": 0.2227513591656386,
+          "y": 0.7658229615608141
+        },
+        {
+          "x": 0.25703124684895845,
+          "y": 0.7877777777407408,
+          "text": "\"reason\": \"runtime-cost\","
+        },
+        {
+          "text": "\"completed\": false,",
+          "y": 0.8087881571154799,
+          "x": 0.2343879094440967
+        },
+        {
+          "text": "\"ready\": true",
+          "x": 0.21250000124999996,
+          "y": 0.8299999999166666
+        },
+        {
+          "text": "}",
+          "y": 0.8511111114074073,
+          "x": 0.152343750078125
+        }
+      ],
+      "final": [
+        {
+          "x": 0.32812500140625,
+          "text": "Combined defense experiment",
+          "y": 0.05888888920370361
+        },
+        {
+          "x": 0.28515624544270846,
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333340740737
+        },
+        {
+          "x": 0.152343749921875,
+          "text": "{",
+          "y": 0.702222221925926
+        },
+        {
+          "x": 0.20078124872395836,
+          "y": 0.7255555554444445,
+          "text": "\"step\": 0,"
+        },
+        {
+          "x": 0.20781249886718753,
+          "text": "\"clicks\": 0,",
+          "y": 0.7466666666111113
+        },
+        {
+          "y": 0.7658229615608141,
+          "x": 0.2227513591656386,
+          "text": "\"blocked\": true,"
+        },
+        {
+          "y": 0.7877777777407408,
+          "text": "\"reason\": \"runtime-cost\",",
+          "x": 0.25703124684895845
+        },
+        {
+          "x": 0.2343879094440967,
+          "y": 0.8087881571154799,
+          "text": "\"completed\": false,"
+        },
+        {
+          "text": "\"ready\": true",
+          "x": 0.21250000124999996,
+          "y": 0.8299999999166666
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8511111114074073
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Runtime.enable",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "runtime-enabled",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "completed": false,
+      "blocked": true,
+      "screenshotCount": 2,
+      "observations": [],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.05888888920370361
+        },
+        {
+          "x": 0.28515624544270846,
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333340740737
+        },
+        {
+          "x": 0.152343749921875,
+          "text": "{",
+          "y": 0.702222221925926
+        },
+        {
+          "x": 0.20078124872395836,
+          "y": 0.7255555554444445,
+          "text": "\"step\": 0,"
+        },
+        {
+          "x": 0.20781249886718753,
+          "y": 0.7466666666111113,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "x": 0.2227513591656386,
+          "text": "\"blocked\": true,",
+          "y": 0.7658229615608141
+        },
+        {
+          "y": 0.7877777777407408,
+          "text": "\"reason\": \"runtime-cost\",",
+          "x": 0.25703124684895845
+        },
+        {
+          "x": 0.2343879094440967,
+          "y": 0.8087881571154799,
+          "text": "\"completed\": false,"
+        },
+        {
+          "y": 0.8299999999166666,
+          "text": "\"ready\": true",
+          "x": 0.21250000124999996
+        },
+        {
+          "y": 0.8511111114074073,
+          "text": "}",
+          "x": 0.152343750078125
+        }
+      ],
+      "final": [
+        {
+          "y": 0.05888888920370361,
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625
+        },
+        {
+          "y": 0.11333333340740737,
+          "x": 0.28515624544270846,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "text": "{",
+          "x": 0.152343749921875,
+          "y": 0.702222221925926
+        },
+        {
+          "x": 0.20078124872395836,
+          "text": "\"step\": 0,",
+          "y": 0.7255555554444445
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753,
+          "y": 0.7466666666111113
+        },
+        {
+          "y": 0.7658229615608141,
+          "text": "\"blocked\": true,",
+          "x": 0.2227513591656386
+        },
+        {
+          "text": "\"reason\": \"runtime-cost\",",
+          "x": 0.25703124684895845,
+          "y": 0.7877777777407408
+        },
+        {
+          "x": 0.2343879094440967,
+          "y": 0.8087881571154799,
+          "text": "\"completed\": false,"
+        },
+        {
+          "y": 0.8299999999166666,
+          "x": 0.21250000124999996,
+          "text": "\"ready\": true"
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8511111114074073
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Runtime.enable",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "runtime-enabled",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "completed": false,
+      "blocked": true,
+      "screenshotCount": 2,
+      "observations": [],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.05888888920370361
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28515624544270846,
+          "y": 0.11333333340740737
+        },
+        {
+          "y": 0.702222221925926,
+          "text": "{",
+          "x": 0.152343749921875
+        },
+        {
+          "y": 0.7255555554444445,
+          "text": "\"step\": 0,",
+          "x": 0.20078124872395836
+        },
+        {
+          "x": 0.20781249886718753,
+          "text": "\"clicks\": 0,",
+          "y": 0.7466666666111113
+        },
+        {
+          "x": 0.2227513591656386,
+          "text": "\"blocked\": true,",
+          "y": 0.7658229615608141
+        },
+        {
+          "x": 0.25703124684895845,
+          "text": "\"reason\": \"runtime-cost\",",
+          "y": 0.7877777777407408
+        },
+        {
+          "x": 0.2343879094440967,
+          "text": "\"completed\": false,",
+          "y": 0.8087881571154799
+        },
+        {
+          "y": 0.8299999999166666,
+          "x": 0.21250000124999996,
+          "text": "\"ready\": true"
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8511111114074073
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.05888888920370361
+        },
+        {
+          "y": 0.11333333340740737,
+          "x": 0.28515624544270846,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "text": "{",
+          "y": 0.702222221925926,
+          "x": 0.152343749921875
+        },
+        {
+          "y": 0.7255555554444445,
+          "text": "\"step\": 0,",
+          "x": 0.20078124872395836
+        },
+        {
+          "y": 0.7466666666111113,
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753
+        },
+        {
+          "x": 0.2227513591656386,
+          "y": 0.7658229615608141,
+          "text": "\"blocked\": true,"
+        },
+        {
+          "y": 0.7877777777407408,
+          "text": "\"reason\": \"runtime-cost\",",
+          "x": 0.25703124684895845
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.2343879094440967,
+          "y": 0.8087881571154799
+        },
+        {
+          "y": 0.8299999999166666,
+          "x": 0.21250000124999996,
+          "text": "\"ready\": true"
+        },
+        {
+          "x": 0.152343750078125,
+          "y": 0.8511111114074073,
+          "text": "}"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Runtime.enable",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "runtime-zero",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 194,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 760.9999986993938,
+            "y": 359.0000001342508
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 744.0000008964615,
+            "y": 358.9999997136756
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 298.0000012,
+            "y": 361.99999992000005
+          },
+          "frameCount": 64
+        }
+      ],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.3281250012276786,
+          "y": 0.06000000025396823
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.2851562534179687,
+          "y": 0.11333333333333329
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.310937501875,
+          "y": 0.20888888879365075
+        },
+        {
+          "text": "Decision 1 of 3",
+          "x": 0.22187500140624997,
+          "y": 0.2566666665555556
+        },
+        {
+          "y": 0.4000000001003926,
+          "text": "HRPA LANUAN",
+          "x": 0.23124999919201444
+        },
+        {
+          "x": 0.3992187494661458,
+          "text": "701.6,",
+          "y": 0.4011111112407407
+        },
+        {
+          "text": "Aноtлeт",
+          "x": 0.5843750005359271,
+          "y": 0.3999999998748447
+        },
+        {
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753,
+          "y": 0.7466666666111113
+        },
+        {
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.21954405011017566,
+          "y": 0.7877601501114742
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21644517979405783,
+          "y": 0.830031328079673
+        },
+        {
+          "y": 0.8511111110370371,
+          "text": "\"drmVerified\": true,",
+          "x": 0.23828124752604174
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556
+        },
+        {
+          "y": 0.8933333336296295,
+          "x": 0.152343750078125,
+          "text": "}"
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "y": 0.06000000029629626,
+          "x": 0.32812500140625
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333333333329,
+          "x": 0.28593750339843743
+        },
+        {
+          "x": 0.2554687512630208,
+          "y": 0.21111111100000002,
+          "text": "Task complete"
+        },
+        {
+          "text": "\"step\": 3,",
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778
+        },
+        {
+          "y": 0.7455555555833333,
+          "text": "\"clicks\": 3,",
+          "x": 0.20781250113281247
+        },
+        {
+          "text": "\"blocked\": false,",
+          "y": 0.7654469754988609,
+          "x": 0.22736790244522023
+        },
+        {
+          "y": 0.7876587676811976,
+          "x": 0.22031399223983747,
+          "text": "\"reason\": null,"
+        },
+        {
+          "x": 0.23124625154024567,
+          "y": 0.8091554486226028,
+          "text": "\"completed\": true,"
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21644517979405783,
+          "y": 0.830031328079673
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.23833147039651123,
+          "y": 0.8493296101229282
+        },
+        {
+          "y": 0.8711111110555556,
+          "x": 0.2539062522851562,
+          "text": "\"detectorsAllowed\": true"
+        },
+        {
+          "y": 0.8933333336296295,
+          "x": 0.152343750078125,
+          "text": "}"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Runtime.enable",
+        "Runtime.setMaxCallStackSizeToCapture",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "runtime-zero",
+      "repetition": 1,
+      "error": "No target Confirm transfer: [{\"text\":\"Combined defense experiment\",\"x\":0.32812500140625,\"y\":0.06000000029629626},{\"text\":\"Complete the three decisions inside the canvas.\",\"y\":0.11333333340740737,\"x\":0.28515624544270846},{\"text\":\"{\",\"x\":0.152343749921875,\"y\":0.702222221925926},{\"y\":0.7255555555833333,\"text\":\"\\\"step\\\": 1,\",\"x\":0.20078125095703125},{\"text\":\"\\\"clicks\\\": 2,\",\"x\":0.2078124984895834,\"y\":0.7455555555185185},{\"y\":0.76777777775,\"text\":\"\\\"blocked\\\": true,\",\"x\":0.2226562484960938},{\"text\":\"\\\"reason\\\": \\\"incorrect-decision\\\",\",\"y\":0.7877777777407408,\"x\":0.27968749609375015},{\"text\":\"\\\"completed\\\": false,\",\"y\":0.8087881571154799,\"x\":0.2343879094440967},{\"x\":0.2156249982291667,\"y\":0.831111111037037,\"text\":\"\\\"ready\\\": true,\"},{\"x\":0.23832644137207448,\"text\":\"\\\"drmVerified\\\": true,\",\"y\":0.8494588592670078},{\"x\":0.2539062522851562,\"y\":0.8711111110555556,\"text\":\"\\\"detectorsAllowed\\\": true\"},{\"text\":\"}\",\"x\":0.152343750078125,\"y\":0.8933333336296295}]"
+    },
+    {
+      "mode": "runtime-zero",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 194,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 304.0000013601525,
+            "y": 359.99999996557614
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 502.0000005666667,
+            "y": 361.99999990000003
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 299.000001475,
+            "y": 360.999999925
+          },
+          "frameCount": 64
+        }
+      ],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "y": 0.06000000025396823,
+          "x": 0.3281250012276786
+        },
+        {
+          "y": 0.11333333333333329,
+          "x": 0.2851562534179687,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.310937501875,
+          "y": 0.20888888879365075
+        },
+        {
+          "x": 0.22187500140624997,
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3"
+        },
+        {
+          "x": 0.21562499943035873,
+          "text": "PORLAL",
+          "y": 0.4000000001411216
+        },
+        {
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778
+        },
+        {
+          "x": 0.20781249886718753,
+          "text": "\"clicks\": 0,",
+          "y": 0.7466666666111113
+        },
+        {
+          "text": "\"blocked\": false,",
+          "y": 0.76547824997011,
+          "x": 0.22736728301247108
+        },
+        {
+          "x": 0.21954405011017566,
+          "y": 0.7877601501114742,
+          "text": "\"reason\": null,"
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "text": "\"ready\": true,",
+          "y": 0.830031328079673,
+          "x": 0.21644517979405783
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "y": 0.8511111110370371,
+          "x": 0.23828124752604174
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556
+        },
+        {
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295,
+          "text": "}"
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "x": 0.28593750339843743,
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333333333329
+        },
+        {
+          "y": 0.21111111100000002,
+          "text": "Task complete",
+          "x": 0.2554687512630208
+        },
+        {
+          "y": 0.7255555555277778,
+          "text": "\"step\": 3,",
+          "x": 0.20078124904296873
+        },
+        {
+          "x": 0.20781250113281247,
+          "y": 0.7455555555833333,
+          "text": "\"clicks\": 3,"
+        },
+        {
+          "x": 0.22736790244522023,
+          "text": "\"blocked\": false,",
+          "y": 0.7654469754988609
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.22031399223983747,
+          "y": 0.7876587676811976
+        },
+        {
+          "y": 0.8091554486226028,
+          "text": "\"completed\": true,",
+          "x": 0.23124625154024567
+        },
+        {
+          "y": 0.830031328079673,
+          "text": "\"ready\": true,",
+          "x": 0.21644517979405783
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.23833147039651123,
+          "y": 0.8493296101229282
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "y": 0.8711111110555556,
+          "x": 0.2539062522851562
+        },
+        {
+          "y": 0.8933333336296295,
+          "text": "}",
+          "x": 0.152343750078125
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Runtime.enable",
+        "Runtime.setMaxCallStackSizeToCapture",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "runtime-disabled",
+      "repetition": 0,
+      "error": "No target Confirm transfer: [{\"y\":0.06000000029629626,\"x\":0.32812500140625,\"text\":\"Combined defense experiment\"},{\"y\":0.11333333333333329,\"text\":\"Complete the three decisions inside the canvas.\",\"x\":0.28593750339843743},{\"x\":0.3093750018526785,\"text\":\"Choose Confirm transfer\",\"y\":0.2088888888253968},{\"x\":0.22265625082812499,\"y\":0.2566666665555556,\"text\":\"Decision 3 of 3\"},{\"x\":0.5710937503710938,\"text\":\"Cancel\",\"y\":0.3988888885833334},{\"y\":0.7255555556235069,\"text\":\"\\\"step\\\": 2,\",\"x\":0.20078125095603738},{\"x\":0.20781250113281247,\"y\":0.7455555555833333,\"text\":\"\\\"clicks\\\": 2,\"},{\"x\":0.22736728301247108,\"y\":0.76547824997011,\"text\":\"\\\"blocked\\\": false,\"},{\"text\":\"\\\"reason\\\": null,\",\"y\":0.7877601501114742,\"x\":0.21954405011017566},{\"y\":0.8088047332432249,\"x\":0.23515714537226923,\"text\":\"\\\"completed\\\": false,\"},{\"y\":0.8300342430775739,\"text\":\"\\\"ready\\\": true,\",\"x\":0.21648513988377624},{\"x\":0.23833147039651123,\"text\":\"\\\"drmVerified\\\": true,\",\"y\":0.8493296101229282},{\"x\":0.2539062522851562,\"text\":\"\\\"detectorsAllowed\\\": true\",\"y\":0.8711111110555556},{\"y\":0.8933333336296295,\"text\":\"}\",\"x\":0.152343750078125}]"
+    },
+    {
+      "mode": "runtime-disabled",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 194,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 302.0000004990644,
+            "y": 360.0000003015538
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 274.00000076000003,
+            "y": 361.99999988
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 759.00000122,
+            "y": 356.0000000399999
+          },
+          "frameCount": 64
+        }
+      ],
+      "initial": [
+        {
+          "x": 0.3281250012276786,
+          "y": 0.06000000025396823,
+          "text": "Combined defense experiment"
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329
+        },
+        {
+          "y": 0.20888888879365075,
+          "text": "Choose Harbor Research",
+          "x": 0.310937501875
+        },
+        {
+          "text": "Decision 1 of 3",
+          "y": 0.2566666665555556,
+          "x": 0.22265625082812499
+        },
+        {
+          "text": "ao Fesour",
+          "y": 0.4033333332037037,
+          "x": 0.4187500008333333
+        },
+        {
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753,
+          "y": 0.7466666666111113
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011
+        },
+        {
+          "y": 0.7877601501114742,
+          "x": 0.21954405011017566,
+          "text": "\"reason\": null,"
+        },
+        {
+          "text": "\"completed\": false,",
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923
+        },
+        {
+          "x": 0.21644517979405783,
+          "text": "\"ready\": true,",
+          "y": 0.830031328079673
+        },
+        {
+          "y": 0.8511111110370371,
+          "text": "\"drmVerified\": true,",
+          "x": 0.23828124752604174
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556
+        },
+        {
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295,
+          "text": "}"
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "text": "Task complete",
+          "x": 0.2554687512630208,
+          "y": 0.21111111100000002
+        },
+        {
+          "y": 0.7255555555277778,
+          "x": 0.20078124904296873,
+          "text": "\"step\": 3,"
+        },
+        {
+          "text": "\"clicks\": 3,",
+          "y": 0.7455555555833333,
+          "x": 0.20781250113281247
+        },
+        {
+          "text": "\"blocked\": false,",
+          "y": 0.7654469754988609,
+          "x": 0.22736790244522023
+        },
+        {
+          "x": 0.22031399223983747,
+          "y": 0.7876587676811976,
+          "text": "\"reason\": null,"
+        },
+        {
+          "y": 0.8091554486226028,
+          "text": "\"completed\": true,",
+          "x": 0.23124625154024567
+        },
+        {
+          "y": 0.830031328079673,
+          "text": "\"ready\": true,",
+          "x": 0.21644517979405783
+        },
+        {
+          "y": 0.8493296101229282,
+          "x": 0.23833147039651123,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "text": "\"detectorsAllowed\": true",
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556
+        },
+        {
+          "text": "}",
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Runtime.enable",
+        "Runtime.disable",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "runtime-disabled",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 194,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 762.0000010666666,
+            "y": 357.9999999666667
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 503.00000073933643,
+            "y": 362.99999989520654
+          },
+          "frameCount": 64
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 526.0000015999999,
+            "y": 363.99999979999996
+          },
+          "frameCount": 64
+        }
+      ],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.3281250012276786,
+          "y": 0.06000000025396823
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.2851562534179687,
+          "y": 0.11333333333333329
+        },
+        {
+          "x": 0.310937501875,
+          "y": 0.20888888879365075,
+          "text": "Choose Harbor Research"
+        },
+        {
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3",
+          "x": 0.22187500140624997
+        },
+        {
+          "y": 0.4011111110185185,
+          "text": "Mabbc dopher",
+          "x": 0.22812500070312497
+        },
+        {
+          "x": 0.4046875005989584,
+          "y": 0.4011111110185185,
+          "text": "x Con"
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,"
+        },
+        {
+          "y": 0.7466666666111113,
+          "text": "\"clicks\": 0,",
+          "x": 0.20781249886718753
+        },
+        {
+          "y": 0.76547824997011,
+          "x": 0.22736728301247108,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "y": 0.7877601501114742,
+          "text": "\"reason\": null,",
+          "x": 0.21954405011017566
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "text": "\"ready\": true,",
+          "y": 0.830031328079673,
+          "x": 0.21644517979405783
+        },
+        {
+          "y": 0.8511111110370371,
+          "x": 0.23828124752604174,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "x": 0.2539062522851562,
+          "y": 0.8711111110555556,
+          "text": "\"detectorsAllowed\": true"
+        },
+        {
+          "x": 0.152343750078125,
+          "y": 0.8933333336296295,
+          "text": "}"
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "x": 0.2554687512630208,
+          "text": "Task complete",
+          "y": 0.21111111100000002
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 3,"
+        },
+        {
+          "text": "\"clicks\": 3,",
+          "y": 0.7455555555833333,
+          "x": 0.20781250113281247
+        },
+        {
+          "x": 0.22736790244522023,
+          "y": 0.7654469754988609,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "y": 0.7876587676811976,
+          "text": "\"reason\": null,",
+          "x": 0.22031399223983747
+        },
+        {
+          "x": 0.23124625154024567,
+          "text": "\"completed\": true,",
+          "y": 0.8091554486226028
+        },
+        {
+          "y": 0.830031328079673,
+          "text": "\"ready\": true,",
+          "x": 0.21644517979405783
+        },
+        {
+          "y": 0.8493296101229282,
+          "text": "\"drmVerified\": true,",
+          "x": 0.23833147039651123
+        },
+        {
+          "y": 0.8711111110555556,
+          "text": "\"detectorsAllowed\": true",
+          "x": 0.2539062522851562
+        },
+        {
+          "x": 0.152343750078125,
+          "text": "}",
+          "y": 0.8933333336296295
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Runtime.enable",
+        "Runtime.disable",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}

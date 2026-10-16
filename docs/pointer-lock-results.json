@@ -1,0 +1,60 @@
+{
+  "browser": "155.0.8059.40",
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "repetition": 0,
+      "acquired": false,
+      "state": {
+        "locked": false,
+        "error": "WrongDocumentError",
+        "events": [
+          {
+            "locked": false,
+            "trusted": true,
+            "x": 102,
+            "y": 43,
+            "movementX": 0,
+            "movementY": 0
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 1,
+      "acquired": false,
+      "state": {
+        "locked": false,
+        "error": "WrongDocumentError",
+        "events": [
+          {
+            "locked": false,
+            "trusted": true,
+            "x": 102,
+            "y": 43,
+            "movementX": 0,
+            "movementY": 0
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 2,
+      "acquired": false,
+      "state": {
+        "locked": false,
+        "error": "WrongDocumentError",
+        "events": [
+          {
+            "locked": false,
+            "trusted": true,
+            "x": 102,
+            "y": 43,
+            "movementX": 0,
+            "movementY": 0
+          }
+        ]
+      }
+    }
+  ]
+}

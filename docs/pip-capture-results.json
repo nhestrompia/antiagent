@@ -1,0 +1,137 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "repetition": 0,
+      "opened": true,
+      "targetTypes": [
+        {
+          "type": "page",
+          "title": "Anti-Agent PiP surface",
+          "url": "about:blank"
+        },
+        {
+          "type": "browser_ui",
+          "title": "Omnibox Popup",
+          "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html"
+        },
+        {
+          "type": "browser_ui",
+          "title": "Omnibox Popup",
+          "url": "chrome://omnibox-popup.top-chrome/"
+        },
+        {
+          "type": "page",
+          "title": "Document PiP capture experiment",
+          "url": "http://127.0.0.1:5173/pip-capture.html"
+        }
+      ],
+      "pageCount": 2,
+      "recovered": {
+        "pixel": [
+          17,
+          100,
+          86,
+          255
+        ],
+        "labelDOM": ""
+      },
+      "pipPixel": [
+        255,
+        255,
+        255
+      ],
+      "pipGreenPixels": 0,
+      "accepted": 1,
+      "copiedGreenPixels": 44443
+    },
+    {
+      "repetition": 1,
+      "opened": true,
+      "targetTypes": [
+        {
+          "type": "page",
+          "title": "Document PiP capture experiment",
+          "url": "http://127.0.0.1:5173/pip-capture.html"
+        },
+        {
+          "type": "browser_ui",
+          "title": "Omnibox Popup",
+          "url": "chrome://omnibox-popup.top-chrome/"
+        },
+        {
+          "type": "browser_ui",
+          "title": "Omnibox Popup",
+          "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html"
+        },
+        {
+          "type": "page",
+          "title": "Anti-Agent PiP surface",
+          "url": "about:blank"
+        }
+      ],
+      "pageCount": 2,
+      "recovered": {
+        "pixel": [
+          17,
+          100,
+          86,
+          255
+        ],
+        "labelDOM": ""
+      },
+      "pipPixel": [
+        255,
+        255,
+        255
+      ],
+      "pipGreenPixels": 0,
+      "accepted": 1,
+      "copiedGreenPixels": 44443
+    },
+    {
+      "repetition": 2,
+      "opened": true,
+      "targetTypes": [
+        {
+          "type": "browser_ui",
+          "title": "Omnibox Popup",
+          "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html"
+        },
+        {
+          "type": "page",
+          "title": "Document PiP capture experiment",
+          "url": "http://127.0.0.1:5173/pip-capture.html"
+        },
+        {
+          "type": "browser_ui",
+          "title": "Omnibox Popup",
+          "url": "chrome://omnibox-popup.top-chrome/"
+        },
+        {
+          "type": "page",
+          "title": "Anti-Agent PiP surface",
+          "url": "about:blank"
+        }
+      ],
+      "pageCount": 2,
+      "recovered": {
+        "pixel": [
+          17,
+          100,
+          86,
+          255
+        ],
+        "labelDOM": ""
+      },
+      "pipPixel": [
+        255,
+        255,
+        255
+      ],
+      "pipGreenPixels": 0,
+      "accepted": 1,
+      "copiedGreenPixels": 44443
+    }
+  ]
+}

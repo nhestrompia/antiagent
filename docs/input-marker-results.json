@@ -1,0 +1,1493 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "operation": "dom-click",
+      "repetition": 0,
+      "accepted": 0,
+      "samples": [
+        {
+          "type": "click",
+          "isTrusted": false,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "",
+          "pointerId": -1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "dom-click",
+      "repetition": 1,
+      "accepted": 0,
+      "samples": [
+        {
+          "type": "click",
+          "isTrusted": false,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "",
+          "pointerId": -1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "dom-click",
+      "repetition": 2,
+      "accepted": 0,
+      "samples": [
+        {
+          "type": "click",
+          "isTrusted": false,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "",
+          "pointerId": -1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "playwright-click",
+      "repetition": 0,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "playwright-click",
+      "repetition": 1,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "playwright-click",
+      "repetition": 2,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "cdp-mouse",
+      "repetition": 0,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "cdp-mouse",
+      "repetition": 1,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "cdp-mouse",
+      "repetition": 2,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "cdp-pen",
+      "repetition": 0,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0.75,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "cdp-pen",
+      "repetition": 1,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0.75,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    {
+      "operation": "cdp-pen",
+      "repetition": 2,
+      "accepted": 1,
+      "samples": [
+        {
+          "type": "pointerdown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0.75,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mousedown",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "pointerup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": null,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 0,
+          "coalesced": 0,
+          "predicted": 0
+        },
+        {
+          "type": "mouseup",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "userActivation": true,
+          "modifiers": {
+            "Alt": false,
+            "Control": false,
+            "Shift": false,
+            "Meta": false,
+            "AltGraph": false,
+            "CapsLock": false,
+            "NumLock": false,
+            "ScrollLock": false,
+            "Fn": false,
+            "FnLock": false,
+            "Symbol": false,
+            "SymbolLock": false,
+            "FromDebugger": false,
+            "Debugger": false
+          },
+          "sourceCapabilities": {
+            "firesTouchEvents": false
+          },
+          "pointerType": "pen",
+          "pointerId": 2,
+          "pressure": 0,
+          "movementX": 0,
+          "movementY": 0,
+          "detail": 1,
+          "coalesced": 0,
+          "predicted": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "cors": "off",
+      "repetition": 0,
+      "before": {
+        "ready": true,
+        "accepted": 0,
+        "exports": {
+          "getImageData": "SecurityError",
+          "toDataURL": "SecurityError",
+          "captureStream": "SecurityError"
+        }
+      },
+      "copy": {
+        "exportResult": "SecurityError"
+      },
+      "pixels": [
+        [
+          17,
+          100,
+          86
+        ],
+        [
+          17,
+          100,
+          86
+        ]
+      ],
+      "accepted": 1
+    },
+    {
+      "cors": "off",
+      "repetition": 1,
+      "before": {
+        "ready": true,
+        "accepted": 0,
+        "exports": {
+          "getImageData": "SecurityError",
+          "toDataURL": "SecurityError",
+          "captureStream": "SecurityError"
+        }
+      },
+      "copy": {
+        "exportResult": "SecurityError"
+      },
+      "pixels": [
+        [
+          17,
+          100,
+          86
+        ],
+        [
+          17,
+          100,
+          86
+        ]
+      ],
+      "accepted": 1
+    },
+    {
+      "cors": "off",
+      "repetition": 2,
+      "before": {
+        "ready": true,
+        "accepted": 0,
+        "exports": {
+          "getImageData": "SecurityError",
+          "toDataURL": "SecurityError",
+          "captureStream": "SecurityError"
+        }
+      },
+      "copy": {
+        "exportResult": "SecurityError"
+      },
+      "pixels": [
+        [
+          17,
+          100,
+          86
+        ],
+        [
+          17,
+          100,
+          86
+        ]
+      ],
+      "accepted": 1
+    },
+    {
+      "cors": "on",
+      "repetition": 0,
+      "before": {
+        "ready": true,
+        "accepted": 0,
+        "exports": {
+          "getImageData": "allowed",
+          "toDataURL": "allowed",
+          "captureStream": "allowed"
+        }
+      },
+      "copy": {
+        "exportResult": "allowed"
+      },
+      "pixels": [
+        [
+          17,
+          100,
+          86
+        ],
+        [
+          17,
+          100,
+          86
+        ]
+      ],
+      "accepted": 1
+    },
+    {
+      "cors": "on",
+      "repetition": 1,
+      "before": {
+        "ready": true,
+        "accepted": 0,
+        "exports": {
+          "getImageData": "allowed",
+          "toDataURL": "allowed",
+          "captureStream": "allowed"
+        }
+      },
+      "copy": {
+        "exportResult": "allowed"
+      },
+      "pixels": [
+        [
+          17,
+          100,
+          86
+        ],
+        [
+          17,
+          100,
+          86
+        ]
+      ],
+      "accepted": 1
+    },
+    {
+      "cors": "on",
+      "repetition": 2,
+      "before": {
+        "ready": true,
+        "accepted": 0,
+        "exports": {
+          "getImageData": "allowed",
+          "toDataURL": "allowed",
+          "captureStream": "allowed"
+        }
+      },
+      "copy": {
+        "exportResult": "allowed"
+      },
+      "pixels": [
+        [
+          17,
+          100,
+          86
+        ],
+        [
+          17,
+          100,
+          86
+        ]
+      ],
+      "accepted": 1
+    }
+  ]
+}

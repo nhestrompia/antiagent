@@ -1,0 +1,63 @@
+[
+  {
+    "robustness": "SW_SECURE_CRYPTO",
+    "supported": true,
+    "configuration": {
+      "audioCapabilities": [],
+      "distinctiveIdentifier": "not-allowed",
+      "initDataTypes": [
+        "cenc"
+      ],
+      "label": "",
+      "persistentState": "not-allowed",
+      "sessionTypes": [
+        "temporary"
+      ],
+      "videoCapabilities": [
+        {
+          "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+          "encryptionScheme": "cenc",
+          "robustness": "SW_SECURE_CRYPTO"
+        }
+      ]
+    }
+  },
+  {
+    "robustness": "SW_SECURE_DECODE",
+    "supported": true,
+    "configuration": {
+      "audioCapabilities": [],
+      "distinctiveIdentifier": "not-allowed",
+      "initDataTypes": [
+        "cenc"
+      ],
+      "label": "",
+      "persistentState": "not-allowed",
+      "sessionTypes": [
+        "temporary"
+      ],
+      "videoCapabilities": [
+        {
+          "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+          "encryptionScheme": "cenc",
+          "robustness": "SW_SECURE_DECODE"
+        }
+      ]
+    }
+  },
+  {
+    "robustness": "HW_SECURE_CRYPTO",
+    "supported": false,
+    "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+  },
+  {
+    "robustness": "HW_SECURE_DECODE",
+    "supported": false,
+    "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+  },
+  {
+    "robustness": "HW_SECURE_ALL",
+    "supported": false,
+    "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+  }
+]

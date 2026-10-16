@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "error": "Layered initialization did not finish"
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "error": "Layered initialization did not finish"
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "error": "Layered initialization did not finish"
+    }
+  ]
+}

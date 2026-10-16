@@ -1,0 +1,199 @@
+{
+  "results": [
+    {
+      "repetition": 0,
+      "conditions": {
+        "headless": false,
+        "automationMarkerDisabled": true
+      },
+      "version": "Chrome/155.0.8059.40",
+      "initial": {
+        "width": 1280,
+        "height": 900,
+        "text": [
+          {
+            "y": 0.2899999997962963,
+            "text": "This site can't be reached",
+            "x": 0.3703124999479167
+          },
+          {
+            "x": 0.34453125263020823,
+            "y": 0.33666666662962963,
+            "text": "127.0.0.1 refused to connect."
+          },
+          {
+            "text": "Try:",
+            "x": 0.27656249978125,
+            "y": 0.38111111117777774
+          },
+          {
+            "text": "• Checking the connection",
+            "y": 0.4066666668148148,
+            "x": 0.35781249755208344
+          },
+          {
+            "text": "• Checking the proxy and the firewall",
+            "y": 0.43444444477777777,
+            "x": 0.38671874966145836
+          },
+          {
+            "text": "ERR_CONNECTION_REFUSED",
+            "x": 0.33281249865625,
+            "y": 0.4788888889555555
+          },
+          {
+            "text": "Details",
+            "x": 0.294531250546208,
+            "y": 0.5644444443610074
+          },
+          {
+            "y": 0.5633333330740741,
+            "text": "Reload@",
+            "x": 0.7078125003125
+          }
+        ]
+      },
+      "error": "Missing Open task window: [{\"y\":0.2899999997962963,\"text\":\"This site can't be reached\",\"x\":0.3703124999479167},{\"x\":0.34453125263020823,\"y\":0.33666666662962963,\"text\":\"127.0.0.1 refused to connect.\"},{\"text\":\"Try:\",\"x\":0.27656249978125,\"y\":0.38111111117777774},{\"text\":\"• Checking the connection\",\"y\":0.4066666668148148,\"x\":0.35781249755208344},{\"text\":\"• Checking the proxy and the firewall\",\"y\":0.43444444477777777,\"x\":0.38671874966145836},{\"text\":\"ERR_CONNECTION_REFUSED\",\"x\":0.33281249865625,\"y\":0.4788888889555555},{\"text\":\"Details\",\"x\":0.294531250546208,\"y\":0.5644444443610074},{\"y\":0.5633333330740741,\"text\":\"Reload@\",\"x\":0.7078125003125}]",
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargets",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "repetition": 1,
+      "conditions": {
+        "headless": false,
+        "automationMarkerDisabled": true
+      },
+      "version": "Chrome/155.0.8059.40",
+      "initial": {
+        "width": 1280,
+        "height": 900,
+        "text": [
+          {
+            "y": 0.2899999997962963,
+            "text": "This site can't be reached",
+            "x": 0.3703124999479167
+          },
+          {
+            "y": 0.33666666662962963,
+            "text": "127.0.0.1 refused to connect.",
+            "x": 0.34453125263020823
+          },
+          {
+            "x": 0.27656249978125,
+            "text": "Try:",
+            "y": 0.38111111117777774
+          },
+          {
+            "y": 0.4066666668148148,
+            "text": "• Checking the connection",
+            "x": 0.35781249755208344
+          },
+          {
+            "text": "• Checking the proxy and the firewall",
+            "x": 0.38671874966145836,
+            "y": 0.43444444477777777
+          },
+          {
+            "text": "ERR_CONNECTION_REFUSED",
+            "x": 0.33281249865625,
+            "y": 0.4788888889555555
+          },
+          {
+            "y": 0.5644444443610074,
+            "x": 0.294531250546208,
+            "text": "Details"
+          },
+          {
+            "x": 0.7078125003125,
+            "text": "Reload@",
+            "y": 0.5633333330740741
+          }
+        ]
+      },
+      "error": "Missing Open task window: [{\"y\":0.2899999997962963,\"text\":\"This site can't be reached\",\"x\":0.3703124999479167},{\"y\":0.33666666662962963,\"text\":\"127.0.0.1 refused to connect.\",\"x\":0.34453125263020823},{\"x\":0.27656249978125,\"text\":\"Try:\",\"y\":0.38111111117777774},{\"y\":0.4066666668148148,\"text\":\"• Checking the connection\",\"x\":0.35781249755208344},{\"text\":\"• Checking the proxy and the firewall\",\"x\":0.38671874966145836,\"y\":0.43444444477777777},{\"text\":\"ERR_CONNECTION_REFUSED\",\"x\":0.33281249865625,\"y\":0.4788888889555555},{\"y\":0.5644444443610074,\"x\":0.294531250546208,\"text\":\"Details\"},{\"x\":0.7078125003125,\"text\":\"Reload@\",\"y\":0.5633333330740741}]",
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargets",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "repetition": 2,
+      "conditions": {
+        "headless": false,
+        "automationMarkerDisabled": true
+      },
+      "version": "Chrome/155.0.8059.40",
+      "initial": {
+        "width": 1280,
+        "height": 900,
+        "text": [
+          {
+            "x": 0.3703124999479167,
+            "y": 0.2899999997962963,
+            "text": "This site can't be reached"
+          },
+          {
+            "text": "127.0.0.1 refused to connect.",
+            "x": 0.34453125263020823,
+            "y": 0.33666666662962963
+          },
+          {
+            "y": 0.38111111117777774,
+            "text": "Try:",
+            "x": 0.27656249978125
+          },
+          {
+            "text": "• Checking the connection",
+            "y": 0.4066666668148148,
+            "x": 0.35781249755208344
+          },
+          {
+            "x": 0.38671874966145836,
+            "y": 0.43444444477777777,
+            "text": "• Checking the proxy and the firewall"
+          },
+          {
+            "text": "ERR_CONNECTION_REFUSED",
+            "y": 0.4788888889555555,
+            "x": 0.33281249865625
+          },
+          {
+            "x": 0.294531250546208,
+            "text": "Details",
+            "y": 0.5644444443610074
+          },
+          {
+            "text": "Reload@",
+            "x": 0.7078125003125,
+            "y": 0.5633333330740741
+          }
+        ]
+      },
+      "error": "Missing Open task window: [{\"x\":0.3703124999479167,\"y\":0.2899999997962963,\"text\":\"This site can't be reached\"},{\"text\":\"127.0.0.1 refused to connect.\",\"x\":0.34453125263020823,\"y\":0.33666666662962963},{\"y\":0.38111111117777774,\"text\":\"Try:\",\"x\":0.27656249978125},{\"text\":\"• Checking the connection\",\"y\":0.4066666668148148,\"x\":0.35781249755208344},{\"x\":0.38671874966145836,\"y\":0.43444444477777777,\"text\":\"• Checking the proxy and the firewall\"},{\"text\":\"ERR_CONNECTION_REFUSED\",\"y\":0.4788888889555555,\"x\":0.33281249865625},{\"x\":0.294531250546208,\"text\":\"Details\",\"y\":0.5644444443610074},{\"text\":\"Reload@\",\"x\":0.7078125003125,\"y\":0.5633333330740741}]",
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargets",
+        "Page.captureScreenshot"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "operation": "idle",
+      "repetition": 0,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 605,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "idle",
+      "repetition": 1,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 604.5,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "idle",
+      "repetition": 2,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 604.3999999761581,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "capture-series",
+      "repetition": 0,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 409.90000009536743,
+        "hidden": false
+      },
+      "accepted": 1,
+      "savedCaptureReferencePixels": 45231
+    },
+    {
+      "operation": "capture-series",
+      "repetition": 1,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 401.90000009536743,
+        "hidden": false
+      },
+      "accepted": 1,
+      "savedCaptureReferencePixels": 45231
+    },
+    {
+      "operation": "capture-series",
+      "repetition": 2,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [],
+        "events": [],
+        "observedDuration": 400.89999997615814,
+        "hidden": false
+      },
+      "accepted": 1,
+      "savedCaptureReferencePixels": 45231
+    },
+    {
+      "operation": "ui-longtask",
+      "repetition": 0,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [
+          {
+            "entryType": "longtask",
+            "name": "self",
+            "startTime": 551,
+            "duration": 90
+          },
+          {
+            "entryType": "long-animation-frame",
+            "name": "long-animation-frame",
+            "startTime": 551,
+            "duration": 90.1,
+            "blockingDuration": 40
+          }
+        ],
+        "events": [],
+        "observedDuration": 193.10000002384186,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "ui-longtask",
+      "repetition": 1,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [
+          {
+            "entryType": "longtask",
+            "name": "self",
+            "startTime": 579.8999999761581,
+            "duration": 90
+          },
+          {
+            "entryType": "long-animation-frame",
+            "name": "long-animation-frame",
+            "startTime": 579.8999999761581,
+            "duration": 90,
+            "blockingDuration": 40
+          }
+        ],
+        "events": [],
+        "observedDuration": 192.89999997615814,
+        "hidden": false
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "ui-longtask",
+      "repetition": 2,
+      "setup": {
+        "supported": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "failedTypes": [],
+        "hidden": false
+      },
+      "probe": {
+        "entries": [
+          {
+            "entryType": "longtask",
+            "name": "self",
+            "startTime": 550,
+            "duration": 90
+          },
+          {
+            "entryType": "long-animation-frame",
+            "name": "long-animation-frame",
+            "startTime": 550,
+            "duration": 90.2,
+            "blockingDuration": 40.2
+          }
+        ],
+        "events": [],
+        "observedDuration": 195,
+        "hidden": false
+      },
+      "accepted": 1
+    }
+  ]
+}

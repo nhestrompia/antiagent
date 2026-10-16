@@ -1,0 +1,6850 @@
+{
+  "browser": "155.0.8059.40",
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "strategy": "playwright-mouse",
+      "repetition": 0,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "playwright-mouse",
+      "repetition": 1,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "playwright-mouse",
+      "repetition": 2,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-mouse",
+      "repetition": 0,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-mouse",
+      "repetition": 1,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-mouse",
+      "repetition": 2,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-burst",
+      "repetition": 0,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 114,
+          "y": 107,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            },
+            {
+              "x": 102,
+              "y": 101,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 104,
+              "y": 102,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 106,
+              "y": 103,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 108,
+              "y": 104,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 110,
+              "y": 105,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 112,
+              "y": 106,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 114,
+              "y": 107,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 10,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 114,
+          "y": 107,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 126,
+          "movementY": 63,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 102,
+              "y": 101,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 104,
+              "y": 102,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 106,
+              "y": 103,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 108,
+              "y": 104,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 110,
+              "y": 105,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 112,
+              "y": 106,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 114,
+              "y": 107,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 116,
+              "y": 108,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 118,
+              "y": 109,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 122,
+              "y": 111,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 124,
+              "y": 112,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 126,
+              "y": 113,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 128,
+              "y": 114,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 130,
+              "y": 115,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 132,
+              "y": 116,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 134,
+              "y": 117,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 136,
+              "y": 118,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 138,
+              "y": 119,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 142,
+              "y": 121,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 144,
+              "y": 122,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 146,
+              "y": 123,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 148,
+              "y": 124,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 150,
+              "y": 125,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 152,
+              "y": 126,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 154,
+              "y": 127,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 156,
+              "y": 128,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 158,
+              "y": 129,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 162,
+              "y": 131,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 164,
+              "y": 132,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 166,
+              "y": 133,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 168,
+              "y": 134,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 170,
+              "y": 135,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 172,
+              "y": 136,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 174,
+              "y": 137,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 176,
+              "y": 138,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 178,
+              "y": 139,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 182,
+              "y": 141,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 184,
+              "y": 142,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 186,
+              "y": 143,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 188,
+              "y": 144,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 190,
+              "y": 145,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 192,
+              "y": 146,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 194,
+              "y": 147,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 196,
+              "y": 148,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 198,
+              "y": 149,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 202,
+              "y": 151,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 204,
+              "y": 152,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 206,
+              "y": 153,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 208,
+              "y": 154,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 210,
+              "y": 155,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 212,
+              "y": 156,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 214,
+              "y": 157,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 216,
+              "y": 158,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 218,
+              "y": 159,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 222,
+              "y": 161,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 224,
+              "y": 162,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 226,
+              "y": 163,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 112,
+          "movementY": 56,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 116,
+              "y": 108,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 118,
+              "y": 109,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 122,
+              "y": 111,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 124,
+              "y": 112,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 126,
+              "y": 113,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 128,
+              "y": 114,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 130,
+              "y": 115,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 132,
+              "y": 116,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 134,
+              "y": 117,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 136,
+              "y": 118,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 138,
+              "y": 119,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 142,
+              "y": 121,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 144,
+              "y": 122,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 146,
+              "y": 123,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 148,
+              "y": 124,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 150,
+              "y": 125,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 152,
+              "y": 126,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 154,
+              "y": 127,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 156,
+              "y": 128,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 158,
+              "y": 129,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 162,
+              "y": 131,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 164,
+              "y": 132,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 166,
+              "y": 133,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 168,
+              "y": 134,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 170,
+              "y": 135,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 172,
+              "y": 136,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 174,
+              "y": 137,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 176,
+              "y": 138,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 178,
+              "y": 139,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 182,
+              "y": 141,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 184,
+              "y": 142,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 186,
+              "y": 143,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 188,
+              "y": 144,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 190,
+              "y": 145,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 192,
+              "y": 146,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 194,
+              "y": 147,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 196,
+              "y": 148,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 198,
+              "y": 149,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 202,
+              "y": 151,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 204,
+              "y": 152,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 206,
+              "y": 153,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 208,
+              "y": 154,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 210,
+              "y": 155,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 212,
+              "y": 156,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 214,
+              "y": 157,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 216,
+              "y": 158,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 218,
+              "y": 159,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 222,
+              "y": 161,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 224,
+              "y": 162,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 226,
+              "y": 163,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 10,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 112,
+          "movementY": 56,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 14,
+              "movementY": 7
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 14,
+              "movementY": 7
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-burst",
+      "repetition": 1,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 106,
+          "y": 103,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            },
+            {
+              "x": 102,
+              "y": 101,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 104,
+              "y": 102,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 106,
+              "y": 103,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 10,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 106,
+          "y": 103,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 198,
+          "y": 149,
+          "movementX": 98,
+          "movementY": 49,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 102,
+              "y": 101,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 104,
+              "y": 102,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 106,
+              "y": 103,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 108,
+              "y": 104,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 110,
+              "y": 105,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 112,
+              "y": 106,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 114,
+              "y": 107,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 116,
+              "y": 108,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 118,
+              "y": 109,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 122,
+              "y": 111,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 124,
+              "y": 112,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 126,
+              "y": 113,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 128,
+              "y": 114,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 130,
+              "y": 115,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 132,
+              "y": 116,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 134,
+              "y": 117,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 136,
+              "y": 118,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 138,
+              "y": 119,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 142,
+              "y": 121,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 144,
+              "y": 122,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 146,
+              "y": 123,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 148,
+              "y": 124,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 150,
+              "y": 125,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 152,
+              "y": 126,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 154,
+              "y": 127,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 156,
+              "y": 128,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 158,
+              "y": 129,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 162,
+              "y": 131,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 164,
+              "y": 132,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 166,
+              "y": 133,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 168,
+              "y": 134,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 170,
+              "y": 135,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 172,
+              "y": 136,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 174,
+              "y": 137,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 176,
+              "y": 138,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 178,
+              "y": 139,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 182,
+              "y": 141,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 184,
+              "y": 142,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 186,
+              "y": 143,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 188,
+              "y": 144,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 190,
+              "y": 145,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 192,
+              "y": 146,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 194,
+              "y": 147,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 196,
+              "y": 148,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 198,
+              "y": 149,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 206,
+          "y": 153,
+          "movementX": 100,
+          "movementY": 50,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 108,
+              "y": 104,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 110,
+              "y": 105,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 112,
+              "y": 106,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 114,
+              "y": 107,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 116,
+              "y": 108,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 118,
+              "y": 109,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 122,
+              "y": 111,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 124,
+              "y": 112,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 126,
+              "y": 113,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 128,
+              "y": 114,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 130,
+              "y": 115,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 132,
+              "y": 116,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 134,
+              "y": 117,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 136,
+              "y": 118,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 138,
+              "y": 119,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 142,
+              "y": 121,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 144,
+              "y": 122,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 146,
+              "y": 123,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 148,
+              "y": 124,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 150,
+              "y": 125,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 152,
+              "y": 126,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 154,
+              "y": 127,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 156,
+              "y": 128,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 158,
+              "y": 129,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 162,
+              "y": 131,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 164,
+              "y": 132,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 166,
+              "y": 133,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 168,
+              "y": 134,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 170,
+              "y": 135,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 172,
+              "y": 136,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 174,
+              "y": 137,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 176,
+              "y": 138,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 178,
+              "y": 139,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 182,
+              "y": 141,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 184,
+              "y": 142,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 186,
+              "y": 143,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 188,
+              "y": 144,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 190,
+              "y": 145,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 192,
+              "y": 146,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 194,
+              "y": 147,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 196,
+              "y": 148,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 198,
+              "y": 149,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 202,
+              "y": 151,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 204,
+              "y": 152,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 206,
+              "y": 153,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 10,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 206,
+          "y": 153,
+          "movementX": 100,
+          "movementY": 50,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 212,
+          "y": 156,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 202,
+              "y": 151,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 204,
+              "y": 152,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 206,
+              "y": 153,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 208,
+              "y": 154,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 210,
+              "y": 155,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 212,
+              "y": 156,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 224,
+          "y": 162,
+          "movementX": 18,
+          "movementY": 9,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 208,
+              "y": 154,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 210,
+              "y": 155,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 212,
+              "y": 156,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 214,
+              "y": 157,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 216,
+              "y": 158,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 218,
+              "y": 159,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 222,
+              "y": 161,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 224,
+              "y": 162,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 10,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 224,
+          "y": 162,
+          "movementX": 18,
+          "movementY": 9,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 214,
+              "y": 157,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 216,
+              "y": 158,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 218,
+              "y": 159,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 222,
+              "y": 161,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 224,
+              "y": 162,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 226,
+              "y": 163,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 2,
+          "movementY": 1,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 226,
+              "y": 163,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 2,
+          "movementY": 1,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 14,
+              "movementY": 7
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 14,
+              "movementY": 7
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-burst",
+      "repetition": 2,
+      "events": [
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 130,
+          "y": 115,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 100,
+              "y": 100,
+              "movementX": 0,
+              "movementY": 0
+            },
+            {
+              "x": 102,
+              "y": 101,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 104,
+              "y": 102,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 106,
+              "y": 103,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 108,
+              "y": 104,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 110,
+              "y": 105,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 112,
+              "y": 106,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 114,
+              "y": 107,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 116,
+              "y": 108,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 118,
+              "y": 109,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 122,
+              "y": 111,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 124,
+              "y": 112,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 126,
+              "y": 113,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 128,
+              "y": 114,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 130,
+              "y": 115,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 10,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 130,
+          "y": 115,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 126,
+          "movementY": 63,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 102,
+              "y": 101,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 104,
+              "y": 102,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 106,
+              "y": 103,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 108,
+              "y": 104,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 110,
+              "y": 105,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 112,
+              "y": 106,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 114,
+              "y": 107,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 116,
+              "y": 108,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 118,
+              "y": 109,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 122,
+              "y": 111,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 124,
+              "y": 112,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 126,
+              "y": 113,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 128,
+              "y": 114,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 130,
+              "y": 115,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 132,
+              "y": 116,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 134,
+              "y": 117,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 136,
+              "y": 118,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 138,
+              "y": 119,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 142,
+              "y": 121,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 144,
+              "y": 122,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 146,
+              "y": 123,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 148,
+              "y": 124,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 150,
+              "y": 125,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 152,
+              "y": 126,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 154,
+              "y": 127,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 156,
+              "y": 128,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 158,
+              "y": 129,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 162,
+              "y": 131,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 164,
+              "y": 132,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 166,
+              "y": 133,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 168,
+              "y": 134,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 170,
+              "y": 135,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 172,
+              "y": 136,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 174,
+              "y": 137,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 176,
+              "y": 138,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 178,
+              "y": 139,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 182,
+              "y": 141,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 184,
+              "y": 142,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 186,
+              "y": 143,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 188,
+              "y": 144,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 190,
+              "y": 145,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 192,
+              "y": 146,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 194,
+              "y": 147,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 196,
+              "y": 148,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 198,
+              "y": 149,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 202,
+              "y": 151,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 204,
+              "y": 152,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 206,
+              "y": 153,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 208,
+              "y": 154,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 210,
+              "y": 155,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 212,
+              "y": 156,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 214,
+              "y": 157,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 216,
+              "y": 158,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 218,
+              "y": 159,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 222,
+              "y": 161,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 224,
+              "y": 162,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 226,
+              "y": 163,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 96,
+          "movementY": 48,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 132,
+              "y": 116,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 134,
+              "y": 117,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 136,
+              "y": 118,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 138,
+              "y": 119,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 142,
+              "y": 121,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 144,
+              "y": 122,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 146,
+              "y": 123,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 148,
+              "y": 124,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 150,
+              "y": 125,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 152,
+              "y": 126,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 154,
+              "y": 127,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 156,
+              "y": 128,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 158,
+              "y": 129,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 162,
+              "y": 131,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 164,
+              "y": 132,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 166,
+              "y": 133,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 168,
+              "y": 134,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 170,
+              "y": 135,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 172,
+              "y": 136,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 174,
+              "y": 137,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 176,
+              "y": 138,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 178,
+              "y": 139,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 182,
+              "y": 141,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 184,
+              "y": 142,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 186,
+              "y": 143,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 188,
+              "y": 144,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 190,
+              "y": 145,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 192,
+              "y": 146,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 194,
+              "y": 147,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 196,
+              "y": 148,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 198,
+              "y": 149,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 202,
+              "y": 151,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 204,
+              "y": 152,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 206,
+              "y": 153,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 208,
+              "y": 154,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 210,
+              "y": 155,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 212,
+              "y": 156,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 214,
+              "y": 157,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 216,
+              "y": 158,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 218,
+              "y": 159,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 222,
+              "y": 161,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 224,
+              "y": 162,
+              "movementX": 2,
+              "movementY": 1
+            },
+            {
+              "x": 226,
+              "y": 163,
+              "movementX": 2,
+              "movementY": 1
+            }
+          ],
+          "predicted": 10,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 226,
+          "y": 163,
+          "movementX": 96,
+          "movementY": 48,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 14,
+              "movementY": 7
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 14,
+              "movementY": 7
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousemove",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 14,
+          "movementY": 7,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0.5,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "mousedown",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": null,
+          "pointerId": null,
+          "pressure": null,
+          "coalesced": null,
+          "predicted": null,
+          "firesTouchEvents": false
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "pressure": 0,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": false
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-touch",
+      "repetition": 0,
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-touch",
+      "repetition": 1,
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        }
+      ]
+    },
+    {
+      "strategy": "cdp-touch",
+      "repetition": 2,
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "x": 100,
+          "y": 100,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointermove",
+          "trusted": true,
+          "x": 120,
+          "y": 110,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 120,
+              "y": 110,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 140,
+          "y": 120,
+          "movementX": 0,
+          "movementY": 0,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 140,
+              "y": 120,
+              "movementX": 0,
+              "movementY": 0
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 160,
+          "y": 130,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 160,
+              "y": 130,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 180,
+          "y": 140,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 180,
+              "y": 140,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 200,
+          "y": 150,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 200,
+              "y": 150,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 220,
+          "y": 160,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 220,
+              "y": 160,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        },
+        {
+          "type": "pointerrawupdate",
+          "trusted": true,
+          "x": 240,
+          "y": 170,
+          "movementX": 20,
+          "movementY": 10,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "pressure": 1,
+          "coalesced": [
+            {
+              "x": 240,
+              "y": 170,
+              "movementX": 20,
+              "movementY": 10
+            }
+          ],
+          "predicted": 0,
+          "firesTouchEvents": null
+        }
+      ]
+    }
+  ]
+}

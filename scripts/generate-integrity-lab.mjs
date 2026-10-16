@@ -1,0 +1,11 @@
+import { createHash } from 'node:crypto';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+const directory = 'public/integrity';
+await mkdir(directory, { recursive: true });
+const gate = await readFile('src/tamper-gate.js', 'utf8');
+const runtime = (await readFile('src/tamper-lab.js', 'utf8')).replace("'./tamper-gate.js'", "'anti-agent-gate'");
+const hash = value => `sha384-${createHash('sha384').update(value).digest('base64')}`;
+const map = { imports: { 'anti-agent-gate': '/integrity/gate.js' }, integrity: { '/integrity/gate.js': hash(gate) } };
+await writeFile(`${directory}/gate.js`, gate);
+await writeFile(`${directory}/runtime.js`, runtime);
+await writeFile(`${directory}/index.html`, `<!doctype html><html lang="en"><meta charset="UTF-8"><title>Module integrity experiment</title><style>body{font:16px sans-serif;margin:32px}canvas{background:black;border:1px solid #bbb}</style><h1>Module integrity experiment</h1><canvas width="720" height="480"></canvas><pre id="status">starting</pre><script type="importmap">${JSON.stringify(map)}</script><script type="module" src="/integrity/runtime.js" integrity="${hash(runtime)}"></script></html>\n`);

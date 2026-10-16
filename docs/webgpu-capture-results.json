@@ -1,0 +1,110 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "copy": "off",
+      "repetition": 0,
+      "screenshotPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "copyEnabled": false,
+      "format": "bgra8unorm",
+      "textureUsage": 16,
+      "copyError": "[Texture \"IOSurface(Gles2Read|RasterRead|DisplayRead|Scanout|WebgpuRead|WebgpuSwapChainTexture|WebgpuWrite)\"] usage (TextureUsage::RenderAttachment) doesn't include TextureUsage::CopySrc.\n - While validating source [Texture \"IOSurface(Gles2Read|RasterRead|DisplayRead|Scanout|WebgpuRead|WebgpuSwapChainTexture|WebgpuWrite)\"] usage.\n - While [Failed to format error message: \"encoding %s.CopyTextureToBuffer(%s, %s, %s).\"].\n - While finishing [CommandEncoder (unlabeled)].\n",
+      "readbackPixel": null
+    },
+    {
+      "copy": "off",
+      "repetition": 1,
+      "screenshotPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "copyEnabled": false,
+      "format": "bgra8unorm",
+      "textureUsage": 16,
+      "copyError": "[Texture \"IOSurface(Gles2Read|RasterRead|DisplayRead|Scanout|WebgpuRead|WebgpuSwapChainTexture|WebgpuWrite)\"] usage (TextureUsage::RenderAttachment) doesn't include TextureUsage::CopySrc.\n - While validating source [Texture \"IOSurface(Gles2Read|RasterRead|DisplayRead|Scanout|WebgpuRead|WebgpuSwapChainTexture|WebgpuWrite)\"] usage.\n - While [Failed to format error message: \"encoding %s.CopyTextureToBuffer(%s, %s, %s).\"].\n - While finishing [CommandEncoder (unlabeled)].\n",
+      "readbackPixel": null
+    },
+    {
+      "copy": "off",
+      "repetition": 2,
+      "screenshotPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "copyEnabled": false,
+      "format": "bgra8unorm",
+      "textureUsage": 16,
+      "copyError": "[Texture \"IOSurface(Gles2Read|RasterRead|DisplayRead|Scanout|WebgpuRead|WebgpuSwapChainTexture|WebgpuWrite)\"] usage (TextureUsage::RenderAttachment) doesn't include TextureUsage::CopySrc.\n - While validating source [Texture \"IOSurface(Gles2Read|RasterRead|DisplayRead|Scanout|WebgpuRead|WebgpuSwapChainTexture|WebgpuWrite)\"] usage.\n - While [Failed to format error message: \"encoding %s.CopyTextureToBuffer(%s, %s, %s).\"].\n - While finishing [CommandEncoder (unlabeled)].\n",
+      "readbackPixel": null
+    },
+    {
+      "copy": "on",
+      "repetition": 0,
+      "screenshotPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "copyEnabled": true,
+      "format": "bgra8unorm",
+      "textureUsage": 17,
+      "copyError": null,
+      "readbackPixel": [
+        86,
+        100,
+        17,
+        255
+      ]
+    },
+    {
+      "copy": "on",
+      "repetition": 1,
+      "screenshotPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "copyEnabled": true,
+      "format": "bgra8unorm",
+      "textureUsage": 17,
+      "copyError": null,
+      "readbackPixel": [
+        86,
+        100,
+        17,
+        255
+      ]
+    },
+    {
+      "copy": "on",
+      "repetition": 2,
+      "screenshotPixel": [
+        17,
+        100,
+        86,
+        255
+      ],
+      "copyEnabled": true,
+      "format": "bgra8unorm",
+      "textureUsage": 17,
+      "copyError": null,
+      "readbackPixel": [
+        86,
+        100,
+        17,
+        255
+      ]
+    }
+  ]
+}

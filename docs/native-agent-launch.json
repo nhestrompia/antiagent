@@ -1,0 +1,12 @@
+{
+  "executable": "Google Chrome",
+  "arguments": [
+    "--user-data-dir=<fresh temporary profile>",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "http://127.0.0.1:5173/bot-signal.html"
+  ],
+  "debuggingTransportRequested": false,
+  "interaction": "Native input planned; window selection must be verified separately",
+  "outcome": "Native API selected another process with the same bundle ID; this isolated process was closed and is not the measured native session."
+}

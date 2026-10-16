@@ -1,0 +1,86 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "mode": "clean",
+      "uiVisible": true,
+      "labels": [],
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      },
+      "accepted": 1
+    },
+    {
+      "mode": "plain",
+      "uiVisible": false,
+      "labels": [],
+      "gate": {
+        "allowed": false,
+        "reasons": [
+          "fillText:native-source",
+          "fillText:extra-property"
+        ]
+      },
+      "accepted": 0
+    },
+    {
+      "mode": "local-disguise",
+      "uiVisible": false,
+      "labels": [],
+      "gate": {
+        "allowed": false,
+        "reasons": [
+          "fillText:native-source",
+          "fillText:source",
+          "toString:native-source",
+          "toString:source"
+        ]
+      },
+      "accepted": 0
+    },
+    {
+      "mode": "cross-realm",
+      "uiVisible": false,
+      "labels": [],
+      "gate": {
+        "allowed": false,
+        "reasons": [
+          "appendChild:extra-property"
+        ]
+      },
+      "accepted": 0
+    },
+    {
+      "mode": "deep-disguise",
+      "uiVisible": true,
+      "labels": [
+        [
+          "Confirm transfer",
+          50,
+          240
+        ],
+        [
+          "Confirm transfer",
+          50,
+          240
+        ]
+      ],
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      },
+      "accepted": 1
+    },
+    {
+      "mode": "response-replace",
+      "uiVisible": true,
+      "labels": [],
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      },
+      "accepted": 1
+    }
+  ]
+}

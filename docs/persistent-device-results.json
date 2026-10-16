@@ -1,0 +1,520 @@
+{
+  "results": [
+    {
+      "type": "mouse",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 301.9999986,
+        "y": 360.0000000282481
+      },
+      "final": {
+        "supported": true,
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "mouse",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 760.9999989749999,
+        "y": 361.000000225
+      },
+      "final": {
+        "supported": true,
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "mouse",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 301.9999986,
+        "y": 360.0000000282481
+      },
+      "final": {
+        "supported": true,
+        "accepted": 1,
+        "blocked": false,
+        "reason": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 1,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "mouse",
+            "pointerId": 1,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "pen",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 760.9999989749999,
+        "y": 361.000000225
+      },
+      "final": {
+        "supported": true,
+        "accepted": 0,
+        "blocked": true,
+        "reason": "unknown-device",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "pen",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 532.00000155,
+        "y": 359.99999990000003
+      },
+      "final": {
+        "supported": true,
+        "accepted": 0,
+        "blocked": true,
+        "reason": "unknown-device",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "pen",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 760.9999989749999,
+        "y": 361.000000225
+      },
+      "final": {
+        "supported": true,
+        "accepted": 0,
+        "blocked": true,
+        "reason": "unknown-device",
+        "events": [
+          {
+            "type": "pointermove",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "pen",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "type": "touch",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 760.9999989749999,
+        "y": 361.000000225
+      },
+      "final": {
+        "supported": true,
+        "accepted": 0,
+        "blocked": true,
+        "reason": "unknown-device",
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchTouchEvent"
+      ]
+    },
+    {
+      "type": "touch",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 532.00000155,
+        "y": 359.99999990000003
+      },
+      "final": {
+        "supported": true,
+        "accepted": 0,
+        "blocked": true,
+        "reason": "unknown-device",
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchTouchEvent"
+      ]
+    },
+    {
+      "type": "touch",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "point": {
+        "x": 301.9999986,
+        "y": 360.0000000282481
+      },
+      "final": {
+        "supported": true,
+        "accepted": 0,
+        "blocked": true,
+        "reason": "unknown-device",
+        "events": [
+          {
+            "type": "pointerdown",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "pointerup",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": true
+          },
+          {
+            "type": "click",
+            "trusted": true,
+            "pointerType": "touch",
+            "pointerId": 2,
+            "persistentDeviceId": 0,
+            "isPrimary": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchTouchEvent"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4533 @@
+{
+  "schemaVersion": 2,
+  "environment": {
+    "hostname": "Umuts-MacBook-Pro.local",
+    "platform": "darwin",
+    "release": "25.6.0",
+    "cpu": "Apple M5",
+    "browser": "154.0.8037.98",
+    "headless": false,
+    "ignoredDefaultArgs": [
+      "--disable-component-update",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--no-sandbox"
+    ]
+  },
+  "asset": {
+    "name": "Encrypted colored positive control",
+    "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+    "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+    "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+    "tinyAsset": false,
+    "encryptedStart": 0,
+    "encrypted": true,
+    "pattern": "red-green-blue-yellow-quadrants",
+    "metadataPath": "/drm-control/asset.json"
+  },
+  "assetMetadata": {
+    "resolution": [
+      64,
+      64
+    ],
+    "pattern": "red-green-blue-yellow-quadrants",
+    "durationSeconds": 2,
+    "frameRate": 1,
+    "audio": false,
+    "clearLeadSeconds": 0,
+    "encryption": "Widevine CENC",
+    "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+    "generationSource": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+    "packagerVersion": "3.9.3",
+    "bytes": 2100,
+    "productionUse": false
+  },
+  "runs": [
+    {
+      "repetition": 1,
+      "mode": "baseline",
+      "captureMethods": [
+        {
+          "method": "playwright",
+          "backend": "Chrome DevTools Protocol",
+          "artifact": "1-baseline-playwright.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "unvalidated-playback"
+          }
+        },
+        {
+          "method": "cdp",
+          "backend": "Page.captureScreenshot",
+          "artifact": "1-baseline-cdp.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "unvalidated-playback"
+          }
+        },
+        {
+          "method": "macos",
+          "outcome": "unavailable",
+          "reason": "Command failed: /usr/sbin/screencapture -x /Users/nhestrompia/Projects/antiagent/artifacts/2026-10-13T02-19-25.779Z/1-baseline-macos.png\ncould not create image from display\n"
+        },
+        {
+          "method": "chrome-ui",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "tab-capture",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "screen-recording",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "safari",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        }
+      ],
+      "before": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:26.486Z",
+        "configuration": {
+          "mode": "baseline",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": null,
+          "phase": "idle",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": false,
+          "selectedRobustness": null
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 0,
+          "decodedFrames": 0,
+          "stats": null
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "videoOpacity": 0.01,
+        "videoHidden": true,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "comparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1237604,
+        "note": "Image difference is not a readability verdict."
+      },
+      "canvas": {
+        "ok": true,
+        "width": 720,
+        "height": 480,
+        "checksum": 335520974
+      },
+      "after": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:26.736Z",
+        "configuration": {
+          "mode": "baseline",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": null,
+          "phase": "idle",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": false,
+          "selectedRobustness": null
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 0,
+          "decodedFrames": 0,
+          "stats": null
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "videoOpacity": 0.01,
+        "videoHidden": true,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "conclusion": "inconclusive"
+    },
+    {
+      "repetition": 1,
+      "mode": "native",
+      "captureMethods": [
+        {
+          "method": "playwright",
+          "backend": "Chrome DevTools Protocol",
+          "artifact": "1-native-playwright.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "pattern-visible",
+            "samples": [
+              {
+                "name": "red",
+                "rgb": [
+                  255,
+                  24,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "green",
+                "rgb": [
+                  0,
+                  215,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "blue",
+                "rgb": [
+                  0,
+                  15,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "yellow",
+                "rgb": [
+                  255,
+                  240,
+                  0
+                ],
+                "expected": [
+                  255,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              }
+            ],
+            "colorTolerance": 80,
+            "blackThreshold": 20,
+            "note": "Color classification tolerates observed decoder/display color conversion. Pixel appearance is a measurement; capture suppression requires a matching live human observation."
+          }
+        },
+        {
+          "method": "cdp",
+          "backend": "Page.captureScreenshot",
+          "artifact": "1-native-cdp.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "pattern-visible",
+            "samples": [
+              {
+                "name": "red",
+                "rgb": [
+                  255,
+                  24,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "green",
+                "rgb": [
+                  0,
+                  215,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "blue",
+                "rgb": [
+                  0,
+                  15,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "yellow",
+                "rgb": [
+                  255,
+                  240,
+                  0
+                ],
+                "expected": [
+                  255,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              }
+            ],
+            "colorTolerance": 80,
+            "blackThreshold": 20,
+            "note": "Color classification tolerates observed decoder/display color conversion. Pixel appearance is a measurement; capture suppression requires a matching live human observation."
+          }
+        },
+        {
+          "method": "macos",
+          "outcome": "unavailable",
+          "reason": "Command failed: /usr/sbin/screencapture -x /Users/nhestrompia/Projects/antiagent/artifacts/2026-10-13T02-19-25.779Z/1-native-macos.png\ncould not create image from display\n"
+        },
+        {
+          "method": "chrome-ui",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "tab-capture",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "screen-recording",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "safari",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        }
+      ],
+      "before": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:28.744Z",
+        "configuration": {
+          "mode": "native",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.644861,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 5,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 33,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 1.871000051498413,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 1.871000051498413
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64,
+          "top": 0,
+          "right": 64,
+          "bottom": 64,
+          "left": 0
+        },
+        "videoOpacity": 1,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "comparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1237604,
+        "note": "Image difference is not a readability verdict."
+      },
+      "canvas": {
+        "ok": true,
+        "width": 720,
+        "height": 480,
+        "checksum": 335520974
+      },
+      "after": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:28.999Z",
+        "configuration": {
+          "mode": "native",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.911112,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 7,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 46,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 2.126000165939331,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 2.126000165939331
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64,
+          "top": 0,
+          "right": 64,
+          "bottom": 64,
+          "left": 0
+        },
+        "videoOpacity": 1,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:28.916Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "conclusion": "inconclusive"
+    },
+    {
+      "repetition": 1,
+      "mode": "transparent",
+      "captureMethods": [
+        {
+          "method": "playwright",
+          "backend": "Chrome DevTools Protocol",
+          "artifact": "1-transparent-playwright.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "not-assessable-transparent"
+          }
+        },
+        {
+          "method": "cdp",
+          "backend": "Page.captureScreenshot",
+          "artifact": "1-transparent-cdp.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "not-assessable-transparent"
+          }
+        },
+        {
+          "method": "macos",
+          "outcome": "unavailable",
+          "reason": "Command failed: /usr/sbin/screencapture -x /Users/nhestrompia/Projects/antiagent/artifacts/2026-10-13T02-19-25.779Z/1-transparent-macos.png\ncould not create image from display\n"
+        },
+        {
+          "method": "chrome-ui",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "tab-capture",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "screen-recording",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "safari",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        }
+      ],
+      "before": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:29.010Z",
+        "configuration": {
+          "mode": "transparent",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.911112,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 7,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 47,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 2.13700008392334,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 2.13700008392334
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "top": 0,
+          "right": 1280,
+          "bottom": 900,
+          "left": 0
+        },
+        "videoOpacity": 0.01,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:28.916Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.001Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "transparent",
+              "opacity": 0.01
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "comparison": {
+        "meanAbsoluteChannelDifference": 1.610369175708331,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1237604,
+        "note": "Image difference is not a readability verdict."
+      },
+      "canvas": {
+        "ok": true,
+        "width": 720,
+        "height": 480,
+        "checksum": 335520974
+      },
+      "after": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:29.226Z",
+        "configuration": {
+          "mode": "transparent",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.911112,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 7,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 57,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 2.3530001640319824,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 2.3530001640319824
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "top": 0,
+          "right": 1280,
+          "bottom": 900,
+          "left": 0
+        },
+        "videoOpacity": 0.01,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:28.916Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.001Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "transparent",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.171Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "conclusion": "inconclusive"
+    },
+    {
+      "repetition": 1,
+      "mode": "opaque",
+      "captureMethods": [
+        {
+          "method": "playwright",
+          "backend": "Chrome DevTools Protocol",
+          "artifact": "1-opaque-playwright.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "pattern-visible",
+            "samples": [
+              {
+                "name": "red",
+                "rgb": [
+                  255,
+                  24,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "green",
+                "rgb": [
+                  0,
+                  215,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "blue",
+                "rgb": [
+                  0,
+                  15,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "yellow",
+                "rgb": [
+                  255,
+                  240,
+                  0
+                ],
+                "expected": [
+                  255,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              }
+            ],
+            "colorTolerance": 80,
+            "blackThreshold": 20,
+            "note": "Color classification tolerates observed decoder/display color conversion. Pixel appearance is a measurement; capture suppression requires a matching live human observation."
+          }
+        },
+        {
+          "method": "cdp",
+          "backend": "Page.captureScreenshot",
+          "artifact": "1-opaque-cdp.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "pattern-visible",
+            "samples": [
+              {
+                "name": "red",
+                "rgb": [
+                  255,
+                  24,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "green",
+                "rgb": [
+                  0,
+                  215,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "blue",
+                "rgb": [
+                  0,
+                  15,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "yellow",
+                "rgb": [
+                  255,
+                  240,
+                  0
+                ],
+                "expected": [
+                  255,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              }
+            ],
+            "colorTolerance": 80,
+            "blackThreshold": 20,
+            "note": "Color classification tolerates observed decoder/display color conversion. Pixel appearance is a measurement; capture suppression requires a matching live human observation."
+          }
+        },
+        {
+          "method": "macos",
+          "outcome": "unavailable",
+          "reason": "Command failed: /usr/sbin/screencapture -x /Users/nhestrompia/Projects/antiagent/artifacts/2026-10-13T02-19-25.779Z/1-opaque-macos.png\ncould not create image from display\n"
+        },
+        {
+          "method": "chrome-ui",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "tab-capture",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "screen-recording",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "safari",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        }
+      ],
+      "before": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:29.244Z",
+        "configuration": {
+          "mode": "opaque",
+          "opacity": 1,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.911112,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 7,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 58,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 2.371000051498413,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 2.371000051498413
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "top": 0,
+          "right": 1280,
+          "bottom": 900,
+          "left": 0
+        },
+        "videoOpacity": 1,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:28.916Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.001Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "transparent",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.171Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.228Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "opaque",
+              "opacity": 1
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "comparison": {
+        "meanAbsoluteChannelDifference": 157.85885442085407,
+        "changedPixelFraction": 1,
+        "pixelsCompared": 1237604,
+        "note": "Image difference is not a readability verdict."
+      },
+      "canvas": {
+        "ok": true,
+        "width": 720,
+        "height": 480,
+        "checksum": 335520974
+      },
+      "after": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:29.424Z",
+        "configuration": {
+          "mode": "opaque",
+          "opacity": 1,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 1.335886,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 9,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 67,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 2.5510001182556152,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 2.5510001182556152
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "top": 0,
+          "right": 1280,
+          "bottom": 900,
+          "left": 0
+        },
+        "videoOpacity": 1,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:28.916Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.001Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "transparent",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.171Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.228Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "opaque",
+              "opacity": 1
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.362Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "conclusion": "inconclusive"
+    },
+    {
+      "repetition": 1,
+      "mode": "composition",
+      "captureMethods": [
+        {
+          "method": "playwright",
+          "backend": "Chrome DevTools Protocol",
+          "artifact": "1-composition-playwright.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "pattern-visible",
+            "samples": [
+              {
+                "name": "red",
+                "rgb": [
+                  255,
+                  24,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "green",
+                "rgb": [
+                  0,
+                  215,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "blue",
+                "rgb": [
+                  0,
+                  15,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "yellow",
+                "rgb": [
+                  255,
+                  240,
+                  0
+                ],
+                "expected": [
+                  255,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              }
+            ],
+            "colorTolerance": 80,
+            "blackThreshold": 20,
+            "note": "Color classification tolerates observed decoder/display color conversion. Pixel appearance is a measurement; capture suppression requires a matching live human observation."
+          }
+        },
+        {
+          "method": "cdp",
+          "backend": "Page.captureScreenshot",
+          "artifact": "1-composition-cdp.png",
+          "readability": "unreviewed",
+          "videoMeasurement": {
+            "appearance": "pattern-visible",
+            "samples": [
+              {
+                "name": "red",
+                "rgb": [
+                  255,
+                  24,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "green",
+                "rgb": [
+                  0,
+                  215,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "blue",
+                "rgb": [
+                  0,
+                  15,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "matches": true,
+                "black": false
+              },
+              {
+                "name": "yellow",
+                "rgb": [
+                  255,
+                  240,
+                  0
+                ],
+                "expected": [
+                  255,
+                  255,
+                  0
+                ],
+                "matches": true,
+                "black": false
+              }
+            ],
+            "colorTolerance": 80,
+            "blackThreshold": 20,
+            "note": "Color classification tolerates observed decoder/display color conversion. Pixel appearance is a measurement; capture suppression requires a matching live human observation."
+          }
+        },
+        {
+          "method": "macos",
+          "outcome": "unavailable",
+          "reason": "Command failed: /usr/sbin/screencapture -x /Users/nhestrompia/Projects/antiagent/artifacts/2026-10-13T02-19-25.779Z/1-composition-macos.png\ncould not create image from display\n"
+        },
+        {
+          "method": "chrome-ui",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "tab-capture",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "screen-recording",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        },
+        {
+          "method": "safari",
+          "outcome": "not-run",
+          "reason": "Follow the manual capture protocol."
+        }
+      ],
+      "before": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:29.445Z",
+        "configuration": {
+          "mode": "composition",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 1.335886,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 9,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 68,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 2.572000026702881,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 2.572000026702881
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64,
+          "top": 0,
+          "right": 64,
+          "bottom": 64,
+          "left": 0
+        },
+        "videoOpacity": 1,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:28.916Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.001Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "transparent",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.171Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.228Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "opaque",
+              "opacity": 1
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.362Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.426Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "composition",
+              "opacity": 0.01
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "composition": {
+        "drawSucceeded": true,
+        "readback": {
+          "ok": true,
+          "width": 64,
+          "height": 64,
+          "checksum": 1044480
+        },
+        "patternMeasurement": {
+          "appearance": "black",
+          "samples": [
+            {
+              "name": "red",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "expected": [
+                255,
+                0,
+                0
+              ],
+              "matches": false,
+              "black": true
+            },
+            {
+              "name": "green",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "expected": [
+                0,
+                255,
+                0
+              ],
+              "matches": false,
+              "black": true
+            },
+            {
+              "name": "blue",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "expected": [
+                0,
+                0,
+                255
+              ],
+              "matches": false,
+              "black": true
+            },
+            {
+              "name": "yellow",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "expected": [
+                255,
+                255,
+                0
+              ],
+              "matches": false,
+              "black": true
+            }
+          ],
+          "colorTolerance": 80,
+          "blackThreshold": 20,
+          "note": "Color classification tolerates observed decoder/display color conversion. Pixel appearance is a measurement; capture suppression requires a matching live human observation."
+        }
+      },
+      "comparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1237604,
+        "note": "Image difference is not a readability verdict."
+      },
+      "canvas": {
+        "ok": true,
+        "width": 720,
+        "height": 480,
+        "checksum": 335520974
+      },
+      "after": {
+        "schemaVersion": 1,
+        "at": "2026-10-13T02:19:29.674Z",
+        "configuration": {
+          "mode": "composition",
+          "opacity": 0.01,
+          "encryptedStart": 0,
+          "asset": {
+            "name": "Encrypted colored positive control",
+            "manifestUrl": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "licenseServerUrl": "https://proxy.uat.widevine.com/proxy",
+            "source": "https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html",
+            "tinyAsset": false,
+            "encryptedStart": 0,
+            "encrypted": true,
+            "pattern": "red-green-blue-yellow-quadrants",
+            "metadataPath": "/drm-control/asset.json"
+          },
+          "headersProvided": false
+        },
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "secureContext": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "devicePixelRatio": 1,
+          "hardwareConcurrency": 10
+        },
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 1.442595,
+          "dimensions": [
+            64,
+            64
+          ]
+        },
+        "robustnessSupport": [
+          {
+            "robustness": "SW_SECURE_CRYPTO",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_CRYPTO"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "SW_SECURE_DECODE",
+            "supported": true,
+            "configuration": {
+              "audioCapabilities": [],
+              "distinctiveIdentifier": "not-allowed",
+              "initDataTypes": [
+                "cenc"
+              ],
+              "label": "",
+              "persistentState": "not-allowed",
+              "sessionTypes": [
+                "temporary"
+              ],
+              "videoCapabilities": [
+                {
+                  "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+                  "encryptionScheme": "cenc",
+                  "robustness": "SW_SECURE_DECODE"
+                }
+              ]
+            }
+          },
+          {
+            "robustness": "HW_SECURE_CRYPTO",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_DECODE",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          },
+          {
+            "robustness": "HW_SECURE_ALL",
+            "supported": false,
+            "error": "NotSupportedError: Unsupported keySystem or supportedConfigurations."
+          }
+        ],
+        "media": {
+          "timeAdvanceSamples": 10,
+          "decodedFrames": 2,
+          "stats": {
+            "width": 64,
+            "height": 64,
+            "currentCodecs": "avc1.42c00a",
+            "streamBandwidth": 3844,
+            "decodedFrames": 2,
+            "droppedFrames": 0,
+            "corruptedFrames": 0,
+            "stallsDetected": 0,
+            "gapsJumped": 0,
+            "estimatedBandwidth": 1650000,
+            "completionPercent": 80,
+            "loadLatency": 0.016000032424926758,
+            "timeToFirstFrame": 1.2300000190734863,
+            "manifestTimeSeconds": 0.007999897003173828,
+            "drmTimeSeconds": 0.38300013542175293,
+            "playTime": 2.8010001182556152,
+            "pauseTime": 0,
+            "bufferingTime": 0.006999969482421875,
+            "licenseTime": 0.897,
+            "liveLatency": null,
+            "maxSegmentDuration": 2,
+            "manifestSizeBytes": 1621,
+            "bytesDownloaded": 5534,
+            "nonFatalErrorCount": 0,
+            "manifestPeriodCount": 1,
+            "manifestGapCount": 0,
+            "stateHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "state": "buffering",
+                "duration": 0.006999969482421875
+              },
+              {
+                "timestamp": 1791857966.873,
+                "state": "playing",
+                "duration": 2.8010001182556152
+              }
+            ],
+            "switchHistory": [
+              {
+                "timestamp": 1791857966.866,
+                "id": 0,
+                "type": "variant",
+                "fromAdaptation": true,
+                "bandwidth": 3844
+              }
+            ]
+          }
+        },
+        "referenceRegion": {
+          "x": 32,
+          "y": 145.796875,
+          "width": 681.9140625,
+          "height": 454.609375,
+          "top": 145.796875,
+          "right": 713.9140625,
+          "bottom": 600.40625,
+          "left": 32
+        },
+        "videoRegion": {
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64,
+          "top": 0,
+          "right": 64,
+          "bottom": 64,
+          "left": 0
+        },
+        "videoOpacity": 1,
+        "videoHidden": false,
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5173/@vite/client",
+            "initiatorType": "script",
+            "duration": 21.100000023841858,
+            "transferSize": 222422,
+            "encodedBodySize": 222122
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/main.js",
+            "initiatorType": "script",
+            "duration": 23.5,
+            "transferSize": 47294,
+            "encodedBodySize": 46994
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+            "initiatorType": "script",
+            "duration": 6.399999976158142,
+            "transferSize": 3778,
+            "encodedBodySize": 3478
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/style.css",
+            "initiatorType": "script",
+            "duration": 6.600000023841858,
+            "transferSize": 2929,
+            "encodedBodySize": 2629
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/canvas.js",
+            "initiatorType": "script",
+            "duration": 11.400000035762787,
+            "transferSize": 12331,
+            "encodedBodySize": 12031
+          },
+          {
+            "name": "http://127.0.0.1:5173/src/drm.js",
+            "initiatorType": "script",
+            "duration": 12.5,
+            "transferSize": 42165,
+            "encodedBodySize": 41865
+          },
+          {
+            "name": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+            "initiatorType": "script",
+            "duration": 43.59999996423721,
+            "transferSize": 3830006,
+            "encodedBodySize": 3829706
+          },
+          {
+            "name": "http://127.0.0.1:5173/favicon.ico",
+            "initiatorType": "other",
+            "duration": 2,
+            "transferSize": 300,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+            "initiatorType": "fetch",
+            "duration": 1.4000000357627869,
+            "transferSize": 1921,
+            "encodedBodySize": 1621
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 1.800000011920929,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 2.599999964237213,
+            "transferSize": 1395,
+            "encodedBodySize": 1095
+          },
+          {
+            "name": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+            "initiatorType": "fetch",
+            "duration": 4.199999988079071,
+            "transferSize": 1261,
+            "encodedBodySize": 961
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 133.0999999642372,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://proxy.uat.widevine.com/proxy",
+            "initiatorType": "fetch",
+            "duration": 762,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ],
+        "observations": [],
+        "events": [
+          {
+            "at": "2026-10-13T02:19:26.411Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.470Z",
+            "type": "stop",
+            "detail": {}
+          },
+          {
+            "at": "2026-10-13T02:19:26.471Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "baseline",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.664Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.739Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.740Z",
+            "type": "start",
+            "detail": {
+              "asset": "Custom media"
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:26.871Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "native",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:28.916Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.001Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "transparent",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.171Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.228Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "opaque",
+              "opacity": 1
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.362Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.426Z",
+            "type": "configuration",
+            "detail": {
+              "mode": "composition",
+              "opacity": 0.01
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.448Z",
+            "type": "composition",
+            "detail": {
+              "drawSucceeded": true,
+              "readback": {
+                "ok": true,
+                "width": 64,
+                "height": 64,
+                "checksum": 1044480
+              }
+            }
+          },
+          {
+            "at": "2026-10-13T02:19:29.607Z",
+            "type": "canvas-readback",
+            "detail": {
+              "ok": true,
+              "width": 720,
+              "height": 480,
+              "checksum": 335520974
+            }
+          }
+        ],
+        "conclusion": "inconclusive",
+        "limitations": [
+          "Capture results require artifact inspection and contemporaneous human observation.",
+          "Cross-origin transfer sizes may be zero without Timing-Allow-Origin.",
+          "Public development licensing is not suitable for production use.",
+          "Encrypted start time for custom media must be verified independently."
+        ]
+      },
+      "conclusion": "inconclusive"
+    }
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:5173/",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/@vite/client",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/main.js",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/style.css",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/canvas.js",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/drm.js",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/.vite/deps/shaka-player_dist_shaka-player__compiled__js.js",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/drm-control/encrypted-video.mpd",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+      "status": 206,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+      "status": 206,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "http://127.0.0.1:5173/drm-control/encrypted-video.mp4",
+      "status": 206,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "https://proxy.uat.widevine.com/proxy",
+      "status": 200,
+      "fromServiceWorker": false
+    },
+    {
+      "url": "https://proxy.uat.widevine.com/proxy",
+      "status": 200,
+      "fromServiceWorker": false
+    }
+  ],
+  "conclusion": "inconclusive",
+  "note": "Inspect both video and canvas separately. Black video replacement needs contemporaneous human confirmation of visible colored frames. Do not infer readability from image differences."
+}

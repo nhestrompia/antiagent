@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anti-Agent capture experiment</title>
+</head>
+<body>
+  <main>
+    <header><h1>Anti-Agent capture experiment</h1><p>Can protected video obscure a canvas in captures while you can still read it?</p></header>
+    <div class="workbench">
+      <section class="scene" aria-label="Reference scene">
+        <canvas id="reference" aria-label="Visual capture reference"></canvas>
+        <canvas id="composition" aria-label="Protected video copy attempt" hidden></canvas>
+        <p>The scene is a fixed capture reference, not an interactive application.</p>
+      </section>
+      <section class="controls" aria-label="Experiment controls">
+        <h2>Experiment settings</h2>
+        <label>Configuration<select id="mode"><option value="baseline">Baseline · no video</option><option value="native">A · native-size video</option><option value="transparent">B · transparent viewport</option><option value="opaque">C · opaque viewport</option><option value="composition">D · canvas composition</option></select></label>
+        <label>Overlay opacity<input id="opacity" type="number" min="0" max="1" step="0.01" value="0.01" /></label>
+        <label>Development asset<select id="asset"><option value="tiny">Tiny solid-color video · 16 × 16</option><option value="control">Encrypted colored control · 64 × 64</option><option value="clear-control">Matching colored control · unencrypted</option><option value="sintel">Sintel · playback baseline</option></select></label>
+        <label>Manifest URL<input id="manifest" type="url" required /></label>
+        <label>License server URL<input id="license" type="url" required /></label>
+        <label>License headers · JSON<textarea id="headers" rows="2" spellcheck="false">{}</textarea></label>
+        <label>Encrypted playback start · seconds<input id="encrypted-start" type="number" min="0" step="0.1" value="0" /></label>
+        <label>Widevine security requirement<select id="robustness"><option value="SW_SECURE_DECODE">Software secure decode · playback baseline</option><option value="SW_SECURE_CRYPTO">Software secure crypto</option><option value="HW_SECURE_CRYPTO">Hardware secure crypto</option><option value="HW_SECURE_DECODE">Hardware secure decode</option><option value="HW_SECURE_ALL">Hardware secure decode and output</option></select></label>
+        <p class="note">Hardware requirements never fall back to software. Encryption alone does not imply screenshot blocking.</p>
+        <p class="note">Default: a 2-second, silent, 16 × 16 solid-color asset encrypted from its first frame. Public Widevine test licensing is for development only. Headers stay in memory and are excluded from reports.</p>
+        <div class="actions"><button id="start">Start protected playback</button><button id="stop" class="secondary">Stop / reveal page</button></div>
+        <p class="note">Press Escape to stop an opaque overlay.</p>
+        <h2>Playback diagnostics</h2>
+        <button id="probe" class="secondary">Probe DRM security levels</button>
+        <pre id="robustness-results"></pre>
+        <output id="status" aria-live="polite">Not started</output>
+        <pre id="diagnostics"></pre>
+        <div class="actions"><button id="readback" class="secondary">Read canvas pixels</button><button id="copy" class="secondary">Attempt video copy</button><button id="remove" class="secondary">Remove video</button></div>
+        <h2>Human observation</h2>
+        <label>Can you read the reference scene now?<select id="human"><option value="unknown">Not recorded</option><option value="readable">Yes, readable</option><option value="unreadable">No, unreadable</option></select></label>
+        <label>What does the live video show?<select id="human-video"><option value="unknown">Not recorded</option><option value="pattern-visible">Red, green, blue, yellow quadrants</option><option value="black">Black rectangle</option><option value="other">Something else</option></select></label>
+        <button id="observe" class="secondary">Record observation</button>
+        <div class="actions"><button id="display" class="secondary">Record tab / screen</button><button id="end-recording" class="secondary" disabled>Finish recording</button><button id="export">Export run report</button></div>
+        <p id="message" role="status"></p>
+      </section>
+    </div>
+  </main>
+  <video id="drm-video" muted autoplay playsinline loop disablepictureinpicture></video>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

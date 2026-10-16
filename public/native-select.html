@@ -1,0 +1,40 @@
+<!doctype html><meta charset="utf-8"><title>Select pending</title>
+<style>body{margin:32px;font:16px system-ui}select,button{font:20px system-ui;padding:12px;margin:16px 16px 16px 0}pre{white-space:pre-wrap}</style>
+<h1>Native popup boundary experiment</h1><p>Choose Harbor Research, then confirm.</p>
+<select id="destination" aria-label="Destination"><option value="">Choose a destination</option></select><button id="confirm">Confirm</button><pre></pre>
+<script type="module">
+const select=document.querySelector('select');
+const choices=['Harbor Research','North Labs','West Studio'];
+const offset=crypto.getRandomValues(new Uint32Array(1))[0]%3;
+const layout=[...choices.slice(offset),...choices.slice(0,offset)];
+const values=layout.map(()=>crypto.randomUUID());
+layout.forEach((label,index)=>select.add(new Option(label,values[index])));
+const expected=values[layout.indexOf('Harbor Research')];
+const parameters=new URLSearchParams(location.search);
+const harden=parameters.get('harden')==='on';
+const hide=parameters.get('hide')==='on';
+const inline=parameters.get('inline')==='on';
+const clear=harden||parameters.get('clear')==='on';
+let clearedMarkup;
+const observer=new MutationObserver(()=>{if(harden&&state.labelsCleared&&!state.blocked&&select.outerHTML!==clearedMarkup){state.blocked=true;state.reason='dom-tamper';report();}});
+observer.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true});
+if(hide){Object.setPrototypeOf(observer,null);Object.freeze(observer);}
+const state={clear,harden,hide,inline,focused:document.hasFocus(),accepted:0,blocked:false,lastChangeTrusted:null,labelsCleared:false,popupOpen:false,events:[]};
+function report(){state.focused=document.hasFocus();state.popupOpen=CSS.supports('selector(:open)')?select.matches(':open'):null;document.querySelector('pre').textContent=JSON.stringify(state,null,2);document.title='Select result:'+JSON.stringify(state);}
+select.addEventListener('pointerdown',event=>{
+  state.events.push({type:'pointerdown',trusted:event.isTrusted});
+  if(clear&&!state.labelsCleared) setTimeout(()=>{for(const option of select.options) option.textContent='';state.labelsCleared=true;clearedMarkup=select.outerHTML;report();},100);
+});
+select.addEventListener('keydown',event=>{state.events.push({type:'keydown',key:event.key,trusted:event.isTrusted});report();});
+function checkMarkup(){if(inline&&state.labelsCleared&&select.outerHTML!==clearedMarkup){state.blocked=true;state.reason='inline-dom-tamper';}}
+select.addEventListener('change',event=>{checkMarkup();state.lastChangeTrusted=event.isTrusted;state.events.push({type:'change',trusted:event.isTrusted});report();});
+document.querySelector('button').addEventListener('click',event=>{
+  state.events.push({type:'confirm',trusted:event.isTrusted});
+  checkMarkup();
+  if(state.blocked) {report();return;}
+  if(!event.isTrusted||!state.lastChangeTrusted) state.blocked=true;
+  else if(select.value===expected) state.accepted++;
+  report();
+});
+report();setInterval(report,100);
+</script>

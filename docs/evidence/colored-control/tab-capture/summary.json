@@ -1,0 +1,756 @@
+{
+  "schemaVersion": 1,
+  "clearReport": "clear/report.json",
+  "encryptedReport": "encrypted/report.json",
+  "clear": [
+    {
+      "repetition": 1,
+      "mode": "native",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 1,
+      "mode": "transparent",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "cdp",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "not-assessable-transparent"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 1,
+      "mode": "opaque",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "other"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 1,
+      "mode": "composition",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": "pattern-visible",
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "native",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "transparent",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "cdp",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "not-assessable-transparent"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 1.510362122903377,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "opaque",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "other"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 150.56952090813476,
+        "changedPixelFraction": 1,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "composition",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": "pattern-visible",
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "native",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "transparent",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "cdp",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "not-assessable-transparent"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 1.510362122903377,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "opaque",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "other"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 150.56952090813476,
+        "changedPixelFraction": 1,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "composition",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": "pattern-visible",
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    }
+  ],
+  "encrypted": [
+    {
+      "repetition": 1,
+      "mode": "native",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 1,
+      "mode": "transparent",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "cdp",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "not-assessable-transparent"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 1,
+      "mode": "opaque",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 1,
+      "mode": "composition",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": "black",
+      "referenceComparison": {
+        "error": "Capture widths differ."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "native",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "transparent",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "cdp",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "not-assessable-transparent"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 1.6091431365358757,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "opaque",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 157.81225836869402,
+        "changedPixelFraction": 1,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 2,
+      "mode": "composition",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": "black",
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "native",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "transparent",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "cdp",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "not-assessable-transparent"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "not-assessable-transparent"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 1.6091431365358757,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "opaque",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": null,
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 157.81225836869402,
+        "changedPixelFraction": 1,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    },
+    {
+      "repetition": 3,
+      "mode": "composition",
+      "playbackValidBefore": true,
+      "playbackValidAfter": true,
+      "screenshotVideo": [
+        {
+          "method": "playwright",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "cdp",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-capture",
+          "appearance": "pattern-visible"
+        },
+        {
+          "method": "tab-recording",
+          "appearance": "pattern-visible"
+        }
+      ],
+      "copiedVideo": "black",
+      "referenceComparison": {
+        "meanAbsoluteChannelDifference": 0,
+        "changedPixelFraction": 0,
+        "pixelsCompared": 1240785,
+        "note": "Image difference is not a readability verdict."
+      },
+      "humanObservation": null
+    }
+  ],
+  "browserVideoCaptureResult": "encrypted-pattern-preserved-in-browser-captures",
+  "underlyingCanvasProtection": "unverified",
+  "note": "This suite distinguishes video capture from underlying canvas capture. No apparent black replacement can establish protection without valid playback, a visible clear baseline, and contemporaneous human observation. Playwright and CDP share a backend."
+}

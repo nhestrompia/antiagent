@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anti-Agent protected media interface</title>
+  <style>
+    body { font: 16px system-ui; margin: 32px; color: #172b35; background: #ecf2f3; }
+    main { max-width: 900px; margin: auto; }
+    .media-surface { width: min(100%, 720px); aspect-ratio: 3 / 2; background: #111; margin: 24px 0; }
+    video { display: block; width: 100%; aspect-ratio: 3 / 2; }
+    button, select { font: inherit; padding: 10px; }
+    pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Protected media interface experiment</h1>
+    <p>The reference interface is encoded inside the video. This static experiment has no interactive business controls.</p>
+    <label>Media <select id="source"><option value="encrypted">Encrypted interface</option><option value="clear">Matching clear interface</option></select></label>
+    <label>Widevine security <select id="robustness"></select></label>
+    <button id="start">Start playback</button>
+    <button id="stop">Stop playback</button>
+    <div class="media-surface"><video id="video" muted autoplay playsinline loop></video></div>
+    <p>Capture may make this region dark for everyone. No screenshot protection is inferred from playback status.</p>
+    <pre id="status">Not started</pre>
+  </main>
+  <script type="module" src="/src/protected-ui.js"></script>
+</body>
+</html>

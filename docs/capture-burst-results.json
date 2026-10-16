@@ -1,0 +1,1272 @@
+{
+  "results": [
+    {
+      "mode": "idle",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 0,
+      "wallMs": 3391,
+      "metrics": {
+        "Frames": 359,
+        "Median": 8.3,
+        "P95": 9.2,
+        "Maximum": 9.4,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "text": "-эmbined defense experiment",
+          "y": 0.058468776409540624,
+          "x": 0.32810224098263874
+        },
+        {
+          "y": 0.08999999983571005,
+          "text": "Timing finished",
+          "x": 0.09453125158372055
+        },
+        {
+          "x": 0.08124999906337838,
+          "y": 0.11888888863772618,
+          "text": "Frames 359"
+        },
+        {
+          "text": "iplete the three decisions inside the canvas.",
+          "x": 0.29609374580729175,
+          "y": 0.11333333348148145
+        },
+        {
+          "text": "Median 8.30",
+          "x": 0.08281250054813513,
+          "y": 0.15000000019673354
+        },
+        {
+          "y": 0.181111110883726,
+          "text": "P95 9.20",
+          "x": 0.06875000043077793
+        },
+        {
+          "text": "Maximum 9.40",
+          "y": 0.2111111109777778,
+          "x": 0.097656251328125
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.31041666328125006,
+          "y": 0.2068704794062095
+        },
+        {
+          "text": "Over25 0",
+          "x": 0.07031249928403333,
+          "y": 0.24111111032084942
+        },
+        {
+          "text": "Decision 1 of 3",
+          "x": 0.22265625082812499,
+          "y": 0.2566666665555556
+        },
+        {
+          "text": "a20KU20PM",
+          "y": 0.4022222223174603,
+          "x": 0.2531249990401786
+        },
+        {
+          "text": "honrbtsbeccolseprj",
+          "x": 0.43281250134375,
+          "y": 0.4033333332222222
+        },
+        {
+          "x": 0.6124999986249999,
+          "y": 0.40222222231111115,
+          "text": "biiaoatedicta comrbo"
+        },
+        {
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778
+        },
+        {
+          "x": 0.20703125092187497,
+          "text": "\"clicks\": 0,",
+          "y": 0.7466666666666666
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011
+        },
+        {
+          "y": 0.7876392864065254,
+          "text": "\"reason\": null,",
+          "x": 0.21954693791124166
+        },
+        {
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249,
+          "text": "\"completed\": false,"
+        },
+        {
+          "x": 0.21648513988377624,
+          "y": 0.8300342430775739,
+          "text": "\"ready\": true,"
+        },
+        {
+          "x": 0.23909372536213871,
+          "text": "\"drmVerified\": true,",
+          "y": 0.8493344423948935
+        },
+        {
+          "y": 0.8722222221944445,
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.2570312476367188
+        },
+        {
+          "text": "\"layoutEpoch\": 1",
+          "x": 0.2234374979687501,
+          "y": 0.8922222221851852
+        },
+        {
+          "x": 0.152343749921875,
+          "y": 0.9133333330370372,
+          "text": "}"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 95,
+      "wallMs": 3410,
+      "metrics": {
+        "Frames": 363,
+        "Median": 8.3,
+        "P95": 9.1,
+        "Maximum": 9.4,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "x": 0.32810224098263874,
+          "y": 0.058468776409540624,
+          "text": "-эmbined defense experiment"
+        },
+        {
+          "y": 0.0900000002858865,
+          "text": "Timing finished",
+          "x": 0.09374999984104333
+        },
+        {
+          "y": 0.1188888886558882,
+          "text": "Frames 363",
+          "x": 0.08124999906106048
+        },
+        {
+          "x": 0.29609374580729175,
+          "y": 0.11333333348148145,
+          "text": "iplete the three decisions inside the canvas."
+        },
+        {
+          "x": 0.08281250054779896,
+          "text": "Median 8.30",
+          "y": 0.1500000001986187
+        },
+        {
+          "text": "P95 9.10",
+          "y": 0.18222222248888886,
+          "x": 0.06875000037499998
+        },
+        {
+          "y": 0.21111111098412705,
+          "text": "Maximum 9.40",
+          "x": 0.09296875088169643
+        },
+        {
+          "x": 0.07031249928403333,
+          "y": 0.24111111032084942,
+          "text": "Over25 0"
+        },
+        {
+          "text": "Choose Harbor Research",
+          "y": 0.20687047930759017,
+          "x": 0.3062499953472224
+        },
+        {
+          "x": 0.22265625082812499,
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3"
+        },
+        {
+          "text": "CNatuthepulBErhram",
+          "x": 0.2539062511914062,
+          "y": 0.40555555530555554
+        },
+        {
+          "text": "TeSt3N0p",
+          "x": 0.433593751390625,
+          "y": 0.4066666665333334
+        },
+        {
+          "x": 0.6125000000413603,
+          "y": 0.40444444441830063,
+          "text": "COnAEUm3n"
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,"
+        },
+        {
+          "y": 0.7466666666666666,
+          "text": "\"clicks\": 0,",
+          "x": 0.20703125092187497
+        },
+        {
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.21954693791124166,
+          "y": 0.7876392864065254
+        },
+        {
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923,
+          "text": "\"completed\": false,"
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21648513988377624,
+          "y": 0.8300342430775739
+        },
+        {
+          "y": 0.8493344423948935,
+          "text": "\"drmVerified\": true,",
+          "x": 0.23909372536213871
+        },
+        {
+          "y": 0.8722222221944445,
+          "x": 0.2570312476367188,
+          "text": "\"detectorsAllowed\": true,"
+        },
+        {
+          "x": 0.2234374979687501,
+          "text": "\"layoutEpoch\": 1",
+          "y": 0.8922222221851852
+        },
+        {
+          "text": "}",
+          "y": 0.9133333330370372,
+          "x": 0.152343749921875
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "screencast",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 290,
+      "wallMs": 3358,
+      "metrics": {
+        "Frames": 360,
+        "Median": 8.3,
+        "P95": 9,
+        "Maximum": 9.4,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "x": 0.32810224098263874,
+          "y": 0.058468776409540624,
+          "text": "-эmbined defense experiment"
+        },
+        {
+          "x": 0.09374999984104333,
+          "y": 0.0900000002858865,
+          "text": "Timing finished"
+        },
+        {
+          "y": 0.11888888970035616,
+          "text": "Frames 360",
+          "x": 0.08124999906298419
+        },
+        {
+          "x": 0.29609374580729175,
+          "text": "iplete the three decisions inside the canvas.",
+          "y": 0.11333333348148145
+        },
+        {
+          "text": "Median 8.30",
+          "x": 0.08281250054598271,
+          "y": 0.15000000020848892
+        },
+        {
+          "y": 0.18111111135259694,
+          "text": "P95 9.00",
+          "x": 0.06875000034478232
+        },
+        {
+          "y": 0.21111111094444446,
+          "text": "Maximum 9.40",
+          "x": 0.09375000156249996
+        },
+        {
+          "y": 0.2068704794062095,
+          "text": "Choose Harbor Research",
+          "x": 0.31041666328125006
+        },
+        {
+          "x": 0.07031249928403333,
+          "y": 0.24111111032084942,
+          "text": "Over25 0"
+        },
+        {
+          "x": 0.22265625082812499,
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3"
+        },
+        {
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.20703125092187497,
+          "y": 0.7466666666666666
+        },
+        {
+          "x": 0.22736728301247108,
+          "text": "\"blocked\": false,",
+          "y": 0.76547824997011
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.21954693791124166,
+          "y": 0.7876392864065254
+        },
+        {
+          "y": 0.8088047332432249,
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923
+        },
+        {
+          "x": 0.21648513988377624,
+          "text": "\"ready\": true,",
+          "y": 0.8300342430775739
+        },
+        {
+          "y": 0.8493344423948935,
+          "text": "\"drmVerified\": true,",
+          "x": 0.23909372536213871
+        },
+        {
+          "x": 0.2570312476367188,
+          "text": "\"detectorsAllowed\": true,",
+          "y": 0.8722222221944445
+        },
+        {
+          "x": 0.2234374979687501,
+          "y": 0.8922222221851852,
+          "text": "\"layoutEpoch\": 1"
+        },
+        {
+          "text": "}",
+          "y": 0.9133333330370372,
+          "x": 0.152343749921875
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.startScreencast",
+        "Page.screencastFrameAck",
+        "Page.stopScreencast",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "idle",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 0,
+      "wallMs": 3368,
+      "metrics": {
+        "Frames": 360,
+        "Median": 8.3,
+        "P95": 9.2,
+        "Maximum": 9.4,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "y": 0.0581249975915622,
+          "x": 0.3281004236822719,
+          "text": "-эmbined defense experiment"
+        },
+        {
+          "x": 0.09453125158337006,
+          "text": "Timing finished",
+          "y": 0.08999999982901374
+        },
+        {
+          "text": "Frames 360",
+          "x": 0.08124999906033845,
+          "y": 0.11888888972149037
+        },
+        {
+          "y": 0.11333333348148145,
+          "text": "iplete the three decisions inside the canvas.",
+          "x": 0.29609374580729175
+        },
+        {
+          "text": "Median 8.30",
+          "y": 0.1500000002073283,
+          "x": 0.08281250054620118
+        },
+        {
+          "text": "P95 9.20",
+          "x": 0.06875000043055432,
+          "y": 0.18111111194400753
+        },
+        {
+          "text": "Maximum 9.40",
+          "x": 0.09296875088169643,
+          "y": 0.21111111098412705
+        },
+        {
+          "text": "Choose Harbor Research",
+          "y": 0.2068704794062095,
+          "x": 0.31041666328125006
+        },
+        {
+          "x": 0.07031249928403333,
+          "y": 0.24111111032084942,
+          "text": "Over25 0"
+        },
+        {
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3",
+          "x": 0.22265625082812499
+        },
+        {
+          "x": 0.6117187509486607,
+          "text": "subobabreEHBjG",
+          "y": 0.39888888877777773
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,"
+        },
+        {
+          "x": 0.20703125092187497,
+          "y": 0.7466666666666666,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011
+        },
+        {
+          "x": 0.21954693791124166,
+          "y": 0.7876392864065254,
+          "text": "\"reason\": null,"
+        },
+        {
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923,
+          "text": "\"completed\": false,"
+        },
+        {
+          "x": 0.21648513988377624,
+          "y": 0.8300342430775739,
+          "text": "\"ready\": true,"
+        },
+        {
+          "y": 0.8493344423948935,
+          "text": "\"drmVerified\": true,",
+          "x": 0.23909372536213871
+        },
+        {
+          "y": 0.8722222221944445,
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.2570312476367188
+        },
+        {
+          "text": "\"layoutEpoch\": 1",
+          "x": 0.2234374979687501,
+          "y": 0.8922222221851852
+        },
+        {
+          "y": 0.9133333330370372,
+          "x": 0.152343749921875,
+          "text": "}"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 104,
+      "wallMs": 3401,
+      "metrics": {
+        "Frames": 361,
+        "Median": 8.3,
+        "P95": 9.1,
+        "Maximum": 9.4,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "text": "-эmbined defense experiment",
+          "x": 0.3281023076903328,
+          "y": 0.058477237856881636
+        },
+        {
+          "text": "Timing finished",
+          "x": 0.09374999984149962,
+          "y": 0.0900000008162175
+        },
+        {
+          "text": "Frames 361",
+          "x": 0.08046874907703416,
+          "y": 0.11888888865291758
+        },
+        {
+          "y": 0.11333333348148145,
+          "text": "iplete the three decisions inside the canvas.",
+          "x": 0.29609374580729175
+        },
+        {
+          "x": 0.08281250062618231,
+          "y": 0.15000000023824556,
+          "text": "Median 8.30"
+        },
+        {
+          "text": "P95 9.10",
+          "x": 0.06875000042968749,
+          "y": 0.18222222255555554
+        },
+        {
+          "text": "Maximum 9.40 Choose Harbor Research",
+          "y": 0.21000000020634912,
+          "x": 0.23671874856026784
+        },
+        {
+          "y": 0.24111111032084942,
+          "text": "Over25 0",
+          "x": 0.07031249928403333
+        },
+        {
+          "x": 0.22265625082812499,
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3"
+        },
+        {
+          "x": 0.25390625113281245,
+          "text": "dertooabblLI2Dc",
+          "y": 0.4044444443333334
+        },
+        {
+          "y": 0.4044444443333334,
+          "text": "mulichResäathishile",
+          "x": 0.4320312511067709
+        },
+        {
+          "text": "ueklebaxe rajrw",
+          "y": 0.4055555554,
+          "x": 0.6132812513593751
+        },
+        {
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873
+        },
+        {
+          "y": 0.7466666666666666,
+          "x": 0.20703125092187497,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "y": 0.7876392864065254,
+          "x": 0.21954693791124166,
+          "text": "\"reason\": null,"
+        },
+        {
+          "text": "\"completed\": false,",
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923
+        },
+        {
+          "x": 0.21648513988377624,
+          "text": "\"ready\": true,",
+          "y": 0.8300342430775739
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "y": 0.8493344423948935,
+          "x": 0.23909372536213871
+        },
+        {
+          "text": "\"detectorsAllowed\": true,",
+          "y": 0.8722222221944445,
+          "x": 0.2570312476367188
+        },
+        {
+          "x": 0.2234374979687501,
+          "y": 0.8922222221851852,
+          "text": "\"layoutEpoch\": 1"
+        },
+        {
+          "x": 0.152343749921875,
+          "y": 0.9133333330370372,
+          "text": "}"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "screencast",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 291,
+      "wallMs": 3368,
+      "metrics": {
+        "Frames": 359,
+        "Median": 8.3,
+        "P95": 9,
+        "Maximum": 9.3,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "text": "-эmbined defense experiment",
+          "y": 0.0581249975915622,
+          "x": 0.3281004236822719
+        },
+        {
+          "x": 0.09374999984104333,
+          "y": 0.0900000002858865,
+          "text": "Timing finished"
+        },
+        {
+          "x": 0.08124999906337838,
+          "y": 0.11888888863772618,
+          "text": "Frames 359"
+        },
+        {
+          "text": "iplete the three decisions inside the canvas.",
+          "x": 0.29609374580729175,
+          "y": 0.11333333348148145
+        },
+        {
+          "y": 0.15000000019673354,
+          "x": 0.08281250054813513,
+          "text": "Median 8.30"
+        },
+        {
+          "text": "P95 9.00",
+          "x": 0.06875000034478232,
+          "y": 0.18111111135259694
+        },
+        {
+          "text": "Maximum 9.30",
+          "y": 0.21111111098412705,
+          "x": 0.09296875088169643
+        },
+        {
+          "y": 0.20687047930759017,
+          "x": 0.31041666215277797,
+          "text": "Choose Harbor Research"
+        },
+        {
+          "y": 0.24111111032073418,
+          "text": "Over25 0",
+          "x": 0.07031249928405406
+        },
+        {
+          "x": 0.22265625082812499,
+          "text": "Decision 1 of 3",
+          "y": 0.2566666665555556
+        },
+        {
+          "text": "BXN2M00T9CSTEDU",
+          "x": 0.25312500111979164,
+          "y": 0.4066666665555556
+        },
+        {
+          "y": 0.4077777776666667,
+          "text": "4pMhixx 881m",
+          "x": 0.43203125135937503
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,"
+        },
+        {
+          "x": 0.20703125092187497,
+          "y": 0.7466666666666666,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "y": 0.7876392864065254,
+          "text": "\"reason\": null,",
+          "x": 0.21954693791124166
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "y": 0.8300342430775739,
+          "text": "\"ready\": true,",
+          "x": 0.21648513988377624
+        },
+        {
+          "x": 0.23909372536213871,
+          "y": 0.8493344423948935,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "x": 0.2570312476367188,
+          "y": 0.8722222221944445,
+          "text": "\"detectorsAllowed\": true,"
+        },
+        {
+          "y": 0.8922222221851852,
+          "text": "\"layoutEpoch\": 1",
+          "x": 0.2234374979687501
+        },
+        {
+          "text": "}",
+          "y": 0.9133333330370372,
+          "x": 0.152343749921875
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.startScreencast",
+        "Page.screencastFrameAck",
+        "Page.stopScreencast",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "idle",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 0,
+      "wallMs": 3384,
+      "metrics": {
+        "Frames": 360,
+        "Median": 8.3,
+        "P95": 9.1,
+        "Maximum": 9.3,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "x": 0.3281004236822719,
+          "y": 0.0581249975915622,
+          "text": "-эmbined defense experiment"
+        },
+        {
+          "text": "Timing finished",
+          "y": 0.09000000081638693,
+          "x": 0.09374999984165108
+        },
+        {
+          "text": "Frames 360",
+          "x": 0.08124999906298419,
+          "y": 0.11888888970035616
+        },
+        {
+          "x": 0.29609374580729175,
+          "text": "iplete the three decisions inside the canvas.",
+          "y": 0.11333333348148145
+        },
+        {
+          "x": 0.08281250054779896,
+          "y": 0.1500000001986187,
+          "text": "Median 8.30"
+        },
+        {
+          "text": "P95 9.10",
+          "x": 0.06875000031221581,
+          "y": 0.18222222297507007
+        },
+        {
+          "y": 0.21111111130158733,
+          "x": 0.09296875061383927,
+          "text": "Maximum 9.30"
+        },
+        {
+          "text": "Over25 0",
+          "y": 0.24111111032073418,
+          "x": 0.07031249928405406
+        },
+        {
+          "text": "Choose Harbor Research",
+          "y": 0.2068704794062095,
+          "x": 0.31041666328125006
+        },
+        {
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3",
+          "x": 0.22265625082812499
+        },
+        {
+          "y": 0.4011111110000001,
+          "x": 0.433593751359375,
+          "text": "024a420000P"
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,"
+        },
+        {
+          "y": 0.7466666666666666,
+          "x": 0.20703125092187497,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "text": "\"blocked\": false,",
+          "y": 0.76547824997011,
+          "x": 0.22736728301247108
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.21954693791124166,
+          "y": 0.7876392864065254
+        },
+        {
+          "text": "\"completed\": false,",
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923
+        },
+        {
+          "x": 0.21648513988377624,
+          "text": "\"ready\": true,",
+          "y": 0.8300342430775739
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "y": 0.8493344423948935,
+          "x": 0.23909372536213871
+        },
+        {
+          "y": 0.8722222221944445,
+          "x": 0.2570312476367188,
+          "text": "\"detectorsAllowed\": true,"
+        },
+        {
+          "text": "\"layoutEpoch\": 1",
+          "x": 0.2234374979687501,
+          "y": 0.8922222221851852
+        },
+        {
+          "x": 0.152343749921875,
+          "y": 0.9133333330370372,
+          "text": "}"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 109,
+      "wallMs": 3408,
+      "metrics": {
+        "Frames": 362,
+        "Median": 8.3,
+        "P95": 9.1,
+        "Maximum": 9.3,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "text": "-эmbined defense experiment",
+          "y": 0.058468776409540624,
+          "x": 0.32810224098263874
+        },
+        {
+          "x": 0.09374999984123113,
+          "y": 0.08999999975627837,
+          "text": "Timing finished"
+        },
+        {
+          "text": "Frames 362",
+          "x": 0.08124999906075966,
+          "y": 0.11888888865835368
+        },
+        {
+          "x": 0.29609374580729175,
+          "y": 0.11333333348148145,
+          "text": "iplete the three decisions inside the canvas."
+        },
+        {
+          "x": 0.08281250054800986,
+          "y": 0.1500000001974382,
+          "text": "Median 8.30"
+        },
+        {
+          "text": "P95 9.10",
+          "x": 0.06875000031249998,
+          "y": 0.18222222244444441
+        },
+        {
+          "x": 0.09296875088169643,
+          "text": "Maximum 9.30",
+          "y": 0.21111111098412705
+        },
+        {
+          "y": 0.24111111032073418,
+          "x": 0.07031249928405406,
+          "text": "Over25 0"
+        },
+        {
+          "x": 0.31041666215277797,
+          "text": "Choose Harbor Research",
+          "y": 0.20687047930759017
+        },
+        {
+          "text": "Decision 1 of 3",
+          "y": 0.2566666665555556,
+          "x": 0.22265625082812499
+        },
+        {
+          "y": 0.4022222224018428,
+          "x": 0.2531249995657556,
+          "text": "(tetwLate2A7OMIMaPC"
+        },
+        {
+          "text": "HeodtuzAL2Hs",
+          "y": 0.4022222223174603,
+          "x": 0.4328124990401786
+        },
+        {
+          "y": 0.7255555555277778,
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.20703125092187497,
+          "y": 0.7466666666666666
+        },
+        {
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108
+        },
+        {
+          "x": 0.21954693791124166,
+          "text": "\"reason\": null,",
+          "y": 0.7876392864065254
+        },
+        {
+          "text": "\"completed\": false,",
+          "y": 0.8088047332432249,
+          "x": 0.23515714537226923
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21648513988377624,
+          "y": 0.8300342430775739
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "y": 0.8493344423948935,
+          "x": 0.23909372536213871
+        },
+        {
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.2570312476367188,
+          "y": 0.8722222221944445
+        },
+        {
+          "y": 0.8922222221851852,
+          "x": 0.2234374979687501,
+          "text": "\"layoutEpoch\": 1"
+        },
+        {
+          "x": 0.152343749921875,
+          "text": "}",
+          "y": 0.9133333330370372
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "screencast",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "conditions": {
+        "headless": false,
+        "rendererVerified": true
+      },
+      "frameCount": 288,
+      "wallMs": 3362,
+      "metrics": {
+        "Frames": 359,
+        "Median": 8.3,
+        "P95": 9.2,
+        "Maximum": 9.3,
+        "Over25": 0
+      },
+      "text": [
+        {
+          "text": "-эmbined defense experiment",
+          "y": 0.058468776409540624,
+          "x": 0.32810224098263874
+        },
+        {
+          "x": 0.09374999984104333,
+          "y": 0.0900000002858865,
+          "text": "Timing finished"
+        },
+        {
+          "text": "Frames 359",
+          "x": 0.08124999906337838,
+          "y": 0.11888888863772618
+        },
+        {
+          "y": 0.11333333348148145,
+          "text": "iplete the three decisions inside the canvas.",
+          "x": 0.29609374580729175
+        },
+        {
+          "x": 0.08281250054808913,
+          "text": "Median 8.30",
+          "y": 0.15000000019699278
+        },
+        {
+          "y": 0.18111111135305835,
+          "x": 0.06875000034462234,
+          "text": "P95 9.20"
+        },
+        {
+          "x": 0.0929687490234375,
+          "y": 0.2111111108888889,
+          "text": "Maximum 9.30"
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.31041666215277797,
+          "y": 0.20687047930759017
+        },
+        {
+          "y": 0.24111111032073418,
+          "x": 0.07031249928405406,
+          "text": "Over25 0"
+        },
+        {
+          "x": 0.22265625082812499,
+          "y": 0.2566666665555556,
+          "text": "Decision 1 of 3"
+        },
+        {
+          "text": "Nracppwgr",
+          "x": 0.25312500111979164,
+          "y": 0.4033333332037037
+        },
+        {
+          "text": "hahrotPtnee3drs",
+          "x": 0.612500001375,
+          "y": 0.4011111110444443
+        },
+        {
+          "text": "\"step\": 0,",
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778
+        },
+        {
+          "y": 0.7466666666666666,
+          "x": 0.20703125092187497,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.21954693791124166,
+          "y": 0.7876392864065254
+        },
+        {
+          "text": "\"completed\": false,",
+          "x": 0.23515714537226923,
+          "y": 0.8088047332432249
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21648513988377624,
+          "y": 0.8300342430775739
+        },
+        {
+          "y": 0.8493344423948935,
+          "x": 0.23909372536213871,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "y": 0.8722222221944445,
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.2570312476367188
+        },
+        {
+          "x": 0.2234374979687501,
+          "text": "\"layoutEpoch\": 1",
+          "y": 0.8922222221851852
+        },
+        {
+          "y": 0.9133333330370372,
+          "text": "}",
+          "x": 0.152343749921875
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.startScreencast",
+        "Page.screencastFrameAck",
+        "Page.stopScreencast",
+        "Page.captureScreenshot"
+      ]
+    }
+  ]
+}

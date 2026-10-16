@@ -1,0 +1,596 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "source": "clear",
+      "repetition": 0,
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.215743,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.481065,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 219847,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 226197,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:01 / 0:02"
+          ],
+          "readable": true
+        }
+      ],
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "clear",
+      "repetition": 1,
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.212506,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.402617,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 220126,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 226197,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:01 / 0:02"
+          ],
+          "readable": true
+        }
+      ],
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "clear",
+      "repetition": 2,
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.166225,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.166225,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 220129,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 226197,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:01 / 0:02"
+          ],
+          "readable": true
+        }
+      ],
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "repetition": 0,
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.495693,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.590197,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 222466,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 0,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
+        }
+      ],
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "repetition": 1,
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.511196,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.776902,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 222464,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 0,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
+        }
+      ],
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "repetition": 2,
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.669227,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.877229,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 222464,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 0,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
+        }
+      ],
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    }
+  ]
+}

@@ -1,0 +1,1102 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "source": "clear",
+      "robustness": "SW_SECURE_DECODE",
+      "repetition": 0,
+      "capabilities": {
+        "supported": true,
+        "configuration": {
+          "audioCapabilities": [],
+          "distinctiveIdentifier": "not-allowed",
+          "initDataTypes": [
+            "cenc"
+          ],
+          "label": "",
+          "persistentState": "not-allowed",
+          "sessionTypes": [
+            "temporary"
+          ],
+          "videoCapabilities": [
+            {
+              "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+              "encryptionScheme": "cenc",
+              "robustness": "SW_SECURE_DECODE"
+            }
+          ]
+        }
+      },
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.211819,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.399362,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 219847,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 /0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 226197,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:01 / 0:02"
+          ],
+          "readable": true
+        }
+      ],
+      "outcome": "capture-readable",
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "clear",
+      "robustness": "SW_SECURE_DECODE",
+      "repetition": 1,
+      "failed": "page.evaluate: TypeError: Failed to execute 'exitFullscreen' on 'Document': Document not active\n    at eval (eval at evaluate (:370:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "source": "clear",
+      "robustness": "SW_SECURE_DECODE",
+      "repetition": 2,
+      "capabilities": {
+        "supported": true,
+        "configuration": {
+          "audioCapabilities": [],
+          "distinctiveIdentifier": "not-allowed",
+          "initDataTypes": [
+            "cenc"
+          ],
+          "label": "",
+          "persistentState": "not-allowed",
+          "sessionTypes": [
+            "temporary"
+          ],
+          "videoCapabilities": [
+            {
+              "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+              "encryptionScheme": "cenc",
+              "robustness": "SW_SECURE_DECODE"
+            }
+          ]
+        }
+      },
+      "before": {
+        "activeSource": "clear",
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.202848,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": null,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": null,
+          "encryptionExpected": false,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": null,
+          "keySystem": null,
+          "currentTime": 0.202848,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 220144,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 226197,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        }
+      ],
+      "outcome": "capture-readable",
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "SW_SECURE_CRYPTO",
+      "repetition": 0,
+      "failed": "page.evaluate: TypeError: Failed to execute 'exitFullscreen' on 'Document': Document not active\n    at eval (eval at evaluate (:370:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "SW_SECURE_CRYPTO",
+      "repetition": 1,
+      "capabilities": {
+        "supported": true,
+        "configuration": {
+          "audioCapabilities": [],
+          "distinctiveIdentifier": "not-allowed",
+          "initDataTypes": [
+            "cenc"
+          ],
+          "label": "",
+          "persistentState": "not-allowed",
+          "sessionTypes": [
+            "temporary"
+          ],
+          "videoCapabilities": [
+            {
+              "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+              "encryptionScheme": "cenc",
+              "robustness": "SW_SECURE_CRYPTO"
+            }
+          ]
+        }
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_CRYPTO",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_CRYPTO",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.587498,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_CRYPTO",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_CRYPTO",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.599182,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 222469,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 0,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
+        }
+      ],
+      "outcome": "capture-readable",
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "SW_SECURE_CRYPTO",
+      "repetition": 2,
+      "capabilities": {
+        "supported": true,
+        "configuration": {
+          "audioCapabilities": [],
+          "distinctiveIdentifier": "not-allowed",
+          "initDataTypes": [
+            "cenc"
+          ],
+          "label": "",
+          "persistentState": "not-allowed",
+          "sessionTypes": [
+            "temporary"
+          ],
+          "videoCapabilities": [
+            {
+              "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+              "encryptionScheme": "cenc",
+              "robustness": "SW_SECURE_CRYPTO"
+            }
+          ]
+        }
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_CRYPTO",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_CRYPTO",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.620788,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_CRYPTO",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_CRYPTO",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.725832,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 222470,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 0,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
+        }
+      ],
+      "outcome": "capture-readable",
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "SW_SECURE_DECODE",
+      "repetition": 0,
+      "capabilities": {
+        "supported": true,
+        "configuration": {
+          "audioCapabilities": [],
+          "distinctiveIdentifier": "not-allowed",
+          "initDataTypes": [
+            "cenc"
+          ],
+          "label": "",
+          "persistentState": "not-allowed",
+          "sessionTypes": [
+            "temporary"
+          ],
+          "videoCapabilities": [
+            {
+              "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+              "encryptionScheme": "cenc",
+              "robustness": "SW_SECURE_DECODE"
+            }
+          ]
+        }
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.690282,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.728807,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 222466,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 0,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
+        }
+      ],
+      "outcome": "capture-readable",
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "SW_SECURE_DECODE",
+      "repetition": 1,
+      "capabilities": {
+        "supported": true,
+        "configuration": {
+          "audioCapabilities": [],
+          "distinctiveIdentifier": "not-allowed",
+          "initDataTypes": [
+            "cenc"
+          ],
+          "label": "",
+          "persistentState": "not-allowed",
+          "sessionTypes": [
+            "temporary"
+          ],
+          "videoCapabilities": [
+            {
+              "contentType": "video/mp4; codecs=\"avc1.42c00a\"",
+              "encryptionScheme": "cenc",
+              "robustness": "SW_SECURE_DECODE"
+            }
+          ]
+        }
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.629306,
+          "dimensions": [
+            720,
+            480
+          ]
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "fullscreen": {
+        "active": true,
+        "width": 1512,
+        "height": 949,
+        "drm": {
+          "supported": true,
+          "phase": "playing",
+          "playing": true,
+          "encrypted": true,
+          "usableKeys": true,
+          "protectedPlayback": true,
+          "captureProtectionVerified": null,
+          "error": null,
+          "playbackVerified": true,
+          "selectedRobustness": "SW_SECURE_DECODE",
+          "encryptionExpected": true,
+          "requestedRobustness": "SW_SECURE_DECODE",
+          "requestedSecuritySupported": true,
+          "keySystem": "com.widevine.alpha",
+          "currentTime": 0.629306,
+          "dimensions": [
+            720,
+            480
+          ]
+        }
+      },
+      "captures": [
+        {
+          "fromSurface": true,
+          "count": 222468,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "Reference transfer",
+            "Account: NORTH-47",
+            "Amount: 125.00 EUR",
+            "Recipient: Harbor Research",
+            "Confirm reference transfer",
+            "CAPTURE TOKEN: ALPHA-729",
+            "Read these values in the captured image.",
+            "0:00 / 0:02"
+          ],
+          "readable": true
+        },
+        {
+          "fromSurface": false,
+          "count": 0,
+          "width": 3024,
+          "height": 1898,
+          "text": [
+            "0:01 / 0:02"
+          ],
+          "readable": false
+        }
+      ],
+      "outcome": "capture-readable",
+      "interactive": false,
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "SW_SECURE_DECODE",
+      "repetition": 2,
+      "failed": "page.evaluate: TypeError: Failed to execute 'exitFullscreen' on 'Document': Document not active\n    at eval (eval at evaluate (:370:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_CRYPTO",
+      "repetition": 0,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_CRYPTO is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_CRYPTO",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_CRYPTO",
+      "repetition": 1,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_CRYPTO is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_CRYPTO",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_CRYPTO",
+      "repetition": 2,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_CRYPTO is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_CRYPTO",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_DECODE",
+      "repetition": 0,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_DECODE is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_DECODE",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_DECODE",
+      "repetition": 1,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_DECODE is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_DECODE",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_DECODE",
+      "repetition": 2,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_DECODE is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_DECODE",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_ALL",
+      "repetition": 0,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_ALL is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_ALL",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_ALL",
+      "repetition": 1,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_ALL is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_ALL",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    },
+    {
+      "source": "encrypted",
+      "robustness": "HW_SECURE_ALL",
+      "repetition": 2,
+      "capabilities": {
+        "supported": false,
+        "error": "NotSupportedError"
+      },
+      "before": {
+        "activeSource": "encrypted",
+        "drm": {
+          "supported": true,
+          "phase": "unsupported",
+          "playing": false,
+          "encrypted": false,
+          "usableKeys": false,
+          "protectedPlayback": false,
+          "captureProtectionVerified": null,
+          "error": "Widevine HW_SECURE_ALL is unavailable in this browser. Playback stopped; no software fallback was used.",
+          "playbackVerified": false,
+          "selectedRobustness": null,
+          "encryptionExpected": true,
+          "requestedRobustness": "HW_SECURE_ALL",
+          "requestedSecuritySupported": false
+        },
+        "videoRegion": {
+          "x": 142.5,
+          "y": 193.4375,
+          "width": 720,
+          "height": 480,
+          "top": 193.4375,
+          "right": 862.5,
+          "bottom": 673.4375,
+          "left": 142.5
+        }
+      },
+      "outcome": "unsupported-not-protection",
+      "nativeHumanVisibility": "Not tested"
+    }
+  ]
+}

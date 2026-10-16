@@ -1,0 +1,532 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 25,
+      "captureTimings": [
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            2,
+            1,
+            6,
+            -1,
+            -2,
+            2,
+            0
+          ],
+          "elapsedMs": 493
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            -2,
+            -2,
+            0,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "elapsedMs": 410
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            -1,
+            1,
+            -2,
+            4,
+            1,
+            3,
+            4
+          ],
+          "elapsedMs": 397
+        },
+        {
+          "frameCount": 1,
+          "cropped": false,
+          "shifts": [],
+          "elapsedMs": 320
+        }
+      ],
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 761.0000009,
+            "y": 359.9999999142857
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 502.00000048441103,
+            "y": 360.9999998938666
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 758.0000010000001,
+            "y": 360.99999991666664
+          },
+          "frameCount": 8
+        }
+      ],
+      "initial": [],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "y": 0.06000000029629626,
+          "x": 0.32812500140625
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333333333329,
+          "x": 0.28593750339843743
+        },
+        {
+          "y": 0.21111111100000002,
+          "text": "Task complete",
+          "x": 0.2554687512630208
+        },
+        {
+          "x": 0.20078124904296873,
+          "text": "\"step\": 3,",
+          "y": 0.7255555555277778
+        },
+        {
+          "text": "\"clicks\": 3,",
+          "x": 0.20781250113281247,
+          "y": 0.7455555555833333
+        },
+        {
+          "x": 0.22736663438243393,
+          "y": 0.765494731153163,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.22031249840793182,
+          "y": 0.787777777599308
+        },
+        {
+          "text": "\"completed\": true,",
+          "x": 0.23124625154024567,
+          "y": 0.8091554486226028
+        },
+        {
+          "y": 0.8302602040988185,
+          "text": "\"ready\": true,",
+          "x": 0.2156449402736652
+        },
+        {
+          "y": 0.8493073759776704,
+          "x": 0.238332482377736,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "x": 0.25702875013800264,
+          "y": 0.8724108342133323,
+          "text": "\"detectorsAllowed\": true,"
+        },
+        {
+          "text": "\"actionClockMs\": 2.200000047683716",
+          "x": 0.2914062457031251,
+          "y": 0.8922222221851852
+        },
+        {
+          "y": 0.9133333331111111,
+          "x": 0.15234374994140626,
+          "text": "}"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 33,
+      "captureTimings": [
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            -1,
+            1,
+            0
+          ],
+          "elapsedMs": 417
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            7,
+            4,
+            3,
+            0,
+            5,
+            4,
+            7
+          ],
+          "elapsedMs": 385
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            6,
+            0,
+            7,
+            7,
+            4,
+            0,
+            1
+          ],
+          "elapsedMs": 418
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            3,
+            5,
+            0,
+            0,
+            0,
+            -3,
+            5
+          ],
+          "elapsedMs": 376
+        },
+        {
+          "frameCount": 1,
+          "cropped": false,
+          "shifts": [],
+          "elapsedMs": 290
+        }
+      ],
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 301.00000105,
+            "y": 361.99999993333336
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 272.00000075057517,
+            "y": 359.0000002230738
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 528.000001,
+            "y": 360.99999991666664
+          },
+          "frameCount": 8
+        }
+      ],
+      "initial": [],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743
+        },
+        {
+          "x": 0.2554687512630208,
+          "y": 0.21111111100000002,
+          "text": "Task complete"
+        },
+        {
+          "text": "\"step\": 3,",
+          "y": 0.7255555555277778,
+          "x": 0.20078124904296873
+        },
+        {
+          "x": 0.20781250113281247,
+          "text": "\"clicks\": 3,",
+          "y": 0.7455555555833333
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.22031249840793182,
+          "y": 0.787777777599308
+        },
+        {
+          "text": "\"completed\": true,",
+          "x": 0.23124625154024567,
+          "y": 0.8091554486226028
+        },
+        {
+          "x": 0.2156449402736652,
+          "y": 0.8302602040988185,
+          "text": "\"ready\": true,"
+        },
+        {
+          "y": 0.8493073759776704,
+          "x": 0.238332482377736,
+          "text": "\"drmVerified\": true,"
+        },
+        {
+          "x": 0.2570305658725971,
+          "y": 0.8723148043648579,
+          "text": "\"detectorsAllowed\": true,"
+        },
+        {
+          "y": 0.8922222221851852,
+          "text": "\"actionClockMs\": 2.600000023841858",
+          "x": 0.2914062457031251
+        },
+        {
+          "text": "}",
+          "x": 0.15312499989583334,
+          "y": 0.9133333330370372
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 33,
+      "captureTimings": [
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            3,
+            -1,
+            -5,
+            -3,
+            -5,
+            -4,
+            2
+          ],
+          "elapsedMs": 531
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            7,
+            4,
+            10,
+            -1,
+            -1,
+            3,
+            7
+          ],
+          "elapsedMs": 403
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            -1,
+            -5,
+            -4,
+            -4,
+            -2,
+            -2,
+            0
+          ],
+          "elapsedMs": 371
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "shifts": [
+            0,
+            -3,
+            -1,
+            4,
+            2,
+            -4,
+            0,
+            -2
+          ],
+          "elapsedMs": 389
+        },
+        {
+          "frameCount": 1,
+          "cropped": false,
+          "shifts": [],
+          "elapsedMs": 322
+        }
+      ],
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 761.00000105,
+            "y": 362.99999991666664
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 729.999999320168,
+            "y": 366.00000008141575
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 758.0000010000001,
+            "y": 361.99999990000003
+          },
+          "frameCount": 8
+        }
+      ],
+      "initial": [],
+      "final": [
+        {
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626,
+          "text": "Combined defense experiment"
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329
+        },
+        {
+          "y": 0.21111111100000002,
+          "text": "Task complete",
+          "x": 0.2554687512630208
+        },
+        {
+          "x": 0.20078124904296873,
+          "y": 0.7255555555277778,
+          "text": "\"step\": 3,"
+        },
+        {
+          "x": 0.20781250113281247,
+          "y": 0.7455555555833333,
+          "text": "\"clicks\": 3,"
+        },
+        {
+          "x": 0.22736728301247108,
+          "y": 0.76547824997011,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "x": 0.22031249840793182,
+          "y": 0.787777777599308,
+          "text": "\"reason\": null,"
+        },
+        {
+          "x": 0.23124625154024567,
+          "text": "\"completed\": true,",
+          "y": 0.8091554486226028
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.2156449402736652,
+          "y": 0.8302602040988185
+        },
+        {
+          "text": "\"drmVerified\": true,",
+          "x": 0.238332482377736,
+          "y": 0.8493073759776704
+        },
+        {
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.2570305658725971,
+          "y": 0.8723148043648579
+        },
+        {
+          "x": 0.2914062457031251,
+          "y": 0.8922222221851852,
+          "text": "\"actionClockMs\": 2.600000023841858"
+        },
+        {
+          "y": 0.9133333330370372,
+          "text": "}",
+          "x": 0.15312499989583334
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    }
+  ]
+}

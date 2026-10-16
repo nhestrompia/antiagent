@@ -1,0 +1,75 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "mode": "open",
+      "agent": "role-locator",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "open",
+      "agent": "preload",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "open",
+      "agent": "cdp-pierce",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "open",
+      "agent": "coordinate",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "open",
+      "agent": "keyboard",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "closed",
+      "agent": "role-locator",
+      "accepted": false,
+      "axLabelExposed": true,
+      "error": "TimeoutError"
+    },
+    {
+      "mode": "closed",
+      "agent": "preload",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "closed",
+      "agent": "cdp-pierce",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "closed",
+      "agent": "coordinate",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    },
+    {
+      "mode": "closed",
+      "agent": "keyboard",
+      "accepted": true,
+      "axLabelExposed": true,
+      "error": null
+    }
+  ]
+}

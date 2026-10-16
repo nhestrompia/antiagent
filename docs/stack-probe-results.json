@@ -1,0 +1,135 @@
+{
+  "browser": "155.0.8059.40",
+  "results": [
+    {
+      "mode": "stock",
+      "operation": "screenshot",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": false
+    },
+    {
+      "mode": "stock",
+      "operation": "native-input",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        },
+        {
+          "source": "native-input",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": false
+    },
+    {
+      "mode": "stock",
+      "operation": "evaluate-title",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": false
+    },
+    {
+      "mode": "stock",
+      "operation": "evaluate-error",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        },
+        {
+          "source": "evaluate-error",
+          "frameworkDetected": true,
+          "matchingFrames": [
+            "UtilityScript.evaluate (<anonymous>:372:16)",
+            "UtilityScript.<anonymous> (<anonymous>:1:44)"
+          ]
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": true
+    },
+    {
+      "mode": "browser-flag",
+      "operation": "screenshot",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": false
+    },
+    {
+      "mode": "browser-flag",
+      "operation": "native-input",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        },
+        {
+          "source": "native-input",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": false
+    },
+    {
+      "mode": "browser-flag",
+      "operation": "evaluate-title",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": false
+    },
+    {
+      "mode": "browser-flag",
+      "operation": "evaluate-error",
+      "samples": [
+        {
+          "source": "page-load",
+          "frameworkDetected": false,
+          "matchingFrames": []
+        },
+        {
+          "source": "evaluate-error",
+          "frameworkDetected": true,
+          "matchingFrames": [
+            "UtilityScript.evaluate (<anonymous>:372:16)",
+            "UtilityScript.<anonymous> (<anonymous>:1:44)"
+          ]
+        }
+      ],
+      "serializationReads": 0,
+      "frameworkDetected": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/shaka-project/shaka-packager version v3.9.3-0a8ba4f-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" xmlns:cenc="urn:mpeg:cenc:2013" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT2S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="video" width="720" height="480" frameRate="16384/16384" subsegmentAlignment="true" par="3:2">
+      <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="44a340db-b2bb-5428-8676-720de100a64d"/>
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAQnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACIiGmFudGktYWdlbnQtcmVmZXJlbmNlLXVpLXYxSOPclZsG</cenc:pssh>
+      </ContentProtection>
+      <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b">
+        <cenc:pssh>AAAAdHBzc2gBAAAAEHfv7MCyTQKs4zweUuL7SwAAAAVEo0DbsrtUKIZ2cg3hAKZNZMMrrEfpVjS7sb4Z36savOr9Q/pwIV29l3LN8i9fCQRAQUceGGdWILyp+1JaZUN3cMROGMXrVECLrDQblEKT6gAAAAA=</cenc:pssh>
+      </ContentProtection>
+      <Representation id="0" bandwidth="125308" codecs="avc1.42c016" mimeType="video/mp4" sar="1:1">
+        <BaseURL>encrypted-video.mp4</BaseURL>
+        <SegmentBase indexRange="1095-1138" timescale="16384">
+          <Initialization range="0-1094"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>

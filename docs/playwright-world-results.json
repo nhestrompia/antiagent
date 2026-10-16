@@ -1,0 +1,96 @@
+{
+  "browser": "155.0.8059.40",
+  "playwright": "1.64.0",
+  "results": [
+    {
+      "operation": "screenshot",
+      "repetition": 0,
+      "probe": {
+        "cleanupWrites": 0,
+        "targetWrites": 0,
+        "fontReadyReads": 0
+      },
+      "accepted": 0
+    },
+    {
+      "operation": "screenshot",
+      "repetition": 1,
+      "probe": {
+        "cleanupWrites": 0,
+        "targetWrites": 0,
+        "fontReadyReads": 0
+      },
+      "accepted": 0
+    },
+    {
+      "operation": "screenshot",
+      "repetition": 2,
+      "probe": {
+        "cleanupWrites": 0,
+        "targetWrites": 0,
+        "fontReadyReads": 0
+      },
+      "accepted": 0
+    },
+    {
+      "operation": "locator-click",
+      "repetition": 0,
+      "probe": {
+        "cleanupWrites": 0,
+        "targetWrites": 0,
+        "fontReadyReads": 0
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "locator-click",
+      "repetition": 1,
+      "probe": {
+        "cleanupWrites": 0,
+        "targetWrites": 0,
+        "fontReadyReads": 0
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "locator-click",
+      "repetition": 2,
+      "probe": {
+        "cleanupWrites": 0,
+        "targetWrites": 0,
+        "fontReadyReads": 0
+      },
+      "accepted": 1
+    },
+    {
+      "operation": "main-world-control",
+      "repetition": 0,
+      "probe": {
+        "cleanupWrites": 1,
+        "targetWrites": 1,
+        "fontReadyReads": 1
+      },
+      "accepted": 0
+    },
+    {
+      "operation": "main-world-control",
+      "repetition": 1,
+      "probe": {
+        "cleanupWrites": 1,
+        "targetWrites": 1,
+        "fontReadyReads": 1
+      },
+      "accepted": 0
+    },
+    {
+      "operation": "main-world-control",
+      "repetition": 2,
+      "probe": {
+        "cleanupWrites": 1,
+        "targetWrites": 1,
+        "fontReadyReads": 1
+      },
+      "accepted": 0
+    }
+  ]
+}

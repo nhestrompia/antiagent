@@ -1,0 +1,173 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "error": "No target 125 EUR: []",
+      "diagnostic": [],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "error": "No target Harbor Research: []",
+      "diagnostic": [],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 25,
+      "captureTimings": [
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "elapsedMs": 351
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "elapsedMs": 396
+        },
+        {
+          "frameCount": 8,
+          "cropped": true,
+          "elapsedMs": 395
+        },
+        {
+          "frameCount": 1,
+          "cropped": false,
+          "elapsedMs": 316
+        }
+      ],
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 301.00000090000003,
+            "y": 362.99999990000003
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 729.9999992004348,
+            "y": 360.9999997734597
+          },
+          "frameCount": 8
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 528.0000012,
+            "y": 361.99999992
+          },
+          "frameCount": 8
+        }
+      ],
+      "initial": [],
+      "final": [
+        {
+          "y": 0.06000000029629626,
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625
+        },
+        {
+          "x": 0.28593750339843743,
+          "y": 0.11333333333333329,
+          "text": "Complete the three decisions inside the canvas."
+        },
+        {
+          "text": "Task complete",
+          "x": 0.2554687512630208,
+          "y": 0.21111111100000002
+        },
+        {
+          "text": "\"step\": 3,",
+          "y": 0.7255555555277778,
+          "x": 0.20078124904296873
+        },
+        {
+          "y": 0.7455555555833333,
+          "x": 0.20781250113281247,
+          "text": "\"clicks\": 3,"
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22736663438243393,
+          "y": 0.765494731153163
+        },
+        {
+          "x": 0.22031249840793182,
+          "y": 0.787777777599308,
+          "text": "\"reason\": null,"
+        },
+        {
+          "text": "\"completed\": true,",
+          "y": 0.8091554486226028,
+          "x": 0.23124625154024567
+        },
+        {
+          "text": "\"ready\": true,",
+          "x": 0.21648513988377624,
+          "y": 0.8300342430775739
+        },
+        {
+          "y": 0.8493073759776704,
+          "text": "\"drmVerified\": true,",
+          "x": 0.238332482377736
+        },
+        {
+          "y": 0.8723148043648579,
+          "text": "\"detectorsAllowed\": true,",
+          "x": 0.2570305658725971
+        },
+        {
+          "x": 0.2914062457031251,
+          "y": 0.8922222221851852,
+          "text": "\"actionClockMs\": 2.399999976158142"
+        },
+        {
+          "y": 0.9133333330370372,
+          "text": "}",
+          "x": 0.152343749921875
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Input.dispatchMouseEvent",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot"
+      ]
+    }
+  ]
+}

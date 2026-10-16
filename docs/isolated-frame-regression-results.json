@@ -1,0 +1,541 @@
+{
+  "results": [
+    {
+      "mode": "bare",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 5,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 761.9999986,
+            "y": 360.0000000282481
+          },
+          "frameCount": 1
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 502.0000005666667,
+            "y": 359.99999990000003
+          },
+          "frameCount": 1
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 759.0000014750001,
+            "y": 358.99999992500005
+          },
+          "frameCount": 1
+        }
+      ],
+      "initial": [
+        {
+          "y": 0.06000000029629626,
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11333333333333329,
+          "x": 0.28515625455729154
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.310937501875,
+          "y": 0.20666666657142851
+        },
+        {
+          "x": 0.22265625103515624,
+          "text": "Decision 1 of 3",
+          "y": 0.25444444436111113
+        },
+        {
+          "x": 0.23593749890625001,
+          "y": 0.4000000000313868,
+          "text": "Harbor Research"
+        },
+        {
+          "x": 0.4000000008984374,
+          "text": "West Studio",
+          "y": 0.39999999994444446
+        },
+        {
+          "x": 0.5773437505349945,
+          "y": 0.39999999994503055,
+          "text": "North Labs"
+        },
+        {
+          "x": 0.15234374994140626,
+          "text": "{",
+          "y": 0.6999999997777779
+        },
+        {
+          "y": 0.7218273171628095,
+          "text": "\"step\": 0,",
+          "x": 0.20081906724187792
+        },
+        {
+          "y": 0.7433333332962964,
+          "x": 0.2078124984895834,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "x": 0.2265965568363531,
+          "text": "\"blocked\": false,",
+          "y": 0.7615378435977593
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.2203149339767851,
+          "y": 0.785448140521642
+        },
+        {
+          "x": 0.2312499977083334,
+          "y": 0.8055555555185185,
+          "text": "\"completed\": false"
+        },
+        {
+          "y": 0.8266666663703706,
+          "text": "}",
+          "x": 0.152343749921875
+        },
+        {
+          "x": 0.908593751796875,
+          "y": 0.9911111110222222,
+          "text": "Parent DOM access: SecuritvError"
+        }
+      ],
+      "final": [
+        {
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626,
+          "text": "Combined defense experiment"
+        },
+        {
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28515625455729154,
+          "y": 0.11222222225925926
+        },
+        {
+          "y": 0.20888888849999998,
+          "x": 0.2554687509179687,
+          "text": "Task complete"
+        },
+        {
+          "x": 0.15234374994140626,
+          "y": 0.6999999997777779,
+          "text": "{"
+        },
+        {
+          "y": 0.7233333333093671,
+          "x": 0.20078124904291786,
+          "text": "\"step\": 3,"
+        },
+        {
+          "x": 0.20703124884765628,
+          "text": "\"clicks\": 3,",
+          "y": 0.7444444444444445
+        },
+        {
+          "x": 0.22658375656672147,
+          "y": 0.7626301332729876,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "x": 0.2203149339767851,
+          "y": 0.785448140521642,
+          "text": "\"reason\": null,"
+        },
+        {
+          "x": 0.22734374783854175,
+          "text": "\"completed\": true",
+          "y": 0.8055555555185185
+        },
+        {
+          "y": 0.8266666663703706,
+          "x": 0.152343749921875,
+          "text": "}"
+        },
+        {
+          "x": 0.908593751796875,
+          "y": 0.9911111110222222,
+          "text": "Parent DOM access: SecuritvError"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 5,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 532.00000155,
+            "y": 359.99999990000003
+          },
+          "frameCount": 1
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 502.0000005666667,
+            "y": 359.99999990000003
+          },
+          "frameCount": 1
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 298.0000012,
+            "y": 359.99999992
+          },
+          "frameCount": 1
+        }
+      ],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "x": 0.28515625455729154,
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11222222225925926
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.31249999819444446,
+          "y": 0.2068704797020675
+        },
+        {
+          "x": 0.22265625103515624,
+          "text": "Decision 1 of 3",
+          "y": 0.25444444436111113
+        },
+        {
+          "x": 0.22031250049107146,
+          "text": "West Studio",
+          "y": 0.39999999990476187
+        },
+        {
+          "y": 0.4000000002935551,
+          "text": "North Labs",
+          "x": 0.3984374992702854
+        },
+        {
+          "text": "Harbor Research",
+          "x": 0.59531249890625,
+          "y": 0.4000000000313868
+        },
+        {
+          "text": "{",
+          "x": 0.15234374994140626,
+          "y": 0.6999999997777779
+        },
+        {
+          "text": "\"step\": 0,",
+          "x": 0.20081906724187792,
+          "y": 0.7218273171628095
+        },
+        {
+          "text": "\"clicks\": 0,",
+          "x": 0.2078124984895834,
+          "y": 0.7433333332962964
+        },
+        {
+          "x": 0.2265965568363531,
+          "text": "\"blocked\": false,",
+          "y": 0.7615378435977593
+        },
+        {
+          "x": 0.2203149339767851,
+          "text": "\"reason\": null,",
+          "y": 0.785448140521642
+        },
+        {
+          "text": "\"completed\": false",
+          "y": 0.8055555555185185,
+          "x": 0.2312499977083334
+        },
+        {
+          "text": "}",
+          "y": 0.8266666663703706,
+          "x": 0.152343749921875
+        },
+        {
+          "text": "Parent DOM access: SecuritvError",
+          "y": 0.9911111110222222,
+          "x": 0.908593751796875
+        }
+      ],
+      "final": [
+        {
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626,
+          "text": "Combined defense experiment"
+        },
+        {
+          "x": 0.28515625455729154,
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11222222225925926
+        },
+        {
+          "x": 0.2554687509179687,
+          "text": "Task complete",
+          "y": 0.20888888849999998
+        },
+        {
+          "y": 0.6999999997777779,
+          "text": "{",
+          "x": 0.15234374994140626
+        },
+        {
+          "text": "\"step\": 3,",
+          "y": 0.7233333333093671,
+          "x": 0.20078124904291786
+        },
+        {
+          "text": "\"clicks\": 3,",
+          "y": 0.7444444444444445,
+          "x": 0.20703124884765628
+        },
+        {
+          "text": "\"blocked\": false,",
+          "x": 0.22658375656672147,
+          "y": 0.7626301332729876
+        },
+        {
+          "y": 0.785448140521642,
+          "x": 0.2203149339767851,
+          "text": "\"reason\": null,"
+        },
+        {
+          "y": 0.8055555555185185,
+          "x": 0.22734374783854175,
+          "text": "\"completed\": true"
+        },
+        {
+          "text": "}",
+          "y": 0.8266666663703706,
+          "x": 0.152343749921875
+        },
+        {
+          "x": 0.908593751796875,
+          "y": 0.9911111110222222,
+          "text": "Parent DOM access: SecuritvError"
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "bare",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "completed": true,
+      "blocked": false,
+      "screenshotCount": 5,
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "point": {
+            "x": 532.00000155,
+            "y": 359.99999990000003
+          },
+          "frameCount": 1
+        },
+        {
+          "label": "125 EUR",
+          "point": {
+            "x": 502.0000005666667,
+            "y": 359.99999990000003
+          },
+          "frameCount": 1
+        },
+        {
+          "label": "Confirm transfer",
+          "point": {
+            "x": 298.00000149999994,
+            "y": 359.99999990000003
+          },
+          "frameCount": 1
+        }
+      ],
+      "initial": [
+        {
+          "text": "Combined defense experiment",
+          "y": 0.06000000029629626,
+          "x": 0.32812500140625
+        },
+        {
+          "y": 0.11222222225925926,
+          "text": "Complete the three decisions inside the canvas.",
+          "x": 0.28515625455729154
+        },
+        {
+          "text": "Choose Harbor Research",
+          "x": 0.31249999819444446,
+          "y": 0.2068704797020675
+        },
+        {
+          "text": "Decision 1 of 3",
+          "y": 0.25444444436111113,
+          "x": 0.22265625103515624
+        },
+        {
+          "y": 0.39999999990476187,
+          "x": 0.22031250049107146,
+          "text": "West Studio"
+        },
+        {
+          "x": 0.3984374992702854,
+          "y": 0.4000000002935551,
+          "text": "North Labs"
+        },
+        {
+          "text": "Harbor Research",
+          "x": 0.59531249890625,
+          "y": 0.4000000000313868
+        },
+        {
+          "text": "{",
+          "x": 0.15234374994140626,
+          "y": 0.6999999997777779
+        },
+        {
+          "text": "\"step\": 0,",
+          "x": 0.20081906724187792,
+          "y": 0.7218273171628095
+        },
+        {
+          "x": 0.2078124984895834,
+          "y": 0.7433333332962964,
+          "text": "\"clicks\": 0,"
+        },
+        {
+          "x": 0.2265965568363531,
+          "y": 0.7615378435977593,
+          "text": "\"blocked\": false,"
+        },
+        {
+          "text": "\"reason\": null,",
+          "x": 0.2203149339767851,
+          "y": 0.785448140521642
+        },
+        {
+          "x": 0.2312499977083334,
+          "y": 0.8055555555185185,
+          "text": "\"completed\": false"
+        },
+        {
+          "text": "}",
+          "x": 0.152343749921875,
+          "y": 0.8266666663703706
+        },
+        {
+          "x": 0.908593751796875,
+          "text": "Parent DOM access: SecuritvError",
+          "y": 0.9911111110222222
+        }
+      ],
+      "final": [
+        {
+          "text": "Combined defense experiment",
+          "x": 0.32812500140625,
+          "y": 0.06000000029629626
+        },
+        {
+          "x": 0.28515625455729154,
+          "text": "Complete the three decisions inside the canvas.",
+          "y": 0.11222222225925926
+        },
+        {
+          "y": 0.20888888849999998,
+          "text": "Task complete",
+          "x": 0.2554687509179687
+        },
+        {
+          "text": "{",
+          "x": 0.15234374994140626,
+          "y": 0.6999999997777779
+        },
+        {
+          "y": 0.7233333333093671,
+          "x": 0.20078124904291786,
+          "text": "\"step\": 3,"
+        },
+        {
+          "text": "\"clicks\": 3,",
+          "y": 0.7444444444444445,
+          "x": 0.20703124884765628
+        },
+        {
+          "x": 0.22658375656672147,
+          "text": "\"blocked\": false,",
+          "y": 0.7626301332729876
+        },
+        {
+          "x": 0.2203149339767851,
+          "text": "\"reason\": null,",
+          "y": 0.785448140521642
+        },
+        {
+          "y": 0.8055555555185185,
+          "text": "\"completed\": true",
+          "x": 0.22734374783854175
+        },
+        {
+          "text": "}",
+          "x": 0.152343749921875,
+          "y": 0.8266666663703706
+        },
+        {
+          "y": 0.9911111110222222,
+          "text": "Parent DOM access: SecuritvError",
+          "x": 0.908593751796875
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}

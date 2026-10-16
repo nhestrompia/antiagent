@@ -1,0 +1,28 @@
+{
+  "browser": "155.0.8059.40",
+  "bypassCSP": false,
+  "results": [
+    {
+      "policy": "csp",
+      "initScriptRan": true,
+      "approvedScriptRan": true,
+      "unapprovedInlineRan": false,
+      "pageEvalRan": false,
+      "pageEvalError": "EvalError",
+      "injectedTagRan": false,
+      "debuggerEvaluationRan": true,
+      "scriptTagError": "Error"
+    },
+    {
+      "policy": "csp-trusted-types",
+      "initScriptRan": true,
+      "approvedScriptRan": true,
+      "unapprovedInlineRan": false,
+      "pageEvalRan": false,
+      "pageEvalError": "EvalError",
+      "injectedTagRan": false,
+      "debuggerEvaluationRan": true,
+      "scriptTagError": "Error"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "mode": "playwright-zero",
+      "repetition": 0,
+      "error": "cdpSession.send: Protocol error (Runtime.setMaxCallStackSizeToCapture): Runtime agent is not enabled"
+    },
+    {
+      "mode": "playwright-zero",
+      "repetition": 1,
+      "error": "cdpSession.send: Protocol error (Runtime.setMaxCallStackSizeToCapture): Runtime agent is not enabled"
+    },
+    {
+      "mode": "playwright-zero",
+      "repetition": 2,
+      "error": "cdpSession.send: Protocol error (Runtime.setMaxCallStackSizeToCapture): Runtime agent is not enabled"
+    }
+  ]
+}

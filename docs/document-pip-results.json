@@ -1,0 +1,922 @@
+{
+  "results": [
+    {
+      "repetition": 0,
+      "conditions": {
+        "headless": false,
+        "automationMarkerDisabled": true
+      },
+      "version": "Chrome/155.0.8059.40",
+      "initial": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "x": 0.28541666225694456,
+            "y": 0.06789283380829203,
+            "text": "Document PiP boundary experiment"
+          },
+          {
+            "x": 0.11328124869140628,
+            "y": 0.15777777811111116,
+            "text": "Open task window"
+          },
+          {
+            "y": 0.22444444481481485,
+            "text": "{",
+            "x": 0.029687500104166663
+          },
+          {
+            "x": 0.12656249828125005,
+            "text": "\"supported\": true,",
+            "y": 0.2522222221999999
+          },
+          {
+            "x": 0.11876744816983753,
+            "y": 0.27680975144853326,
+            "text": "\"opened\": false,"
+          },
+          {
+            "y": 0.3022222221666666,
+            "x": 0.13124999777343754,
+            "text": "\"completed\": false,"
+          },
+          {
+            "x": 0.12191162820019717,
+            "text": "\"blocked\": false,",
+            "y": 0.327655478142606
+          },
+          {
+            "text": "\"trustedClicks\": 0",
+            "x": 0.12812499828125004,
+            "y": 0.35222222224444444
+          },
+          {
+            "y": 0.3766666664166667,
+            "text": "}",
+            "x": 0.029687499921875006
+          }
+        ]
+      },
+      "addedTargets": [
+        {
+          "targetId": "30DD53F3160E526448AE378353FB9EAE",
+          "type": "page",
+          "title": "PiP task surface",
+          "url": "about:blank",
+          "attached": false,
+          "openerId": "42F85283478158E9FC8B504B3B9F4C66",
+          "canAccessOpener": true,
+          "openerFrameId": "42F85283478158E9FC8B504B3B9F4C66",
+          "browserContextId": "3A1947BA464EF7986EA7E1FFD5871165"
+        }
+      ],
+      "openerAfter": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "x": 0.28541666225694456,
+            "y": 0.06789283380829203,
+            "text": "Document PiP boundary experiment"
+          },
+          {
+            "text": "Open task window",
+            "x": 0.11328124869140628,
+            "y": 0.15777777811111116
+          },
+          {
+            "x": 0.029687500104166663,
+            "text": "{",
+            "y": 0.22444444481481485
+          },
+          {
+            "y": 0.2522222221999999,
+            "x": 0.12656249828125005,
+            "text": "\"supported\": true,"
+          },
+          {
+            "text": "\"opened\": true,",
+            "x": 0.11328125177734373,
+            "y": 0.27888888891666674
+          },
+          {
+            "text": "\"completed\": false,",
+            "x": 0.1312601820927416,
+            "y": 0.303227684903961
+          },
+          {
+            "text": "\"blocked\": false,",
+            "x": 0.12191162820019717,
+            "y": 0.327655478142606
+          },
+          {
+            "y": 0.35222222224444444,
+            "text": "\"trustedClicks\": 0",
+            "x": 0.12812499828125004
+          },
+          {
+            "text": "}",
+            "y": 0.3766666664166667,
+            "x": 0.029687499921875006
+          }
+        ]
+      },
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "text": "Choose Harbor Research",
+                "x": 0.3144230767994506,
+                "y": 0.11142857102040815
+              },
+              {
+                "text": "North Labs",
+                "y": 0.26851851829114226,
+                "x": 0.500000001368532
+              },
+              {
+                "x": 0.5009615400534186,
+                "text": "Harbor Research",
+                "y": 0.43142857126984124
+              },
+              {
+                "text": "West Studio",
+                "x": 0.5009615396307432,
+                "y": 0.5928571424009716
+              }
+            ]
+          }
+        },
+        {
+          "label": "125 EUR",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "text": "Choose 125 EUR",
+                "x": 0.2240384597596154,
+                "y": 0.11285714298571425
+              },
+              {
+                "text": "125 EUR",
+                "x": 0.4979166647395834,
+                "y": 0.26851851875
+              },
+              {
+                "x": 0.5000000007699696,
+                "text": "250 EUR",
+                "y": 0.4299999998510595
+              },
+              {
+                "x": 0.49519230681490384,
+                "y": 0.5942857144285714,
+                "text": "50 EUR"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Confirm transfer",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "x": 0.31249999733653844,
+                "y": 0.1114285715714286,
+                "text": "Choose Confirm transfer"
+              },
+              {
+                "x": 0.5009615377047847,
+                "text": "Cancel",
+                "y": 0.2657142858624
+              },
+              {
+                "y": 0.429999999547619,
+                "text": "Confirm transfer",
+                "x": 0.5009615374839744
+              },
+              {
+                "text": "Go back",
+                "y": 0.59428571440416,
+                "x": 0.49903846086443066
+              }
+            ]
+          }
+        }
+      ],
+      "final": {
+        "width": 1040,
+        "height": 700,
+        "cssWidth": 520,
+        "cssHeight": 350,
+        "text": [
+          {
+            "x": 0.20096153722756416,
+            "text": "Task complete",
+            "y": 0.1157142851666666
+          }
+        ]
+      },
+      "completed": true,
+      "openerFinal": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "text": "Document PiP boundary experiment",
+            "x": 0.28541666225694456,
+            "y": 0.06789283380829203
+          },
+          {
+            "text": "Open task window",
+            "x": 0.11328124869140628,
+            "y": 0.15777777811111116
+          },
+          {
+            "text": "{",
+            "x": 0.029687500104166663,
+            "y": 0.22444444481481485
+          },
+          {
+            "text": "\"supported\": true,",
+            "x": 0.12656249828125005,
+            "y": 0.2522222221999999
+          },
+          {
+            "x": 0.11328125177734373,
+            "text": "\"opened\": true,",
+            "y": 0.27888888891666674
+          },
+          {
+            "y": 0.3036067817528989,
+            "text": "\"completed\": true,",
+            "x": 0.1265721503518208
+          },
+          {
+            "y": 0.327655478142606,
+            "x": 0.12191162820019717,
+            "text": "\"blocked\": false,"
+          },
+          {
+            "text": "\"trustedClicks\":",
+            "x": 0.11953125193359368,
+            "y": 0.3522222221388889
+          },
+          {
+            "x": 0.2046875000520833,
+            "y": 0.35222222188888885,
+            "text": "3"
+          },
+          {
+            "text": "}",
+            "x": 0.029687499921875006,
+            "y": 0.3766666664166667
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargets",
+        "Page.captureScreenshot",
+        "Page.getLayoutMetrics",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 1,
+      "conditions": {
+        "headless": false,
+        "automationMarkerDisabled": true
+      },
+      "version": "Chrome/155.0.8059.40",
+      "initial": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "y": 0.06789283380829203,
+            "text": "Document PiP boundary experiment",
+            "x": 0.28541666225694456
+          },
+          {
+            "y": 0.15777777811111116,
+            "text": "Open task window",
+            "x": 0.11328124869140628
+          },
+          {
+            "text": "{",
+            "x": 0.029687500104166663,
+            "y": 0.22444444481481485
+          },
+          {
+            "text": "\"supported\": true,",
+            "x": 0.12656249828125005,
+            "y": 0.2522222221999999
+          },
+          {
+            "text": "\"opened\": false,",
+            "y": 0.27680975144853326,
+            "x": 0.11876744816983753
+          },
+          {
+            "y": 0.3022222221666666,
+            "x": 0.13124999777343754,
+            "text": "\"completed\": false,"
+          },
+          {
+            "x": 0.12191162820019717,
+            "y": 0.327655478142606,
+            "text": "\"blocked\": false,"
+          },
+          {
+            "text": "\"trustedClicks\": 0",
+            "y": 0.35222222224444444,
+            "x": 0.12812499828125004
+          },
+          {
+            "y": 0.3766666664166667,
+            "text": "}",
+            "x": 0.029687499921875006
+          }
+        ]
+      },
+      "addedTargets": [
+        {
+          "targetId": "109A7D170289FB8D2C6DD4FBD22AADF5",
+          "type": "page",
+          "title": "PiP task surface",
+          "url": "about:blank",
+          "attached": false,
+          "openerId": "C14A81B9CBDEB6194474B0C088B469AE",
+          "canAccessOpener": true,
+          "openerFrameId": "C14A81B9CBDEB6194474B0C088B469AE",
+          "browserContextId": "615D966D61FE93DF8150ECE840E7E0CA"
+        }
+      ],
+      "openerAfter": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "x": 0.28541666225694456,
+            "y": 0.06789283380829203,
+            "text": "Document PiP boundary experiment"
+          },
+          {
+            "y": 0.15777777811111116,
+            "text": "Open task window",
+            "x": 0.11328124869140628
+          },
+          {
+            "y": 0.22444444481481485,
+            "text": "{",
+            "x": 0.029687500104166663
+          },
+          {
+            "text": "\"supported\": true,",
+            "y": 0.2522222221999999,
+            "x": 0.12656249828125005
+          },
+          {
+            "text": "\"opened\": true,",
+            "y": 0.27888888891666674,
+            "x": 0.11328125177734373
+          },
+          {
+            "y": 0.303227684903961,
+            "text": "\"completed\": false,",
+            "x": 0.1312601820927416
+          },
+          {
+            "text": "\"blocked\": false,",
+            "y": 0.327655478142606,
+            "x": 0.12191162820019717
+          },
+          {
+            "text": "\"trustedClicks\": 0",
+            "x": 0.12812499828125004,
+            "y": 0.35222222224444444
+          },
+          {
+            "y": 0.3766666664166667,
+            "x": 0.029687499921875006,
+            "text": "}"
+          }
+        ]
+      },
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "text": "Choose Harbor Research",
+                "y": 0.11142857102040815,
+                "x": 0.3144230767994506
+              },
+              {
+                "x": 0.500000001368532,
+                "y": 0.26851851829114226,
+                "text": "North Labs"
+              },
+              {
+                "text": "Harbor Research",
+                "y": 0.43142857126984124,
+                "x": 0.5009615400534186
+              },
+              {
+                "y": 0.5928571424009716,
+                "text": "West Studio",
+                "x": 0.5009615396307432
+              }
+            ]
+          }
+        },
+        {
+          "label": "125 EUR",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "y": 0.11285714298571425,
+                "text": "Choose 125 EUR",
+                "x": 0.2240384597596154
+              },
+              {
+                "text": "50 EUR",
+                "y": 0.26571428583673473,
+                "x": 0.4951923066895605
+              },
+              {
+                "y": 0.42999999985124104,
+                "text": "250 EUR",
+                "x": 0.5000000007699855
+              },
+              {
+                "y": 0.5942857143965563,
+                "text": "125 EUR",
+                "x": 0.4980769220049222
+              }
+            ]
+          }
+        },
+        {
+          "label": "Confirm transfer",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "text": "Choose Confirm transfer",
+                "y": 0.1114285709523809,
+                "x": 0.3125000002083333
+              },
+              {
+                "y": 0.26428571443448434,
+                "text": "Cancel",
+                "x": 0.5019230760718874
+              },
+              {
+                "text": "Go back",
+                "y": 0.4300000009096502,
+                "x": 0.4990384614269435
+              },
+              {
+                "text": "Confirm transfer",
+                "x": 0.5028846142115384,
+                "y": 0.5914285709142858
+              }
+            ]
+          }
+        }
+      ],
+      "final": {
+        "width": 1040,
+        "height": 700,
+        "cssWidth": 520,
+        "cssHeight": 350,
+        "text": [
+          {
+            "x": 0.20096153722756416,
+            "text": "Task complete",
+            "y": 0.1157142851666666
+          }
+        ]
+      },
+      "completed": true,
+      "openerFinal": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "x": 0.28541666225694456,
+            "y": 0.06789283380829203,
+            "text": "Document PiP boundary experiment"
+          },
+          {
+            "text": "Open task window",
+            "y": 0.15777777811111116,
+            "x": 0.11328124869140628
+          },
+          {
+            "x": 0.029687500104166663,
+            "y": 0.22444444481481485,
+            "text": "{"
+          },
+          {
+            "x": 0.12656249828125005,
+            "text": "\"supported\": true,",
+            "y": 0.2522222221999999
+          },
+          {
+            "y": 0.27888888891666674,
+            "text": "\"opened\": true,",
+            "x": 0.11328125177734373
+          },
+          {
+            "text": "\"completed\": true,",
+            "y": 0.3036067817528989,
+            "x": 0.1265721503518208
+          },
+          {
+            "y": 0.327655478142606,
+            "text": "\"blocked\": false,",
+            "x": 0.12191162820019717
+          },
+          {
+            "text": "\"trustedClicks\":",
+            "x": 0.11953125193359368,
+            "y": 0.3522222221388889
+          },
+          {
+            "text": "3",
+            "y": 0.35222222188888885,
+            "x": 0.2046875000520833
+          },
+          {
+            "text": "}",
+            "y": 0.3766666664166667,
+            "x": 0.029687499921875006
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargets",
+        "Page.captureScreenshot",
+        "Page.getLayoutMetrics",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 2,
+      "conditions": {
+        "headless": false,
+        "automationMarkerDisabled": true
+      },
+      "version": "Chrome/155.0.8059.40",
+      "initial": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "text": "Document PiP boundary experiment",
+            "y": 0.06789283380829203,
+            "x": 0.28541666225694456
+          },
+          {
+            "x": 0.11328124869140628,
+            "y": 0.15777777811111116,
+            "text": "Open task window"
+          },
+          {
+            "text": "{",
+            "x": 0.029687500104166663,
+            "y": 0.22444444481481485
+          },
+          {
+            "text": "\"supported\": true,",
+            "x": 0.12656249828125005,
+            "y": 0.2522222221999999
+          },
+          {
+            "y": 0.27680975144853326,
+            "x": 0.11876744816983753,
+            "text": "\"opened\": false,"
+          },
+          {
+            "y": 0.3022222221666666,
+            "text": "\"completed\": false,",
+            "x": 0.13124999777343754
+          },
+          {
+            "text": "\"blocked\": false,",
+            "y": 0.327655478142606,
+            "x": 0.12191162820019717
+          },
+          {
+            "text": "\"trustedClicks\": 0",
+            "x": 0.12812499828125004,
+            "y": 0.35222222224444444
+          },
+          {
+            "x": 0.029687499921875006,
+            "y": 0.3766666664166667,
+            "text": "}"
+          }
+        ]
+      },
+      "addedTargets": [
+        {
+          "targetId": "51225294DCB6254826B074F5398EAB16",
+          "type": "page",
+          "title": "PiP task surface",
+          "url": "about:blank",
+          "attached": false,
+          "openerId": "EAF56CCDA9DCF41B27999790CF6EE753",
+          "canAccessOpener": true,
+          "openerFrameId": "EAF56CCDA9DCF41B27999790CF6EE753",
+          "browserContextId": "30DE50BB31E9FCE3DB2B588B9197A687"
+        }
+      ],
+      "openerAfter": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "y": 0.06789283380829203,
+            "text": "Document PiP boundary experiment",
+            "x": 0.28541666225694456
+          },
+          {
+            "text": "Open task window",
+            "x": 0.11328124869140628,
+            "y": 0.15777777811111116
+          },
+          {
+            "text": "{",
+            "y": 0.22444444481481485,
+            "x": 0.029687500104166663
+          },
+          {
+            "x": 0.12656249828125005,
+            "y": 0.2522222221999999,
+            "text": "\"supported\": true,"
+          },
+          {
+            "x": 0.11328125177734373,
+            "y": 0.27888888891666674,
+            "text": "\"opened\": true,"
+          },
+          {
+            "x": 0.1312601820927416,
+            "text": "\"completed\": false,",
+            "y": 0.303227684903961
+          },
+          {
+            "y": 0.327655478142606,
+            "text": "\"blocked\": false,",
+            "x": 0.12191162820019717
+          },
+          {
+            "x": 0.12812499828125004,
+            "y": 0.35222222224444444,
+            "text": "\"trustedClicks\": 0"
+          },
+          {
+            "x": 0.029687499921875006,
+            "text": "}",
+            "y": 0.3766666664166667
+          }
+        ]
+      },
+      "observations": [
+        {
+          "label": "Harbor Research",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "text": "Choose Harbor Research",
+                "x": 0.3144230742403847,
+                "y": 0.1114285715714286
+              },
+              {
+                "text": "North Labs",
+                "x": 0.5009615391460795,
+                "y": 0.2657142853902572
+              },
+              {
+                "y": 0.4299999995551682,
+                "text": "West Studio",
+                "x": 0.5000000011871905
+              },
+              {
+                "y": 0.5956790125308642,
+                "x": 0.49999999708333337,
+                "text": "Harbor Research"
+              }
+            ]
+          }
+        },
+        {
+          "label": "125 EUR",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "x": 0.2240384597596154,
+                "y": 0.11285714298571425,
+                "text": "Choose 125 EUR"
+              },
+              {
+                "y": 0.2685185181792523,
+                "text": "250 EUR",
+                "x": 0.5000000011269485
+              },
+              {
+                "x": 0.4979166653582987,
+                "y": 0.42901234501099605,
+                "text": "125 EUR"
+              },
+              {
+                "text": "50 EUR",
+                "x": 0.49519230681490384,
+                "y": 0.5942857144285714
+              }
+            ]
+          }
+        },
+        {
+          "label": "Confirm transfer",
+          "shot": {
+            "width": 1040,
+            "height": 700,
+            "cssWidth": 520,
+            "cssHeight": 350,
+            "text": [
+              {
+                "x": 0.3125000002083333,
+                "text": "Choose Confirm transfer",
+                "y": 0.1114285709523809
+              },
+              {
+                "x": 0.4990384608640911,
+                "text": "Go back",
+                "y": 0.2657142858283862
+              },
+              {
+                "y": 0.429999999547619,
+                "x": 0.5019230759294873,
+                "text": "Confirm transfer"
+              },
+              {
+                "y": 0.5942857144081632,
+                "x": 0.4990384606456044,
+                "text": "Cancel"
+              }
+            ]
+          }
+        }
+      ],
+      "final": {
+        "width": 1040,
+        "height": 700,
+        "cssWidth": 520,
+        "cssHeight": 350,
+        "text": [
+          {
+            "x": 0.20096153722756416,
+            "text": "Task complete",
+            "y": 0.1157142851666666
+          }
+        ]
+      },
+      "completed": true,
+      "openerFinal": {
+        "width": 1280,
+        "height": 900,
+        "cssWidth": 1280,
+        "cssHeight": 900,
+        "text": [
+          {
+            "y": 0.06789283380829203,
+            "text": "Document PiP boundary experiment",
+            "x": 0.28541666225694456
+          },
+          {
+            "text": "Open task window",
+            "y": 0.15777777811111116,
+            "x": 0.11328124869140628
+          },
+          {
+            "text": "{",
+            "x": 0.029687500104166663,
+            "y": 0.22444444481481485
+          },
+          {
+            "y": 0.2522222221999999,
+            "text": "\"supported\": true,",
+            "x": 0.12656249828125005
+          },
+          {
+            "x": 0.11328125177734373,
+            "y": 0.27888888891666674,
+            "text": "\"opened\": true,"
+          },
+          {
+            "text": "\"completed\": true,",
+            "y": 0.3036067817528989,
+            "x": 0.1265721503518208
+          },
+          {
+            "text": "\"blocked\": false,",
+            "x": 0.12191162820019717,
+            "y": 0.327655478142606
+          },
+          {
+            "x": 0.11953125193359368,
+            "text": "\"trustedClicks\":",
+            "y": 0.3522222221388889
+          },
+          {
+            "y": 0.35222222188888885,
+            "text": "3",
+            "x": 0.2046875000520833
+          },
+          {
+            "text": "}",
+            "y": 0.3766666664166667,
+            "x": 0.029687499921875006
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargets",
+        "Page.captureScreenshot",
+        "Page.getLayoutMetrics",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "results": [
+    {
+      "strategy": "closed-keyboard",
+      "repetition": 0,
+      "error": "{\"clear\":false,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "closed-keyboard",
+      "repetition": 1,
+      "error": "{\"clear\":false,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "closed-keyboard",
+      "repetition": 2,
+      "error": "{\"clear\":false,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "popup-keyboard",
+      "repetition": 0,
+      "error": "{\"clear\":false,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"pointerdown\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "popup-keyboard",
+      "repetition": 1,
+      "error": "{\"clear\":false,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"pointerdown\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "popup-keyboard",
+      "repetition": 2,
+      "error": "{\"clear\":false,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":false,\"popupOpen\":false,\"events\":[{\"type\":\"pointerdown\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "cleared-popup-keyboard",
+      "repetition": 0,
+      "error": "{\"clear\":true,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":true,\"popupOpen\":false,\"events\":[{\"type\":\"pointerdown\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "cleared-popup-keyboard",
+      "repetition": 1,
+      "error": "{\"clear\":true,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":true,\"popupOpen\":false,\"events\":[{\"type\":\"pointerdown\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "cleared-popup-keyboard",
+      "repetition": 2,
+      "error": "{\"clear\":true,\"accepted\":0,\"blocked\":true,\"lastChangeTrusted\":null,\"labelsCleared\":true,\"popupOpen\":false,\"events\":[{\"type\":\"pointerdown\",\"trusted\":true},{\"type\":\"confirm\",\"trusted\":true}]}\n\n0 !== 1\n"
+    },
+    {
+      "strategy": "synthetic-selection",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 2,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": false,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": false
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Runtime.evaluate",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "synthetic-selection",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": false,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": false
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Runtime.evaluate",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "strategy": "synthetic-selection",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.40",
+      "targetIndex": 3,
+      "popup": null,
+      "labelsAfterOpen": null,
+      "final": {
+        "clear": false,
+        "accepted": 0,
+        "blocked": true,
+        "lastChangeTrusted": false,
+        "labelsCleared": false,
+        "popupOpen": false,
+        "events": [
+          {
+            "type": "change",
+            "trusted": false
+          },
+          {
+            "type": "confirm",
+            "trusted": true
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "DOM.getDocument",
+        "DOM.querySelector",
+        "DOM.getOuterHTML",
+        "DOM.focus",
+        "Runtime.evaluate",
+        "DOM.getBoxModel",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}
