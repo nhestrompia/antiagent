@@ -14,3 +14,11 @@ test('watcher catches a late binding once and can be disposed',async()=>{
  scope.__playwright__binding__controller__={};const {result,stop}=await observed;
  assert.equal(result.suspected,true);stop();await new Promise(resolve=>setTimeout(resolve,20));assert.equal(calls,1);
 });
+
+test('optional clock and snapshot markers are own properties only',()=>{
+ const scope=Object.create({__pwClock:{}});
+ assert.equal(inspectAutomationArtifacts(scope).suspected,false);
+ Object.defineProperty(scope,'__playwright_snapshot_streamer_test',{value:{},enumerable:false});
+ scope.__pwClock={};
+ assert.deepEqual(inspectAutomationArtifacts(scope).artifacts,['__pwClock','__playwright_snapshot_streamer_test']);
+});

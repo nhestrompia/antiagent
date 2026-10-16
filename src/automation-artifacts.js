@@ -1,4 +1,4 @@
-const artifactNames=['__playwright__binding__','__playwright__binding__controller__','__pwInitScripts'];
+const artifactNames=['__playwright__binding__','__playwright__binding__controller__','__pwInitScripts','__pwClock'];
 
 // These names identify optional instrumentation, not every browser controller.
 export function inspectAutomationArtifacts(scope=globalThis){
@@ -6,6 +6,7 @@ export function inspectAutomationArtifacts(scope=globalThis){
   for(const name of artifactNames){
     try{if(Object.getOwnPropertyDescriptor(scope,name))artifacts.push(name);}catch{}
   }
+  try{for(const name of Object.getOwnPropertyNames(scope))if(name.startsWith('__playwright_snapshot_streamer_'))artifacts.push(name);}catch{}
   return{suspected:artifacts.length>0,artifacts};
 }
 

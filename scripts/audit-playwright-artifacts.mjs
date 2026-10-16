@@ -10,6 +10,8 @@ for(const needle of [
  'async exposePlaywrightBindingIfNeeded() {',
  'this._client.send("Runtime.addBinding", { name: PageBinding.kBindingName })',
  'this._crPage._browserContext.needsPlaywrightBinding()',
+ 'this._snapshotStreamer = "__playwright_snapshot_streamer_" + guid;',
+ 'if (!globalThis.__pwClock)',
 ]){
  const index=lines.findIndex(line=>line.includes(needle));assert.ok(index>=0,`Source anchor changed: ${needle}`);
  anchors.push({needle,line:index+1,text:lines.slice(Math.max(0,index-2),index+10).map(line=>line.length>500?line.slice(0,500)+' [truncated]':line).join('\n')});

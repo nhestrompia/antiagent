@@ -77,7 +77,10 @@
     "benchmark:bfcache-detection": "node scripts/benchmark-bfcache-detection.mjs",
     "benchmark:prerender-detection": "node scripts/benchmark-prerender-detection.mjs",
     "audit:playwright-artifacts": "node scripts/audit-playwright-artifacts.mjs",
-    "benchmark:playwright-artifacts": "node scripts/benchmark-automation-decoy.mjs --artifacts"
+    "benchmark:playwright-artifacts": "node scripts/benchmark-automation-decoy.mjs --artifacts",
+    "benchmark:playwright-root-probe": "node scripts/benchmark-playwright-root-probe.mjs",
+    "benchmark:root-probe-control": "node scripts/benchmark-root-probe-control.mjs",
+    "benchmark:playwright-instrumentation": "node scripts/benchmark-automation-decoy.mjs --instrumentation"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
