@@ -1,3 +1,4 @@
+import { inspectAutomationArtifacts } from './automation-artifacts.js';
 import { paintCanvasDecoy } from './automation-decoy.js';
 import { load as loadBotD } from '@fingerprintjs/botd';
 import { detectInstantClientAsync } from 'bot-signal/browser';
@@ -191,6 +192,7 @@ if ((combinedMode || parameters.get('runtime') === 'on') && inspectRuntimeCost()
 if (combinedMode) installCaptureCover(canvas.parentElement, { onCover: reason => block(`capture-cover:${reason}`) });
 const integrity = inspectAPIs();
 if (navigator.webdriver) block('webdriver');
+else if (inspectAutomationArtifacts().suspected) block('playwright-artifact');
 else if (!integrity.allowed) block(`api-integrity:${integrity.reasons.join(',')}`);
 else {
   const locks = lockMethods([{ target: CanvasRenderingContext2D.prototype, key: 'fillText' }]);
@@ -221,7 +223,8 @@ if (layeredMode && !state.blocked) {
 if (layeredMode && !state.blocked) {
   const monitor=setInterval(()=>{
     if(state.blocked||state.completed){clearInterval(monitor);return;}
-    if(inspectRuntimeCost().suspected) block('runtime-attached');
+    if(inspectAutomationArtifacts().suspected) block('playwright-artifact');
+    else if(inspectRuntimeCost().suspected) block('runtime-attached');
   },1000);
   window.addEventListener('pagehide',()=>clearInterval(monitor),{once:true});
 }

@@ -1,21 +1,23 @@
+import {watchAutomationArtifacts} from './automation-artifacts.js';
 const documentEvents=['__playwright_reset_targets__','__playwright_mark_target__'];
 const windowEvents=['__playwright_global_listeners_check__','__playwright_snapshotter_global_listeners_check__'];
 
 // Factories mount synchronously and return a cleanup function. Loading may be async.
 export async function mountAutomationDecoy({root,detect,loadApplication,mountDecoy,onChange=()=>{}}){
-  let decoy=false,disposed=false,cleanup=()=>{};
+  let decoy=false,disposed=false,cleanup=()=>{},stopArtifacts=()=>{};
   const listeners=new AbortController();
   root.replaceChildren();
   function divert(reason){
     if(disposed||decoy)return;
-    decoy=true;cleanup();root.replaceChildren();
+    decoy=true;stopArtifacts();cleanup();root.replaceChildren();
     cleanup=mountDecoy(root)||(()=>{});
     onChange({mode:'decoy',reason});
   }
-  function dispose(){if(disposed)return;disposed=true;listeners.abort();cleanup();root.replaceChildren();}
+  function dispose(){if(disposed)return;disposed=true;listeners.abort();stopArtifacts();cleanup();root.replaceChildren();}
   for(const name of documentEvents)document.addEventListener(name,()=>divert('playwright-event'),{capture:true,signal:listeners.signal});
   for(const name of windowEvents)window.addEventListener(name,()=>divert('playwright-event'),{capture:true,signal:listeners.signal});
   if(navigator.webdriver)divert('webdriver');
+  else stopArtifacts=watchAutomationArtifacts(()=>divert('playwright-artifact'));
   try{
     if(!decoy){const verdict=await detect();if(verdict.suspected)divert(verdict.reason||'automation');}
     if(!decoy&&!disposed){
