@@ -4,6 +4,7 @@ import {launchRawCDP} from './raw-cdp.mjs';
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const results=[];
 const sham=process.argv.includes('--sham');
+const consoleMode=process.argv.includes('--console');
 const schedules=sham?[{load:false,constant:'detached'},{load:false,constant:'attached'}]:[{load:false},{load:true}];
 assert.ok((await fetch('http://127.0.0.1:5173/task-observer-probe.html')).ok,'The local fixture server is unavailable');
 for(let repetition=0;repetition<3;repetition++)for(const {load,constant} of schedules) {
@@ -15,7 +16,7 @@ for(let repetition=0;repetition<3;repetition++)for(const {load,constant} of sche
     if(constant)states.fill(constant);
     else if(repetition%2)states.reverse();
     const start=Date.now()+2000;
-    const {targetId}=await chrome.send('Target.createTarget',{url:`http://127.0.0.1:5173/task-observer-probe.html?start=${start}${load?'&load=on':''}`});
+    const {targetId}=await chrome.send('Target.createTarget',{url:`http://127.0.0.1:5173/task-observer-probe.html?start=${start}${load?'&load=on':''}${consoleMode?'&console=on':''}`});
     await chrome.send('Target.activateTarget',{targetId});
     let ready=false;
     for(let i=0;i<100;i++) {
@@ -43,11 +44,13 @@ for(let repetition=0;repetition<3;repetition++)for(const {load,constant} of sche
     assert.ok(transitions.every(item=>item.lateMs<100),'Attachment changed outside the excluded transition margin');
     assert.equal(measurement?.phases?.length,8);
     assert.ok(measurement.phases.every(item=>item.tasks.count>=10),'Too few samples in a phase');
+    if(consoleMode)assert.ok(measurement.phases.every(item=>item.hiddenSamples===0&&item.unfocusedSamples===0),'The console probe lost foreground focus');
     assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
+    if(consoleMode)assert.ok(chrome.commands.every(command=>!command.startsWith('Console.')));
     results.push({repetition,load,constant,version,headless:false,measurement,transitions,commands:[...new Set(chrome.commands)]});
   } catch(error) {results.push({repetition,load,constant,error:error.message,diagnostic});}
   finally {await chrome.close();}
 }
-await writeFile(sham?'docs/task-observer-sham-results.json':'docs/task-observer-results.json',JSON.stringify({results},null,2));
+await writeFile(consoleMode?(sham?'docs/console-cost-sham-results.json':'docs/console-cost-results.json'):(sham?'docs/task-observer-sham-results.json':'docs/task-observer-results.json'),JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({repetition,load,constant,measurement,error})=>({repetition,load,constant,phases:measurement?.phases,error})),null,2));
 assert.equal(results.filter(result=>result.error).length,0,'Task observer measurement failed');

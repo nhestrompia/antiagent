@@ -1,0 +1,1306 @@
+{
+  "results": [
+    {
+      "repetition": 0,
+      "load": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": false,
+        "consoleMode": true,
+        "start": 1792120778725,
+        "period": 750,
+        "checksum": -1267918000,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 190,
+              "median": 2.399999976158142,
+              "p95": 2.899999976158142,
+              "minimum": 2.100000023841858,
+              "maximum": 4.199999928474426
+            },
+            "loop": {
+              "count": 190,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 189,
+              "median": 2.399999976158142,
+              "p95": 2.799999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 4.100000023841858
+            },
+            "loop": {
+              "count": 189,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 180,
+              "median": 2.4000000953674316,
+              "p95": 3.899999976158142,
+              "minimum": 2.1999999284744263,
+              "maximum": 7.799999952316284
+            },
+            "loop": {
+              "count": 180,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7999999523162842
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 191,
+              "median": 2.399999976158142,
+              "p95": 2.700000047683716,
+              "minimum": 2.1999999284744263,
+              "maximum": 7.100000023841858
+            },
+            "loop": {
+              "count": 191,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5999999046325684
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 193,
+              "median": 2.399999976158142,
+              "p95": 2.8000000715255737,
+              "minimum": 2.100000023841858,
+              "maximum": 3.299999952316284
+            },
+            "loop": {
+              "count": 193,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 190,
+              "median": 2.399999976158142,
+              "p95": 3.299999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 8.100000023841858
+            },
+            "loop": {
+              "count": 190,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.8000000715255737
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 188,
+              "median": 2.5,
+              "p95": 2.9000000953674316,
+              "minimum": 2.299999952316284,
+              "maximum": 4.100000023841858
+            },
+            "loop": {
+              "count": 188,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 177,
+              "median": 2.5,
+              "p95": 3.299999952316284,
+              "minimum": 2.299999952316284,
+              "maximum": 6.199999928474426
+            },
+            "loop": {
+              "count": 177,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7000000476837158
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 0,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120787311,
+        "period": 750,
+        "checksum": -953914816,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.399999976158142,
+              "p95": 3.100000023841858,
+              "minimum": 2.100000023841858,
+              "maximum": 3.3000000715255737
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.7999999523162842
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.399999976158142,
+              "p95": 3,
+              "minimum": 2.1999999284744263,
+              "maximum": 5.700000047683716
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6999999284744263
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 91,
+              "median": 2.3000000715255737,
+              "p95": 3.600000023841858,
+              "minimum": 2.1999999284744263,
+              "maximum": 8.200000047683716
+            },
+            "loop": {
+              "count": 91,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.8999999761581421
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.399999976158142,
+              "p95": 3.299999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 5.300000071525574
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.399999976158142,
+              "p95": 3.3000000715255737,
+              "minimum": 2.1999999284744263,
+              "maximum": 4
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 95,
+              "median": 2.299999952316284,
+              "p95": 2.899999976158142,
+              "minimum": 2.100000023841858,
+              "maximum": 4.899999976158142
+            },
+            "loop": {
+              "count": 95,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.399999976158142,
+              "p95": 3.100000023841858,
+              "minimum": 2.0999999046325684,
+              "maximum": 5.699999928474426
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5999999046325684
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 94,
+              "median": 2.399999976158142,
+              "p95": 2.899999976158142,
+              "minimum": 2.200000047683716,
+              "maximum": 3.799999952316284
+            },
+            "loop": {
+              "count": 94,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 1
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 1,
+      "load": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": false,
+        "consoleMode": true,
+        "start": 1792120795869,
+        "period": 750,
+        "checksum": 2126853376,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 189,
+              "median": 2.4000000953674316,
+              "p95": 2.899999976158142,
+              "minimum": 2.1999999284744263,
+              "maximum": 3.5
+            },
+            "loop": {
+              "count": 189,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.8000000715255737
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 193,
+              "median": 2.399999976158142,
+              "p95": 2.700000047683716,
+              "minimum": 2.1999999284744263,
+              "maximum": 4.200000047683716
+            },
+            "loop": {
+              "count": 193,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 193,
+              "median": 2.399999976158142,
+              "p95": 3.5,
+              "minimum": 2.1999999284744263,
+              "maximum": 4.600000023841858
+            },
+            "loop": {
+              "count": 193,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 192,
+              "median": 2.4000000953674316,
+              "p95": 2.8000000715255737,
+              "minimum": 2.200000047683716,
+              "maximum": 4.399999976158142
+            },
+            "loop": {
+              "count": 192,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 189,
+              "median": 2.399999976158142,
+              "p95": 3,
+              "minimum": 2.1999999284744263,
+              "maximum": 4.399999976158142
+            },
+            "loop": {
+              "count": 189,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 187,
+              "median": 2.399999976158142,
+              "p95": 3.100000023841858,
+              "minimum": 2.1999999284744263,
+              "maximum": 8.399999976158142
+            },
+            "loop": {
+              "count": 187,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6999999284744263
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 186,
+              "median": 2.5,
+              "p95": 3,
+              "minimum": 2.299999952316284,
+              "maximum": 5
+            },
+            "loop": {
+              "count": 186,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.6999999284744263
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 186,
+              "median": 2.399999976158142,
+              "p95": 3.200000047683716,
+              "minimum": 2.1999999284744263,
+              "maximum": 5.399999976158142
+            },
+            "loop": {
+              "count": 186,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.6999999284744263
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 1,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 2,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 5,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 6,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "detached",
+          "lateMs": 1
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 1,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120804434,
+        "period": 750,
+        "checksum": 1996158144,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 91,
+              "median": 2.4000000953674316,
+              "p95": 2.899999976158142,
+              "minimum": 2.299999952316284,
+              "maximum": 3.299999952316284
+            },
+            "loop": {
+              "count": 91,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.299999952316284,
+              "p95": 3.299999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 7.200000047683716
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 94,
+              "median": 2.299999952316284,
+              "p95": 3.200000047683716,
+              "minimum": 2.0999999046325684,
+              "maximum": 7.5
+            },
+            "loop": {
+              "count": 94,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6999999284744263
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 90,
+              "median": 2.399999976158142,
+              "p95": 3.600000023841858,
+              "minimum": 2.200000047683716,
+              "maximum": 8.699999928474426
+            },
+            "loop": {
+              "count": 90,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.299999952316284,
+              "p95": 3.200000047683716,
+              "minimum": 2.1999999284744263,
+              "maximum": 6.200000047683716
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.399999976158142,
+              "p95": 3.3000000715255737,
+              "minimum": 2.1999999284744263,
+              "maximum": 6.300000071525574
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 89,
+              "median": 2.4000000953674316,
+              "p95": 3.399999976158142,
+              "minimum": 2.1999999284744263,
+              "maximum": 8.5
+            },
+            "loop": {
+              "count": 89,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7999999523162842
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.399999976158142,
+              "p95": 2.8000000715255737,
+              "minimum": 2.1999999284744263,
+              "maximum": 3.899999976158142
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "attached",
+          "lateMs": 3
+        },
+        {
+          "phase": 1,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 2,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 5,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "detached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 2,
+      "load": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": false,
+        "consoleMode": true,
+        "start": 1792120813016,
+        "period": 750,
+        "checksum": 1291728528,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 197,
+              "median": 2.3000000715255737,
+              "p95": 2.799999952316284,
+              "minimum": 2,
+              "maximum": 3.6999999284744263
+            },
+            "loop": {
+              "count": 197,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7999999523162842
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 192,
+              "median": 2.399999976158142,
+              "p95": 2.700000047683716,
+              "minimum": 2.1999999284744263,
+              "maximum": 3.700000047683716
+            },
+            "loop": {
+              "count": 192,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 183,
+              "median": 2.399999976158142,
+              "p95": 3.600000023841858,
+              "minimum": 2.1999999284744263,
+              "maximum": 7.600000023841858
+            },
+            "loop": {
+              "count": 183,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 191,
+              "median": 2.3000000715255737,
+              "p95": 3.1999999284744263,
+              "minimum": 2.1999999284744263,
+              "maximum": 9
+            },
+            "loop": {
+              "count": 191,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.7999999523162842
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 191,
+              "median": 2.399999976158142,
+              "p95": 3,
+              "minimum": 2.100000023841858,
+              "maximum": 3.700000047683716
+            },
+            "loop": {
+              "count": 191,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 196,
+              "median": 2.399999976158142,
+              "p95": 2.700000047683716,
+              "minimum": 2.100000023841858,
+              "maximum": 3.200000047683716
+            },
+            "loop": {
+              "count": 196,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 1.3000000715255737
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 194,
+              "median": 2.3000000715255737,
+              "p95": 2.799999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 4.399999976158142
+            },
+            "loop": {
+              "count": 194,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 183,
+              "median": 2.4000000953674316,
+              "p95": 3.299999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 8.100000023841858
+            },
+            "loop": {
+              "count": 183,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 2,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120821586,
+        "period": 750,
+        "checksum": 1931087072,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.3000000715255737,
+              "p95": 2.700000047683716,
+              "minimum": 2.100000023841858,
+              "maximum": 4
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.4000000953674316,
+              "p95": 2.899999976158142,
+              "minimum": 2.1999999284744263,
+              "maximum": 3.1999999284744263
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.5,
+              "p95": 3.399999976158142,
+              "minimum": 2.200000047683716,
+              "maximum": 4.600000023841858
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 94,
+              "median": 2.299999952316284,
+              "p95": 3.299999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 5.200000047683716
+            },
+            "loop": {
+              "count": 94,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.399999976158142,
+              "p95": 2.799999952316284,
+              "minimum": 2.1999999284744263,
+              "maximum": 2.9000000953674316
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 91,
+              "median": 2.399999976158142,
+              "p95": 3.4000000953674316,
+              "minimum": 2.1999999284744263,
+              "maximum": 7.099999904632568
+            },
+            "loop": {
+              "count": 91,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.299999952316284,
+              "p95": 3.5,
+              "minimum": 2.0999999046325684,
+              "maximum": 7.700000047683716
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 92,
+              "median": 2.4000000953674316,
+              "p95": 3.6999999284744263,
+              "minimum": 2.1999999284744263,
+              "maximum": 6.199999928474426
+            },
+            "loop": {
+              "count": 92,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.7000000476837158
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    }
+  ]
+}

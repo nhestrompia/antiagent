@@ -1,0 +1,1125 @@
+{
+  "results": [
+    {
+      "repetition": 0,
+      "load": false,
+      "error": "Too few samples in a phase",
+      "diagnostic": {
+        "measurement": {
+          "load": false,
+          "consoleMode": true,
+          "start": 1792120532211,
+          "period": 750,
+          "checksum": 1572781360,
+          "phases": [
+            {
+              "index": 0,
+              "tasks": {
+                "count": 47,
+                "median": 2.399999976158142,
+                "p95": 3.1999999284744263,
+                "minimum": 2.100000023841858,
+                "maximum": 4.299999952316284
+              },
+              "loop": {
+                "count": 47,
+                "median": 0.30000007152557373,
+                "p95": 0.5,
+                "minimum": 0.19999992847442627,
+                "maximum": 1
+              }
+            },
+            {
+              "index": 1,
+              "tasks": {
+                "count": 42,
+                "median": 3.700000047683716,
+                "p95": 4.100000023841858,
+                "minimum": 2.5,
+                "maximum": 4.899999976158142
+              },
+              "loop": {
+                "count": 42,
+                "median": 0.5,
+                "p95": 0.5999999046325684,
+                "minimum": 0.3999999761581421,
+                "maximum": 0.6000000238418579
+              }
+            },
+            {
+              "index": 2,
+              "tasks": {
+                "count": 42,
+                "median": 3.600000023841858,
+                "p95": 4.399999976158142,
+                "minimum": 2.5,
+                "maximum": 5
+              },
+              "loop": {
+                "count": 42,
+                "median": 0.5,
+                "p95": 0.6000000238418579,
+                "minimum": 0.2999999523162842,
+                "maximum": 0.6000000238418579
+              }
+            },
+            {
+              "index": 3,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            },
+            {
+              "index": 4,
+              "tasks": {
+                "count": 1,
+                "median": 12.300000071525574,
+                "p95": 12.300000071525574,
+                "minimum": 12.300000071525574,
+                "maximum": 12.300000071525574
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.5,
+                "p95": 0.5,
+                "minimum": 0.5,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 5,
+              "tasks": {
+                "count": 1,
+                "median": 20.299999952316284,
+                "p95": 20.299999952316284,
+                "minimum": 20.299999952316284,
+                "maximum": 20.299999952316284
+              },
+              "loop": {
+                "count": 1,
+                "median": 1,
+                "p95": 1,
+                "minimum": 1,
+                "maximum": 1
+              }
+            },
+            {
+              "index": 6,
+              "tasks": {
+                "count": 1,
+                "median": 10.399999976158142,
+                "p95": 10.399999976158142,
+                "minimum": 10.399999976158142,
+                "maximum": 10.399999976158142
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.5,
+                "p95": 0.5,
+                "minimum": 0.5,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 7,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            }
+          ]
+        },
+        "transitions": [
+          {
+            "phase": 0,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 1,
+            "state": "attached",
+            "lateMs": 6
+          },
+          {
+            "phase": 2,
+            "state": "attached",
+            "lateMs": 1
+          },
+          {
+            "phase": 3,
+            "state": "detached",
+            "lateMs": 3
+          },
+          {
+            "phase": 4,
+            "state": "attached",
+            "lateMs": 2
+          },
+          {
+            "phase": 5,
+            "state": "detached",
+            "lateMs": 2
+          },
+          {
+            "phase": 6,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 7,
+            "state": "attached",
+            "lateMs": 3
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 0,
+      "load": true,
+      "error": "Too few samples in a phase",
+      "diagnostic": {
+        "measurement": {
+          "load": true,
+          "consoleMode": true,
+          "start": 1792120540745,
+          "period": 750,
+          "checksum": -965266992,
+          "phases": [
+            {
+              "index": 0,
+              "tasks": {
+                "count": 11,
+                "median": 2.4000000953674316,
+                "p95": 10.700000047683716,
+                "minimum": 2.299999952316284,
+                "maximum": 10.700000047683716
+              },
+              "loop": {
+                "count": 11,
+                "median": 0.3999999761581421,
+                "p95": 1.2999999523162842,
+                "minimum": 0.2999999523162842,
+                "maximum": 1.2999999523162842
+              }
+            },
+            {
+              "index": 1,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            },
+            {
+              "index": 2,
+              "tasks": {
+                "count": 1,
+                "median": 8.600000023841858,
+                "p95": 8.600000023841858,
+                "minimum": 8.600000023841858,
+                "maximum": 8.600000023841858
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.5,
+                "p95": 0.5,
+                "minimum": 0.5,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 3,
+              "tasks": {
+                "count": 1,
+                "median": 7.200000047683716,
+                "p95": 7.200000047683716,
+                "minimum": 7.200000047683716,
+                "maximum": 7.200000047683716
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.5,
+                "p95": 0.5,
+                "minimum": 0.5,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 4,
+              "tasks": {
+                "count": 1,
+                "median": 7.5,
+                "p95": 7.5,
+                "minimum": 7.5,
+                "maximum": 7.5
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.6999999284744263,
+                "p95": 0.6999999284744263,
+                "minimum": 0.6999999284744263,
+                "maximum": 0.6999999284744263
+              }
+            },
+            {
+              "index": 5,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            },
+            {
+              "index": 6,
+              "tasks": {
+                "count": 1,
+                "median": 9.299999952316284,
+                "p95": 9.299999952316284,
+                "minimum": 9.299999952316284,
+                "maximum": 9.299999952316284
+              },
+              "loop": {
+                "count": 1,
+                "median": 1.3000000715255737,
+                "p95": 1.3000000715255737,
+                "minimum": 1.3000000715255737,
+                "maximum": 1.3000000715255737
+              }
+            },
+            {
+              "index": 7,
+              "tasks": {
+                "count": 1,
+                "median": 17.399999976158142,
+                "p95": 17.399999976158142,
+                "minimum": 17.399999976158142,
+                "maximum": 17.399999976158142
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.5,
+                "p95": 0.5,
+                "minimum": 0.5,
+                "maximum": 0.5
+              }
+            }
+          ]
+        },
+        "transitions": [
+          {
+            "phase": 0,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 1,
+            "state": "attached",
+            "lateMs": 2
+          },
+          {
+            "phase": 2,
+            "state": "attached",
+            "lateMs": 1
+          },
+          {
+            "phase": 3,
+            "state": "detached",
+            "lateMs": 0
+          },
+          {
+            "phase": 4,
+            "state": "attached",
+            "lateMs": 1
+          },
+          {
+            "phase": 5,
+            "state": "detached",
+            "lateMs": 2
+          },
+          {
+            "phase": 6,
+            "state": "detached",
+            "lateMs": 0
+          },
+          {
+            "phase": 7,
+            "state": "attached",
+            "lateMs": 3
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 1,
+      "load": false,
+      "error": "Too few samples in a phase",
+      "diagnostic": {
+        "measurement": {
+          "load": false,
+          "consoleMode": true,
+          "start": 1792120549802,
+          "period": 750,
+          "checksum": 1854663824,
+          "phases": [
+            {
+              "index": 0,
+              "tasks": {
+                "count": 14,
+                "median": 3,
+                "p95": 8.700000047683716,
+                "minimum": 2.899999976158142,
+                "maximum": 8.700000047683716
+              },
+              "loop": {
+                "count": 14,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.2999999523162842,
+                "maximum": 0.40000009536743164
+              }
+            },
+            {
+              "index": 1,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            },
+            {
+              "index": 2,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            },
+            {
+              "index": 3,
+              "tasks": {
+                "count": 1,
+                "median": 9.300000071525574,
+                "p95": 9.300000071525574,
+                "minimum": 9.300000071525574,
+                "maximum": 9.300000071525574
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.7999999523162842,
+                "p95": 0.7999999523162842,
+                "minimum": 0.7999999523162842,
+                "maximum": 0.7999999523162842
+              }
+            },
+            {
+              "index": 4,
+              "tasks": {
+                "count": 1,
+                "median": 6.399999976158142,
+                "p95": 6.399999976158142,
+                "minimum": 6.399999976158142,
+                "maximum": 6.399999976158142
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.6000000238418579,
+                "p95": 0.6000000238418579,
+                "minimum": 0.6000000238418579,
+                "maximum": 0.6000000238418579
+              }
+            },
+            {
+              "index": 5,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            },
+            {
+              "index": 6,
+              "tasks": {
+                "count": 0
+              },
+              "loop": {
+                "count": 0
+              }
+            },
+            {
+              "index": 7,
+              "tasks": {
+                "count": 1,
+                "median": 15.800000071525574,
+                "p95": 15.800000071525574,
+                "minimum": 15.800000071525574,
+                "maximum": 15.800000071525574
+              },
+              "loop": {
+                "count": 1,
+                "median": 0.5,
+                "p95": 0.5,
+                "minimum": 0.5,
+                "maximum": 0.5
+              }
+            }
+          ]
+        },
+        "transitions": [
+          {
+            "phase": 0,
+            "state": "attached",
+            "lateMs": 21
+          },
+          {
+            "phase": 1,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 2,
+            "state": "detached",
+            "lateMs": 16
+          },
+          {
+            "phase": 3,
+            "state": "attached",
+            "lateMs": 24
+          },
+          {
+            "phase": 4,
+            "state": "detached",
+            "lateMs": 2
+          },
+          {
+            "phase": 5,
+            "state": "attached",
+            "lateMs": 2
+          },
+          {
+            "phase": 6,
+            "state": "attached",
+            "lateMs": 0
+          },
+          {
+            "phase": 7,
+            "state": "detached",
+            "lateMs": 3
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 1,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120558762,
+        "period": 750,
+        "checksum": 705259248,
+        "phases": [
+          {
+            "index": 0,
+            "tasks": {
+              "count": 37,
+              "median": 2.5,
+              "p95": 3.100000023841858,
+              "minimum": 2.200000047683716,
+              "maximum": 3.1999999284744263
+            },
+            "loop": {
+              "count": 37,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 1,
+            "tasks": {
+              "count": 37,
+              "median": 2.600000023841858,
+              "p95": 3.3000000715255737,
+              "minimum": 2.1999999284744263,
+              "maximum": 6.399999976158142
+            },
+            "loop": {
+              "count": 37,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 2,
+            "tasks": {
+              "count": 37,
+              "median": 2.5,
+              "p95": 3.6999999284744263,
+              "minimum": 2.299999952316284,
+              "maximum": 3.700000047683716
+            },
+            "loop": {
+              "count": 37,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 3,
+            "tasks": {
+              "count": 36,
+              "median": 2.700000047683716,
+              "p95": 3.299999952316284,
+              "minimum": 2.399999976158142,
+              "maximum": 3.299999952316284
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 4,
+            "tasks": {
+              "count": 36,
+              "median": 2.6999999284744263,
+              "p95": 2.8000000715255737,
+              "minimum": 2.5,
+              "maximum": 2.8000000715255737
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "tasks": {
+              "count": 35,
+              "median": 2.799999952316284,
+              "p95": 2.9000000953674316,
+              "minimum": 2.5999999046325684,
+              "maximum": 2.9000000953674316
+            },
+            "loop": {
+              "count": 35,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 6,
+            "tasks": {
+              "count": 36,
+              "median": 2.8000000715255737,
+              "p95": 3,
+              "minimum": 2.6999999284744263,
+              "maximum": 3
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.40000009536743164,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 7,
+            "tasks": {
+              "count": 36,
+              "median": 2.700000047683716,
+              "p95": 2.899999976158142,
+              "minimum": 2.5999999046325684,
+              "maximum": 2.9000000953674316
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "attached",
+          "lateMs": 4
+        },
+        {
+          "phase": 1,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 2,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 3,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 5,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 6,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "detached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 2,
+      "load": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": false,
+        "consoleMode": true,
+        "start": 1792120567284,
+        "period": 750,
+        "checksum": -140664688,
+        "phases": [
+          {
+            "index": 0,
+            "tasks": {
+              "count": 45,
+              "median": 2.700000047683716,
+              "p95": 3.600000023841858,
+              "minimum": 2.100000023841858,
+              "maximum": 3.700000047683716
+            },
+            "loop": {
+              "count": 45,
+              "median": 0.3999999761581421,
+              "p95": 0.6000000238418579,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 1,
+            "tasks": {
+              "count": 43,
+              "median": 3.1999999284744263,
+              "p95": 4.099999904632568,
+              "minimum": 2.5,
+              "maximum": 4.200000047683716
+            },
+            "loop": {
+              "count": 43,
+              "median": 0.3999999761581421,
+              "p95": 0.6000000238418579,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 2,
+            "tasks": {
+              "count": 43,
+              "median": 3.299999952316284,
+              "p95": 4.100000023841858,
+              "minimum": 2.700000047683716,
+              "maximum": 4.200000047683716
+            },
+            "loop": {
+              "count": 43,
+              "median": 0.5,
+              "p95": 0.6000000238418579,
+              "minimum": 0.30000007152557373,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 3,
+            "tasks": {
+              "count": 43,
+              "median": 3.3000000715255737,
+              "p95": 4.099999904632568,
+              "minimum": 2.200000047683716,
+              "maximum": 4.399999976158142
+            },
+            "loop": {
+              "count": 43,
+              "median": 0.5,
+              "p95": 0.6000000238418579,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 4,
+            "tasks": {
+              "count": 43,
+              "median": 3.399999976158142,
+              "p95": 3.600000023841858,
+              "minimum": 2.4000000953674316,
+              "maximum": 3.700000047683716
+            },
+            "loop": {
+              "count": 43,
+              "median": 0.5,
+              "p95": 0.6000000238418579,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 5,
+            "tasks": {
+              "count": 43,
+              "median": 3.3000000715255737,
+              "p95": 3.5,
+              "minimum": 3.0999999046325684,
+              "maximum": 3.5999999046325684
+            },
+            "loop": {
+              "count": 43,
+              "median": 0.5,
+              "p95": 0.6000000238418579,
+              "minimum": 0.3999999761581421,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 6,
+            "tasks": {
+              "count": 42,
+              "median": 3.5,
+              "p95": 3.600000023841858,
+              "minimum": 2.399999976158142,
+              "maximum": 3.600000023841858
+            },
+            "loop": {
+              "count": 42,
+              "median": 0.5,
+              "p95": 0.6000000238418579,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.7000000476837158
+            }
+          },
+          {
+            "index": 7,
+            "tasks": {
+              "count": 44,
+              "median": 2.8000000715255737,
+              "p95": 3.5,
+              "minimum": 2.299999952316284,
+              "maximum": 3.600000023841858
+            },
+            "loop": {
+              "count": 44,
+              "median": 0.40000009536743164,
+              "p95": 0.6000000238418579,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.7000000476837158
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 1
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 2,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120575726,
+        "period": 750,
+        "checksum": 705259248,
+        "phases": [
+          {
+            "index": 0,
+            "tasks": {
+              "count": 37,
+              "median": 2.5,
+              "p95": 3.200000047683716,
+              "minimum": 2.299999952316284,
+              "maximum": 6.799999952316284
+            },
+            "loop": {
+              "count": 37,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 1,
+            "tasks": {
+              "count": 36,
+              "median": 2.799999952316284,
+              "p95": 2.9000000953674316,
+              "minimum": 2.5,
+              "maximum": 3
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 2,
+            "tasks": {
+              "count": 36,
+              "median": 2.899999976158142,
+              "p95": 3,
+              "minimum": 2.600000023841858,
+              "maximum": 3
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.6000000238418579,
+              "minimum": 0.30000007152557373,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 3,
+            "tasks": {
+              "count": 36,
+              "median": 2.6999999284744263,
+              "p95": 2.899999976158142,
+              "minimum": 2.399999976158142,
+              "maximum": 2.9000000953674316
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 4,
+            "tasks": {
+              "count": 36,
+              "median": 2.799999952316284,
+              "p95": 3,
+              "minimum": 2.399999976158142,
+              "maximum": 3.100000023841858
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.6000000238418579,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.6000000238418579
+            }
+          },
+          {
+            "index": 5,
+            "tasks": {
+              "count": 36,
+              "median": 2.700000047683716,
+              "p95": 3.5999999046325684,
+              "minimum": 2.299999952316284,
+              "maximum": 4
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 6,
+            "tasks": {
+              "count": 37,
+              "median": 2.5,
+              "p95": 2.8000000715255737,
+              "minimum": 2.299999952316284,
+              "maximum": 2.899999976158142
+            },
+            "loop": {
+              "count": 37,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 7,
+            "tasks": {
+              "count": 36,
+              "median": 2.799999952316284,
+              "p95": 3,
+              "minimum": 2.399999976158142,
+              "maximum": 3.100000023841858
+            },
+            "loop": {
+              "count": 36,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    }
+  ]
+}
