@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "mode": "attach-cycle",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "mode": "attach-cycle",
+        "events": [],
+        "changes": [],
+        "initial": {
+          "width": 1200,
+          "height": 755,
+          "outerWidth": 1200,
+          "outerHeight": 842,
+          "dpr": 2,
+          "hidden": false,
+          "focused": true,
+          "viewport": [
+            1200,
+            755,
+            0,
+            0,
+            1
+          ],
+          "screen": [
+            1512,
+            982,
+            1512,
+            886
+          ],
+          "root": [
+            1200,
+            755
+          ]
+        },
+        "visibilityTracking": true,
+        "startWallMs": 1792125259821,
+        "durationMs": 3201.7999999523163,
+        "foreground": {
+          "hidden": false,
+          "focused": true
+        }
+      },
+      "frames": [
+        {
+          "atWallMs": 1792125264150,
+          "finishedWallMs": 1792125264193
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "after": {
+        "ready": true,
+        "finished": true,
+        "accepted": 1
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Page.bringToFront",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "attach-cycle",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "mode": "attach-cycle",
+        "events": [],
+        "changes": [],
+        "initial": {
+          "width": 1200,
+          "height": 755,
+          "outerWidth": 1200,
+          "outerHeight": 842,
+          "dpr": 2,
+          "hidden": false,
+          "focused": true,
+          "viewport": [
+            1200,
+            755,
+            0,
+            0,
+            1
+          ],
+          "screen": [
+            1512,
+            982,
+            1512,
+            886
+          ],
+          "root": [
+            1200,
+            755
+          ]
+        },
+        "visibilityTracking": true,
+        "startWallMs": 1792125265764,
+        "durationMs": 3201.1999999284744,
+        "foreground": {
+          "hidden": false,
+          "focused": true
+        }
+      },
+      "frames": [
+        {
+          "atWallMs": 1792125270087,
+          "finishedWallMs": 1792125270133
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "after": {
+        "ready": true,
+        "finished": true,
+        "accepted": 1
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Page.bringToFront",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "attach-cycle",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "mode": "attach-cycle",
+        "events": [],
+        "changes": [],
+        "initial": {
+          "width": 1200,
+          "height": 755,
+          "outerWidth": 1200,
+          "outerHeight": 842,
+          "dpr": 2,
+          "hidden": false,
+          "focused": true,
+          "viewport": [
+            1200,
+            755,
+            0,
+            0,
+            1
+          ],
+          "screen": [
+            1512,
+            982,
+            1512,
+            886
+          ],
+          "root": [
+            1200,
+            755
+          ]
+        },
+        "visibilityTracking": true,
+        "startWallMs": 1792125271749,
+        "durationMs": 3202.3000000715256,
+        "foreground": {
+          "hidden": false,
+          "focused": true
+        }
+      },
+      "frames": [
+        {
+          "atWallMs": 1792125276066,
+          "finishedWallMs": 1792125276105
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "after": {
+        "ready": true,
+        "finished": true,
+        "accepted": 1
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Page.bringToFront",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}

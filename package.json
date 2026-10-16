@@ -71,7 +71,8 @@
     "benchmark:console-cost": "node scripts/benchmark-task-observer.mjs --console",
     "benchmark:console-cost-sham": "node scripts/benchmark-task-observer.mjs --console --sham",
     "benchmark:pressure-signal": "node scripts/benchmark-pressure-signal.mjs",
-    "benchmark:browser-signals": "node scripts/benchmark-browser-signals.mjs"
+    "benchmark:browser-signals": "node scripts/benchmark-browser-signals.mjs",
+    "benchmark:page-events": "node scripts/benchmark-page-events.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"
