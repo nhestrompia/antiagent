@@ -69,7 +69,9 @@
     "benchmark:task-observer": "node scripts/benchmark-task-observer.mjs",
     "benchmark:gpu-pixel-guard": "node scripts/benchmark-gpu-pixel-guard.mjs",
     "benchmark:console-cost": "node scripts/benchmark-task-observer.mjs --console",
-    "benchmark:console-cost-sham": "node scripts/benchmark-task-observer.mjs --console --sham"
+    "benchmark:console-cost-sham": "node scripts/benchmark-task-observer.mjs --console --sham",
+    "benchmark:pressure-signal": "node scripts/benchmark-pressure-signal.mjs",
+    "benchmark:browser-signals": "node scripts/benchmark-browser-signals.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

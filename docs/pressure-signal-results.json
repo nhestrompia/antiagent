@@ -1,0 +1,3698 @@
+{
+  "results": [
+    {
+      "mode": "real-idle",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "fair",
+            "time": 1698.7999999523163
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "fair",
+            "time": 1698.7999999523163
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"fair\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"fair\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "real-burst",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "fair",
+            "time": 1829.9000000953674
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "fair",
+            "time": 1829.9000000953674
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"fair\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"fair\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "virtual-critical",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": true,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 146.5
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": true,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 146.5
+          },
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 1149.8999999761581
+          },
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 2154.899999976158
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        }
+      ],
+      "first": {
+        "text": "",
+        "readable": false
+      },
+      "last": {
+        "text": "",
+        "readable": false
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Emulation.setPressureSourceOverrideEnabled",
+        "Emulation.setPressureStateOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "virtual-nominal",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 130
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 130
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 1134.3999999761581
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 2134.600000023842
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Emulation.setPressureSourceOverrideEnabled",
+        "Emulation.setPressureStateOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "real-idle",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "real-burst",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "fair",
+            "time": 1952.2999999523163
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "fair",
+            "time": 1952.2999999523163
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 3029.5
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 4030
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"fair\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "virtual-critical",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": true,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 121.39999997615814
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": true,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 121.39999997615814
+          },
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 1125
+          },
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 2125.7999999523163
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        }
+      ],
+      "first": {
+        "text": "",
+        "readable": false
+      },
+      "last": {
+        "text": "",
+        "readable": false
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Emulation.setPressureSourceOverrideEnabled",
+        "Emulation.setPressureStateOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "virtual-nominal",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 131.89999997615814
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 131.89999997615814
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 1134.2000000476837
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 2137.7000000476837
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Emulation.setPressureSourceOverrideEnabled",
+        "Emulation.setPressureStateOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "real-idle",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 1974.3000000715256
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 1974.3000000715256
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 3022.899999976158
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 4023.399999976158
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "real-burst",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 1966.7000000476837
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 1966.7000000476837
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 3026.5
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 4027.5
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "virtual-critical",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": true,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 124.29999995231628
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": true,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 124.29999995231628
+          },
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 1127.1000000238419
+          },
+          {
+            "source": "cpu",
+            "state": "critical",
+            "time": 2132.2999999523163
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        },
+        {
+          "green": 0,
+          "black": 55000
+        }
+      ],
+      "first": {
+        "text": "",
+        "readable": false
+      },
+      "last": {
+        "text": "",
+        "readable": false
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Emulation.setPressureSourceOverrideEnabled",
+        "Emulation.setPressureStateOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "virtual-nominal",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 0,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 120.39999997615814
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "ready": true,
+        "available": true,
+        "blocked": false,
+        "accepted": 1,
+        "records": [
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 120.39999997615814
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 1123.8999999761581
+          },
+          {
+            "source": "cpu",
+            "state": "nominal",
+            "time": 2125.600000023842
+          }
+        ],
+        "error": null
+      },
+      "frames": [
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        },
+        {
+          "green": 50762,
+          "black": 0
+        }
+      ],
+      "first": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "last": {
+        "text": "cpupressuresignalprobe{\"available\":true,\"error\":null,\"last\":\"nominal\",\"blocked\":false}pressuretoken5824approve",
+        "readable": true
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Emulation.setPressureSourceOverrideEnabled",
+        "Emulation.setPressureStateOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}
