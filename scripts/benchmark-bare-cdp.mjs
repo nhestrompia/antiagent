@@ -5,6 +5,7 @@ import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { PNG } from 'pngjs';
 import { launchRawCDP } from './raw-cdp.mjs';
 const execute=promisify(execFile);
+const decoyResponse=process.argv.includes('--decoy-response');
 const isolated=process.env.ISOLATED==='1'||process.argv.includes('--isolated');
 const freshness=process.argv.includes('--freshness');
 const holdCapture=process.argv.includes('--hold-capture');
@@ -28,11 +29,12 @@ const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
 assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
 const allGuards=layered||process.argv.includes('--all-guards');
+if(decoyResponse)assert.ok(layered,'The decoy-response benchmark requires --layered');
 if(perceptionInputOnly){
   assert.ok(layered&&!virtualClock&&!screencastCapture&&!isolated,'The route contract requires the visible layered screenshot test');
   assert.equal(process.env.MODES,'bare','The route contract requires MODES=bare');
 }
-const directory=freshness?'artifacts/freshness-guards':layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
+const directory=decoyResponse?'artifacts/decoy-full-stack':freshness?'artifacts/freshness-guards':layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
 await mkdir(directory,{recursive:true});
 const results=[];
 function verifyResults(results) {
@@ -72,7 +74,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if(mode!=='bare'&&mode!=='runtime-late') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':'')+(clockGuard?'&clock=on':'')+(jitterMask?'&jitter=on':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':'')+(clockGuard?'&clock=on':'')+(jitterMask?'&jitter=on':'')+(decoyResponse?'&response=decoy':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
     assert.ok(!navigation.errorText,navigation.errorText);
     if(layered) {
       let ready=false;
@@ -229,6 +231,6 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
   } catch(error) {results.push({mode,repetition,error:error.message,diagnostic:failureDiagnostic,commands:[...new Set(chrome.commands)]});}
   finally {try{await stopCapture();}catch{}await chrome.close();}
 }
-await writeFile(process.env.RESULT_PATH||(decoyMask?(stableColumns?'docs/decoy-stable-results.json':'docs/decoy-color-results.json'):freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json'),JSON.stringify({results},null,2));
+await writeFile(process.env.RESULT_PATH||(decoyResponse?'artifacts/decoy-full-stack/results.json':decoyMask?(stableColumns?'docs/decoy-stable-results.json':'docs/decoy-color-results.json'):freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json'),JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
 verifyResults(results);

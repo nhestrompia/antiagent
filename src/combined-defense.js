@@ -1,3 +1,4 @@
+import { paintCanvasDecoy } from './automation-decoy.js';
 import { load as loadBotD } from '@fingerprintjs/botd';
 import { detectInstantClientAsync } from 'bot-signal/browser';
 import { DRMRuntime, publicAsset } from './drm.js';
@@ -51,7 +52,10 @@ const layouts = tasks.map(([, choices]) => {
 function paintFrame() {
   context.fillStyle = state.blocked ? '#000' : '#fff';
   context.fillRect(0, 0, 720, 480);
-  if (state.blocked) return;
+  if (state.blocked) {
+    if(parameters.get('response')==='decoy')paintCanvasDecoy(context);
+    return;
+  }
   context.fillStyle = '#172b35'; context.font = 'bold 28px sans-serif';
   context.fillText(state.completed ? 'Task complete' : tasks[state.step][0], 40, 70);
   if (state.completed) return;

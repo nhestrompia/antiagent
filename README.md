@@ -139,3 +139,9 @@ The playback runtime monitors support, usable keys, time advancement, interrupti
 The current research build includes Shaka Player and is about 832 KB of JavaScript, or 275 KB gzipped. This is not a validated lightweight SDK size.
 
 Phase 1 and package integration remain gated on Phase 0 evidence or an independently tested replacement mechanism. Each implementation milestone must be verified and committed before the next begins.
+
+## Automation decoy response
+
+Open [the decoy demo](http://localhost:5173/automation-decoy.html) to test a separate app selected by automation checks. Detected clients receive a workspace with its own refresh action. The gate delays the real demo module until checks pass. Add `response=decoy` to the combined-defense URL to replace its blocked canvas with a decoy instead of black pixels.
+
+Run `npm run benchmark:automation-decoy` for visible Playwright and raw CDP tests. Run `node --test scripts/automation-decoy.test.mjs` for loading and cleanup checks. Raw evidence stays under `artifacts/`. See [measured outcomes and limits](docs/automation-decoy-findings.md). Marker-disabled coordinate input and raw CDP still bypass detection; this mode is not an authorization boundary.
