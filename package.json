@@ -66,7 +66,8 @@
     "benchmark:gpu-capture-signal": "node scripts/benchmark-gpu-capture-signal.mjs",
     "benchmark:endpoint-probe": "node scripts/benchmark-endpoint-probe.mjs",
     "benchmark:input-coordinates": "node scripts/benchmark-input-coordinates.mjs",
-    "benchmark:task-observer": "node scripts/benchmark-task-observer.mjs"
+    "benchmark:task-observer": "node scripts/benchmark-task-observer.mjs",
+    "benchmark:gpu-pixel-guard": "node scripts/benchmark-gpu-pixel-guard.mjs"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><title>Pixel guard loading</title>
+<style>
+body {margin:0;background:white;font:24px system-ui}
+canvas {position:absolute;left:8px;top:80px;width:512px;height:512px}
+#secret {display:none;position:absolute;left:600px;top:230px;width:350px;height:110px;background:#159e32;color:white;align-items:center;justify-content:center;font-size:27px;font-weight:bold}
+button {position:absolute;left:600px;top:360px;width:220px;height:60px;font-size:24px}
+#cover {display:none;position:fixed;inset:0;background:black;z-index:10}
+</style>
+<h1>GPU pixel guard experiment</h1><canvas width="512" height="512"></canvas>
+<div id="secret">APP SECRET 7391</div><button>Approve</button><div id="cover"></div>
+<script type="module" src="/src/gpu-pixel-guard.js"></script>

@@ -1,0 +1,6548 @@
+{
+  "results": [
+    {
+      "mode": "off-burst",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 1,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 0.7000000476837158,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 55,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 90,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 133,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 174,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 213,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 246,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 279,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 303,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 337,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 370,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 403,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 436,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 470,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 503,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 537,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 573,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 615,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 648,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 693,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 732,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 774,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 816,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 857,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 905,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 945,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 989,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1037,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1078,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1115,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1148,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1188,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1222,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1253,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1288,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1319,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1355,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1388,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1422,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1465,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1508,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1549,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1590,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1631,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1673,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1715,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1758,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1799,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1841,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1883,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1924,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1965,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2004,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2037,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2071,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2104,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2137,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2171,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2204,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2241,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2279,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2313,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2346,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2379,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2412,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2447,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2479,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2512,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2545,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2579,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2612,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2645,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2679,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2712,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2750,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2788,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2821,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2854,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2887,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2921,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2954,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2987,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3021,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3054,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3090,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3129,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3162,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3195,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3229,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3262,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3295,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3328,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3365,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3409,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3445,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3479,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3505,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3537,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3570,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "gpupixelquardexperimentappsecret7391approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "gpupixelquardexperimentappsecret7391approve"
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-burst",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.7000000476837158,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.7000000476837158,
+        "publishedReady": true,
+        "finalMedian": 0.8999999761581421,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 47,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 93,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 134,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 175,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 218,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 257,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 299,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 341,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 387,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 424,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 469,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 509,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 549,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 592,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 634,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 675,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 717,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 759,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 802,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 843,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 885,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 928,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 968,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1011,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1051,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1093,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1136,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1177,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1218,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1264,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1311,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1351,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1393,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1438,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1482,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1524,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1565,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1609,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1651,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1692,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1735,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1776,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1818,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1860,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1901,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1942,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1983,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2026,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2069,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2109,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2151,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2192,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2235,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2275,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2318,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2359,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2401,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2442,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2483,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2526,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2567,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2608,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2650,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2691,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2733,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2774,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2817,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2858,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2900,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2941,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2983,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3025,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3066,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3108,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3150,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3191,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3232,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3274,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3317,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3358,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3399,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3441,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3484,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3525,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3567,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-cropped",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true,
+        "finalMedian": 0.9000000953674316,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 27,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 53,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 77,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 101,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 126,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 151,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 178,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 201,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 226,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 251,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 276,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 301,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 326,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 351,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 375,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 401,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 426,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 451,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 477,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 503,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 528,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 555,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 580,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 604,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 630,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 653,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 677,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 702,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 727,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 753,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 780,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 803,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 829,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 855,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 880,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 903,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 926,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 953,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 980,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1001,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1028,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1051,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1077,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1103,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1128,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1157,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1180,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1203,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1227,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1252,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1277,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1302,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1327,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1353,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1378,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1404,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1427,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1452,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1476,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1501,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1526,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1551,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1576,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1600,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1626,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1651,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1676,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1702,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1726,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1751,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1776,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1801,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1828,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1853,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1879,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1903,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1927,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1953,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1977,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2003,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2029,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2054,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2080,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2105,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2136,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2161,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2186,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2211,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2239,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2263,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2286,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2311,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2335,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2362,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2386,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2413,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2438,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2463,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2487,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2513,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2537,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2561,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2587,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2613,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2638,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2664,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2689,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2719,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2745,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2772,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2795,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2819,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2843,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2868,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2884,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2910,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2935,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2960,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2985,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3012,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3035,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3063,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3088,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3112,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3135,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3160,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3186,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3211,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3236,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3262,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3287,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3312,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3336,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3361,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3386,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3413,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3437,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3464,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3494,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3519,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3544,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3569,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3595,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-sparse",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.7000000476837158,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.7000000476837158,
+        "publishedReady": true,
+        "finalMedian": 1.2999999523162842,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 548,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1110,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1662,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2204,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2756,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3307,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-idle",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.19999992847442627,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.19999992847442627,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 1.399999976158142,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 3605,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "afterIdle": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.19999992847442627,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 1.399999976158142,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-cpu",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.10000002384185791,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.5999999046325684,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.10000002384185791,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5999999046325684,
+        "publishedReady": true,
+        "finalMedian": 0.5999999046325684,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 3603,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "afterIdle": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.10000002384185791,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5999999046325684,
+        "publishedReady": true,
+        "finalMedian": 0.5999999046325684,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "forced-black",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.7999999523162842,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": true,
+        "reason": "forced-control",
+        "lockAtMs": 46.800000071525574,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.7999999523162842,
+        "publishedReady": true
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "off-burst",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 1,
+        "finished": true,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true,
+        "finalMedian": 0.7999999523162842,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 48,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 93,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 133,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 177,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 225,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 266,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 308,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 350,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 392,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 433,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 475,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 517,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 559,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 600,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 642,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 686,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 727,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 771,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 822,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 872,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 922,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 971,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1022,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1072,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1124,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1177,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1222,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1275,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1330,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1380,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1429,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1473,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1515,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1558,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1599,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1641,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1683,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1725,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1766,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1809,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1850,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1892,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1934,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1975,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2016,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2057,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2099,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2141,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2183,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2226,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2269,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2308,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2350,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2392,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2433,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2474,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2515,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2558,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2599,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2640,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2683,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2726,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2766,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2807,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2850,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2891,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2933,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2974,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3016,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3057,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3100,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3141,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3184,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3223,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3265,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3307,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3350,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3391,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3433,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3474,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3516,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3558,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "gpupixelquardexperimentappsecret7391approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "gpupixelquardexperimentappsecret7391approve"
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-burst",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true,
+        "finalMedian": 0.6999999284744263,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 35,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 67,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 101,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 134,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 168,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 199,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 232,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 266,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 290,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 324,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 349,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 383,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 415,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 450,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 482,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 516,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 550,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 575,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 616,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 651,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 682,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 717,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 750,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 784,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 816,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 850,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 884,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 917,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 951,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 984,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1017,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1050,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1084,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1121,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1165,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1203,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1250,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1287,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1331,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1374,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1414,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1448,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1482,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1515,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1549,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1582,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1615,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1648,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1682,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1716,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1749,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1782,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1815,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1849,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1882,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1916,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1949,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1974,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2007,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2041,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2075,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2108,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2142,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2176,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2209,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2242,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2275,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2308,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2340,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2375,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2408,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2442,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2475,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2509,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2542,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2575,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2608,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2642,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2675,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2708,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2741,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2774,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2811,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2849,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2882,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2917,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2952,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2984,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3015,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3049,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3082,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3116,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3150,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3183,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3217,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3249,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3282,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3316,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3350,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3382,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3417,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3451,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3483,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3516,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3551,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3583,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-cropped",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true,
+        "finalMedian": 1.1999999284744263,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 23,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 56,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 81,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 97,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 122,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 147,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 164,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 189,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 218,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 239,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 263,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 289,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 314,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 338,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 364,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 389,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 413,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 439,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 465,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 492,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 516,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 541,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 566,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 592,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 615,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 639,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 666,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 690,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 716,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 742,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 767,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 792,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 817,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 841,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 865,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 892,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 915,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 941,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 965,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 991,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1014,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1041,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1065,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1088,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1115,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1144,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1165,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1191,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1215,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1240,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1265,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1290,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1315,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1341,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1369,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1391,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1414,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1441,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1466,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1493,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1514,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1539,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1564,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1589,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1614,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1638,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1664,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1689,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1714,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1739,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1764,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1789,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1814,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1839,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1864,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1891,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1914,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1943,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1966,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1991,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2015,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2042,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2064,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2090,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2115,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2139,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2166,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2191,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2214,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2242,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2268,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2292,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2314,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2341,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2366,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2391,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2416,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2440,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2466,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2492,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2518,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2542,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2567,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2590,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2619,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2642,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2667,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2692,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2716,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2740,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2766,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2791,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2816,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2844,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2867,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2893,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2917,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2943,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2970,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3001,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3023,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3050,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3075,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3101,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3127,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3149,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3175,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3201,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3224,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3248,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3275,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3299,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3323,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3350,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3373,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3400,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3424,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3448,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3473,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3501,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3522,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3550,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3575,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-sparse",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.5,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.9000000953674316,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.5,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.9000000953674316,
+        "publishedReady": true,
+        "finalMedian": 1.3000000715255737,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 546,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1103,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1656,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2207,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2755,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3310,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-idle",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.3999999761581421,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.3999999761581421,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 1.399999976158142,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 3604,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "afterIdle": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.3999999761581421,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 1.399999976158142,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-cpu",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.5,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5,
+        "publishedReady": true,
+        "finalMedian": 0.5999999046325684,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 3601,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "afterIdle": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5,
+        "publishedReady": true,
+        "finalMedian": 0.5999999046325684,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "forced-black",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": true,
+        "reason": "forced-control",
+        "lockAtMs": 42,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "off-burst",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.8999999761581421,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 1,
+        "finished": true,
+        "initialMedian": 0.8999999761581421,
+        "publishedReady": true,
+        "finalMedian": 0.8999999761581421,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 39,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 78,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 121,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 160,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 195,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 236,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 277,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 317,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 360,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 402,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 444,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 485,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 528,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 558,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 589,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 615,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 649,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 682,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 716,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 749,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 782,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 815,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 849,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 882,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 915,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 949,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 984,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1030,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1244,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1320,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1368,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1402,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1445,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1489,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1527,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1568,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1608,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1640,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1675,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1708,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1740,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1773,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1807,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1840,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1873,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1906,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1940,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 1973,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2006,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2040,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2074,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2107,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2140,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2174,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2207,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2240,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2273,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2307,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2340,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2373,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2407,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2440,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2473,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2507,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2540,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2573,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2606,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2640,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2673,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2707,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2740,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2780,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2818,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2858,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2892,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2923,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2957,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 2990,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3023,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3056,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3089,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3123,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3157,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3190,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3223,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3256,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3290,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3323,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3357,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3389,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3422,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3457,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3489,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3532,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3565,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 3598,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "gpupixelquardexperimentappsecret7391approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "gpupixelquardexperimentappsecret7391approve"
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-burst",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.8999999761581421,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.30000007152557373,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.8999999761581421,
+        "publishedReady": true,
+        "finalMedian": 0.7000000476837158,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 36,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 77,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 111,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 143,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 176,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 212,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 242,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 266,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 302,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 336,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 371,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 413,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 454,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 484,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 517,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 560,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 592,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 624,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 649,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 684,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 717,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 751,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 784,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 818,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 851,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 883,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 916,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 950,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 983,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1016,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1051,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1085,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1122,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1161,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1198,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1240,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1278,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1318,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1353,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1387,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1432,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1468,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1501,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1534,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1569,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1601,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1634,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1668,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1700,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1734,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1767,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1800,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1834,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1867,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1901,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1934,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1967,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2001,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2034,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2068,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2101,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2134,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2168,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2200,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2234,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2267,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2300,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2334,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2367,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2400,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2436,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2468,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2502,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2535,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2574,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2620,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2659,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2694,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2725,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2749,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2784,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2817,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2850,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2876,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2910,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2944,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2977,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3002,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3035,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3060,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3093,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3127,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3160,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3193,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3227,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3260,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3294,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3327,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3360,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3398,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3438,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3478,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3510,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3544,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3577,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-cropped",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.5,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5,
+        "publishedReady": true,
+        "finalMedian": 0.6999999284744263,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 30,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 56,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 81,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 106,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 131,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 155,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 180,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 207,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 231,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 255,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 281,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 307,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 333,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 357,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 380,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 407,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 430,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 456,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 480,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 505,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 531,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 556,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 583,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 608,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 635,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 659,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 682,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 706,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 733,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 756,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 782,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 806,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 832,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 856,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 882,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 906,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 932,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 956,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 981,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1008,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1034,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1057,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1083,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1109,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1133,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1159,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1184,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1210,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1246,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1275,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1294,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1330,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1350,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1382,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1406,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1437,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1457,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1482,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1505,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1531,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1557,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1581,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1605,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1631,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1656,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1682,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1706,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1730,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1758,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1781,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1806,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1822,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1847,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1875,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1900,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1925,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1950,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1975,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1998,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2023,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2050,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2073,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2098,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2124,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2148,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2172,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2200,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2222,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2247,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2274,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2297,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2323,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2348,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2372,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2397,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2422,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2447,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2472,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2497,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2522,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2548,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2575,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2597,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2623,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2647,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2672,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2697,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2722,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2747,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2774,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2798,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2822,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2848,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2872,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2897,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2922,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2948,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2972,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2997,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3023,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3048,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3074,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3098,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3123,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3151,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3174,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3198,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3224,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3246,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3272,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3299,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3323,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3347,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3374,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3396,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3422,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3450,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3473,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3490,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3516,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3538,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3564,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3590,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-sparse",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 1,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 307.3000000715256,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 1,
+        "publishedReady": true,
+        "finalMedian": 1.3000000715255737,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 36038,
+          "blackPixels": 0
+        },
+        {
+          "atMs": 553,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1108,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 1655,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2208,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 2770,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        },
+        {
+          "atMs": 3321,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "gpupixelquardexperimentappsecret7391approve"
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-idle",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.3999999761581421,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.5,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.3999999761581421,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5,
+        "publishedReady": true,
+        "finalMedian": 1.2000000476837158,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 3603,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "afterIdle": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.3999999761581421,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5,
+        "publishedReady": true,
+        "finalMedian": 1.2000000476837158,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "on-cpu",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 0.5999999046325684,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "frames": [
+        {
+          "atMs": 3601,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "afterIdle": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 0.5999999046325684,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Target.detachFromTarget",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "forced-black",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "before": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true
+      },
+      "after": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": true,
+        "reason": "forced-control",
+        "lockAtMs": 32.39999997615814,
+        "accepted": 0,
+        "finished": false,
+        "initialMedian": 0.6999999284744263,
+        "publishedReady": true
+      },
+      "frames": [
+        {
+          "atMs": 0,
+          "greenPixels": 0,
+          "blackPixels": 38500
+        }
+      ],
+      "first": {
+        "readable": false,
+        "text": ""
+      },
+      "last": {
+        "readable": false,
+        "text": ""
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchKeyEvent",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}

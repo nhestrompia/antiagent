@@ -1,0 +1,301 @@
+{
+  "results": [
+    {
+      "mode": "off-idle",
+      "repetition": 0,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 1.1999999284744263,
+        "publishedReady": true,
+        "finalMedian": 1.4000000953674316,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "on-idle",
+      "repetition": 0,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 357.39999997615814,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 1.2000000476837158,
+        "publishedReady": true,
+        "finalMedian": 1.399999976158142,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "on-cpu",
+      "repetition": 0,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.09999990463256836,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5,
+        "publishedReady": true,
+        "finalMedian": 0.5,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "off-idle",
+      "repetition": 1,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.7999999523162842,
+        "publishedReady": true,
+        "finalMedian": 1.5,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "on-idle",
+      "repetition": 1,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.10000002384185791,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.7999999523162842,
+        "publishedReady": true,
+        "finalMedian": 1.1999999284744263,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "on-cpu",
+      "repetition": 1,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.10000002384185791,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5,
+        "publishedReady": true,
+        "finalMedian": 0.6000000238418579,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "off-idle",
+      "repetition": 2,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": false,
+        "cpu": false,
+        "blocked": false,
+        "reason": null,
+        "lockAtMs": null,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 1.8000000715255737,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "on-idle",
+      "repetition": 2,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": true,
+        "cpu": false,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.20000004768371582,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.6000000238418579,
+        "publishedReady": true,
+        "finalMedian": 2,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "mode": "on-cpu",
+      "repetition": 2,
+      "headless": false,
+      "remoteDebuggingFlag": false,
+      "browserAutomationConnection": false,
+      "pageSelfReport": {
+        "ready": true,
+        "guard": true,
+        "cpu": true,
+        "blocked": true,
+        "reason": "readback-median",
+        "lockAtMs": 0.09999990463256836,
+        "accepted": 0,
+        "finished": true,
+        "initialMedian": 0.5999999046325684,
+        "publishedReady": true,
+        "finalMedian": 0.5,
+        "gpuError": 0,
+        "pixel": [
+          26,
+          204,
+          51,
+          255
+        ],
+        "environment": {
+          "devicePixelRatio": 2,
+          "innerWidth": 1200,
+          "innerHeight": 699
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    }
+  ]
+}
