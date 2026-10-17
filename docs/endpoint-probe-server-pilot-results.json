@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "mode": "detached-target",
+      "repetition": 0,
+      "error": "Endpoint probe did not finish\n\nundefined !== 6\n"
+    },
+    {
+      "mode": "attached-target",
+      "repetition": 0,
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "mode": "detached-target",
+      "repetition": 1,
+      "error": "Endpoint probe did not finish\n\nundefined !== 6\n"
+    },
+    {
+      "mode": "attached-target",
+      "repetition": 1,
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "mode": "detached-target",
+      "repetition": 2,
+      "error": "Endpoint probe did not finish\n\nundefined !== 6\n"
+    },
+    {
+      "mode": "attached-target",
+      "repetition": 2,
+      "error": "net::ERR_CONNECTION_REFUSED"
+    }
+  ]
+}

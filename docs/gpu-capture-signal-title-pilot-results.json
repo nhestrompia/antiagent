@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "mode": "idle",
+      "repetition": 0,
+      "error": "Unterminated string in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 0,
+      "error": "Expected ',' or '}' after property value in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "ordinary-gpu-load",
+      "repetition": 0,
+      "error": "Unterminated string in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 1,
+      "error": "Expected ',' or '}' after property value in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "ordinary-gpu-load",
+      "repetition": 1,
+      "error": "Expected ',' or '}' after property value in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "idle",
+      "repetition": 1,
+      "error": "Unterminated string in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "ordinary-gpu-load",
+      "repetition": 2,
+      "error": "Unterminated string in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "idle",
+      "repetition": 2,
+      "error": "Expected ',' or '}' after property value in JSON at position 4096 (line 1 column 4097)"
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 2,
+      "error": "Unterminated fractional number in JSON at position 4096 (line 1 column 4097)"
+    }
+  ]
+}

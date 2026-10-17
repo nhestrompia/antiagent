@@ -5,6 +5,7 @@ import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { PNG } from 'pngjs';
 import { launchRawCDP } from './raw-cdp.mjs';
 const execute=promisify(execFile);
+const decoyResponse=process.argv.includes('--decoy-response');
 const isolated=process.env.ISOLATED==='1'||process.argv.includes('--isolated');
 const freshness=process.argv.includes('--freshness');
 const holdCapture=process.argv.includes('--hold-capture');
@@ -18,11 +19,22 @@ const jitterMask=process.argv.includes('--jitter-mask');
 const alignFrames=process.argv.includes('--align-frames');
 const screencastCapture=process.argv.includes('--screencast-capture');
 const binaryColumns=process.argv.includes('--binary-columns');
+const perceptionInputOnly=process.argv.includes('--perception-input-only');
+const perceptionInputCommands=new Set([
+  'Browser.getVersion','Target.createTarget','Target.attachToTarget','Target.activateTarget',
+  'Emulation.setDeviceMetricsOverride','Input.dispatchMouseEvent','Page.navigate',
+  'Target.getTargetInfo','Page.captureScreenshot',
+]);
 const captureFrames=Number(process.env.CAPTURE_FRAMES||(fastCapture?32:64));
 assert.ok(Number.isInteger(captureFrames)&&captureFrames>0&&captureFrames<=256);
 const layered=process.argv.includes('--layered');
 const allGuards=layered||process.argv.includes('--all-guards');
-const directory=freshness?'artifacts/freshness-guards':layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
+if(decoyResponse)assert.ok(layered,'The decoy-response benchmark requires --layered');
+if(perceptionInputOnly){
+  assert.ok(layered&&!virtualClock&&!screencastCapture&&!isolated,'The route contract requires the visible layered screenshot test');
+  assert.equal(process.env.MODES,'bare','The route contract requires MODES=bare');
+}
+const directory=decoyResponse?'artifacts/decoy-full-stack':freshness?'artifacts/freshness-guards':layered?'artifacts/layered-guards':allGuards?'artifacts/combined-guards':isolated?'artifacts/isolated-frame':'artifacts/bare-cdp';
 await mkdir(directory,{recursive:true});
 const results=[];
 function verifyResults(results) {
@@ -48,7 +60,7 @@ function retainedLetters(text,label) {
   return row[label.length]/label.length;
 }
 for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','runtime-zero','runtime-disabled'])) for(let repetition=0;repetition<3;repetition++) {
-  const chrome=await launchRawCDP({headless:!layered});
+  const chrome=await launchRawCDP({headless:!layered,allowedCommands:perceptionInputOnly?perceptionInputCommands:undefined});
   let failureDiagnostic;
   let stopCapture=async()=>{},streamFrameCount=0;
   try {
@@ -62,7 +74,7 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     if(mode!=='bare'&&mode!=='runtime-late') await send('Runtime.enable');
     if(mode==='runtime-zero') await send('Runtime.setMaxCallStackSizeToCapture',{size:0});
     if(mode==='runtime-disabled') await send('Runtime.disable');
-    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':'')+(clockGuard?'&clock=on':'')+(jitterMask?'&jitter=on':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
+    const navigation=await send('Page.navigate',{url:layered?'http://127.0.0.1:5173/combined-defense.html?defense=layered'+(freshness?'&fresh=on':'')+(decoyMask?'&mask=decoy':'')+(clockGuard?'&clock=on':'')+(jitterMask?'&jitter=on':'')+(decoyResponse?'&response=decoy':''):allGuards?'http://127.0.0.1:5173/combined-defense.html?defense=combined':isolated?'http://127.0.0.1:5173/isolated-frame.html':'http://127.0.0.1:5173/combined-defense.html?runtime=on'});
     assert.ok(!navigation.errorText,navigation.errorText);
     if(layered) {
       let ready=false;
@@ -215,10 +227,10 @@ for(const mode of (process.env.MODES?.split(',')||['bare','runtime-enabled','run
     else if(freshness) {assert.equal(completed||blocked,true,JSON.stringify(final));}
     else {assert.equal(completed,true,JSON.stringify(final));assert.equal(blocked,false);}
     if(mode==='bare') assert.ok(chrome.commands.every(command=>!command.startsWith('Runtime.')&&!command.startsWith('Debugger.')));
-    results.push({mode,repetition,version:version.product,completed,blocked,streamFrameCount,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
+    results.push({mode,repetition,version:version.product,...(perceptionInputOnly?{routeContract:{headless:false,allowedCommands:[...perceptionInputCommands]}}:{}),completed,blocked,streamFrameCount,screenshotCount:chrome.commands.filter(command=>command==='Page.captureScreenshot').length,captureTimings,observations,initial,final,commands:[...new Set(chrome.commands)]});
   } catch(error) {results.push({mode,repetition,error:error.message,diagnostic:failureDiagnostic,commands:[...new Set(chrome.commands)]});}
   finally {try{await stopCapture();}catch{}await chrome.close();}
 }
-await writeFile(process.env.RESULT_PATH||(decoyMask?(stableColumns?'docs/decoy-stable-results.json':'docs/decoy-color-results.json'):freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json'),JSON.stringify({results},null,2));
+await writeFile(process.env.RESULT_PATH||(decoyResponse?'artifacts/decoy-full-stack/results.json':decoyMask?(stableColumns?'docs/decoy-stable-results.json':'docs/decoy-color-results.json'):freshness?(holdCapture?'docs/freshness-bounded-hold-results.json':fastCapture?'docs/freshness-fast-results.json':'docs/freshness-slow-results.json'):process.argv.includes('--audit')?'docs/agent-route-layered-results.json':layered?(process.env.MODES==='bare'?'docs/layered-guards-results.json':'docs/layered-monitor-results.json'):allGuards?'docs/combined-guards-results.json':isolated?(process.env.MODES?'docs/isolated-frame-regression-results.json':'docs/isolated-frame-results.json'):'docs/bare-cdp-results.json'),JSON.stringify({results},null,2));
 console.log(JSON.stringify(results.map(({mode,repetition,completed,blocked,error})=>({mode,repetition,completed,blocked,error})),null,2));
 verifyResults(results);

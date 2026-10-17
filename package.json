@@ -61,7 +61,26 @@
     "benchmark:capture-burst": "node scripts/benchmark-capture-burst.mjs",
     "benchmark:layered-screencast": "RESULT_PATH=docs/layered-screencast-results.json CAPTURE_FRAMES=16 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames --screencast-capture --binary-columns",
     "probe:html-readback": "node scripts/probe-html-readback.mjs",
-    "audit:capture-boundary": "python3 scripts/audit-capture-boundary.py"
+    "audit:capture-boundary": "python3 scripts/audit-capture-boundary.py",
+    "verify:perception-input": "RESULT_PATH=docs/first-principles-route-results.json CAPTURE_FRAMES=8 MODES=bare node scripts/benchmark-bare-cdp.mjs --layered --freshness --fast-capture --decoy-mask --stable-columns --clock-guard --lean-capture --jitter-mask --align-frames --perception-input-only --require-blocking",
+    "benchmark:gpu-capture-signal": "node scripts/benchmark-gpu-capture-signal.mjs",
+    "benchmark:endpoint-probe": "node scripts/benchmark-endpoint-probe.mjs",
+    "benchmark:input-coordinates": "node scripts/benchmark-input-coordinates.mjs",
+    "benchmark:task-observer": "node scripts/benchmark-task-observer.mjs",
+    "benchmark:gpu-pixel-guard": "node scripts/benchmark-gpu-pixel-guard.mjs",
+    "benchmark:console-cost": "node scripts/benchmark-task-observer.mjs --console",
+    "benchmark:console-cost-sham": "node scripts/benchmark-task-observer.mjs --console --sham",
+    "benchmark:pressure-signal": "node scripts/benchmark-pressure-signal.mjs",
+    "benchmark:browser-signals": "node scripts/benchmark-browser-signals.mjs",
+    "benchmark:page-events": "node scripts/benchmark-page-events.mjs",
+    "benchmark:automation-decoy": "node scripts/benchmark-automation-decoy.mjs",
+    "benchmark:bfcache-detection": "node scripts/benchmark-bfcache-detection.mjs",
+    "benchmark:prerender-detection": "node scripts/benchmark-prerender-detection.mjs",
+    "audit:playwright-artifacts": "node scripts/audit-playwright-artifacts.mjs",
+    "benchmark:playwright-artifacts": "node scripts/benchmark-automation-decoy.mjs --artifacts",
+    "benchmark:playwright-root-probe": "node scripts/benchmark-playwright-root-probe.mjs",
+    "benchmark:root-probe-control": "node scripts/benchmark-root-probe-control.mjs",
+    "benchmark:playwright-instrumentation": "node scripts/benchmark-automation-decoy.mjs --instrumentation"
   },
   "dependencies": {
     "shaka-player": "5.2.13"

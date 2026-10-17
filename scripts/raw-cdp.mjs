@@ -3,7 +3,7 @@ import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-export async function launchRawCDP({ headless = true } = {}) {
+export async function launchRawCDP({ headless = true, allowedCommands } = {}) {
   const profile = await mkdtemp(join(tmpdir(), 'antiagent-raw-'));
   const child = spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', [
     `--user-data-dir=${profile}`, '--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check',
@@ -52,6 +52,9 @@ export async function launchRawCDP({ headless = true } = {}) {
       else request.resolve(message.result);
     });
     function send(method, params = {}, sessionId) {
+      if (allowedCommands && !allowedCommands.has(method)) {
+        return Promise.reject(new Error(`CDP route contract rejects: ${method}`));
+      }
       commands.push(method);
       const id = ++nextId;
       return new Promise((resolve, reject) => {
@@ -66,6 +69,6 @@ export async function launchRawCDP({ headless = true } = {}) {
       listeners.get(key).add(listener);
       return () => { listeners.get(key)?.delete(listener); if (!listeners.get(key)?.size) listeners.delete(key); };
     }
-    return { send, commands, close, onEvent };
+    return { send, commands, close, onEvent, debuggingPort: Number(new URL(endpoint).port) };
   } catch (error) { await close(); throw error; }
 }

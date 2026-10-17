@@ -1,0 +1,1285 @@
+{
+  "results": [
+    {
+      "repetition": 0,
+      "load": false,
+      "error": "Attachment changed outside the excluded transition margin",
+      "diagnostic": {
+        "measurement": {
+          "load": false,
+          "consoleMode": true,
+          "start": 1792120674008,
+          "period": 750,
+          "checksum": 359411888,
+          "phases": [
+            {
+              "index": 0,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 198,
+                "median": 2.3000000715255737,
+                "p95": 2.700000047683716,
+                "minimum": 2.100000023841858,
+                "maximum": 4.100000023841858
+              },
+              "loop": {
+                "count": 198,
+                "median": 0.3999999761581421,
+                "p95": 0.5,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.6000000238418579
+              }
+            },
+            {
+              "index": 1,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 203,
+                "median": 2.3000000715255737,
+                "p95": 2.5,
+                "minimum": 2.0999999046325684,
+                "maximum": 2.700000047683716
+              },
+              "loop": {
+                "count": 203,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.20000004768371582,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 2,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 196,
+                "median": 2.399999976158142,
+                "p95": 2.799999952316284,
+                "minimum": 2.100000023841858,
+                "maximum": 3.700000047683716
+              },
+              "loop": {
+                "count": 196,
+                "median": 0.3999999761581421,
+                "p95": 0.5,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 3,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 200,
+                "median": 2.3000000715255737,
+                "p95": 2.8000000715255737,
+                "minimum": 2.100000023841858,
+                "maximum": 3.200000047683716
+              },
+              "loop": {
+                "count": 200,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.20000004768371582,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 4,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 167,
+                "median": 2.3000000715255737,
+                "p95": 2.799999952316284,
+                "minimum": 2,
+                "maximum": 3.5
+              },
+              "loop": {
+                "count": 167,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.20000004768371582,
+                "maximum": 1.7999999523162842
+              }
+            },
+            {
+              "index": 5,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 199,
+                "median": 2.3000000715255737,
+                "p95": 2.600000023841858,
+                "minimum": 2.0999999046325684,
+                "maximum": 2.8000000715255737
+              },
+              "loop": {
+                "count": 199,
+                "median": 0.30000007152557373,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 6,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 195,
+                "median": 2.3000000715255737,
+                "p95": 2.700000047683716,
+                "minimum": 2.0999999046325684,
+                "maximum": 3.4000000953674316
+              },
+              "loop": {
+                "count": 195,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 7,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 205,
+                "median": 2.1999999284744263,
+                "p95": 2.899999976158142,
+                "minimum": 1.899999976158142,
+                "maximum": 4.600000023841858
+              },
+              "loop": {
+                "count": 205,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            }
+          ]
+        },
+        "transitions": [
+          {
+            "phase": 0,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 1,
+            "state": "attached",
+            "lateMs": 103
+          },
+          {
+            "phase": 2,
+            "state": "attached",
+            "lateMs": 1
+          },
+          {
+            "phase": 3,
+            "state": "detached",
+            "lateMs": 174
+          },
+          {
+            "phase": 4,
+            "state": "attached",
+            "lateMs": 215
+          },
+          {
+            "phase": 5,
+            "state": "detached",
+            "lateMs": 171
+          },
+          {
+            "phase": 6,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 7,
+            "state": "attached",
+            "lateMs": 279
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 0,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120682868,
+        "period": 750,
+        "checksum": -682554896,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.399999976158142,
+              "p95": 3,
+              "minimum": 2.100000023841858,
+              "maximum": 3.799999952316284
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 96,
+              "median": 2.299999952316284,
+              "p95": 2.5,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.600000023841858
+            },
+            "loop": {
+              "count": 96,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 95,
+              "median": 2.399999976158142,
+              "p95": 2.600000023841858,
+              "minimum": 2.1999999284744263,
+              "maximum": 2.8000000715255737
+            },
+            "loop": {
+              "count": 95,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.399999976158142,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.600000023841858
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 96,
+              "median": 2.3000000715255737,
+              "p95": 2.5,
+              "minimum": 2.1999999284744263,
+              "maximum": 2.700000047683716
+            },
+            "loop": {
+              "count": 96,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.3000000715255737,
+              "minimum": 2,
+              "maximum": 2.700000047683716
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 99,
+              "median": 2.200000047683716,
+              "p95": 2.3000000715255737,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.5
+            },
+            "loop": {
+              "count": 99,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.4000000953674316,
+              "minimum": 2.1999999284744263,
+              "maximum": 2.5
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 1
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 1,
+      "load": false,
+      "error": "Attachment changed outside the excluded transition margin",
+      "diagnostic": {
+        "measurement": {
+          "load": false,
+          "consoleMode": true,
+          "start": 1792120691375,
+          "period": 750,
+          "checksum": 869181376,
+          "phases": [
+            {
+              "index": 0,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 198,
+                "median": 2.3000000715255737,
+                "p95": 2.700000047683716,
+                "minimum": 2.100000023841858,
+                "maximum": 5.300000071525574
+              },
+              "loop": {
+                "count": 198,
+                "median": 0.3999999761581421,
+                "p95": 0.5,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.6000000238418579
+              }
+            },
+            {
+              "index": 1,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 199,
+                "median": 2.200000047683716,
+                "p95": 3.3000000715255737,
+                "minimum": 1.9000000953674316,
+                "maximum": 5.399999976158142
+              },
+              "loop": {
+                "count": 199,
+                "median": 0.3999999761581421,
+                "p95": 0.5,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 2,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 208,
+                "median": 2.299999952316284,
+                "p95": 2.600000023841858,
+                "minimum": 2.0999999046325684,
+                "maximum": 2.8000000715255737
+              },
+              "loop": {
+                "count": 208,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 3,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 206,
+                "median": 2.299999952316284,
+                "p95": 2.4000000953674316,
+                "minimum": 2.100000023841858,
+                "maximum": 2.5
+              },
+              "loop": {
+                "count": 206,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 4,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 179,
+                "median": 2.299999952316284,
+                "p95": 2.5,
+                "minimum": 2.100000023841858,
+                "maximum": 2.899999976158142
+              },
+              "loop": {
+                "count": 179,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.20000004768371582,
+                "maximum": 1.1999999284744263
+              }
+            },
+            {
+              "index": 5,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 200,
+                "median": 2.3000000715255737,
+                "p95": 2.5,
+                "minimum": 2.100000023841858,
+                "maximum": 2.8000000715255737
+              },
+              "loop": {
+                "count": 200,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 6,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 195,
+                "median": 2.399999976158142,
+                "p95": 2.600000023841858,
+                "minimum": 2.1999999284744263,
+                "maximum": 2.8000000715255737
+              },
+              "loop": {
+                "count": 195,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 7,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 200,
+                "median": 2.3000000715255737,
+                "p95": 2.5,
+                "minimum": 2.1999999284744263,
+                "maximum": 2.799999952316284
+              },
+              "loop": {
+                "count": 200,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.2999999523162842,
+                "maximum": 0.5
+              }
+            }
+          ]
+        },
+        "transitions": [
+          {
+            "phase": 0,
+            "state": "attached",
+            "lateMs": 9
+          },
+          {
+            "phase": 1,
+            "state": "detached",
+            "lateMs": 74
+          },
+          {
+            "phase": 2,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 3,
+            "state": "attached",
+            "lateMs": 189
+          },
+          {
+            "phase": 4,
+            "state": "detached",
+            "lateMs": 219
+          },
+          {
+            "phase": 5,
+            "state": "attached",
+            "lateMs": 164
+          },
+          {
+            "phase": 6,
+            "state": "attached",
+            "lateMs": 1
+          },
+          {
+            "phase": 7,
+            "state": "detached",
+            "lateMs": 208
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 1,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120699989,
+        "period": 750,
+        "checksum": 662339440,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 94,
+              "median": 2.399999976158142,
+              "p95": 2.9000000953674316,
+              "minimum": 2.1999999284744263,
+              "maximum": 4.5
+            },
+            "loop": {
+              "count": 94,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.40000009536743164
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.399999976158142,
+              "minimum": 2,
+              "maximum": 2.4000000953674316
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.3000000715255737,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.399999976158142
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.5,
+              "minimum": 2.0999999046325684,
+              "maximum": 3.0999999046325684
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.3000000715255737,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.5
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.40000009536743164
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.4000000953674316,
+              "minimum": 2.100000023841858,
+              "maximum": 2.5
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.4000000953674316,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.600000023841858
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.3000000715255737,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.5
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 1,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 2,
+          "state": "detached",
+          "lateMs": 0
+        },
+        {
+          "phase": 3,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 5,
+          "state": "attached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "detached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    },
+    {
+      "repetition": 2,
+      "load": false,
+      "error": "Attachment changed outside the excluded transition margin",
+      "diagnostic": {
+        "measurement": {
+          "load": false,
+          "consoleMode": true,
+          "start": 1792120708533,
+          "period": 750,
+          "checksum": 1845247456,
+          "phases": [
+            {
+              "index": 0,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 205,
+                "median": 2.299999952316284,
+                "p95": 2.5,
+                "minimum": 2,
+                "maximum": 2.899999976158142
+              },
+              "loop": {
+                "count": 205,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.2999999523162842,
+                "maximum": 0.9000000953674316
+              }
+            },
+            {
+              "index": 1,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 205,
+                "median": 2.3000000715255737,
+                "p95": 2.4000000953674316,
+                "minimum": 2.100000023841858,
+                "maximum": 2.8000000715255737
+              },
+              "loop": {
+                "count": 205,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.6999999284744263
+              }
+            },
+            {
+              "index": 2,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 202,
+                "median": 2.3000000715255737,
+                "p95": 2.600000023841858,
+                "minimum": 2.100000023841858,
+                "maximum": 2.899999976158142
+              },
+              "loop": {
+                "count": 202,
+                "median": 0.3999999761581421,
+                "p95": 0.5,
+                "minimum": 0.20000004768371582,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 3,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 152,
+                "median": 2.5,
+                "p95": 5.600000023841858,
+                "minimum": 2,
+                "maximum": 7.800000071525574
+              },
+              "loop": {
+                "count": 152,
+                "median": 0.3999999761581421,
+                "p95": 0.5,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5999999046325684
+              }
+            },
+            {
+              "index": 4,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 166,
+                "median": 2.399999976158142,
+                "p95": 2.700000047683716,
+                "minimum": 1.899999976158142,
+                "maximum": 4.899999976158142
+              },
+              "loop": {
+                "count": 166,
+                "median": 0.3999999761581421,
+                "p95": 0.5,
+                "minimum": 0.2999999523162842,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 5,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 195,
+                "median": 2.3000000715255737,
+                "p95": 2.700000047683716,
+                "minimum": 2.100000023841858,
+                "maximum": 3.1999999284744263
+              },
+              "loop": {
+                "count": 195,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.19999992847442627,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 6,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 197,
+                "median": 2.3000000715255737,
+                "p95": 2.600000023841858,
+                "minimum": 2.0999999046325684,
+                "maximum": 3
+              },
+              "loop": {
+                "count": 197,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.20000004768371582,
+                "maximum": 0.5
+              }
+            },
+            {
+              "index": 7,
+              "hiddenSamples": 0,
+              "unfocusedSamples": 0,
+              "tasks": {
+                "count": 193,
+                "median": 2.399999976158142,
+                "p95": 2.6999999284744263,
+                "minimum": 2.100000023841858,
+                "maximum": 2.799999952316284
+              },
+              "loop": {
+                "count": 193,
+                "median": 0.3999999761581421,
+                "p95": 0.40000009536743164,
+                "minimum": 0.20000004768371582,
+                "maximum": 0.5
+              }
+            }
+          ]
+        },
+        "transitions": [
+          {
+            "phase": 0,
+            "state": "detached",
+            "lateMs": 1
+          },
+          {
+            "phase": 1,
+            "state": "attached",
+            "lateMs": 75
+          },
+          {
+            "phase": 2,
+            "state": "attached",
+            "lateMs": 1
+          },
+          {
+            "phase": 3,
+            "state": "detached",
+            "lateMs": 255
+          },
+          {
+            "phase": 4,
+            "state": "attached",
+            "lateMs": 289
+          },
+          {
+            "phase": 5,
+            "state": "detached",
+            "lateMs": 192
+          },
+          {
+            "phase": 6,
+            "state": "detached",
+            "lateMs": 0
+          },
+          {
+            "phase": 7,
+            "state": "attached",
+            "lateMs": 225
+          }
+        ]
+      }
+    },
+    {
+      "repetition": 2,
+      "load": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "load": true,
+        "consoleMode": true,
+        "start": 1792120717163,
+        "period": 750,
+        "checksum": 727410512,
+        "phases": [
+          {
+            "index": 0,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 93,
+              "median": 2.399999976158142,
+              "p95": 3.299999952316284,
+              "minimum": 2.100000023841858,
+              "maximum": 5.299999952316284
+            },
+            "loop": {
+              "count": 93,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 1,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.399999976158142,
+              "minimum": 2.100000023841858,
+              "maximum": 2.4000000953674316
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 2,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.5,
+              "minimum": 2.100000023841858,
+              "maximum": 3
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.30000007152557373,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 3,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.3000000715255737,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.399999976158142
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.2999999523162842,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 4,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.4000000953674316,
+              "minimum": 2.1999999284744263,
+              "maximum": 2.5
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 5,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 98,
+              "median": 2.200000047683716,
+              "p95": 2.399999976158142,
+              "minimum": 2,
+              "maximum": 2.5
+            },
+            "loop": {
+              "count": 98,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 6,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 97,
+              "median": 2.299999952316284,
+              "p95": 2.5,
+              "minimum": 2.0999999046325684,
+              "maximum": 2.799999952316284
+            },
+            "loop": {
+              "count": 97,
+              "median": 0.3999999761581421,
+              "p95": 0.5,
+              "minimum": 0.19999992847442627,
+              "maximum": 0.5
+            }
+          },
+          {
+            "index": 7,
+            "hiddenSamples": 0,
+            "unfocusedSamples": 0,
+            "tasks": {
+              "count": 96,
+              "median": 2.3000000715255737,
+              "p95": 2.6999999284744263,
+              "minimum": 2.1999999284744263,
+              "maximum": 3
+            },
+            "loop": {
+              "count": 96,
+              "median": 0.3999999761581421,
+              "p95": 0.40000009536743164,
+              "minimum": 0.20000004768371582,
+              "maximum": 0.5
+            }
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "phase": 0,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 1,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 2,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 3,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 4,
+          "state": "attached",
+          "lateMs": 1
+        },
+        {
+          "phase": 5,
+          "state": "detached",
+          "lateMs": 2
+        },
+        {
+          "phase": 6,
+          "state": "detached",
+          "lateMs": 1
+        },
+        {
+          "phase": 7,
+          "state": "attached",
+          "lateMs": 2
+        }
+      ],
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.activateTarget",
+        "Target.getTargetInfo",
+        "Target.attachToTarget",
+        "Target.detachFromTarget"
+      ]
+    }
+  ]
+}

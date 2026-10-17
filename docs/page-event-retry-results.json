@@ -1,0 +1,1793 @@
+{
+  "results": [
+    {
+      "mode": "screenshots",
+      "repetition": 0,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "mode": "screenshots",
+        "events": [],
+        "changes": [],
+        "initial": {
+          "width": 1000,
+          "height": 800,
+          "outerWidth": 1200,
+          "outerHeight": 842,
+          "dpr": 1,
+          "hidden": false,
+          "focused": true,
+          "viewport": [
+            1000,
+            800,
+            0,
+            0,
+            1
+          ],
+          "screen": [
+            1512,
+            982,
+            1512,
+            982
+          ],
+          "root": [
+            1000,
+            800
+          ]
+        },
+        "visibilityTracking": true,
+        "startWallMs": 1792125233094,
+        "durationMs": 3201,
+        "foreground": {
+          "hidden": false,
+          "focused": true
+        }
+      },
+      "frames": [
+        {
+          "atWallMs": 1792125233113,
+          "finishedWallMs": 1792125233132
+        },
+        {
+          "atWallMs": 1792125233133,
+          "finishedWallMs": 1792125233161
+        },
+        {
+          "atWallMs": 1792125233161,
+          "finishedWallMs": 1792125233186
+        },
+        {
+          "atWallMs": 1792125233186,
+          "finishedWallMs": 1792125233211
+        },
+        {
+          "atWallMs": 1792125233211,
+          "finishedWallMs": 1792125233236
+        },
+        {
+          "atWallMs": 1792125233236,
+          "finishedWallMs": 1792125233261
+        },
+        {
+          "atWallMs": 1792125233261,
+          "finishedWallMs": 1792125233286
+        },
+        {
+          "atWallMs": 1792125233286,
+          "finishedWallMs": 1792125233313
+        },
+        {
+          "atWallMs": 1792125233313,
+          "finishedWallMs": 1792125233343
+        },
+        {
+          "atWallMs": 1792125233343,
+          "finishedWallMs": 1792125233369
+        },
+        {
+          "atWallMs": 1792125233369,
+          "finishedWallMs": 1792125233395
+        },
+        {
+          "atWallMs": 1792125233395,
+          "finishedWallMs": 1792125233420
+        },
+        {
+          "atWallMs": 1792125233420,
+          "finishedWallMs": 1792125233445
+        },
+        {
+          "atWallMs": 1792125233445,
+          "finishedWallMs": 1792125233470
+        },
+        {
+          "atWallMs": 1792125233470,
+          "finishedWallMs": 1792125233496
+        },
+        {
+          "atWallMs": 1792125233496,
+          "finishedWallMs": 1792125233520
+        },
+        {
+          "atWallMs": 1792125233520,
+          "finishedWallMs": 1792125233546
+        },
+        {
+          "atWallMs": 1792125233546,
+          "finishedWallMs": 1792125233570
+        },
+        {
+          "atWallMs": 1792125233570,
+          "finishedWallMs": 1792125233596
+        },
+        {
+          "atWallMs": 1792125233596,
+          "finishedWallMs": 1792125233620
+        },
+        {
+          "atWallMs": 1792125233620,
+          "finishedWallMs": 1792125233645
+        },
+        {
+          "atWallMs": 1792125233645,
+          "finishedWallMs": 1792125233671
+        },
+        {
+          "atWallMs": 1792125233671,
+          "finishedWallMs": 1792125233695
+        },
+        {
+          "atWallMs": 1792125233695,
+          "finishedWallMs": 1792125233720
+        },
+        {
+          "atWallMs": 1792125233720,
+          "finishedWallMs": 1792125233746
+        },
+        {
+          "atWallMs": 1792125233746,
+          "finishedWallMs": 1792125233771
+        },
+        {
+          "atWallMs": 1792125233771,
+          "finishedWallMs": 1792125233795
+        },
+        {
+          "atWallMs": 1792125233795,
+          "finishedWallMs": 1792125233820
+        },
+        {
+          "atWallMs": 1792125233820,
+          "finishedWallMs": 1792125233845
+        },
+        {
+          "atWallMs": 1792125233845,
+          "finishedWallMs": 1792125233870
+        },
+        {
+          "atWallMs": 1792125233870,
+          "finishedWallMs": 1792125233895
+        },
+        {
+          "atWallMs": 1792125233895,
+          "finishedWallMs": 1792125233921
+        },
+        {
+          "atWallMs": 1792125233921,
+          "finishedWallMs": 1792125233945
+        },
+        {
+          "atWallMs": 1792125233945,
+          "finishedWallMs": 1792125233969
+        },
+        {
+          "atWallMs": 1792125233969,
+          "finishedWallMs": 1792125233995
+        },
+        {
+          "atWallMs": 1792125233995,
+          "finishedWallMs": 1792125234020
+        },
+        {
+          "atWallMs": 1792125234020,
+          "finishedWallMs": 1792125234045
+        },
+        {
+          "atWallMs": 1792125234045,
+          "finishedWallMs": 1792125234069
+        },
+        {
+          "atWallMs": 1792125234069,
+          "finishedWallMs": 1792125234095
+        },
+        {
+          "atWallMs": 1792125234095,
+          "finishedWallMs": 1792125234123
+        },
+        {
+          "atWallMs": 1792125234123,
+          "finishedWallMs": 1792125234145
+        },
+        {
+          "atWallMs": 1792125234145,
+          "finishedWallMs": 1792125234172
+        },
+        {
+          "atWallMs": 1792125234172,
+          "finishedWallMs": 1792125234196
+        },
+        {
+          "atWallMs": 1792125234196,
+          "finishedWallMs": 1792125234222
+        },
+        {
+          "atWallMs": 1792125234222,
+          "finishedWallMs": 1792125234246
+        },
+        {
+          "atWallMs": 1792125234246,
+          "finishedWallMs": 1792125234270
+        },
+        {
+          "atWallMs": 1792125234270,
+          "finishedWallMs": 1792125234298
+        },
+        {
+          "atWallMs": 1792125234298,
+          "finishedWallMs": 1792125234320
+        },
+        {
+          "atWallMs": 1792125234320,
+          "finishedWallMs": 1792125234345
+        },
+        {
+          "atWallMs": 1792125234345,
+          "finishedWallMs": 1792125234370
+        },
+        {
+          "atWallMs": 1792125234370,
+          "finishedWallMs": 1792125234395
+        },
+        {
+          "atWallMs": 1792125234395,
+          "finishedWallMs": 1792125234421
+        },
+        {
+          "atWallMs": 1792125234421,
+          "finishedWallMs": 1792125234444
+        },
+        {
+          "atWallMs": 1792125234444,
+          "finishedWallMs": 1792125234470
+        },
+        {
+          "atWallMs": 1792125234470,
+          "finishedWallMs": 1792125234495
+        },
+        {
+          "atWallMs": 1792125234495,
+          "finishedWallMs": 1792125234518
+        },
+        {
+          "atWallMs": 1792125234518,
+          "finishedWallMs": 1792125234543
+        },
+        {
+          "atWallMs": 1792125234543,
+          "finishedWallMs": 1792125234569
+        },
+        {
+          "atWallMs": 1792125234569,
+          "finishedWallMs": 1792125234594
+        },
+        {
+          "atWallMs": 1792125234594,
+          "finishedWallMs": 1792125234619
+        },
+        {
+          "atWallMs": 1792125234619,
+          "finishedWallMs": 1792125234644
+        },
+        {
+          "atWallMs": 1792125234644,
+          "finishedWallMs": 1792125234669
+        },
+        {
+          "atWallMs": 1792125234669,
+          "finishedWallMs": 1792125234694
+        },
+        {
+          "atWallMs": 1792125234694,
+          "finishedWallMs": 1792125234719
+        },
+        {
+          "atWallMs": 1792125234719,
+          "finishedWallMs": 1792125234744
+        },
+        {
+          "atWallMs": 1792125234744,
+          "finishedWallMs": 1792125234770
+        },
+        {
+          "atWallMs": 1792125234770,
+          "finishedWallMs": 1792125234795
+        },
+        {
+          "atWallMs": 1792125234795,
+          "finishedWallMs": 1792125234822
+        },
+        {
+          "atWallMs": 1792125234822,
+          "finishedWallMs": 1792125234845
+        },
+        {
+          "atWallMs": 1792125234845,
+          "finishedWallMs": 1792125234869
+        },
+        {
+          "atWallMs": 1792125234869,
+          "finishedWallMs": 1792125234894
+        },
+        {
+          "atWallMs": 1792125234894,
+          "finishedWallMs": 1792125234920
+        },
+        {
+          "atWallMs": 1792125234920,
+          "finishedWallMs": 1792125234946
+        },
+        {
+          "atWallMs": 1792125234946,
+          "finishedWallMs": 1792125234971
+        },
+        {
+          "atWallMs": 1792125234972,
+          "finishedWallMs": 1792125234996
+        },
+        {
+          "atWallMs": 1792125234996,
+          "finishedWallMs": 1792125235021
+        },
+        {
+          "atWallMs": 1792125235021,
+          "finishedWallMs": 1792125235047
+        },
+        {
+          "atWallMs": 1792125235047,
+          "finishedWallMs": 1792125235073
+        },
+        {
+          "atWallMs": 1792125235073,
+          "finishedWallMs": 1792125235097
+        },
+        {
+          "atWallMs": 1792125235097,
+          "finishedWallMs": 1792125235121
+        },
+        {
+          "atWallMs": 1792125235121,
+          "finishedWallMs": 1792125235146
+        },
+        {
+          "atWallMs": 1792125235146,
+          "finishedWallMs": 1792125235172
+        },
+        {
+          "atWallMs": 1792125235172,
+          "finishedWallMs": 1792125235196
+        },
+        {
+          "atWallMs": 1792125235196,
+          "finishedWallMs": 1792125235212
+        },
+        {
+          "atWallMs": 1792125235212,
+          "finishedWallMs": 1792125235237
+        },
+        {
+          "atWallMs": 1792125235237,
+          "finishedWallMs": 1792125235262
+        },
+        {
+          "atWallMs": 1792125235262,
+          "finishedWallMs": 1792125235287
+        },
+        {
+          "atWallMs": 1792125235287,
+          "finishedWallMs": 1792125235312
+        },
+        {
+          "atWallMs": 1792125235312,
+          "finishedWallMs": 1792125235338
+        },
+        {
+          "atWallMs": 1792125235338,
+          "finishedWallMs": 1792125235362
+        },
+        {
+          "atWallMs": 1792125235362,
+          "finishedWallMs": 1792125235390
+        },
+        {
+          "atWallMs": 1792125235390,
+          "finishedWallMs": 1792125235412
+        },
+        {
+          "atWallMs": 1792125235412,
+          "finishedWallMs": 1792125235437
+        },
+        {
+          "atWallMs": 1792125235437,
+          "finishedWallMs": 1792125235462
+        },
+        {
+          "atWallMs": 1792125235462,
+          "finishedWallMs": 1792125235489
+        },
+        {
+          "atWallMs": 1792125235489,
+          "finishedWallMs": 1792125235514
+        },
+        {
+          "atWallMs": 1792125235514,
+          "finishedWallMs": 1792125235538
+        },
+        {
+          "atWallMs": 1792125235538,
+          "finishedWallMs": 1792125235564
+        },
+        {
+          "atWallMs": 1792125235564,
+          "finishedWallMs": 1792125235589
+        },
+        {
+          "atWallMs": 1792125235589,
+          "finishedWallMs": 1792125235613
+        },
+        {
+          "atWallMs": 1792125235613,
+          "finishedWallMs": 1792125235640
+        },
+        {
+          "atWallMs": 1792125235640,
+          "finishedWallMs": 1792125235665
+        },
+        {
+          "atWallMs": 1792125235665,
+          "finishedWallMs": 1792125235686
+        },
+        {
+          "atWallMs": 1792125235686,
+          "finishedWallMs": 1792125235714
+        },
+        {
+          "atWallMs": 1792125235714,
+          "finishedWallMs": 1792125235740
+        },
+        {
+          "atWallMs": 1792125235740,
+          "finishedWallMs": 1792125235774
+        },
+        {
+          "atWallMs": 1792125235774,
+          "finishedWallMs": 1792125235797
+        },
+        {
+          "atWallMs": 1792125235797,
+          "finishedWallMs": 1792125235820
+        },
+        {
+          "atWallMs": 1792125235820,
+          "finishedWallMs": 1792125235847
+        },
+        {
+          "atWallMs": 1792125235847,
+          "finishedWallMs": 1792125235871
+        },
+        {
+          "atWallMs": 1792125235871,
+          "finishedWallMs": 1792125235896
+        },
+        {
+          "atWallMs": 1792125235896,
+          "finishedWallMs": 1792125235920
+        },
+        {
+          "atWallMs": 1792125235920,
+          "finishedWallMs": 1792125235945
+        },
+        {
+          "atWallMs": 1792125235945,
+          "finishedWallMs": 1792125235969
+        },
+        {
+          "atWallMs": 1792125235969,
+          "finishedWallMs": 1792125235996
+        },
+        {
+          "atWallMs": 1792125235996,
+          "finishedWallMs": 1792125236020
+        },
+        {
+          "atWallMs": 1792125236020,
+          "finishedWallMs": 1792125236048
+        },
+        {
+          "atWallMs": 1792125236048,
+          "finishedWallMs": 1792125236072
+        },
+        {
+          "atWallMs": 1792125236072,
+          "finishedWallMs": 1792125236104
+        },
+        {
+          "atWallMs": 1792125236104,
+          "finishedWallMs": 1792125236130
+        },
+        {
+          "atWallMs": 1792125236130,
+          "finishedWallMs": 1792125236154
+        },
+        {
+          "atWallMs": 1792125236154,
+          "finishedWallMs": 1792125236182
+        },
+        {
+          "atWallMs": 1792125236182,
+          "finishedWallMs": 1792125236204
+        },
+        {
+          "atWallMs": 1792125236204,
+          "finishedWallMs": 1792125236232
+        },
+        {
+          "atWallMs": 1792125236232,
+          "finishedWallMs": 1792125236257
+        },
+        {
+          "atWallMs": 1792125236257,
+          "finishedWallMs": 1792125236289
+        },
+        {
+          "atWallMs": 1792125236289,
+          "finishedWallMs": 1792125236314
+        },
+        {
+          "atWallMs": 1792125236314,
+          "finishedWallMs": 1792125236345
+        },
+        {
+          "atWallMs": 1792125236345,
+          "finishedWallMs": 1792125236373
+        },
+        {
+          "atWallMs": 1792125236373,
+          "finishedWallMs": 1792125236400
+        },
+        {
+          "atWallMs": 1792125236400,
+          "finishedWallMs": 1792125236430
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "after": {
+        "ready": true,
+        "finished": true,
+        "accepted": 1
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Page.bringToFront",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 1,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "mode": "screenshots",
+        "events": [],
+        "changes": [],
+        "initial": {
+          "width": 1000,
+          "height": 800,
+          "outerWidth": 1200,
+          "outerHeight": 842,
+          "dpr": 1,
+          "hidden": false,
+          "focused": true,
+          "viewport": [
+            1000,
+            800,
+            0,
+            0,
+            1
+          ],
+          "screen": [
+            1512,
+            982,
+            1512,
+            982
+          ],
+          "root": [
+            1000,
+            800
+          ]
+        },
+        "visibilityTracking": true,
+        "startWallMs": 1792125237966,
+        "durationMs": 3201.4000000953674,
+        "foreground": {
+          "hidden": false,
+          "focused": true
+        }
+      },
+      "frames": [
+        {
+          "atWallMs": 1792125237985,
+          "finishedWallMs": 1792125238009
+        },
+        {
+          "atWallMs": 1792125238009,
+          "finishedWallMs": 1792125238037
+        },
+        {
+          "atWallMs": 1792125238037,
+          "finishedWallMs": 1792125238062
+        },
+        {
+          "atWallMs": 1792125238062,
+          "finishedWallMs": 1792125238087
+        },
+        {
+          "atWallMs": 1792125238087,
+          "finishedWallMs": 1792125238114
+        },
+        {
+          "atWallMs": 1792125238114,
+          "finishedWallMs": 1792125238137
+        },
+        {
+          "atWallMs": 1792125238137,
+          "finishedWallMs": 1792125238165
+        },
+        {
+          "atWallMs": 1792125238165,
+          "finishedWallMs": 1792125238187
+        },
+        {
+          "atWallMs": 1792125238187,
+          "finishedWallMs": 1792125238212
+        },
+        {
+          "atWallMs": 1792125238212,
+          "finishedWallMs": 1792125238239
+        },
+        {
+          "atWallMs": 1792125238239,
+          "finishedWallMs": 1792125238261
+        },
+        {
+          "atWallMs": 1792125238261,
+          "finishedWallMs": 1792125238287
+        },
+        {
+          "atWallMs": 1792125238287,
+          "finishedWallMs": 1792125238312
+        },
+        {
+          "atWallMs": 1792125238312,
+          "finishedWallMs": 1792125238337
+        },
+        {
+          "atWallMs": 1792125238337,
+          "finishedWallMs": 1792125238362
+        },
+        {
+          "atWallMs": 1792125238362,
+          "finishedWallMs": 1792125238387
+        },
+        {
+          "atWallMs": 1792125238387,
+          "finishedWallMs": 1792125238412
+        },
+        {
+          "atWallMs": 1792125238412,
+          "finishedWallMs": 1792125238437
+        },
+        {
+          "atWallMs": 1792125238437,
+          "finishedWallMs": 1792125238462
+        },
+        {
+          "atWallMs": 1792125238462,
+          "finishedWallMs": 1792125238487
+        },
+        {
+          "atWallMs": 1792125238487,
+          "finishedWallMs": 1792125238512
+        },
+        {
+          "atWallMs": 1792125238512,
+          "finishedWallMs": 1792125238537
+        },
+        {
+          "atWallMs": 1792125238537,
+          "finishedWallMs": 1792125238562
+        },
+        {
+          "atWallMs": 1792125238562,
+          "finishedWallMs": 1792125238587
+        },
+        {
+          "atWallMs": 1792125238587,
+          "finishedWallMs": 1792125238612
+        },
+        {
+          "atWallMs": 1792125238612,
+          "finishedWallMs": 1792125238637
+        },
+        {
+          "atWallMs": 1792125238637,
+          "finishedWallMs": 1792125238662
+        },
+        {
+          "atWallMs": 1792125238662,
+          "finishedWallMs": 1792125238687
+        },
+        {
+          "atWallMs": 1792125238687,
+          "finishedWallMs": 1792125238712
+        },
+        {
+          "atWallMs": 1792125238712,
+          "finishedWallMs": 1792125238737
+        },
+        {
+          "atWallMs": 1792125238737,
+          "finishedWallMs": 1792125238762
+        },
+        {
+          "atWallMs": 1792125238762,
+          "finishedWallMs": 1792125238787
+        },
+        {
+          "atWallMs": 1792125238787,
+          "finishedWallMs": 1792125238813
+        },
+        {
+          "atWallMs": 1792125238813,
+          "finishedWallMs": 1792125238836
+        },
+        {
+          "atWallMs": 1792125238836,
+          "finishedWallMs": 1792125238862
+        },
+        {
+          "atWallMs": 1792125238862,
+          "finishedWallMs": 1792125238887
+        },
+        {
+          "atWallMs": 1792125238887,
+          "finishedWallMs": 1792125238912
+        },
+        {
+          "atWallMs": 1792125238912,
+          "finishedWallMs": 1792125238937
+        },
+        {
+          "atWallMs": 1792125238937,
+          "finishedWallMs": 1792125238962
+        },
+        {
+          "atWallMs": 1792125238962,
+          "finishedWallMs": 1792125238986
+        },
+        {
+          "atWallMs": 1792125238986,
+          "finishedWallMs": 1792125239012
+        },
+        {
+          "atWallMs": 1792125239012,
+          "finishedWallMs": 1792125239039
+        },
+        {
+          "atWallMs": 1792125239039,
+          "finishedWallMs": 1792125239063
+        },
+        {
+          "atWallMs": 1792125239063,
+          "finishedWallMs": 1792125239090
+        },
+        {
+          "atWallMs": 1792125239090,
+          "finishedWallMs": 1792125239112
+        },
+        {
+          "atWallMs": 1792125239112,
+          "finishedWallMs": 1792125239137
+        },
+        {
+          "atWallMs": 1792125239137,
+          "finishedWallMs": 1792125239163
+        },
+        {
+          "atWallMs": 1792125239163,
+          "finishedWallMs": 1792125239190
+        },
+        {
+          "atWallMs": 1792125239190,
+          "finishedWallMs": 1792125239212
+        },
+        {
+          "atWallMs": 1792125239212,
+          "finishedWallMs": 1792125239240
+        },
+        {
+          "atWallMs": 1792125239240,
+          "finishedWallMs": 1792125239266
+        },
+        {
+          "atWallMs": 1792125239266,
+          "finishedWallMs": 1792125239297
+        },
+        {
+          "atWallMs": 1792125239297,
+          "finishedWallMs": 1792125239320
+        },
+        {
+          "atWallMs": 1792125239320,
+          "finishedWallMs": 1792125239346
+        },
+        {
+          "atWallMs": 1792125239346,
+          "finishedWallMs": 1792125239369
+        },
+        {
+          "atWallMs": 1792125239369,
+          "finishedWallMs": 1792125239396
+        },
+        {
+          "atWallMs": 1792125239396,
+          "finishedWallMs": 1792125239419
+        },
+        {
+          "atWallMs": 1792125239419,
+          "finishedWallMs": 1792125239444
+        },
+        {
+          "atWallMs": 1792125239444,
+          "finishedWallMs": 1792125239469
+        },
+        {
+          "atWallMs": 1792125239469,
+          "finishedWallMs": 1792125239495
+        },
+        {
+          "atWallMs": 1792125239495,
+          "finishedWallMs": 1792125239519
+        },
+        {
+          "atWallMs": 1792125239519,
+          "finishedWallMs": 1792125239543
+        },
+        {
+          "atWallMs": 1792125239543,
+          "finishedWallMs": 1792125239569
+        },
+        {
+          "atWallMs": 1792125239569,
+          "finishedWallMs": 1792125239593
+        },
+        {
+          "atWallMs": 1792125239593,
+          "finishedWallMs": 1792125239619
+        },
+        {
+          "atWallMs": 1792125239619,
+          "finishedWallMs": 1792125239644
+        },
+        {
+          "atWallMs": 1792125239644,
+          "finishedWallMs": 1792125239669
+        },
+        {
+          "atWallMs": 1792125239669,
+          "finishedWallMs": 1792125239695
+        },
+        {
+          "atWallMs": 1792125239695,
+          "finishedWallMs": 1792125239719
+        },
+        {
+          "atWallMs": 1792125239719,
+          "finishedWallMs": 1792125239745
+        },
+        {
+          "atWallMs": 1792125239745,
+          "finishedWallMs": 1792125239772
+        },
+        {
+          "atWallMs": 1792125239772,
+          "finishedWallMs": 1792125239794
+        },
+        {
+          "atWallMs": 1792125239794,
+          "finishedWallMs": 1792125239820
+        },
+        {
+          "atWallMs": 1792125239820,
+          "finishedWallMs": 1792125239848
+        },
+        {
+          "atWallMs": 1792125239848,
+          "finishedWallMs": 1792125239870
+        },
+        {
+          "atWallMs": 1792125239870,
+          "finishedWallMs": 1792125239895
+        },
+        {
+          "atWallMs": 1792125239895,
+          "finishedWallMs": 1792125239921
+        },
+        {
+          "atWallMs": 1792125239921,
+          "finishedWallMs": 1792125239945
+        },
+        {
+          "atWallMs": 1792125239945,
+          "finishedWallMs": 1792125239969
+        },
+        {
+          "atWallMs": 1792125239969,
+          "finishedWallMs": 1792125239995
+        },
+        {
+          "atWallMs": 1792125239995,
+          "finishedWallMs": 1792125240020
+        },
+        {
+          "atWallMs": 1792125240020,
+          "finishedWallMs": 1792125240049
+        },
+        {
+          "atWallMs": 1792125240049,
+          "finishedWallMs": 1792125240072
+        },
+        {
+          "atWallMs": 1792125240073,
+          "finishedWallMs": 1792125240096
+        },
+        {
+          "atWallMs": 1792125240096,
+          "finishedWallMs": 1792125240119
+        },
+        {
+          "atWallMs": 1792125240119,
+          "finishedWallMs": 1792125240145
+        },
+        {
+          "atWallMs": 1792125240145,
+          "finishedWallMs": 1792125240170
+        },
+        {
+          "atWallMs": 1792125240170,
+          "finishedWallMs": 1792125240195
+        },
+        {
+          "atWallMs": 1792125240195,
+          "finishedWallMs": 1792125240220
+        },
+        {
+          "atWallMs": 1792125240220,
+          "finishedWallMs": 1792125240244
+        },
+        {
+          "atWallMs": 1792125240244,
+          "finishedWallMs": 1792125240270
+        },
+        {
+          "atWallMs": 1792125240270,
+          "finishedWallMs": 1792125240299
+        },
+        {
+          "atWallMs": 1792125240299,
+          "finishedWallMs": 1792125240320
+        },
+        {
+          "atWallMs": 1792125240320,
+          "finishedWallMs": 1792125240344
+        },
+        {
+          "atWallMs": 1792125240344,
+          "finishedWallMs": 1792125240369
+        },
+        {
+          "atWallMs": 1792125240369,
+          "finishedWallMs": 1792125240396
+        },
+        {
+          "atWallMs": 1792125240396,
+          "finishedWallMs": 1792125240422
+        },
+        {
+          "atWallMs": 1792125240422,
+          "finishedWallMs": 1792125240447
+        },
+        {
+          "atWallMs": 1792125240447,
+          "finishedWallMs": 1792125240472
+        },
+        {
+          "atWallMs": 1792125240472,
+          "finishedWallMs": 1792125240496
+        },
+        {
+          "atWallMs": 1792125240496,
+          "finishedWallMs": 1792125240521
+        },
+        {
+          "atWallMs": 1792125240521,
+          "finishedWallMs": 1792125240546
+        },
+        {
+          "atWallMs": 1792125240546,
+          "finishedWallMs": 1792125240570
+        },
+        {
+          "atWallMs": 1792125240570,
+          "finishedWallMs": 1792125240598
+        },
+        {
+          "atWallMs": 1792125240598,
+          "finishedWallMs": 1792125240622
+        },
+        {
+          "atWallMs": 1792125240622,
+          "finishedWallMs": 1792125240646
+        },
+        {
+          "atWallMs": 1792125240646,
+          "finishedWallMs": 1792125240672
+        },
+        {
+          "atWallMs": 1792125240672,
+          "finishedWallMs": 1792125240695
+        },
+        {
+          "atWallMs": 1792125240695,
+          "finishedWallMs": 1792125240720
+        },
+        {
+          "atWallMs": 1792125240720,
+          "finishedWallMs": 1792125240745
+        },
+        {
+          "atWallMs": 1792125240745,
+          "finishedWallMs": 1792125240771
+        },
+        {
+          "atWallMs": 1792125240771,
+          "finishedWallMs": 1792125240799
+        },
+        {
+          "atWallMs": 1792125240799,
+          "finishedWallMs": 1792125240821
+        },
+        {
+          "atWallMs": 1792125240821,
+          "finishedWallMs": 1792125240845
+        },
+        {
+          "atWallMs": 1792125240845,
+          "finishedWallMs": 1792125240870
+        },
+        {
+          "atWallMs": 1792125240870,
+          "finishedWallMs": 1792125240897
+        },
+        {
+          "atWallMs": 1792125240897,
+          "finishedWallMs": 1792125240923
+        },
+        {
+          "atWallMs": 1792125240923,
+          "finishedWallMs": 1792125240948
+        },
+        {
+          "atWallMs": 1792125240948,
+          "finishedWallMs": 1792125240980
+        },
+        {
+          "atWallMs": 1792125240980,
+          "finishedWallMs": 1792125241005
+        },
+        {
+          "atWallMs": 1792125241005,
+          "finishedWallMs": 1792125241028
+        },
+        {
+          "atWallMs": 1792125241028,
+          "finishedWallMs": 1792125241055
+        },
+        {
+          "atWallMs": 1792125241055,
+          "finishedWallMs": 1792125241082
+        },
+        {
+          "atWallMs": 1792125241082,
+          "finishedWallMs": 1792125241107
+        },
+        {
+          "atWallMs": 1792125241107,
+          "finishedWallMs": 1792125241138
+        },
+        {
+          "atWallMs": 1792125241138,
+          "finishedWallMs": 1792125241165
+        },
+        {
+          "atWallMs": 1792125241165,
+          "finishedWallMs": 1792125241188
+        },
+        {
+          "atWallMs": 1792125241188,
+          "finishedWallMs": 1792125241212
+        },
+        {
+          "atWallMs": 1792125241212,
+          "finishedWallMs": 1792125241228
+        },
+        {
+          "atWallMs": 1792125241228,
+          "finishedWallMs": 1792125241254
+        },
+        {
+          "atWallMs": 1792125241254,
+          "finishedWallMs": 1792125241279
+        },
+        {
+          "atWallMs": 1792125241279,
+          "finishedWallMs": 1792125241304
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "after": {
+        "ready": true,
+        "finished": true,
+        "accepted": 1
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Page.bringToFront",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "mode": "screenshots",
+      "repetition": 2,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "mode": "screenshots",
+        "events": [],
+        "changes": [],
+        "initial": {
+          "width": 1000,
+          "height": 800,
+          "outerWidth": 1200,
+          "outerHeight": 842,
+          "dpr": 1,
+          "hidden": false,
+          "focused": true,
+          "viewport": [
+            1000,
+            800,
+            0,
+            0,
+            1
+          ],
+          "screen": [
+            1512,
+            982,
+            1512,
+            982
+          ],
+          "root": [
+            1000,
+            800
+          ]
+        },
+        "visibilityTracking": true,
+        "startWallMs": 1792125242841,
+        "durationMs": 3202.100000023842,
+        "foreground": {
+          "hidden": false,
+          "focused": true
+        }
+      },
+      "frames": [
+        {
+          "atWallMs": 1792125242853,
+          "finishedWallMs": 1792125242880
+        },
+        {
+          "atWallMs": 1792125242881,
+          "finishedWallMs": 1792125242904
+        },
+        {
+          "atWallMs": 1792125242904,
+          "finishedWallMs": 1792125242928
+        },
+        {
+          "atWallMs": 1792125242928,
+          "finishedWallMs": 1792125242952
+        },
+        {
+          "atWallMs": 1792125242952,
+          "finishedWallMs": 1792125242981
+        },
+        {
+          "atWallMs": 1792125242981,
+          "finishedWallMs": 1792125243004
+        },
+        {
+          "atWallMs": 1792125243004,
+          "finishedWallMs": 1792125243029
+        },
+        {
+          "atWallMs": 1792125243029,
+          "finishedWallMs": 1792125243053
+        },
+        {
+          "atWallMs": 1792125243053,
+          "finishedWallMs": 1792125243081
+        },
+        {
+          "atWallMs": 1792125243081,
+          "finishedWallMs": 1792125243103
+        },
+        {
+          "atWallMs": 1792125243103,
+          "finishedWallMs": 1792125243128
+        },
+        {
+          "atWallMs": 1792125243128,
+          "finishedWallMs": 1792125243152
+        },
+        {
+          "atWallMs": 1792125243152,
+          "finishedWallMs": 1792125243178
+        },
+        {
+          "atWallMs": 1792125243178,
+          "finishedWallMs": 1792125243203
+        },
+        {
+          "atWallMs": 1792125243203,
+          "finishedWallMs": 1792125243228
+        },
+        {
+          "atWallMs": 1792125243228,
+          "finishedWallMs": 1792125243254
+        },
+        {
+          "atWallMs": 1792125243254,
+          "finishedWallMs": 1792125243279
+        },
+        {
+          "atWallMs": 1792125243279,
+          "finishedWallMs": 1792125243304
+        },
+        {
+          "atWallMs": 1792125243304,
+          "finishedWallMs": 1792125243329
+        },
+        {
+          "atWallMs": 1792125243329,
+          "finishedWallMs": 1792125243353
+        },
+        {
+          "atWallMs": 1792125243353,
+          "finishedWallMs": 1792125243378
+        },
+        {
+          "atWallMs": 1792125243378,
+          "finishedWallMs": 1792125243403
+        },
+        {
+          "atWallMs": 1792125243403,
+          "finishedWallMs": 1792125243428
+        },
+        {
+          "atWallMs": 1792125243428,
+          "finishedWallMs": 1792125243453
+        },
+        {
+          "atWallMs": 1792125243453,
+          "finishedWallMs": 1792125243478
+        },
+        {
+          "atWallMs": 1792125243478,
+          "finishedWallMs": 1792125243503
+        },
+        {
+          "atWallMs": 1792125243503,
+          "finishedWallMs": 1792125243528
+        },
+        {
+          "atWallMs": 1792125243528,
+          "finishedWallMs": 1792125243553
+        },
+        {
+          "atWallMs": 1792125243553,
+          "finishedWallMs": 1792125243578
+        },
+        {
+          "atWallMs": 1792125243578,
+          "finishedWallMs": 1792125243603
+        },
+        {
+          "atWallMs": 1792125243603,
+          "finishedWallMs": 1792125243628
+        },
+        {
+          "atWallMs": 1792125243628,
+          "finishedWallMs": 1792125243653
+        },
+        {
+          "atWallMs": 1792125243653,
+          "finishedWallMs": 1792125243678
+        },
+        {
+          "atWallMs": 1792125243678,
+          "finishedWallMs": 1792125243702
+        },
+        {
+          "atWallMs": 1792125243702,
+          "finishedWallMs": 1792125243730
+        },
+        {
+          "atWallMs": 1792125243730,
+          "finishedWallMs": 1792125243753
+        },
+        {
+          "atWallMs": 1792125243753,
+          "finishedWallMs": 1792125243778
+        },
+        {
+          "atWallMs": 1792125243778,
+          "finishedWallMs": 1792125243805
+        },
+        {
+          "atWallMs": 1792125243805,
+          "finishedWallMs": 1792125243828
+        },
+        {
+          "atWallMs": 1792125243828,
+          "finishedWallMs": 1792125243852
+        },
+        {
+          "atWallMs": 1792125243852,
+          "finishedWallMs": 1792125243879
+        },
+        {
+          "atWallMs": 1792125243879,
+          "finishedWallMs": 1792125243904
+        },
+        {
+          "atWallMs": 1792125243904,
+          "finishedWallMs": 1792125243932
+        },
+        {
+          "atWallMs": 1792125243932,
+          "finishedWallMs": 1792125243957
+        },
+        {
+          "atWallMs": 1792125243957,
+          "finishedWallMs": 1792125243987
+        },
+        {
+          "atWallMs": 1792125243987,
+          "finishedWallMs": 1792125244011
+        },
+        {
+          "atWallMs": 1792125244011,
+          "finishedWallMs": 1792125244039
+        },
+        {
+          "atWallMs": 1792125244039,
+          "finishedWallMs": 1792125244061
+        },
+        {
+          "atWallMs": 1792125244061,
+          "finishedWallMs": 1792125244086
+        },
+        {
+          "atWallMs": 1792125244086,
+          "finishedWallMs": 1792125244111
+        },
+        {
+          "atWallMs": 1792125244111,
+          "finishedWallMs": 1792125244136
+        },
+        {
+          "atWallMs": 1792125244136,
+          "finishedWallMs": 1792125244161
+        },
+        {
+          "atWallMs": 1792125244161,
+          "finishedWallMs": 1792125244186
+        },
+        {
+          "atWallMs": 1792125244186,
+          "finishedWallMs": 1792125244211
+        },
+        {
+          "atWallMs": 1792125244211,
+          "finishedWallMs": 1792125244236
+        },
+        {
+          "atWallMs": 1792125244236,
+          "finishedWallMs": 1792125244261
+        },
+        {
+          "atWallMs": 1792125244261,
+          "finishedWallMs": 1792125244286
+        },
+        {
+          "atWallMs": 1792125244286,
+          "finishedWallMs": 1792125244315
+        },
+        {
+          "atWallMs": 1792125244315,
+          "finishedWallMs": 1792125244336
+        },
+        {
+          "atWallMs": 1792125244336,
+          "finishedWallMs": 1792125244361
+        },
+        {
+          "atWallMs": 1792125244361,
+          "finishedWallMs": 1792125244386
+        },
+        {
+          "atWallMs": 1792125244386,
+          "finishedWallMs": 1792125244410
+        },
+        {
+          "atWallMs": 1792125244410,
+          "finishedWallMs": 1792125244436
+        },
+        {
+          "atWallMs": 1792125244436,
+          "finishedWallMs": 1792125244461
+        },
+        {
+          "atWallMs": 1792125244461,
+          "finishedWallMs": 1792125244486
+        },
+        {
+          "atWallMs": 1792125244486,
+          "finishedWallMs": 1792125244511
+        },
+        {
+          "atWallMs": 1792125244511,
+          "finishedWallMs": 1792125244536
+        },
+        {
+          "atWallMs": 1792125244536,
+          "finishedWallMs": 1792125244561
+        },
+        {
+          "atWallMs": 1792125244561,
+          "finishedWallMs": 1792125244586
+        },
+        {
+          "atWallMs": 1792125244586,
+          "finishedWallMs": 1792125244611
+        },
+        {
+          "atWallMs": 1792125244611,
+          "finishedWallMs": 1792125244636
+        },
+        {
+          "atWallMs": 1792125244636,
+          "finishedWallMs": 1792125244661
+        },
+        {
+          "atWallMs": 1792125244661,
+          "finishedWallMs": 1792125244689
+        },
+        {
+          "atWallMs": 1792125244689,
+          "finishedWallMs": 1792125244712
+        },
+        {
+          "atWallMs": 1792125244712,
+          "finishedWallMs": 1792125244737
+        },
+        {
+          "atWallMs": 1792125244737,
+          "finishedWallMs": 1792125244762
+        },
+        {
+          "atWallMs": 1792125244762,
+          "finishedWallMs": 1792125244787
+        },
+        {
+          "atWallMs": 1792125244787,
+          "finishedWallMs": 1792125244813
+        },
+        {
+          "atWallMs": 1792125244813,
+          "finishedWallMs": 1792125244838
+        },
+        {
+          "atWallMs": 1792125244838,
+          "finishedWallMs": 1792125244862
+        },
+        {
+          "atWallMs": 1792125244862,
+          "finishedWallMs": 1792125244887
+        },
+        {
+          "atWallMs": 1792125244887,
+          "finishedWallMs": 1792125244913
+        },
+        {
+          "atWallMs": 1792125244913,
+          "finishedWallMs": 1792125244938
+        },
+        {
+          "atWallMs": 1792125244938,
+          "finishedWallMs": 1792125244963
+        },
+        {
+          "atWallMs": 1792125244963,
+          "finishedWallMs": 1792125244987
+        },
+        {
+          "atWallMs": 1792125244987,
+          "finishedWallMs": 1792125245013
+        },
+        {
+          "atWallMs": 1792125245013,
+          "finishedWallMs": 1792125245037
+        },
+        {
+          "atWallMs": 1792125245037,
+          "finishedWallMs": 1792125245062
+        },
+        {
+          "atWallMs": 1792125245062,
+          "finishedWallMs": 1792125245087
+        },
+        {
+          "atWallMs": 1792125245087,
+          "finishedWallMs": 1792125245115
+        },
+        {
+          "atWallMs": 1792125245115,
+          "finishedWallMs": 1792125245139
+        },
+        {
+          "atWallMs": 1792125245139,
+          "finishedWallMs": 1792125245162
+        },
+        {
+          "atWallMs": 1792125245162,
+          "finishedWallMs": 1792125245188
+        },
+        {
+          "atWallMs": 1792125245188,
+          "finishedWallMs": 1792125245212
+        },
+        {
+          "atWallMs": 1792125245212,
+          "finishedWallMs": 1792125245238
+        },
+        {
+          "atWallMs": 1792125245238,
+          "finishedWallMs": 1792125245263
+        },
+        {
+          "atWallMs": 1792125245263,
+          "finishedWallMs": 1792125245287
+        },
+        {
+          "atWallMs": 1792125245287,
+          "finishedWallMs": 1792125245314
+        },
+        {
+          "atWallMs": 1792125245314,
+          "finishedWallMs": 1792125245338
+        },
+        {
+          "atWallMs": 1792125245338,
+          "finishedWallMs": 1792125245362
+        },
+        {
+          "atWallMs": 1792125245362,
+          "finishedWallMs": 1792125245391
+        },
+        {
+          "atWallMs": 1792125245391,
+          "finishedWallMs": 1792125245412
+        },
+        {
+          "atWallMs": 1792125245412,
+          "finishedWallMs": 1792125245438
+        },
+        {
+          "atWallMs": 1792125245438,
+          "finishedWallMs": 1792125245462
+        },
+        {
+          "atWallMs": 1792125245462,
+          "finishedWallMs": 1792125245486
+        },
+        {
+          "atWallMs": 1792125245486,
+          "finishedWallMs": 1792125245513
+        },
+        {
+          "atWallMs": 1792125245513,
+          "finishedWallMs": 1792125245538
+        },
+        {
+          "atWallMs": 1792125245538,
+          "finishedWallMs": 1792125245564
+        },
+        {
+          "atWallMs": 1792125245564,
+          "finishedWallMs": 1792125245590
+        },
+        {
+          "atWallMs": 1792125245590,
+          "finishedWallMs": 1792125245615
+        },
+        {
+          "atWallMs": 1792125245615,
+          "finishedWallMs": 1792125245649
+        },
+        {
+          "atWallMs": 1792125245649,
+          "finishedWallMs": 1792125245673
+        },
+        {
+          "atWallMs": 1792125245673,
+          "finishedWallMs": 1792125245707
+        },
+        {
+          "atWallMs": 1792125245707,
+          "finishedWallMs": 1792125245729
+        },
+        {
+          "atWallMs": 1792125245729,
+          "finishedWallMs": 1792125245754
+        },
+        {
+          "atWallMs": 1792125245754,
+          "finishedWallMs": 1792125245780
+        },
+        {
+          "atWallMs": 1792125245780,
+          "finishedWallMs": 1792125245803
+        },
+        {
+          "atWallMs": 1792125245803,
+          "finishedWallMs": 1792125245829
+        },
+        {
+          "atWallMs": 1792125245829,
+          "finishedWallMs": 1792125245856
+        },
+        {
+          "atWallMs": 1792125245856,
+          "finishedWallMs": 1792125245880
+        },
+        {
+          "atWallMs": 1792125245880,
+          "finishedWallMs": 1792125245906
+        },
+        {
+          "atWallMs": 1792125245906,
+          "finishedWallMs": 1792125245933
+        },
+        {
+          "atWallMs": 1792125245933,
+          "finishedWallMs": 1792125245963
+        },
+        {
+          "atWallMs": 1792125245963,
+          "finishedWallMs": 1792125245989
+        },
+        {
+          "atWallMs": 1792125245989,
+          "finishedWallMs": 1792125246012
+        },
+        {
+          "atWallMs": 1792125246012,
+          "finishedWallMs": 1792125246036
+        },
+        {
+          "atWallMs": 1792125246036,
+          "finishedWallMs": 1792125246053
+        },
+        {
+          "atWallMs": 1792125246053,
+          "finishedWallMs": 1792125246086
+        },
+        {
+          "atWallMs": 1792125246086,
+          "finishedWallMs": 1792125246112
+        },
+        {
+          "atWallMs": 1792125246112,
+          "finishedWallMs": 1792125246137
+        },
+        {
+          "atWallMs": 1792125246137,
+          "finishedWallMs": 1792125246163
+        }
+      ],
+      "first": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "last": {
+        "readable": true,
+        "text": "signaltoken4826approve"
+      },
+      "after": {
+        "ready": true,
+        "finished": true,
+        "accepted": 1
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Page.bringToFront",
+        "Target.getTargetInfo",
+        "Page.captureScreenshot",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}

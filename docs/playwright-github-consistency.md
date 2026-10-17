@@ -1,0 +1,15 @@
+# Does GitHub source support consistent Playwright detection?
+
+Reviewed 2026-10-16. **No: these sources do not establish detection of every Playwright session.** They supply useful tests for specific markers and optional features. The local marker-disabled completion results remain counterexamples to a stronger claim.
+
+The reviewed `online/headless-detector` revision is `21e9789a0a0c1de8218b1a76b3db82383798a158`. Its combined script checks webdriver and named automation properties around lines 175–194. Around lines 204–261 it scans exposed functions for `__installed` and implementation strings. These operations inspect page-visible properties and function source. They do not ask Chromium for an authenticated “Playwright connected” bit. [Pinned detector implementation](https://github.com/online/headless-detector/blob/21e9789a0a0c1de8218b1a76b3db82383798a158/scripts/headless-detector.js#L175).
+
+A function-string detector needs the relevant function to exist in the inspected world. An exposed binding is an optional client feature. A named-global detector needs that version/configuration to install the name. A webdriver check can catch normal automation launch settings, while the already tested marker-disabled browser is a separate case. README labels such as “Playwright detection” must be read in that narrower sense.
+
+The root agent checked the installed Playwright 1.64 bundle: it contained no `__playwright_builtins__`, `__installed`, or `__pwInitScripts` strings. A missing string alone does not prove absence of every equivalent behavior, but it directly undermines a rule that expects that exact marker in this installed version. The separately reviewed `__pwSnapshotGlobals` path is optional. Do not add these old names as compulsory signatures based on detector reputation.
+
+Pinned upstream 1.64 startup likewise makes its binding conditional on `needsPlaywrightBinding()`. It creates its utility world separately. The latter's name is protocol metadata, not evidence of a page global with that name. [Versioned startup conditions, lines 493–506](https://github.com/microsoft/playwright/blob/v1.64.0/packages/playwright-core/src/server/chromium/crPage.ts#L493).
+
+The local real-task records reported by the root agent show marker-disabled coordinate control, plain initialization, and screenshot tracing each completing 3/3 trials. Those results cover the tested browser, version, and operations; they do not mean every Playwright configuration evades detection. They do mean this application cannot currently claim consistent Playwright exclusion.
+
+Actionable next step: keep exact-marker checks scoped to a tested feature/version. Require a positive control that actually installs the marker, an ordinary-browser negative control, and the marker-disabled task-completion case. If the latter completes while the detector stays clear, the check remains a feature detector rather than a complete Playwright gate. This review did not run a third-party detector script or change application code.

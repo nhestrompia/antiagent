@@ -1,0 +1,939 @@
+{
+  "results": [
+    {
+      "repetition": 0,
+      "emulated": false,
+      "scrolled": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 0,
+          "innerWidth": 1000,
+          "innerHeight": 713
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 0,
+      "emulated": false,
+      "scrolled": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 200,
+          "innerWidth": 1000,
+          "innerHeight": 713
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 0,
+      "emulated": true,
+      "scrolled": false,
+      "error": "Input fixture did not initialize"
+    },
+    {
+      "repetition": 0,
+      "emulated": true,
+      "scrolled": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 200,
+          "innerWidth": 1000,
+          "innerHeight": 800
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 1,
+      "emulated": false,
+      "scrolled": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 0,
+          "innerWidth": 1000,
+          "innerHeight": 713
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 1,
+      "emulated": false,
+      "scrolled": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 200,
+          "innerWidth": 1000,
+          "innerHeight": 713
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 1,
+      "emulated": true,
+      "scrolled": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 0,
+          "innerWidth": 1000,
+          "innerHeight": 800
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 1,
+      "emulated": true,
+      "scrolled": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 200,
+          "innerWidth": 1000,
+          "innerHeight": 800
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 2,
+      "emulated": false,
+      "scrolled": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 0,
+          "innerWidth": 1000,
+          "innerHeight": 713
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 2,
+      "emulated": false,
+      "scrolled": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 200,
+          "innerWidth": 1000,
+          "innerHeight": 713
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 2,
+      "emulated": true,
+      "scrolled": false,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 0,
+          "innerWidth": 1000,
+          "innerHeight": 800
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 160,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 180,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    },
+    {
+      "repetition": 2,
+      "emulated": true,
+      "scrolled": true,
+      "version": "Chrome/155.0.8059.80",
+      "headless": false,
+      "measurement": {
+        "window": {
+          "screenX": 160,
+          "screenY": 100,
+          "scrollX": 0,
+          "scrollY": 200,
+          "innerWidth": 1000,
+          "innerHeight": 800
+        },
+        "samples": [
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 120,
+            "clientY": 160,
+            "pageX": 120,
+            "pageY": 360,
+            "screenX": 280,
+            "screenY": 347,
+            "movementX": 20,
+            "movementY": 20,
+            "equality": false
+          },
+          {
+            "type": "pointermove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "pointerType": "mouse",
+            "equality": false
+          },
+          {
+            "type": "mousemove",
+            "isTrusted": true,
+            "clientX": 160,
+            "clientY": 180,
+            "pageX": 160,
+            "pageY": 380,
+            "screenX": 320,
+            "screenY": 367,
+            "movementX": 40,
+            "movementY": 20,
+            "equality": false
+          }
+        ]
+      },
+      "commands": [
+        "Browser.getVersion",
+        "Target.createTarget",
+        "Target.attachToTarget",
+        "Browser.getWindowForTarget",
+        "Browser.setWindowBounds",
+        "Target.activateTarget",
+        "Emulation.setDeviceMetricsOverride",
+        "Page.navigate",
+        "Target.getTargetInfo",
+        "Input.dispatchMouseEvent"
+      ]
+    }
+  ]
+}
